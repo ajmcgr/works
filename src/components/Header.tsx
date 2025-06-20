@@ -12,7 +12,6 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Portfolio", href: "/portfolio" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
@@ -23,7 +22,7 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+          <Link to="/" className="text-2xl font-bold text-black hover:text-gray-600 transition-colors">
             Works
           </Link>
 
@@ -33,14 +32,14 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive(item.href) ? "text-blue-600" : "text-gray-700"
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                  isActive(item.href) ? "text-black border-b border-black" : "text-gray-700"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild className="bg-black hover:bg-gray-800 text-white">
               <Link to="/contact">Get Started</Link>
             </Button>
           </nav>
@@ -65,8 +64,8 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-blue-600 ${
-                    isActive(item.href) ? "text-blue-600" : "text-gray-700"
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-gray-600 ${
+                    isActive(item.href) ? "text-black" : "text-gray-700"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -74,7 +73,7 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button asChild className="w-full bg-black hover:bg-gray-800 text-white">
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                     Get Started
                   </Link>
