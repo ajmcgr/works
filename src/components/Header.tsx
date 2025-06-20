@@ -22,8 +22,12 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="text-xl font-medium text-black hover:text-gray-600 transition-colors">
-            Works
+          <Link to="/" className="hover:opacity-80 transition-opacity">
+            <img 
+              src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
+              alt="Works" 
+              className="h-8"
+            />
           </Link>
 
           {/* Desktop Navigation */}

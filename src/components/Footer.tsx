@@ -8,7 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-medium text-black mb-4">Works</h3>
+            <img 
+              src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
+              alt="Works" 
+              className="h-8 mb-4"
+            />
             <p className="text-gray-600 font-light leading-relaxed max-w-md">
               Strategic public relations that shapes narratives and builds lasting relationships.
             </p>
