@@ -59,10 +59,10 @@ const Services = () => {
       <section className="py-32 lg:py-48 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
-            <h1 className="text-5xl lg:text-7xl font-light text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
               Our Services
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-light max-w-2xl">
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
               Comprehensive public relations solutions designed to elevate your brand, 
               protect your reputation, and drive meaningful engagement.
             </p>
@@ -76,19 +76,19 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {services.map((service, index) => (
               <div key={index} className="bg-white p-8 lg:p-12">
-                <h3 className="text-2xl lg:text-3xl font-light text-black mb-6">{service.title}</h3>
-                <p className="text-gray-600 font-light leading-relaxed mb-8">{service.description}</p>
+                <h3 className="text-2xl lg:text-3xl font-bold text-black mb-6">{service.title}</h3>
+                <p className="text-gray-600 font-normal leading-relaxed mb-8">{service.description}</p>
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-3">
                       <div className="w-1 h-1 bg-black rounded-full"></div>
-                      <span className="text-sm text-gray-700 font-light">{feature}</span>
+                      <span className="text-sm text-gray-700 font-normal">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="pt-6 border-t border-gray-100">
-                  <div className="text-lg font-medium text-black mb-6">{service.price}</div>
-                  <Button asChild variant="outline" className="border-black text-black hover:bg-black hover:text-white">
+                  <div className="text-lg font-bold text-black mb-6">{service.price}</div>
+                  <Button asChild variant="outline" className="border-[#409EFF] text-[#409EFF] hover:bg-[#409EFF] hover:text-white">
                     <Link to="/contact">Get Quote</Link>
                   </Button>
                 </div>
@@ -102,10 +102,10 @@ const Services = () => {
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="mb-20">
-            <h2 className="text-3xl lg:text-4xl font-light text-black mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
               Our Process
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl font-light leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-2xl font-normal leading-relaxed">
               We follow a proven methodology to ensure every campaign delivers results 
               and builds lasting value for your brand.
             </p>
@@ -113,9 +113,9 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {process.map((item, index) => (
               <div key={index} className="space-y-6">
-                <div className="text-sm text-gray-400 font-light uppercase tracking-wide">{item.step}</div>
-                <h3 className="text-xl font-medium text-black">{item.title}</h3>
-                <p className="text-gray-600 font-light leading-relaxed">{item.description}</p>
+                <div className="text-sm text-gray-400 font-normal uppercase tracking-wide">{item.step}</div>
+                <h3 className="text-xl font-bold text-black">{item.title}</h3>
+                <p className="text-gray-600 font-normal leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -125,13 +125,13 @@ const Services = () => {
       {/* CTA */}
       <section className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-light mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
             Ready to elevate your PR strategy?
           </h2>
-          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-light leading-relaxed">
+          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">
             Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
-          <Button asChild size="lg" variant="secondary" className="bg-white text-black hover:bg-gray-100 px-8 py-3">
+          <Button asChild size="lg" className="text-white hover:opacity-90 px-8 py-3" style={{ backgroundColor: '#409EFF' }}>
             <Link to="/contact">Start a conversation</Link>
           </Button>
         </div>
