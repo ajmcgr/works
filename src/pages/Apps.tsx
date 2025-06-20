@@ -6,10 +6,10 @@ const Apps = () => {
   const apps = [
     {
       name: "Media AI",
-      description: "AI-powered media generation and editing platform. Create stunning visuals, videos, and multimedia content with the power of artificial intelligence.",
+      description: "Find the right voices for your stories, campaigns, and projects in just a few clicks from our database of over top 30,000 journalists and creators — powered by AI",
       icon: Video,
       url: "https://trymedia.ai",
-      features: ["AI Video Generation", "Smart Editing Tools", "Media Enhancement", "Automated Production"],
+      features: ["30,000+ Journalists & Creators", "AI-Powered Search", "Campaign Matching", "Story Voice Discovery"],
       color: "from-purple-500 to-pink-500",
       logo: "/lovable-uploads/96599754-b7c2-4982-9e8b-5cded98ef4cf.png"
     },

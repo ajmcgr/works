@@ -1,11 +1,10 @@
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-100">
       <div className="container mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
             <img 
@@ -26,6 +25,33 @@ const Footer = () => {
               <li><Link to="/services" className="text-gray-600 font-normal hover:text-black transition-colors">Crisis Communication</Link></li>
               <li><Link to="/services" className="text-gray-600 font-normal hover:text-black transition-colors">Brand Communications</Link></li>
               <li><Link to="/services" className="text-gray-600 font-normal hover:text-black transition-colors">Content Strategy</Link></li>
+            </ul>
+          </div>
+
+          {/* Apps */}
+          <div>
+            <h4 className="text-sm font-medium text-black mb-6 uppercase tracking-wide">Apps</h4>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  href="https://trymedia.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 font-normal hover:text-black transition-colors"
+                >
+                  TryMedia.ai
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://trywrite.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 font-normal hover:text-black transition-colors"
+                >
+                  TryWrite.ai
+                </a>
+              </li>
             </ul>
           </div>
 
