@@ -1,4 +1,5 @@
 
+
 import { Link } from "react-router-dom";
 import { Twitter, Youtube, Linkedin, Instagram } from "lucide-react";
 
@@ -50,7 +51,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-black transition-colors"
                 aria-label="Follow us on X"
               >
-                <Twitter size={20} />
+                <Twitter size={20} fill="currentColor" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/worksxyz" 
@@ -59,7 +60,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-black transition-colors"
                 aria-label="Follow us on LinkedIn"
               >
-                <Linkedin size={20} />
+                <Linkedin size={20} fill="currentColor" />
               </a>
               <a 
                 href="https://www.youtube.com/@worksxyz" 
@@ -68,7 +69,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-black transition-colors"
                 aria-label="Follow us on YouTube"
               >
-                <Youtube size={20} />
+                <Youtube size={20} fill="currentColor" />
               </a>
               <a 
                 href="https://www.instagram.com/works.xyz" 
@@ -77,7 +78,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-black transition-colors"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram size={20} />
+                <Instagram size={20} fill="currentColor" />
               </a>
             </div>
           </div>
@@ -88,3 +89,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
