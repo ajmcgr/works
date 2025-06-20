@@ -163,7 +163,7 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-white py-32 lg:py-40">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
