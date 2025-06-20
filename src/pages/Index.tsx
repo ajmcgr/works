@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -169,7 +168,7 @@ const Index = () => {
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex items-center justify-center space-x-8">
-              <Button asChild className="text-white px-8 py-3 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
                 <button onClick={scrollToContact} className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -297,7 +296,7 @@ const Index = () => {
               </p>
             </div>
             <div className="mt-12">
-              <Button asChild className="text-white px-8 py-3 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
                 <button onClick={scrollToContact} className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -428,7 +427,7 @@ const Index = () => {
                 className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-black hover:opacity-90" style={{ backgroundColor: '#409EFF' }}>
+            <Button type="submit" disabled={isSubmitting} className="w-full text-black hover:opacity-90 px-6 py-4" style={{ backgroundColor: '#409EFF' }}>
               {isSubmitting ? (
                 "Opening email client..."
               ) : (
