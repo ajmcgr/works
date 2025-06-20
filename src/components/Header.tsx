@@ -40,30 +40,32 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-12">
-            {navigation.map((item) => (
-              item.href.startsWith('#') ? (
-                <button
-                  key={item.name}
-                  onClick={() => handleNavClick(item.href)}
-                  className={`text-sm font-light transition-colors hover:text-gray-600 ${
-                    isActive(item.href) ? "text-black" : "text-gray-700"
-                  }`}
-                >
-                  {item.name}
-                </button>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-sm font-light transition-colors hover:text-gray-600 ${
-                    isActive(item.href) ? "text-black" : "text-gray-700"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              )
-            ))}
+          <nav className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-12">
+              {navigation.map((item) => (
+                item.href.startsWith('#') ? (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.href)}
+                    className={`text-sm font-normal transition-colors hover:text-gray-600 ${
+                      isActive(item.href) ? "text-black" : "text-gray-700"
+                    }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`text-sm font-normal transition-colors hover:text-gray-600 ${
+                      isActive(item.href) ? "text-black" : "text-gray-700"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              ))}
+            </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -88,7 +90,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className={`block text-base font-light transition-colors hover:text-gray-600 ${
+                    className={`block text-base font-normal transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -98,7 +100,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`block text-base font-light transition-colors hover:text-gray-600 ${
+                    className={`block text-base font-normal transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                     onClick={() => setIsMenuOpen(false)}

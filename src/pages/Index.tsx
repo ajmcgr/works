@@ -66,7 +66,7 @@ const Index = () => {
             <h1 className="text-5xl lg:text-7xl font-light text-black leading-[1.1] mb-8 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl font-light">
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl font-normal">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex items-center space-x-8">
@@ -96,33 +96,33 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="text-center mb-12">
-            <p className="text-sm text-gray-600 font-light uppercase tracking-wide">Trusted by leading brands</p>
+            <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 items-center justify-items-center">
             <img 
               src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
               alt="OnePlus" 
-              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-16 lg:h-20 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
               alt="OPPO" 
-              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-16 lg:h-20 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
               alt="Ogilvy" 
-              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-16 lg:h-20 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
               alt="Weber Shandwick" 
-              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-16 lg:h-20 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
               alt="Publicis Groupe" 
-              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-16 lg:h-20 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
           </div>
         </div>
@@ -136,7 +136,7 @@ const Index = () => {
               <h2 className="text-3xl lg:text-4xl font-light text-black mb-8 leading-tight">
                 What we do
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed font-light">
+              <p className="text-lg text-gray-600 leading-relaxed font-normal">
                 Comprehensive PR solutions tailored to your unique challenges and opportunities.
               </p>
             </div>
@@ -144,7 +144,7 @@ const Index = () => {
               {services.map((service, index) => (
                 <div key={index} className="pb-6 border-b border-gray-100 last:border-b-0">
                   <h3 className="text-xl font-medium text-black mb-2">{service}</h3>
-                  <p className="text-gray-600 font-light">Strategic approach to elevate your brand presence</p>
+                  <p className="text-gray-600 font-normal">Strategic approach to elevate your brand presence</p>
                 </div>
               ))}
             </div>
@@ -158,19 +158,19 @@ const Index = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-light text-black mb-2">8+</div>
-              <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Years</div>
+              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-light text-black mb-2">500+</div>
-              <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Campaigns</div>
+              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Campaigns</div>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-light text-black mb-2">98%</div>
-              <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Retention</div>
+              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Retention</div>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-light text-black mb-2">24/7</div>
-              <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Support</div>
+              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Support</div>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@ const Index = () => {
               <h2 className="text-3xl lg:text-4xl font-light text-black mb-8 leading-tight">
                 Why Works
               </h2>
-              <div className="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+              <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
                 <p>
                   We believe in the power of strategic communication to shape perceptions 
                   and drive meaningful change.
@@ -253,19 +253,19 @@ const Index = () => {
             <div className="lg:pl-16">
               <div className="space-y-6">
                 <div className="pb-6 border-b border-gray-100">
-                  <div className="text-sm text-gray-600 font-light uppercase tracking-wide mb-2">Expertise</div>
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
                   <div className="text-lg text-black font-medium">8+ years of PR excellence</div>
                 </div>
                 <div className="pb-6 border-b border-gray-100">
-                  <div className="text-sm text-gray-600 font-light uppercase tracking-wide mb-2">Network</div>
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Network</div>
                   <div className="text-lg text-black font-medium">Extensive media relationships</div>
                 </div>
                 <div className="pb-6 border-b border-gray-100">
-                  <div className="text-sm text-gray-600 font-light uppercase tracking-wide mb-2">Response</div>
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Response</div>
                   <div className="text-lg text-black font-medium">24/7 crisis management</div>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-600 font-light uppercase tracking-wide mb-2">Results</div>
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Results</div>
                   <div className="text-lg text-black font-medium">Proven track record</div>
                 </div>
               </div>
@@ -281,7 +281,7 @@ const Index = () => {
             <h2 className="text-4xl lg:text-5xl font-light mb-8 leading-tight">
               Ready to shape your story?
             </h2>
-            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-light text-gray-300 leading-relaxed">
+            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-300 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
           </div>
