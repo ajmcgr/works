@@ -1,177 +1,124 @@
 
-import { Users, Award, Target, Heart } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const About = () => {
-  const team = [
-    {
-      name: "Alex Thompson",
-      role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      bio: "10+ years in digital strategy and business development."
-    },
-    {
-      name: "Sarah Martinez",
-      role: "Lead Designer",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332c1b4?w=400&h=400&fit=crop&crop=face",
-      bio: "Award-winning designer with a passion for user experience."
-    },
-    {
-      name: "Mike Johnson",
-      role: "Technical Director",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      bio: "Full-stack developer specializing in modern web technologies."
-    },
-    {
-      name: "Emily Chen",
-      role: "Marketing Lead",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      bio: "Digital marketing expert with expertise in growth strategies."
-    }
-  ];
-
   const values = [
     {
-      icon: <Target className="h-8 w-8 text-blue-600" />,
       title: "Excellence",
-      description: "We strive for perfection in every project, delivering results that exceed expectations."
+      description: "We strive for perfection in every campaign, delivering results that exceed expectations and set new industry standards."
     },
     {
-      icon: <Users className="h-8 w-8 text-green-600" />,
-      title: "Collaboration",
-      description: "We work closely with our clients as partners, ensuring their vision becomes reality."
+      title: "Integrity",
+      description: "We build trust through transparent communication, ethical practices, and unwavering commitment to our clients' best interests."
     },
     {
-      icon: <Award className="h-8 w-8 text-purple-600" />,
       title: "Innovation",
-      description: "We stay ahead of trends and use cutting-edge technologies to solve complex problems."
+      description: "We stay ahead of media trends and leverage cutting-edge strategies to solve complex communication challenges."
     },
     {
-      icon: <Heart className="h-8 w-8 text-red-600" />,
-      title: "Passion",
-      description: "We love what we do, and it shows in the quality and creativity of our work."
+      title: "Results",
+      description: "We measure success by the meaningful impact we create for our clients' brands and business objectives."
     }
   ];
 
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+      <section className="py-32 lg:py-48 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl lg:text-7xl font-light text-black leading-[1.1] mb-8 tracking-tight">
               About Works
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              We're a passionate team of designers, developers, and strategists who believe 
-              in the power of great digital experiences to transform businesses and create 
-              meaningful connections.
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 font-light max-w-2xl">
+              We're a team of strategic communication experts who believe in the power 
+              of storytelling to transform businesses and create meaningful connections.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600">2015</div>
-                <div className="text-gray-600">Founded</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-green-600">500+</div>
-                <div className="text-gray-600">Projects</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-purple-600">50+</div>
-                <div className="text-gray-600">Happy Clients</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+      {/* Story Section */}
+      <section className="py-32 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-light text-black mb-8 leading-tight">
                 Our Story
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Founded in 2015, Works began as a small team with a big vision: to help 
-                businesses succeed in the digital world through exceptional design and development.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                What started as a passion project has grown into a full-service digital agency 
-                that's helped hundreds of companies build their online presence, engage their 
-                audiences, and achieve their business goals.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Today, we're proud to work with startups, established businesses, and everything 
-                in between, always maintaining our commitment to quality, creativity, and results.
-              </p>
+              <div className="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+                <p>
+                  Founded in 2009, Works began with a simple belief: that strategic communication 
+                  has the power to shape perceptions, drive change, and create lasting impact.
+                </p>
+                <p>
+                  What started as a boutique consultancy has evolved into a full-service PR agency 
+                  that's helped hundreds of organizations navigate complex communication challenges 
+                  and achieve their business objectives.
+                </p>
+                <p>
+                  Today, we work with industry leaders, emerging brands, and visionary entrepreneurs, 
+                  always maintaining our commitment to excellence, integrity, and results.
+                </p>
+              </div>
             </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop" 
-                alt="Team working together" 
-                className="rounded-2xl shadow-2xl"
-              />
+            <div className="space-y-12">
+              <div className="pb-8 border-b border-gray-200">
+                <div className="text-4xl font-light text-black mb-2">2009</div>
+                <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Founded</div>
+              </div>
+              <div className="pb-8 border-b border-gray-200">
+                <div className="text-4xl font-light text-black mb-2">500+</div>
+                <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Campaigns</div>
+              </div>
+              <div className="pb-8 border-b border-gray-200">
+                <div className="text-4xl font-light text-black mb-2">98%</div>
+                <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Client Retention</div>
+              </div>
+              <div>
+                <div className="text-4xl font-light text-black mb-2">24/7</div>
+                <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Crisis Support</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="mb-20">
+            <h2 className="text-3xl lg:text-4xl font-light text-black mb-8 leading-tight">
               Our Values
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These core values guide everything we do and shape how we work with our clients and each other.
+            <p className="text-lg text-gray-600 max-w-2xl font-light leading-relaxed">
+              These core principles guide everything we do and shape how we work with our clients.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             {values.map((value, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex justify-center">{value.icon}</div>
-                  <h3 className="text-xl font-semibold">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </CardContent>
-              </Card>
+              <div key={index} className="space-y-4">
+                <h3 className="text-xl font-medium text-black">{value.title}</h3>
+                <p className="text-gray-600 font-light leading-relaxed">{value.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The talented individuals who make the magic happen every day.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6 space-y-4">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto object-cover"
-                  />
-                  <div>
-                    <h3 className="text-xl font-semibold">{member.name}</h3>
-                    <p className="text-blue-600 font-medium">{member.role}</p>
-                  </div>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+      {/* CTA */}
+      <section className="py-32 bg-black text-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
+          <h2 className="text-4xl lg:text-5xl font-light mb-8 leading-tight">
+            Ready to work together?
+          </h2>
+          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-light leading-relaxed">
+            Let's discuss how we can help you achieve your communication goals.
+          </p>
+          <Button asChild size="lg" variant="secondary" className="bg-white text-black hover:bg-gray-100 px-8 py-3">
+            <Link to="/contact">Start a conversation</Link>
+          </Button>
         </div>
       </section>
     </div>
