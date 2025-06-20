@@ -6,20 +6,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Apps = () => {
   const apps = [
     {
-      name: "TryMedia.ai",
+      name: "Media AI",
       description: "AI-powered media generation and editing platform. Create stunning visuals, videos, and multimedia content with the power of artificial intelligence.",
       icon: Video,
       url: "https://trymedia.ai",
       features: ["AI Video Generation", "Smart Editing Tools", "Media Enhancement", "Automated Production"],
-      color: "from-purple-500 to-pink-500"
+      color: "from-purple-500 to-pink-500",
+      logo: "/lovable-uploads/96599754-b7c2-4982-9e8b-5cded98ef4cf.png"
     },
     {
-      name: "TryWrite.ai",
+      name: "Write AI",
       description: "Advanced AI writing assistant that helps you create compelling content, from blog posts to marketing copy, with intelligent suggestions and optimization.",
       icon: PenTool,
       url: "https://trywrite.ai",
       features: ["AI Content Generation", "Writing Enhancement", "SEO Optimization", "Multi-format Support"],
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-cyan-500",
+      logo: "/lovable-uploads/33bf2510-c9fc-4d3f-b495-c3f48537119b.png"
     }
   ];
 
@@ -46,8 +48,12 @@ const Apps = () => {
             {apps.map((app, index) => (
               <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg">
                 <CardHeader className="space-y-4">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${app.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
-                    <app.icon className="h-8 w-8" />
+                  <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <img 
+                      src={app.logo} 
+                      alt={app.name}
+                      className="w-12 h-12 object-contain"
+                    />
                   </div>
                   <div>
                     <CardTitle className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
@@ -107,7 +113,7 @@ const Apps = () => {
               className="bg-white text-blue-600 hover:bg-gray-100 font-medium px-8"
             >
               <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer">
-                Get Started with TryMedia.ai
+                Get Started with Media AI
               </a>
             </Button>
             <Button 
@@ -117,7 +123,7 @@ const Apps = () => {
               className="border-white text-white hover:bg-white hover:text-blue-600 font-medium px-8"
             >
               <a href="https://trywrite.ai" target="_blank" rel="noopener noreferrer">
-                Explore TryWrite.ai
+                Explore Write AI
               </a>
             </Button>
           </div>
