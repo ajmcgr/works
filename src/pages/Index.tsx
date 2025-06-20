@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -200,7 +199,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
-                  className="w-full h-full object-contain transition-opacity"
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
             </div>
@@ -209,7 +208,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                   alt="OPPO" 
-                  className="w-full h-full object-contain transition-opacity"
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
             </div>
@@ -218,7 +217,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                   alt="Ogilvy" 
-                  className="w-full h-full object-contain transition-opacity"
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
             </div>
@@ -227,7 +226,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                   alt="Weber Shandwick" 
-                  className="w-full h-full object-contain transition-opacity"
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
             </div>
@@ -236,7 +235,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
-                  className="w-full h-full object-contain transition-opacity"
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
             </div>
