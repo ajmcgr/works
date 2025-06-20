@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -81,6 +80,19 @@ const Footer = () => {
                 >
                   Discord
                 </a>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    const element = document.querySelector('#newsletter');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="text-gray-600 font-normal hover:text-black transition-colors"
+                >
+                  Newsletter
+                </button>
               </li>
             </ul>
           </div>
