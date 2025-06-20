@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -194,48 +195,48 @@ const Index = () => {
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 items-center justify-items-center">
-            <div className="w-32 h-20">
+            <div className="w-40 h-24">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-contain transition-opacity"
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-40 h-24">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                   alt="OPPO" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-contain transition-opacity"
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-40 h-24">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                   alt="Ogilvy" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-contain transition-opacity"
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-40 h-24">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                   alt="Weber Shandwick" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-contain transition-opacity"
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-40 h-24">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-contain transition-opacity"
                 />
               </AspectRatio>
             </div>
