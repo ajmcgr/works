@@ -349,7 +349,7 @@ const Index = () => {
             </div>
             
             <div className="text-left space-y-6 text-gray-800 leading-relaxed">
-              <div className="text-lg font-medium text-black mb-6">PR</div>
+              
               
               <p>Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
               
@@ -369,7 +369,7 @@ const Index = () => {
               
               <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
               
-              <div className="mt-8 pt-6 border-t border-gray-200">
+              <div className="mt-8">
                 <p className="font-medium">Best,<br />Alex MacGregor<br />Founder & CEO</p>
                 <p className="mt-4">
                   <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
