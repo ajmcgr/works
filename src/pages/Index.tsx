@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -156,19 +157,19 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-light text-black mb-2">8+</div>
+              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">8+</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-light text-black mb-2">500+</div>
+              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">50+</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Campaigns</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-light text-black mb-2">98%</div>
+              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">98%</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Retention</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-light text-black mb-2">24/7</div>
+              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">24/7</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Support</div>
             </div>
           </div>
