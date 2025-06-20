@@ -85,6 +85,57 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Personal Letter Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
+          <div className="text-center mb-12">
+            <img 
+              src="/lovable-uploads/b8aee3ea-3f0d-4746-b80c-7a91e1513ee7.png" 
+              alt="Alex MacGregor" 
+              className="w-24 h-24 rounded-full mx-auto mb-8 object-cover"
+            />
+            <h2 className="text-2xl font-medium text-black mb-8">PR</h2>
+          </div>
+          
+          <div className="space-y-6 text-base text-gray-700 leading-relaxed">
+            <p>
+              Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.
+            </p>
+            <p>
+              I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.
+            </p>
+            <p>
+              Navigating multiple languages, time zones, and regulatory mazes taught me how to craft stories that resonate and hit revenue targets while we're at it.
+            </p>
+            <p>
+              Collaborating with world‑class agencies like Ogilvy and Weber Shandwick sharpened my instincts for turning relationships into rocket fuel.
+            </p>
+            <p>
+              Add in hands‑on mastery of PR software and AI tools, and I operate with real‑time data as my compass no guesswork, no vanity metrics.
+            </p>
+            <p>
+              Why should you choose us to deliver PR? Because the team and I have delivered successful PR work for clients time and time again.
+            </p>
+            <p>
+              I've chased embargoes at 3 a.m., soothed skeptical editors with fresh angles, and built influencer programs that survived algorithm earthquakes.
+            </p>
+            <p>
+              I know the pressure of quarterly targets, the thrill of a viral moment, and the discipline it takes to turn buzz into long‑term brand equity.
+            </p>
+            <p>
+              If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.
+            </p>
+            
+            <div className="pt-8 space-y-2">
+              <p className="font-medium">Best,</p>
+              <p className="font-medium">Alex MacGregor</p>
+              <p className="text-sm text-gray-600">Founder & CEO</p>
+              <a href="#" className="text-sm text-black hover:text-gray-600 underline">Connect with me on LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
