@@ -165,7 +165,7 @@ export const NewsSection = () => {
         <div className="text-center">
           <Button asChild variant="outline" className="text-black border-gray-300 hover:bg-gray-50">
             <a 
-              href="https://works-blog.ghost.io/" 
+              href="https://blog.works.xyz/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center"
