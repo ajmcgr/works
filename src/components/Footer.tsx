@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { X, Youtube, Linkedin, Instagram } from "lucide-react";
+import { Twitter, Youtube, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-black transition-colors"
                 aria-label="Follow us on X"
               >
-                <X size={20} />
+                <Twitter size={20} />
               </a>
               <a 
                 href="https://www.linkedin.com/company/worksxyz" 
