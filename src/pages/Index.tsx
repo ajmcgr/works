@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -294,44 +293,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* News Section */}
-      <NewsSection />
-
-      {/* About Section */}
-      <section id="about" className="py-32 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-              About Works
-            </h2>
-            <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
-              <p>
-                Works offers best-in-class public relations expertise.
-              </p>
-              <p>
-                Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
-              </p>
-              <p>
-                Our PR apps aligns your strategy, earns media, and drives influence.
-              </p>
-              <p>
-                Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
-              </p>
-            </div>
-            <div className="mt-12">
-              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <button onClick={scrollToContact} className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Personal Letter Section */}
-      <section className="py-32 bg-gray-50">
+      <section id="letter" className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="text-center">
             <div className="mb-8">
@@ -380,6 +343,39 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-left">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+              About Works
+            </h2>
+            <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
+              <p>
+                Works offers best-in-class public relations expertise.
+              </p>
+              <p>
+                Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
+              </p>
+              <p>
+                Our PR apps aligns your strategy, earns media, and drives influence.
+              </p>
+              <p>
+                Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
+              </p>
+            </div>
+            <div className="mt-12">
+              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+                <button onClick={scrollToContact} className="hover:opacity-90">
+                  Start a conversation
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </button>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Works Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
@@ -422,6 +418,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* News Section */}
+      <NewsSection />
 
       {/* Contact Section */}
       <section id="contact" className="py-32 bg-white">
