@@ -168,8 +168,8 @@ const Index = () => {
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex items-center space-x-8">
-              <Button asChild className="bg-black hover:bg-gray-900 text-white px-8 py-3 text-sm font-medium">
-                <button onClick={scrollToContact}>
+              <Button asChild className="text-white px-8 py-3 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+                <button onClick={scrollToContact} className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </button>
@@ -277,7 +277,7 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-center">
+          <div className="text-left">
             <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
               About Works
             </h2>
@@ -296,8 +296,8 @@ const Index = () => {
               </p>
             </div>
             <div className="mt-12">
-              <Button asChild className="bg-black hover:bg-gray-900 text-white px-8 py-3 text-sm font-medium">
-                <button onClick={scrollToContact}>
+              <Button asChild className="text-white px-8 py-3 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+                <button onClick={scrollToContact} className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </button>
@@ -326,8 +326,8 @@ const Index = () => {
                 </p>
               </div>
               <div className="mt-12">
-                <Button asChild variant="outline" className="border-black text-black hover:bg-black hover:text-white">
-                  <Link to="/about">Learn more about us</Link>
+                <Button asChild variant="outline" className="text-white hover:text-white" style={{ borderColor: '#409EFF', backgroundColor: '#409EFF' }}>
+                  <Link to="/about" className="hover:opacity-90">Learn more about us</Link>
                 </Button>
               </div>
             </div>
@@ -427,7 +427,7 @@ const Index = () => {
                 className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full bg-white text-black hover:bg-gray-100">
+            <Button type="submit" disabled={isSubmitting} className="w-full text-black hover:opacity-90" style={{ backgroundColor: '#409EFF' }}>
               {isSubmitting ? (
                 "Opening email client..."
               ) : (
