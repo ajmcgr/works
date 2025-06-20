@@ -293,6 +293,49 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Works Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+                Why Works
+              </h2>
+              <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
+                <p>
+                  We believe in the power of strategic communication to shape perceptions 
+                  and drive meaningful change.
+                </p>
+                <p>
+                  Our approach combines deep industry expertise with creative storytelling 
+                  to deliver results that matter.
+                </p>
+              </div>
+            </div>
+            <div className="lg:pl-16">
+              <div className="space-y-6">
+                <div className="pb-6 border-b border-gray-100">
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
+                  <div className="text-lg text-black font-medium">2+ years of PR excellence</div>
+                </div>
+                <div className="pb-6 border-b border-gray-100">
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Network</div>
+                  <div className="text-lg text-black font-medium">Extensive media relationships</div>
+                </div>
+                <div className="pb-6 border-b border-gray-100">
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Response</div>
+                  <div className="text-lg text-black font-medium">24/7 crisis management</div>
+                </div>
+                <div>
+                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Results</div>
+                  <div className="text-lg text-black font-medium">Proven track record</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Personal Letter Section */}
       <section id="letter" className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
@@ -337,82 +380,6 @@ const Index = () => {
                     Connect with me on LinkedIn
                   </a>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-32 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-              About Works
-            </h2>
-            <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
-              <p>
-                Works offers best-in-class public relations expertise.
-              </p>
-              <p>
-                Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
-              </p>
-              <p>
-                Our PR apps aligns your strategy, earns media, and drives influence.
-              </p>
-              <p>
-                Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
-              </p>
-            </div>
-            <div className="mt-12">
-              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <button onClick={scrollToContact} className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Works Section */}
-      <section className="py-32 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                Why Works
-              </h2>
-              <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
-                <p>
-                  We believe in the power of strategic communication to shape perceptions 
-                  and drive meaningful change.
-                </p>
-                <p>
-                  Our approach combines deep industry expertise with creative storytelling 
-                  to deliver results that matter.
-                </p>
-              </div>
-            </div>
-            <div className="lg:pl-16">
-              <div className="space-y-6">
-                <div className="pb-6 border-b border-gray-100">
-                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
-                  <div className="text-lg text-black font-medium">2+ years of PR excellence</div>
-                </div>
-                <div className="pb-6 border-b border-gray-100">
-                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Network</div>
-                  <div className="text-lg text-black font-medium">Extensive media relationships</div>
-                </div>
-                <div className="pb-6 border-b border-gray-100">
-                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Response</div>
-                  <div className="text-lg text-black font-medium">24/7 crisis management</div>
-                </div>
-                <div>
-                  <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Results</div>
-                  <div className="text-lg text-black font-medium">Proven track record</div>
-                </div>
               </div>
             </div>
           </div>
@@ -505,6 +472,39 @@ const Index = () => {
               )}
             </Button>
           </form>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-left">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+              About Works
+            </h2>
+            <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
+              <p>
+                Works offers best-in-class public relations expertise.
+              </p>
+              <p>
+                Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
+              </p>
+              <p>
+                Our PR apps aligns your strategy, earns media, and drives influence.
+              </p>
+              <p>
+                Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
+              </p>
+            </div>
+            <div className="mt-12">
+              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+                <button onClick={scrollToContact} className="hover:opacity-90">
+                  Start a conversation
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </button>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
