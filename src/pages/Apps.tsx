@@ -1,4 +1,3 @@
-
 import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -82,7 +81,8 @@ const Apps = () => {
                   {/* Action Button */}
                   <Button 
                     asChild 
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-3 group-hover:shadow-lg transition-all duration-300"
+                    className="w-full text-white font-medium py-3 group-hover:shadow-lg transition-all duration-300"
+                    style={{ backgroundColor: '#409EFF' }}
                   >
                     <a href={app.url} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
@@ -110,7 +110,8 @@ const Apps = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8"
+              className="text-white font-medium px-8"
+              style={{ backgroundColor: '#409EFF' }}
             >
               <a href="/contact">
                 Contact Us for Custom Solutions
