@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
               alt="Works" 
-              className="h-8 mb-4"
+              className="h-6 mb-4"
             />
             <p className="text-gray-600 font-light leading-relaxed max-w-md">
               Strategic public relations that shapes narratives and builds lasting relationships.

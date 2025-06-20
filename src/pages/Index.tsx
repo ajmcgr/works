@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,11 +17,10 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
             <h1 className="text-5xl lg:text-7xl font-light text-black leading-[1.1] mb-8 tracking-tight">
-              Strategic public relations that shapes narratives
+              Tell your story.
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl font-light">
-              We craft compelling stories and build meaningful relationships that elevate your brand 
-              and protect your reputation.
+              Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex items-center space-x-8">
               <Button asChild className="bg-black hover:bg-gray-900 text-white px-8 py-3 text-sm font-medium">
