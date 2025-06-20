@@ -1,7 +1,5 @@
 
-
 import { Link } from "react-router-dom";
-import { Twitter, Youtube, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -42,44 +40,42 @@ const Footer = () => {
 
         <div className="border-t border-gray-100 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-gray-600 font-normal">&copy; 2024 Works. All rights reserved.</p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://x.com/worksxyz/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="Follow us on X"
-              >
-                <Twitter size={20} fill="currentColor" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/worksxyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="Follow us on LinkedIn"
-              >
-                <Linkedin size={20} fill="currentColor" />
-              </a>
-              <a 
-                href="https://www.youtube.com/@worksxyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="Follow us on YouTube"
-              >
-                <Youtube size={20} fill="currentColor" />
-              </a>
-              <a 
-                href="https://www.instagram.com/works.xyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="Follow us on Instagram"
-              >
-                <Instagram size={20} fill="currentColor" />
-              </a>
+            <div className="flex items-center space-x-6">
+              <p className="text-sm text-gray-600 font-normal">&copy; 2024 Works. All rights reserved.</p>
+              <div className="flex space-x-6">
+                <a 
+                  href="https://x.com/worksxyz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-black transition-colors"
+                >
+                  X
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-black transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://www.youtube.com/@worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-black transition-colors"
+                >
+                  YouTube
+                </a>
+                <a 
+                  href="https://www.instagram.com/works.xyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-black transition-colors"
+                >
+                  Instagram
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -89,4 +85,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
