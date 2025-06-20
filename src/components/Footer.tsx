@@ -35,44 +35,6 @@ const Footer = () => {
             <h4 className="text-sm font-medium text-black mb-6 uppercase tracking-wide">Contact</h4>
             <div className="space-y-3">
               <div className="text-gray-600 font-normal">alex@worksapp.com</div>
-              <div className="flex space-x-4 mt-4">
-                <a 
-                  href="https://x.com/worksxyz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-black transition-colors"
-                  aria-label="Follow us on X"
-                >
-                  <X size={20} />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/company/worksxyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-black transition-colors"
-                  aria-label="Follow us on LinkedIn"
-                >
-                  <Linkedin size={20} />
-                </a>
-                <a 
-                  href="https://www.youtube.com/@worksxyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-black transition-colors"
-                  aria-label="Follow us on YouTube"
-                >
-                  <Youtube size={20} />
-                </a>
-                <a 
-                  href="https://www.instagram.com/works.xyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-black transition-colors"
-                  aria-label="Follow us on Instagram"
-                >
-                  <Instagram size={20} />
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -80,19 +42,43 @@ const Footer = () => {
         <div className="border-t border-gray-100 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-600 font-normal">&copy; 2024 Works. All rights reserved.</p>
-            <div className="flex space-x-8">
-              <Link to="/blog" className="text-sm text-gray-600 font-normal hover:text-black transition-colors">News</Link>
-              <button 
-                onClick={() => {
-                  const element = document.querySelector('#contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-                className="text-sm text-gray-600 font-normal hover:text-black transition-colors"
+            <div className="flex space-x-4">
+              <a 
+                href="https://x.com/worksxyz/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition-colors"
+                aria-label="Follow us on X"
               >
-                Contact
-              </button>
+                <X size={20} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/worksxyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition-colors"
+                aria-label="Follow us on LinkedIn"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                href="https://www.youtube.com/@worksxyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition-colors"
+                aria-label="Follow us on YouTube"
+              >
+                <Youtube size={20} />
+              </a>
+              <a 
+                href="https://www.instagram.com/works.xyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram size={20} />
+              </a>
             </div>
           </div>
         </div>
