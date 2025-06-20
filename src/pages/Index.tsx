@@ -1,15 +1,61 @@
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
   const services = [
     "Media Relations",
     "Crisis Communication", 
     "Brand Communications",
     "Content Strategy"
   ];
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Create mailto link
+    const subject = `Contact from ${formData.name} - ${formData.company}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:alex@worksapp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+
+    toast({
+      title: "Email Client Opened",
+      description: "Your default email client should open with the message pre-filled.",
+    });
+
+    setFormData({ name: "", email: "", company: "", message: "" });
+    setIsSubmitting(false);
+  };
+
+  const scrollToContact = () => {
+    const element = document.querySelector('#contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="pt-16">
@@ -25,14 +71,22 @@ const Index = () => {
             </p>
             <div className="flex items-center space-x-8">
               <Button asChild className="bg-black hover:bg-gray-900 text-white px-8 py-3 text-sm font-medium">
-                <Link to="/contact">
+                <button onClick={scrollToContact}>
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </button>
               </Button>
-              <Link to="/services" className="text-sm font-medium text-black hover:text-gray-600 transition-colors">
+              <button 
+                onClick={() => {
+                  const element = document.querySelector('#services');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-sm font-medium text-black hover:text-gray-600 transition-colors"
+              >
                 Our services
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -48,34 +102,34 @@ const Index = () => {
             <img 
               src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
               alt="OnePlus" 
-              className="h-8 lg:h-10 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
               alt="OPPO" 
-              className="h-8 lg:h-10 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
               alt="Ogilvy" 
-              className="h-8 lg:h-10 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
               alt="Weber Shandwick" 
-              className="h-8 lg:h-10 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
             <img 
               src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
               alt="Publicis Groupe" 
-              className="h-8 lg:h-10 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-12 lg:h-16 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-32 bg-white border-t border-gray-100">
+      <section id="services" className="py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
             <div>
@@ -103,7 +157,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-light text-black mb-2">15+</div>
+              <div className="text-4xl lg:text-5xl font-light text-black mb-2">8+</div>
               <div className="text-sm text-gray-600 font-light uppercase tracking-wide">Years</div>
             </div>
             <div className="text-center">
@@ -123,7 +177,7 @@ const Index = () => {
       </section>
 
       {/* Personal Letter Section */}
-      <section className="py-32 bg-white">
+      <section id="about" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="text-center mb-12">
             <img 
@@ -131,12 +185,11 @@ const Index = () => {
               alt="Alex MacGregor" 
               className="w-24 h-24 rounded-full mx-auto mb-8 object-cover"
             />
-            <h2 className="text-2xl font-medium text-black mb-8">PR</h2>
           </div>
           
           <div className="space-y-6 text-base text-gray-700 leading-relaxed">
             <p>
-              Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.
+              <strong>Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</strong>
             </p>
             <p>
               I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.
@@ -201,7 +254,7 @@ const Index = () => {
               <div className="space-y-6">
                 <div className="pb-6 border-b border-gray-100">
                   <div className="text-sm text-gray-600 font-light uppercase tracking-wide mb-2">Expertise</div>
-                  <div className="text-lg text-black font-medium">15+ years of PR excellence</div>
+                  <div className="text-lg text-black font-medium">8+ years of PR excellence</div>
                 </div>
                 <div className="pb-6 border-b border-gray-100">
                   <div className="text-sm text-gray-600 font-light uppercase tracking-wide mb-2">Network</div>
@@ -221,18 +274,89 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-32 bg-black text-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-light mb-8 leading-tight">
-            Ready to shape your story?
-          </h2>
-          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-light text-gray-300 leading-relaxed">
-            Let's discuss how strategic public relations can elevate your brand.
-          </p>
-          <Button asChild size="lg" variant="secondary" className="bg-white text-black hover:bg-gray-100 px-8 py-3">
-            <Link to="/contact">Start a conversation</Link>
-          </Button>
+      {/* Contact Section */}
+      <section id="contact" className="py-32 bg-black text-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-light mb-8 leading-tight">
+              Ready to shape your story?
+            </h2>
+            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-light text-gray-300 leading-relaxed">
+              Let's discuss how strategic public relations can elevate your brand.
+            </p>
+          </div>
+          
+          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                  Name *
+                </label>
+                <Input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="Your name"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                  Email *
+                </label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="your@email.com"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
+                Company
+              </label>
+              <Input
+                id="company"
+                name="company"
+                value={formData.company}
+                onChange={handleInputChange}
+                placeholder="Your company name"
+                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                Message *
+              </label>
+              <Textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                rows={6}
+                placeholder="Tell us about your project..."
+                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+              />
+            </div>
+            <Button type="submit" disabled={isSubmitting} className="w-full bg-white text-black hover:bg-gray-100">
+              {isSubmitting ? (
+                "Opening email client..."
+              ) : (
+                <>
+                  <Send className="h-4 w-4 mr-2" />
+                  Start a conversation
+                </>
+              )}
+            </Button>
+          </form>
         </div>
       </section>
     </div>

@@ -9,14 +9,23 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "News", href: "/blog" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
+
+  const handleNavClick = (href: string) => {
+    if (href.startsWith('#')) {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
@@ -26,22 +35,34 @@ const Header = () => {
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
               alt="Works" 
-              className="h-6"
+              className="h-5"
             />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-light transition-colors hover:text-gray-600 ${
-                  isActive(item.href) ? "text-black" : "text-gray-700"
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.href.startsWith('#') ? (
+                <button
+                  key={item.name}
+                  onClick={() => handleNavClick(item.href)}
+                  className={`text-sm font-light transition-colors hover:text-gray-600 ${
+                    isActive(item.href) ? "text-black" : "text-gray-700"
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`text-sm font-light transition-colors hover:text-gray-600 ${
+                    isActive(item.href) ? "text-black" : "text-gray-700"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -63,16 +84,28 @@ const Header = () => {
           <div className="md:hidden border-t border-gray-100">
             <div className="py-6 space-y-4">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block text-base font-light transition-colors hover:text-gray-600 ${
-                    isActive(item.href) ? "text-black" : "text-gray-700"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                item.href.startsWith('#') ? (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.href)}
+                    className={`block text-base font-light transition-colors hover:text-gray-600 ${
+                      isActive(item.href) ? "text-black" : "text-gray-700"
+                    }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`block text-base font-light transition-colors hover:text-gray-600 ${
+                      isActive(item.href) ? "text-black" : "text-gray-700"
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>

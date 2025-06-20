@@ -14,7 +14,7 @@ const Footer = () => {
               className="h-6 mb-4"
             />
             <p className="text-gray-600 font-light leading-relaxed max-w-md">
-              Strategic public relations that shapes narratives and builds lasting relationships.
+              Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
           </div>
 
@@ -33,9 +33,7 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-medium text-black mb-6 uppercase tracking-wide">Contact</h4>
             <div className="space-y-3">
-              <div className="text-gray-600 font-light">hello@works.xyz</div>
-              <div className="text-gray-600 font-light">+1 (555) 123-4567</div>
-              <div className="text-gray-600 font-light">New York, NY</div>
+              <div className="text-gray-600 font-light">alex@worksapp.com</div>
             </div>
           </div>
         </div>
@@ -44,8 +42,18 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-600 font-light">&copy; 2024 Works. All rights reserved.</p>
             <div className="flex space-x-8">
-              <Link to="/blog" className="text-sm text-gray-600 font-light hover:text-black transition-colors">Blog</Link>
-              <Link to="/contact" className="text-sm text-gray-600 font-light hover:text-black transition-colors">Contact</Link>
+              <Link to="/blog" className="text-sm text-gray-600 font-light hover:text-black transition-colors">News</Link>
+              <button 
+                onClick={() => {
+                  const element = document.querySelector('#contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-sm text-gray-600 font-light hover:text-black transition-colors"
+              >
+                Contact
+              </button>
             </div>
           </div>
         </div>
