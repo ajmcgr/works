@@ -80,6 +80,12 @@ export const NewsSection = () => {
     });
   };
 
+  const truncateExcerpt = (text: string, wordLimit: number = 15) => {
+    const words = text.split(' ');
+    if (words.length <= wordLimit) return text;
+    return words.slice(0, wordLimit).join(' ') + '...';
+  };
+
   if (isLoading) {
     return (
       <section className="py-32 bg-gray-50">
@@ -101,7 +107,7 @@ export const NewsSection = () => {
 
   return (
     <section className="py-32 bg-gray-50">
-      <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+      <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
             Latest News
@@ -111,9 +117,9 @@ export const NewsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
           {posts?.map((post) => (
-            <Card key={post.id} className="bg-white border border-gray-200 hover:shadow-lg transition-shadow">
+            <Card key={post.id} className="bg-white border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               {post.feature_image && (
                 <div className="aspect-video bg-gray-100 rounded-t-lg overflow-hidden">
                   <img 
@@ -123,22 +129,22 @@ export const NewsSection = () => {
                   />
                 </div>
               )}
-              <CardHeader>
-                <div className="flex items-center text-sm text-gray-500 mb-2">
+              <CardHeader className="p-8">
+                <div className="flex items-center text-sm text-gray-500 mb-3">
                   <Calendar className="h-4 w-4 mr-2" />
                   {formatDate(post.published_at)}
                 </div>
-                <CardTitle className="text-xl font-semibold text-black leading-tight hover:text-gray-600 transition-colors">
+                <CardTitle className="text-2xl font-semibold text-black leading-tight hover:text-gray-600 transition-colors mb-4">
                   {post.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-600 font-normal leading-relaxed mb-4">
-                  {post.excerpt}
+              <CardContent className="px-8 pb-8">
+                <CardDescription className="text-gray-600 font-normal leading-relaxed mb-6 text-base">
+                  {truncateExcerpt(post.excerpt)}
                 </CardDescription>
                 <Button 
                   variant="ghost" 
-                  className="p-0 h-auto text-black hover:text-gray-600 font-medium"
+                  className="p-0 h-auto text-black hover:text-gray-600 font-medium text-base"
                   asChild
                 >
                   <a 
