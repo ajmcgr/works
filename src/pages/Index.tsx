@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -160,14 +161,14 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative bg-white py-32 lg:py-48">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl font-normal">
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center justify-center space-x-8">
               <Button asChild className="text-white px-8 py-3 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
                 <button onClick={scrollToContact} className="hover:opacity-90">
                   Start a conversation
