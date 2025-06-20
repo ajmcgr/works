@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -349,7 +348,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="text-left space-y-6 text-gray-800 leading-relaxed">
+            <div className="text-left space-y-6 text-gray-800 leading-relaxed text-lg">
               
               
               <p className="font-bold">Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
