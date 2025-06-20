@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -12,7 +11,6 @@ const Header = () => {
     { name: "About", href: "#letter" },
     { name: "Services", href: "/services" },
     { name: "Apps", href: "/apps" },
-    { name: "News", href: "https://blog.works.xyz/" },
     { name: "Contact", href: "#contact" },
   ];
 

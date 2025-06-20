@@ -58,12 +58,31 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Community */}
           <div>
-            <h4 className="text-sm font-medium text-black mb-6 uppercase tracking-wide">Contact</h4>
-            <div className="space-y-3">
-              <div className="text-gray-600 font-normal">alex@worksapp.com</div>
-            </div>
+            <h4 className="text-sm font-medium text-black mb-6 uppercase tracking-wide">Community</h4>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  href="https://blog.works.xyz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 font-normal hover:text-black transition-colors"
+                >
+                  News
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://discord.gg/JvzSsyNf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 font-normal hover:text-black transition-colors"
+                >
+                  Discord
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
