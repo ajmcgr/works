@@ -312,7 +312,7 @@ const Index = () => {
                 Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
               </p>
               <p>
-                Our PR software aligns your strategy, earns media, and drives influence.
+                Our PR apps aligns your strategy, earns media, and drives influence.
               </p>
               <p>
                 Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
