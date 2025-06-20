@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -328,6 +327,56 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </button>
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Personal Letter Section */}
+      <section className="py-32 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
+          <div className="text-center">
+            <div className="mb-8">
+              <div className="w-32 h-32 mx-auto mb-6">
+                <AspectRatio ratio={1}>
+                  <img 
+                    src="/lovable-uploads/d85283ba-56ab-47cf-8695-a27510431d3e.png" 
+                    alt="Alex MacGregor" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
+            
+            <div className="text-left space-y-6 text-gray-800 leading-relaxed">
+              <div className="text-lg font-medium text-black mb-6">PR</div>
+              
+              <p>Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
+              
+              <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
+              
+              <p>Navigating multiple languages, time zones, and regulatory mazes taught me how to craft stories that resonate and hit revenue targets while we're at it.</p>
+              
+              <p>Collaborating with world‑class agencies like Ogilvy and Weber Shandwick sharpened my instincts for turning relationships into rocket fuel.</p>
+              
+              <p>Add in hands‑on mastery of PR software and AI tools, and I operate with real‑time data as my compass no guesswork, no vanity metrics.</p>
+              
+              <p>Why should you choose us to deliver PR? Because the team and I have delivered successful PR work for clients time and time again.</p>
+              
+              <p>I've chased embargoes at 3 a.m., soothed skeptical editors with fresh angles, and built influencer programs that survived algorithm earthquakes.</p>
+              
+              <p>I know the pressure of quarterly targets, the thrill of a viral moment, and the discipline it takes to turn buzz into long‑term brand equity.</p>
+              
+              <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
+              
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <p className="font-medium">Best,<br />Alex MacGregor<br />Founder & CEO</p>
+                <p className="mt-4">
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+                    Connect with me on LinkedIn
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
