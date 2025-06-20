@@ -11,7 +11,7 @@ const Header = () => {
   const navigation = [
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "News", href: "/blog" },
+    { name: "News", href: "https://blog.works.xyz/" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -23,6 +23,8 @@ const Header = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    } else if (href.startsWith('http')) {
+      window.open(href, '_blank');
     }
     setIsMenuOpen(false);
   };
@@ -50,6 +52,14 @@ const Header = () => {
                     className={`text-sm font-normal transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : item.href.startsWith('http') ? (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.href)}
+                    className="text-sm font-normal transition-colors hover:text-gray-600 text-gray-700"
                   >
                     {item.name}
                   </button>
@@ -93,6 +103,14 @@ const Header = () => {
                     className={`block text-base font-normal transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : item.href.startsWith('http') ? (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.href)}
+                    className="block text-base font-normal transition-colors hover:text-gray-600 text-gray-700"
                   >
                     {item.name}
                   </button>
