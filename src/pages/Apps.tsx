@@ -1,5 +1,5 @@
 
-import { ExternalLink, Video, PenTool } from "lucide-react";
+import { ExternalLink, Video, PenTool, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -96,34 +96,42 @@ const Apps = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="container mx-auto px-6 lg:px-12 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Transform Your Workflow?
-          </h2>
-          <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-            Experience the power of AI-driven creativity and productivity with our cutting-edge applications.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* Custom Solution Section */}
+      <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              Need a custom solution?
+            </h2>
+            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+              Looking for tailored AI technology solutions for your specific business needs? Our team specializes in creating custom applications and integrations that perfectly align with your requirements.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Mail className="h-6 w-6" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Email Us</h3>
+                <p className="text-gray-300">hello@yourcompany.com</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Phone className="h-6 w-6" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Call Us</h3>
+                <p className="text-gray-300">+1 (555) 123-4567</p>
+              </div>
+            </div>
+
             <Button 
               asChild 
-              variant="secondary" 
               size="lg"
-              className="bg-white text-blue-600 hover:bg-gray-100 font-medium px-8"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8"
             >
-              <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer">
-                Get Started with Media AI
-              </a>
-            </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-blue-600 font-medium px-8"
-            >
-              <a href="https://trywrite.ai" target="_blank" rel="noopener noreferrer">
-                Explore Write AI
+              <a href="/contact">
+                Contact Us for Custom Solutions
               </a>
             </Button>
           </div>
