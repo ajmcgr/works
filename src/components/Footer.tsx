@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-600 font-normal hover:text-black transition-colors"
                 >
-                  TryMedia.ai
+                  Media AI
                 </a>
               </li>
               <li>
@@ -49,7 +50,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-600 font-normal hover:text-black transition-colors"
                 >
-                  TryWrite.ai
+                  Write AI
                 </a>
               </li>
             </ul>
