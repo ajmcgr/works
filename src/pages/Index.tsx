@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { NewsSection } from "@/components/NewsSection";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -273,6 +274,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* News Section */}
+      <NewsSection />
 
       {/* About Section */}
       <section id="about" className="py-32 bg-white">
