@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -27,6 +26,18 @@ const Services = () => {
       description: "Create compelling narratives and content that engage your audience and drive meaningful conversations.",
       features: ["Content Planning", "Storytelling", "Editorial Calendar", "Multi-Channel Distribution"],
       price: "Starting at $2,500/month"
+    },
+    {
+      title: "Influencer Marketing",
+      description: "Connect with influential voices that authentically align with your brand to amplify your message and reach new audiences.",
+      features: ["Influencer Identification", "Partnership Management", "Campaign Strategy", "Performance Tracking"],
+      price: "Starting at $3,500/month"
+    },
+    {
+      title: "Event Management",
+      description: "Create memorable experiences that strengthen relationships, generate buzz, and position your brand as an industry leader.",
+      features: ["Event Planning", "Media Events", "Product Launches", "Conference Management"],
+      price: "Starting at $4,500/month"
     }
   ];
 
