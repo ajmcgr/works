@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -158,6 +157,7 @@ const Index = () => {
 
   return (
     <div className="pt-16">
+      {/* Hero Section */}
       <section className="relative bg-white py-32 lg:py-48">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
@@ -190,6 +190,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Trusted by Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="text-center mb-12">
@@ -225,6 +226,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Services Section */}
       <section id="services" className="py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
@@ -248,6 +250,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Stats Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
@@ -271,55 +274,40 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
       <section id="about" className="py-32 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
-          <div className="text-center mb-12">
-            <img 
-              src="/lovable-uploads/b8aee3ea-3f0d-4746-b80c-7a91e1513ee7.png" 
-              alt="Alex MacGregor" 
-              className="w-24 h-24 rounded-full mx-auto mb-8 object-cover"
-            />
-          </div>
-          
-          <div className="space-y-6 text-base text-gray-700 leading-relaxed">
-            <p>
-              <strong>Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</strong>
-            </p>
-            <p>
-              I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.
-            </p>
-            <p>
-              Navigating multiple languages, time zones, and regulatory mazes taught me how to craft stories that resonate and hit revenue targets while we're at it.
-            </p>
-            <p>
-              Collaborating with world‑class agencies like Ogilvy and Weber Shandwick sharpened my instincts for turning relationships into rocket fuel.
-            </p>
-            <p>
-              Add in hands‑on mastery of PR software and AI tools, and I operate with real‑time data as my compass no guesswork, no vanity metrics.
-            </p>
-            <p>
-              Why should you choose us to deliver PR? Because the team and I have delivered successful PR work for clients time and time again.
-            </p>
-            <p>
-              I've chased embargoes at 3 a.m., soothed skeptical editors with fresh angles, and built influencer programs that survived algorithm earthquakes.
-            </p>
-            <p>
-              I know the pressure of quarterly targets, the thrill of a viral moment, and the discipline it takes to turn buzz into long‑term brand equity.
-            </p>
-            <p>
-              If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.
-            </p>
-            
-            <div className="pt-8 space-y-2">
-              <p className="font-medium">Best,</p>
-              <p className="font-medium">Alex MacGregor</p>
-              <p className="text-sm text-gray-600">Founder & CEO</p>
-              <a href="#" className="text-sm text-black hover:text-gray-600 underline">Connect with me on LinkedIn</a>
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+              About Works
+            </h2>
+            <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
+              <p>
+                Works offers best-in-class public relations expertise.
+              </p>
+              <p>
+                Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
+              </p>
+              <p>
+                Our PR software aligns your strategy, earns media, and drives influence.
+              </p>
+              <p>
+                Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
+              </p>
+            </div>
+            <div className="mt-12">
+              <Button asChild className="bg-black hover:bg-gray-900 text-white px-8 py-3 text-sm font-medium">
+                <button onClick={scrollToContact}>
+                  Start a conversation
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </button>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Why Works Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -367,6 +355,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Section */}
       <section id="contact" className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">

@@ -19,9 +19,16 @@ const Header = () => {
 
   const handleNavClick = (href: string) => {
     if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+      // For homepage sections, always scroll to the section
+      if (location.pathname !== '/') {
+        // If not on homepage, navigate to homepage first
+        window.location.href = `/${href}`;
+      } else {
+        // If on homepage, scroll to section
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     } else if (href.startsWith('http')) {
       window.open(href, '_blank');
