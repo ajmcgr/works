@@ -191,13 +191,13 @@ const Index = () => {
       </section>
 
       {/* Trusted by Section */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 items-center justify-items-center">
-            <div className="w-24 h-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 items-center justify-items-center">
+            <div className="w-32 h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
@@ -206,7 +206,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 h-16">
+            <div className="w-32 h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
@@ -215,7 +215,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 h-16">
+            <div className="w-32 h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
@@ -224,7 +224,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 h-16">
+            <div className="w-32 h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
@@ -233,7 +233,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 h-16">
+            <div className="w-32 h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
