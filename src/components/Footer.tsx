@@ -40,42 +40,40 @@ const Footer = () => {
 
         <div className="border-t border-gray-100 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-6">
-              <p className="text-sm text-gray-600 font-normal">&copy; 2024 Works. All rights reserved.</p>
-              <div className="flex space-x-6">
-                <a 
-                  href="https://x.com/worksxyz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-black transition-colors"
-                >
-                  X
-                </a>
-                <a 
-                  href="https://www.linkedin.com/company/worksxyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-black transition-colors"
-                >
-                  LinkedIn
-                </a>
-                <a 
-                  href="https://www.youtube.com/@worksxyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-black transition-colors"
-                >
-                  YouTube
-                </a>
-                <a 
-                  href="https://www.instagram.com/works.xyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-black transition-colors"
-                >
-                  Instagram
-                </a>
-              </div>
+            <p className="text-sm text-gray-600 font-normal">&copy; 2024 Works. All rights reserved.</p>
+            <div className="flex space-x-6">
+              <a 
+                href="https://x.com/worksxyz/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
+              >
+                X
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/worksxyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a 
+                href="https://www.youtube.com/@worksxyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
+              >
+                YouTube
+              </a>
+              <a 
+                href="https://www.instagram.com/works.xyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
+              >
+                Instagram
+              </a>
             </div>
           </div>
         </div>
