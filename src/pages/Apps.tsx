@@ -1,5 +1,5 @@
 
-import { ExternalLink, Video, PenTool, Mail, Phone } from "lucide-react";
+import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -106,24 +106,6 @@ const Apps = () => {
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
               Looking for tailored AI technology solutions for your specific business needs? Our team specializes in creating custom applications and integrations that perfectly align with your requirements.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Mail className="h-6 w-6" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-                <p className="text-gray-300">hello@yourcompany.com</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Phone className="h-6 w-6" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-                <p className="text-gray-300">+1 (555) 123-4567</p>
-              </div>
-            </div>
 
             <Button 
               asChild 
