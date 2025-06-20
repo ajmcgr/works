@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { X, Youtube, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -34,6 +35,44 @@ const Footer = () => {
             <h4 className="text-sm font-medium text-black mb-6 uppercase tracking-wide">Contact</h4>
             <div className="space-y-3">
               <div className="text-gray-600 font-normal">alex@worksapp.com</div>
+              <div className="flex space-x-4 mt-4">
+                <a 
+                  href="https://x.com/worksxyz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors"
+                  aria-label="Follow us on X"
+                >
+                  <X size={20} />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <a 
+                  href="https://www.youtube.com/@worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors"
+                  aria-label="Follow us on YouTube"
+                >
+                  <Youtube size={20} />
+                </a>
+                <a 
+                  href="https://www.instagram.com/works.xyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -257,7 +256,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">8+</div>
+              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">2+</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
             </div>
             <div className="text-center">
@@ -330,17 +329,12 @@ const Index = () => {
                   to deliver results that matter.
                 </p>
               </div>
-              <div className="mt-12">
-                <Button asChild variant="outline" className="text-white hover:text-white" style={{ borderColor: '#409EFF', backgroundColor: '#409EFF' }}>
-                  <Link to="/about" className="hover:opacity-90">Learn more about us</Link>
-                </Button>
-              </div>
             </div>
             <div className="lg:pl-16">
               <div className="space-y-6">
                 <div className="pb-6 border-b border-gray-100">
                   <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
-                  <div className="text-lg text-black font-medium">8+ years of PR excellence</div>
+                  <div className="text-lg text-black font-medium">2+ years of PR excellence</div>
                 </div>
                 <div className="pb-6 border-b border-gray-100">
                   <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Network</div>
