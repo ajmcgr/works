@@ -360,13 +360,13 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 bg-black text-white">
+      <section id="contact" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-black">
               Ready to shape your story?
             </h2>
-            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-300 leading-relaxed">
+            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
           </div>
@@ -374,7 +374,7 @@ const Index = () => {
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
                   Name *
                 </label>
                 <Input
@@ -384,11 +384,11 @@ const Index = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="Your name"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
                   Email *
                 </label>
                 <Input
@@ -399,12 +399,12 @@ const Index = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="your@email.com"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
                 />
               </div>
             </div>
             <div>
-              <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
+              <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
                 Company
               </label>
               <Input
@@ -413,11 +413,11 @@ const Index = () => {
                 value={formData.company}
                 onChange={handleInputChange}
                 placeholder="Your company name"
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
                 Message *
               </label>
               <Textarea
@@ -428,10 +428,10 @@ const Index = () => {
                 required
                 rows={6}
                 placeholder="Tell us about your project..."
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-black hover:opacity-90 px-6 py-4" style={{ backgroundColor: '#409EFF' }}>
+            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4" style={{ backgroundColor: '#409EFF' }}>
               {isSubmitting ? (
                 "Opening email client..."
               ) : (

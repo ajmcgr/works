@@ -4,50 +4,72 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
 
-interface BlogPost {
+interface GhostPost {
   id: string;
   title: string;
   excerpt: string;
-  publishedAt: string;
+  published_at: string;
   slug: string;
-  featuredImage?: string;
+  feature_image?: string;
+  html: string;
 }
 
-const fetchBlogPosts = async (): Promise<BlogPost[]> => {
-  // Since we can't directly access the blog.works.xyz API, we'll create mock data
-  // In a real implementation, you would fetch from their RSS feed or API
-  return [
-    {
-      id: "1",
-      title: "The Future of PR: How AI is Transforming Communications",
-      excerpt: "Explore how artificial intelligence is revolutionizing the public relations industry and what it means for brands.",
-      publishedAt: "2024-01-15",
-      slug: "ai-transforming-communications",
-      featuredImage: "/placeholder.svg"
-    },
-    {
-      id: "2", 
-      title: "Building Media Relations in the Digital Age",
-      excerpt: "Traditional media relations are evolving. Learn how to adapt your strategy for maximum impact.",
-      publishedAt: "2024-01-10",
-      slug: "media-relations-digital-age",
-      featuredImage: "/placeholder.svg"
-    },
-    {
-      id: "3",
-      title: "Crisis Communication: Lessons from Recent Brand Cases",
-      excerpt: "Analyzing recent crisis communication successes and failures to extract actionable insights.",
-      publishedAt: "2024-01-05",
-      slug: "crisis-communication-lessons",
-      featuredImage: "/placeholder.svg"
+interface GhostResponse {
+  posts: GhostPost[];
+}
+
+const fetchGhostPosts = async (): Promise<GhostPost[]> => {
+  const apiUrl = 'https://works-blog.ghost.io';
+  const apiKey = 'd4aacae2afda51dc7c5702519e';
+  
+  try {
+    const response = await fetch(`${apiUrl}/ghost/api/content/posts/?key=${apiKey}&limit=3&include=tags,authors`);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-  ];
+    
+    const data: GhostResponse = await response.json();
+    return data.posts;
+  } catch (error) {
+    console.error('Error fetching Ghost posts:', error);
+    // Fallback to mock data if API fails
+    return [
+      {
+        id: "1",
+        title: "The Future of PR: How AI is Transforming Communications",
+        excerpt: "Explore how artificial intelligence is revolutionizing the public relations industry and what it means for brands.",
+        published_at: "2024-01-15T00:00:00.000Z",
+        slug: "ai-transforming-communications",
+        feature_image: "/placeholder.svg",
+        html: ""
+      },
+      {
+        id: "2", 
+        title: "Building Media Relations in the Digital Age",
+        excerpt: "Traditional media relations are evolving. Learn how to adapt your strategy for maximum impact.",
+        published_at: "2024-01-10T00:00:00.000Z",
+        slug: "media-relations-digital-age",
+        feature_image: "/placeholder.svg",
+        html: ""
+      },
+      {
+        id: "3",
+        title: "Crisis Communication: Lessons from Recent Brand Cases",
+        excerpt: "Analyzing recent crisis communication successes and failures to extract actionable insights.",
+        published_at: "2024-01-05T00:00:00.000Z",
+        slug: "crisis-communication-lessons",
+        feature_image: "/placeholder.svg",
+        html: ""
+      }
+    ];
+  }
 };
 
 export const NewsSection = () => {
   const { data: posts, isLoading, error } = useQuery({
-    queryKey: ['blog-posts'],
-    queryFn: fetchBlogPosts,
+    queryKey: ['ghost-posts'],
+    queryFn: fetchGhostPosts,
   });
 
   const formatDate = (dateString: string) => {
@@ -75,7 +97,6 @@ export const NewsSection = () => {
 
   if (error) {
     console.error('Error fetching blog posts:', error);
-    return null;
   }
 
   return (
@@ -93,13 +114,19 @@ export const NewsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {posts?.map((post) => (
             <Card key={post.id} className="bg-white border border-gray-200 hover:shadow-lg transition-shadow">
-              {post.featuredImage && (
-                <div className="aspect-video bg-gray-100 rounded-t-lg"></div>
+              {post.feature_image && (
+                <div className="aspect-video bg-gray-100 rounded-t-lg overflow-hidden">
+                  <img 
+                    src={post.feature_image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               )}
               <CardHeader>
                 <div className="flex items-center text-sm text-gray-500 mb-2">
                   <Calendar className="h-4 w-4 mr-2" />
-                  {formatDate(post.publishedAt)}
+                  {formatDate(post.published_at)}
                 </div>
                 <CardTitle className="text-xl font-semibold text-black leading-tight hover:text-gray-600 transition-colors">
                   {post.title}
@@ -115,7 +142,7 @@ export const NewsSection = () => {
                   asChild
                 >
                   <a 
-                    href={`https://blog.works.xyz/${post.slug}`} 
+                    href={`https://works-blog.ghost.io/${post.slug}`} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
@@ -132,7 +159,7 @@ export const NewsSection = () => {
         <div className="text-center">
           <Button asChild variant="outline" className="text-black border-gray-300 hover:bg-gray-50">
             <a 
-              href="https://blog.works.xyz/" 
+              href="https://works-blog.ghost.io/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center"
