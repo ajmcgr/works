@@ -338,7 +338,7 @@ const Index = () => {
               <div className="w-32 h-32 mx-auto mb-6">
                 <AspectRatio ratio={1}>
                   <img 
-                    src="/lovable-uploads/d85283ba-56ab-47cf-8695-a27510431d3e.png" 
+                    src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
                     alt="Alex MacGregor" 
                     className="w-full h-full object-cover rounded-full"
                   />
