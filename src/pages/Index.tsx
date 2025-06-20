@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -74,8 +75,69 @@ const Index = () => {
     };
     document.head.appendChild(script);
 
+    // Add custom CSS for HubSpot form styling
+    const style = document.createElement('style');
+    style.textContent = `
+      #hubspot-form .hs-form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      #hubspot-form .hs-form-field {
+        margin-bottom: 1rem;
+      }
+      #hubspot-form .hs-form-field label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+      #hubspot-form .hs-input {
+        width: 100%;
+        height: 2.5rem;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      #hubspot-form .hs-input:focus {
+        outline: none;
+        border-color: #000;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+      }
+      #hubspot-form .hs-button {
+        background-color: #000;
+        color: white;
+        padding: 0.75rem 2rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: background-color 0.15s ease-in-out;
+        width: 100%;
+      }
+      #hubspot-form .hs-button:hover {
+        background-color: #374151;
+      }
+      #hubspot-form .hs-error-msgs {
+        color: #dc2626;
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+      }
+      #hubspot-form .hs-richtext {
+        font-size: 0.875rem;
+        color: #6b7280;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    `;
+    document.head.appendChild(style);
+
     return () => {
       document.head.removeChild(script);
+      document.head.removeChild(style);
     };
   }, []);
 
@@ -376,16 +438,16 @@ const Index = () => {
       </section>
 
       {/* Mailing List Section */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
               Join our mailing list
             </h2>
-            <p className="text-lg text-gray-600 mb-12 font-normal">
+            <p className="text-lg text-gray-600 mb-12 font-normal leading-relaxed">
               Join our mailing list for the latest from our team.
             </p>
-            <div id="hubspot-form"></div>
+            <div id="hubspot-form" className="max-w-md mx-auto"></div>
           </div>
         </div>
       </section>
