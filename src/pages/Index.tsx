@@ -107,19 +107,34 @@ const Index = () => {
         box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
       }
       #hubspot-form .hs-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 500;
         background-color: #000;
         color: white;
         padding: 0.75rem 2rem;
-        font-size: 0.875rem;
-        font-weight: 500;
+        height: 2.5rem;
         border: none;
-        border-radius: 0.375rem;
         cursor: pointer;
         transition: background-color 0.15s ease-in-out;
         width: 100%;
+        text-decoration: none;
       }
       #hubspot-form .hs-button:hover {
-        background-color: #374151;
+        background-color: #1f2937;
+      }
+      #hubspot-form .hs-button:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+      }
+      #hubspot-form .hs-button:disabled {
+        pointer-events: none;
+        opacity: 0.5;
       }
       #hubspot-form .hs-error-msgs {
         color: #dc2626;
