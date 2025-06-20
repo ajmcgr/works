@@ -176,17 +176,12 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </button>
               </Button>
-              <button 
-                onClick={() => {
-                  const element = document.querySelector('#services');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+              <Link 
+                to="/services"
                 className="text-sm font-medium text-black hover:text-gray-600 transition-colors"
               >
                 Our services
-              </button>
+              </Link>
             </div>
           </div>
         </div>
