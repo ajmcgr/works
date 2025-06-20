@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -57,9 +56,31 @@ const Index = () => {
     }
   };
 
+  useEffect(() => {
+    // Load HubSpot form script
+    const script = document.createElement('script');
+    script.src = '//js.hsforms.net/forms/embed/v2.js';
+    script.charset = 'utf-8';
+    script.type = 'text/javascript';
+    script.onload = () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "40189621",
+          formId: "9afe8262-34a1-4c4b-bc0a-7b473ed68562",
+          region: "na1",
+          target: '#hubspot-form'
+        });
+      }
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="pt-16">
-      {/* Hero Section */}
       <section className="relative bg-white py-32 lg:py-48">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
@@ -92,7 +113,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Client Logos Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="text-center mb-12">
@@ -128,7 +148,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
@@ -152,7 +171,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
@@ -176,7 +194,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Personal Letter Section */}
       <section id="about" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="text-center mb-12">
@@ -226,7 +243,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -274,7 +290,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
@@ -359,8 +374,30 @@ const Index = () => {
           </form>
         </div>
       </section>
+
+      {/* Mailing List Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
+              Join our mailing list
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 font-normal">
+              Join our mailing list for the latest from our team.
+            </p>
+            <div id="hubspot-form"></div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
+
+// Declare global hbspt for TypeScript
+declare global {
+  interface Window {
+    hbspt: any;
+  }
+}
 
 export default Index;
