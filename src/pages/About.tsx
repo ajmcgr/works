@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -72,27 +73,40 @@ const About = () => {
 
       {/* Three C's Section */}
       <section className="py-4 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
-          <div className="text-left space-y-8 text-gray-800 leading-relaxed text-lg">
-            <p>
-              The first one is concept. This focuses on the importance of implementing a specific DNA into your brand – particularly the style or taste. Consistent orientation towards that style in all areas where we put our emphasis from day one.
-            </p>
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-800 leading-relaxed text-lg">
+            {/* Concept */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-black">Concept</h3>
+              <p>
+                This focuses on the importance of implementing a specific DNA into your brand – particularly the style or taste. Consistent orientation towards that style in all areas where we put our emphasis from day one.
+              </p>
+              <p>
+                The style should be highly recognisable – even on a bad day, you can still recognise the kind of work we want to do. By doing that, you create an identity across your brand.
+              </p>
+            </div>
             
-            <p>
-              The style should be highly recognisable – even on a bad day, you can still recognise the kind of work we want to do. By doing that, you create an identity across your brand.
-            </p>
+            {/* Competence */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-black">Competence</h3>
+              <p>
+                We try to find the best possible people for each job, guaranteeing competence across your brand.
+              </p>
+              <p>
+                It is key to have a competent and excellently trained staff in every position, and to challenge them every day to make themselves and the brand better.
+              </p>
+            </div>
             
-            <p>
-              The second C is for competence. We try to find the best possible people for each job, guaranteeing competence across your brand.
-            </p>
-            
-            <p>
-              It is key to have a competent and excellently trained staff in every position, and to challenge them every day to make themselves and the brand better.
-            </p>
-            
-            <p>
-              The third and final C is for capital – or cash. There is no doubt that financial backing enables us to implement the philosophy we wanted to start with, but at the same time it is by no means a replacement for concept and competence – it has to work together with these other fundamental pillars.
-            </p>
+            {/* Capital */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-black">Capital</h3>
+              <p>
+                There is no doubt that financial backing enables us to implement the philosophy we wanted to start with, but at the same time it is by no means a replacement for concept and competence.
+              </p>
+              <p>
+                It has to work together with these other fundamental pillars.
+              </p>
+            </div>
           </div>
         </div>
       </section>
