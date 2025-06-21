@@ -1,5 +1,4 @@
 
-
 import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -114,9 +113,9 @@ const Apps = () => {
             className="text-white hover:opacity-90 px-8 py-3" 
             style={{ backgroundColor: '#409EFF' }}
           >
-            <Link to="/contact">
+            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Contact Us for Custom Solutions
-            </Link>
+            </a>
           </Button>
         </div>
       </section>
@@ -125,4 +124,3 @@ const Apps = () => {
 };
 
 export default Apps;
-

@@ -174,10 +174,10 @@ const Index = () => {
             </p>
             <div className="flex items-center justify-center space-x-8">
               <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <button onClick={scrollToContact} className="hover:opacity-90">
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
+                </a>
               </Button>
               <Link 
                 to="/services"
@@ -410,10 +410,10 @@ const Index = () => {
             </div>
             <div className="mt-12">
               <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <button onClick={scrollToContact} className="hover:opacity-90">
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
+                </a>
               </Button>
             </div>
           </div>
