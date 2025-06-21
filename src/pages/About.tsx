@@ -60,8 +60,35 @@ const About = () => {
         </div>
       </section>
 
-      {/* About Works Section */}
+      {/* Three C's Section */}
       <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
+          <div className="text-left space-y-8 text-gray-800 leading-relaxed text-lg">
+            <p>
+              The first one is concept. This focuses on the importance of implementing a specific DNA into your brand – particularly the style or taste. Consistent orientation towards that style in all areas where we put our emphasis from day one.
+            </p>
+            
+            <p>
+              The style should be highly recognisable – even on a bad day, you can still recognise the kind of work we want to do. By doing that, you create an identity across your brand.
+            </p>
+            
+            <p>
+              The second C is for competence. We try to find the best possible people for each job, guaranteeing competence across your brand.
+            </p>
+            
+            <p>
+              It is key to have a competent and excellently trained staff in every position, and to challenge them every day to make themselves and the brand better.
+            </p>
+            
+            <p>
+              The third and final C is for capital – or cash. There is no doubt that financial backing enables us to implement the philosophy we wanted to start with, but at the same time it is by no means a replacement for concept and competence – it has to work together with these other fundamental pillars.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Works Section */}
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-left">
             <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
