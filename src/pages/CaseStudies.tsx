@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 
@@ -101,196 +102,203 @@ const CaseStudies = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20 bg-white">
-      <div className="container mx-auto px-6 lg:px-12 py-16">
-        {/* Hero Section */}
-        <div className="text-center mb-20">
-          <h1 className="text-5xl lg:text-7xl font-light mb-8 text-black">
-            Strategic Communications
-            <span className="block text-gray-700">Portfolio</span>
-          </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            From global product launches to crisis management, we deliver integrated communications 
-            strategies that build brands, manage reputation, and drive meaningful engagement across markets.
-          </p>
-        </div>
-
-        {/* Portfolio Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {portfolioStats.map((stat, index) => (
-            <div key={index} className="text-center bg-gray-50 p-8 border border-gray-200">
-              <stat.icon className="w-8 h-8 mx-auto mb-4 text-black" />
-              <div className="text-3xl font-bold text-black mb-2">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Featured Work */}
-        <div className="space-y-16">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-4 text-black">Featured Work</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Case studies showcasing strategic communications across technology, enterprise, and innovation sectors.
+    <div className="pt-16">
+      {/* Hero Section */}
+      <section className="py-32 lg:py-48 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
+              Our Work
+            </h1>
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
+              From global product launches to crisis management, we deliver integrated communications 
+              strategies that build brands, manage reputation, and drive meaningful engagement across markets.
             </p>
           </div>
+        </div>
+      </section>
 
-          {featuredWork.map((work, index) => (
-            <Card key={index} className="bg-white border border-gray-300 shadow-none overflow-hidden">
-              <CardHeader className="bg-black text-white p-8">
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                  <div>
-                    <CardTitle className="text-3xl font-light mb-3">{work.client}</CardTitle>
-                    <CardDescription className="text-gray-300 text-lg">{work.category}</CardDescription>
-                    {work.period && (
-                      <p className="text-gray-400 text-sm mt-2">{work.period}</p>
+      {/* Portfolio Stats */}
+      <section className="py-32 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            {portfolioStats.map((stat, index) => (
+              <div key={index} className="text-center bg-white p-8 border border-gray-200">
+                <stat.icon className="w-8 h-8 mx-auto mb-4 text-black" />
+                <div className="text-3xl font-bold text-black mb-2">{stat.value}</div>
+                <div className="text-sm text-gray-600">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Featured Work */}
+          <div className="space-y-16">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">Featured Work</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed">
+                Case studies showcasing strategic communications across technology, enterprise, and innovation sectors.
+              </p>
+            </div>
+
+            {featuredWork.map((work, index) => (
+              <Card key={index} className="bg-white border border-gray-300 shadow-none overflow-hidden">
+                <CardHeader className="bg-gray-100 text-black p-8">
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                    <div>
+                      <CardTitle className="text-2xl lg:text-3xl font-bold mb-3">{work.client}</CardTitle>
+                      <CardDescription className="text-gray-600 text-lg font-normal">{work.category}</CardDescription>
+                      {work.period && (
+                        <p className="text-gray-500 text-sm mt-2 font-normal">{work.period}</p>
+                      )}
+                    </div>
+                    {work.brands && (
+                      <div className="flex flex-wrap gap-4 items-center">
+                        {work.brands.map((brand, idx) => (
+                          <div key={idx} className="bg-white p-3 flex items-center justify-center min-w-[100px] h-12 border border-gray-200">
+                            <img 
+                              src={brand.logo} 
+                              alt={brand.name}
+                              className="max-h-8 max-w-[80px] object-contain filter grayscale"
+                              onError={(e) => {
+                                const target = e.currentTarget as HTMLImageElement;
+                                const sibling = target.nextElementSibling as HTMLSpanElement;
+                                target.style.display = 'none';
+                                if (sibling) {
+                                  sibling.style.display = 'block';
+                                }
+                              }}
+                            />
+                            <span className="text-black text-sm font-medium hidden">{brand.name}</span>
+                          </div>
+                        ))}
+                      </div>
                     )}
                   </div>
-                  {work.brands && (
-                    <div className="flex flex-wrap gap-4 items-center">
-                      {work.brands.map((brand, idx) => (
-                        <div key={idx} className="bg-white p-3 flex items-center justify-center min-w-[100px] h-12">
-                          <img 
-                            src={brand.logo} 
-                            alt={brand.name}
-                            className="max-h-8 max-w-[80px] object-contain filter grayscale"
-                            onError={(e) => {
-                              const target = e.currentTarget as HTMLImageElement;
-                              const sibling = target.nextElementSibling as HTMLSpanElement;
-                              target.style.display = 'none';
-                              if (sibling) {
-                                sibling.style.display = 'block';
-                              }
-                            }}
-                          />
-                          <span className="text-black text-sm font-medium hidden">{brand.name}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </CardHeader>
-              
-              <CardContent className="p-8">
-                <div className="grid lg:grid-cols-3 gap-8">
-                  {/* Challenge */}
-                  <div>
-                    <h4 className="font-semibold text-lg mb-3 text-black border-b border-gray-300 pb-2">Challenge</h4>
-                    <p className="text-gray-700 leading-relaxed">{work.challenge}</p>
-                  </div>
-                  
-                  {/* Solution */}
-                  <div>
-                    <h4 className="font-semibold text-lg mb-3 text-black border-b border-gray-300 pb-2">Solution</h4>
-                    <p className="text-gray-700 leading-relaxed">{work.solution}</p>
-                  </div>
-                  
-                  {/* Results */}
-                  <div>
-                    <h4 className="font-semibold text-lg mb-3 text-black border-b border-gray-300 pb-2">Results</h4>
-                    <ul className="space-y-2">
-                      {work.results.map((result, idx) => (
-                        <li key={idx} className="text-gray-700 flex items-start">
-                          <span className="w-2 h-2 bg-black mt-2 mr-3 flex-shrink-0"></span>
-                          {result}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Additional Details */}
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  {/* Media Coverage */}
-                  {work.media && (
-                    <div className="mb-6">
-                      <h5 className="font-medium text-black mb-3">Media Coverage</h5>
-                      <div className="flex flex-wrap gap-3">
-                        {work.media.map((outlet, idx) => (
-                          <div key={idx} className="bg-gray-100 px-4 py-2 border border-gray-300">
-                            <span className="font-medium text-black">{outlet.outlet}</span>
-                            <span className="text-gray-600 text-sm ml-2">({outlet.type})</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Client Portfolio */}
-                  {work.clients && (
-                    <div className="mb-6">
-                      <h5 className="font-medium text-black mb-4">Client Portfolio</h5>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {work.clients.map((client, idx) => (
-                          <div key={idx} className="bg-gray-50 p-4 border border-gray-200">
-                            <div className="font-medium text-black">{client.name}</div>
-                            <div className="text-sm text-gray-600">{client.sector} • {client.region}</div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Innovation Highlights */}
-                  {work.innovations && (
-                    <div className="mb-6">
-                      <h5 className="font-medium text-black mb-4">Innovation Highlights</h5>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {work.innovations.map((innovation, idx) => (
-                          <div key={idx} className="bg-gray-100 p-4 border border-gray-300">
-                            <div className="font-medium text-black">{innovation.company}</div>
-                            <div className="text-sm text-gray-700">{innovation.product}</div>
-                            <div className="text-xs text-gray-600 mt-1">{innovation.highlight}</div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Services */}
-                  {work.services && (
-                    <div className="mb-6">
-                      <h5 className="font-medium text-black mb-3">Services Delivered</h5>
-                      <div className="flex flex-wrap gap-2">
-                        {work.services.map((service, idx) => (
-                          <span key={idx} className="bg-black text-white px-3 py-1 text-sm">
-                            {service}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Links */}
-                  {work.links && (
+                </CardHeader>
+                
+                <CardContent className="p-8">
+                  <div className="grid lg:grid-cols-3 gap-8">
+                    {/* Challenge */}
                     <div>
-                      <h5 className="font-medium text-black mb-3">Featured Coverage</h5>
-                      <div className="flex flex-wrap gap-3">
-                        {work.links.map((link, idx) => (
-                          <a
-                            key={idx}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors border-b border-black hover:border-gray-600"
-                          >
-                            {link.title}
-                            <ExternalLink className="w-4 h-4" />
-                          </a>
-                        ))}
-                      </div>
+                      <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Challenge</h4>
+                      <p className="text-gray-700 leading-relaxed font-normal">{work.challenge}</p>
                     </div>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                    
+                    {/* Solution */}
+                    <div>
+                      <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Solution</h4>
+                      <p className="text-gray-700 leading-relaxed font-normal">{work.solution}</p>
+                    </div>
+                    
+                    {/* Results */}
+                    <div>
+                      <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Results</h4>
+                      <ul className="space-y-2">
+                        {work.results.map((result, idx) => (
+                          <li key={idx} className="text-gray-700 flex items-start font-normal">
+                            <span className="w-2 h-2 bg-black mt-2 mr-3 flex-shrink-0"></span>
+                            {result}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-24 bg-black text-white p-16">
-          <h2 className="text-4xl font-light mb-6">Ready to Tell Your Story?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                  {/* Additional Details */}
+                  <div className="mt-8 pt-8 border-t border-gray-200">
+                    {/* Media Coverage */}
+                    {work.media && (
+                      <div className="mb-6">
+                        <h5 className="font-bold text-black mb-3">Media Coverage</h5>
+                        <div className="flex flex-wrap gap-3">
+                          {work.media.map((outlet, idx) => (
+                            <div key={idx} className="bg-gray-100 px-4 py-2 border border-gray-300">
+                              <span className="font-bold text-black">{outlet.outlet}</span>
+                              <span className="text-gray-600 text-sm ml-2 font-normal">({outlet.type})</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Client Portfolio */}
+                    {work.clients && (
+                      <div className="mb-6">
+                        <h5 className="font-bold text-black mb-4">Client Portfolio</h5>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {work.clients.map((client, idx) => (
+                            <div key={idx} className="bg-gray-50 p-4 border border-gray-200">
+                              <div className="font-bold text-black">{client.name}</div>
+                              <div className="text-sm text-gray-600 font-normal">{client.sector} • {client.region}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Innovation Highlights */}
+                    {work.innovations && (
+                      <div className="mb-6">
+                        <h5 className="font-bold text-black mb-4">Innovation Highlights</h5>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          {work.innovations.map((innovation, idx) => (
+                            <div key={idx} className="bg-gray-100 p-4 border border-gray-300">
+                              <div className="font-bold text-black">{innovation.company}</div>
+                              <div className="text-sm text-gray-700 font-normal">{innovation.product}</div>
+                              <div className="text-xs text-gray-600 mt-1 font-normal">{innovation.highlight}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Services */}
+                    {work.services && (
+                      <div className="mb-6">
+                        <h5 className="font-bold text-black mb-3">Services Delivered</h5>
+                        <div className="flex flex-wrap gap-2">
+                          {work.services.map((service, idx) => (
+                            <span key={idx} className="bg-gray-700 text-white px-3 py-1 text-sm font-normal">
+                              {service}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Links */}
+                    {work.links && (
+                      <div>
+                        <h5 className="font-bold text-black mb-3">Featured Coverage</h5>
+                        <div className="flex flex-wrap gap-3">
+                          {work.links.map((link, idx) => (
+                            <a
+                              key={idx}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors border-b border-black hover:border-gray-600 font-normal"
+                            >
+                              {link.title}
+                              <ExternalLink className="w-4 h-4" />
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-32 bg-gray-700 text-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">Ready to Tell Your Story?</h2>
+          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">
             Let's create communications strategies that build your brand, engage your audience, 
             and deliver measurable results across global markets.
           </p>
@@ -303,12 +311,13 @@ const CaseStudies = () => {
                 window.location.href = '/#contact';
               }
             }}
-            className="bg-white text-black px-8 py-4 hover:bg-gray-100 transition-colors text-lg font-medium border border-white"
+            className="px-8 py-4 hover:opacity-90 transition-opacity text-lg font-bold border border-white text-white"
+            style={{ backgroundColor: '#409EFF' }}
           >
             Start Your Campaign
           </button>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
