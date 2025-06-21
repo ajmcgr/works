@@ -1,6 +1,8 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CaseStudies = () => {
   const portfolioStats = [
@@ -294,28 +296,18 @@ const CaseStudies = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-32 bg-gray-700 text-white">
+      {/* CTA Section - matching Services page */}
+      <section className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">Ready to Tell Your Story?</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+            Ready to tell your story?
+          </h2>
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">
-            Let's create communications strategies that build your brand, engage your audience, 
-            and deliver measurable results across global markets.
+            Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
-          <button
-            onClick={() => {
-              const element = document.querySelector('#contact');
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                window.location.href = '/#contact';
-              }
-            }}
-            className="px-8 py-4 hover:opacity-90 transition-opacity text-lg font-bold border border-white text-white"
-            style={{ backgroundColor: '#409EFF' }}
-          >
-            Start Your Campaign
-          </button>
+          <Button asChild size="lg" className="text-white hover:opacity-90 px-8 py-3" style={{ backgroundColor: '#409EFF' }}>
+            <Link to="/contact">Start a conversation</Link>
+          </Button>
         </div>
       </section>
     </div>
