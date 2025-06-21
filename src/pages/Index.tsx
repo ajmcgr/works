@@ -1,5 +1,4 @@
 
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -164,7 +163,7 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section with Logos */}
-      <section className="relative bg-white min-h-screen flex flex-col">
+      <section className="relative bg-white min-h-screen flex flex-col justify-between">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
@@ -173,7 +172,7 @@ const Index = () => {
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex items-center justify-center space-x-8 mb-16">
+            <div className="flex items-center justify-center space-x-8">
               <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
@@ -187,59 +186,59 @@ const Index = () => {
                 Our services
               </Link>
             </div>
-            
-            {/* Logos within hero section */}
-            <div className="mt-16">
-              <div className="text-center mb-6">
-                <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 items-center justify-items-center">
-                <div className="w-32 h-20">
-                  <AspectRatio ratio={16/10}>
-                    <img 
-                      src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                      alt="OnePlus" 
-                      className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                    />
-                  </AspectRatio>
-                </div>
-                <div className="w-32 h-20">
-                  <AspectRatio ratio={16/10}>
-                    <img 
-                      src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                      alt="OPPO" 
-                      className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                    />
-                  </AspectRatio>
-                </div>
-                <div className="w-32 h-20">
-                  <AspectRatio ratio={16/10}>
-                    <img 
-                      src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                      alt="Ogilvy" 
-                      className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                    />
-                  </AspectRatio>
-                </div>
-                <div className="w-32 h-20">
-                  <AspectRatio ratio={16/10}>
-                    <img 
-                      src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                      alt="Weber Shandwick" 
-                      className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                    />
-                  </AspectRatio>
-                </div>
-                <div className="w-32 h-20">
-                  <AspectRatio ratio={16/10}>
-                    <img 
-                      src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                      alt="Publicis Groupe" 
-                      className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                    />
-                  </AspectRatio>
-                </div>
-              </div>
+          </div>
+        </div>
+        
+        {/* Logos at bottom of viewport */}
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full pb-6">
+          <div className="text-center mb-4">
+            <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 items-center justify-items-center">
+            <div className="w-32 h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
+                  src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                  alt="OnePlus" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
+            </div>
+            <div className="w-32 h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
+                  src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                  alt="OPPO" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
+            </div>
+            <div className="w-32 h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
+                  src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                  alt="Ogilvy" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
+            </div>
+            <div className="w-32 h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
+                  src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                  alt="Weber Shandwick" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
+            </div>
+            <div className="w-32 h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
+                  src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                  alt="Publicis Groupe" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
             </div>
           </div>
         </div>
