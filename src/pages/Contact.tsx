@@ -51,9 +51,20 @@ const Contact = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-black">
               Ready to shape your story?
             </h2>
-            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
+            <p className="text-lg lg:text-xl mb-6 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
+            <div className="text-gray-600 font-normal space-y-2 mb-12">
+              <p>Presidio Ave, San Francisco, California 94115, US</p>
+              <p>
+                <a 
+                  href="mailto:alex@worksapp.com" 
+                  className="hover:text-black transition-colors"
+                >
+                  alex@worksapp.com
+                </a>
+              </p>
+            </div>
           </div>
           
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">

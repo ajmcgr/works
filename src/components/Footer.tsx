@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -12,9 +13,20 @@ const Footer = () => {
               alt="Works" 
               className="h-6 mb-4"
             />
-            <p className="text-gray-600 font-normal leading-relaxed max-w-md">
+            <p className="text-gray-600 font-normal leading-relaxed max-w-md mb-4">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
+            <div className="text-gray-600 font-normal text-sm space-y-1">
+              <p>Presidio Ave, San Francisco, California 94115, US</p>
+              <p>
+                <a 
+                  href="mailto:alex@worksapp.com" 
+                  className="hover:text-black transition-colors"
+                >
+                  alex@worksapp.com
+                </a>
+              </p>
+            </div>
           </div>
 
           {/* Services */}
