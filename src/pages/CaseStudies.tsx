@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,94 +13,208 @@ const CaseStudies = () => {
     { icon: Award, label: "Support", value: "24/7" }
   ];
 
-  const featuredWork = [
+  const workByClient = [
+    // Consumer Electronics Group
     {
-      client: "Consumer Electronics Giants",
-      category: "Product Launch & Crisis Management",
-      brands: [
-        { name: "OnePlus", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/OnePlus_logo.svg/2560px-OnePlus_logo.svg.png" },
-        { name: "OPPO", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/OPPO_LOGO_2019.svg/2560px-OPPO_LOGO_2019.svg.png" },
-        { name: "Meizu", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Meizu_logo.svg/2560px-Meizu_logo.svg.png" }
-      ],
-      challenge: "Navigate competitive smartphone market with multiple product launches while managing corporate restructuring and crisis communications.",
-      solution: "Developed integrated campaigns combining product storytelling with transparent crisis communication, securing tier-1 media coverage across global markets.",
-      results: [
-        "Global coverage in The Verge, TechRadar, CNET, Forbes",
-        "Successful crisis management during OPPO merger",
-        "First-ever Reddit AMA for Meizu reaching 50K+ users"
-      ],
-      media: [
-        { outlet: "The Verge", type: "Editorial" },
-        { outlet: "TechRadar", type: "Review" },
-        { outlet: "CNET", type: "Feature" },
-        { outlet: "Forbes", type: "Analysis" }
-      ],
-      links: [
-        { title: "OnePlus Press Center", url: "http://oneplus.com/press" },
-        { title: "Meizu Reddit AMA", url: "https://www.reddit.com/r/Android/comments/5fqclp/we_are_the_global_meizu_team_and_today_we/" }
-      ]
-    },
-    {
-      client: "Enterprise & B2B Solutions",
-      category: "Strategic Communications - APAC",
-      brands: [
-        { name: "Cision", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cision_logo.svg/2560px-Cision_logo.svg.png" },
-        { name: "Huawei Cloud", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Huawei_Standard_logo.svg/2560px-Huawei_Standard_logo.svg.png" },
-        { name: "Ping An", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ping_An_Insurance_logo.svg/2560px-Ping_An_Insurance_logo.svg.png" },
-        { name: "Tencent", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tencent_Logo.svg/2560px-Tencent_Logo.svg.png" }
-      ],
-      challenge: "Develop content strategies for diverse portfolio of 12+ enterprise clients across finance, technology, and healthcare sectors in APAC markets.",
-      solution: "Created tailored communication frameworks for each market, leveraging local insights and cultural nuances to drive engagement across Hong Kong, Singapore, and Mainland China.",
-      results: [
-        "Successfully managed 12+ high-profile accounts simultaneously",
-        "Achieved consistent coverage in regional business media",
-        "Developed scalable content strategies across 3 major APAC markets"
-      ],
+      groupTitle: "Consumer Electronics Giants",
+      groupCategory: "Product Launch & Crisis Management",
       clients: [
-        { name: "Huawei Cloud", sector: "Technology", region: "HK/Macau" },
-        { name: "Ping An Insurance", sector: "Finance", region: "China" },
-        { name: "Tencent", sector: "Entertainment", region: "China" },
-        { name: "Farrer Park Hospital", sector: "Healthcare", region: "Singapore" }
+        {
+          name: "OnePlus",
+          logo: "https://logos-world.net/wp-content/uploads/2020/11/OnePlus-Logo.png",
+          challenge: "Navigate competitive smartphone market with multiple product launches while managing corporate restructuring.",
+          solution: "Developed integrated campaigns combining product storytelling with transparent communication, securing tier-1 media coverage across global markets.",
+          results: [
+            "Global coverage in The Verge, TechRadar, CNET",
+            "Successful product launch campaigns",
+            "Strengthened brand positioning in competitive market"
+          ],
+          media: [
+            { outlet: "The Verge", type: "Editorial" },
+            { outlet: "TechRadar", type: "Review" },
+            { outlet: "CNET", type: "Feature" }
+          ],
+          links: [
+            { title: "OnePlus Press Center", url: "http://oneplus.com/press" }
+          ]
+        },
+        {
+          name: "OPPO",
+          logo: "https://logos-world.net/wp-content/uploads/2020/11/Oppo-Logo.png",
+          challenge: "Crisis management during corporate restructuring and merger activities while maintaining market presence.",
+          solution: "Executed transparent crisis communication strategy, maintaining stakeholder confidence during transition period.",
+          results: [
+            "Successful crisis management during merger",
+            "Maintained positive media relations",
+            "Preserved brand reputation during transition"
+          ],
+          media: [
+            { outlet: "Forbes", type: "Analysis" },
+            { outlet: "TechRadar", type: "News" }
+          ]
+        },
+        {
+          name: "Meizu",
+          logo: "https://logos-world.net/wp-content/uploads/2020/11/Meizu-Logo.png",
+          challenge: "Break into Western markets and build community engagement for Chinese smartphone brand.",
+          solution: "Created community-focused campaigns including first-ever Reddit AMA, building direct user engagement.",
+          results: [
+            "First-ever Reddit AMA reaching 50K+ users",
+            "Built strong Western market presence",
+            "Established direct community engagement channels"
+          ],
+          links: [
+            { title: "Meizu Reddit AMA", url: "https://www.reddit.com/r/Android/comments/5fqclp/we_are_the_global_meizu_team_and_today_we/" }
+          ]
+        }
       ]
     },
+    // Enterprise & B2B Group
     {
-      client: "Innovative Tech Startups",
-      category: "Brand Building & Market Entry",
-      brands: [
-        { name: "Xreal", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Xreal_logo.svg/2560px-Xreal_logo.svg.png" },
-        { name: "Angry Miao", logo: "https://angrymiao.com/wp-content/uploads/2023/07/logo-black.png" },
-        { name: "ECARX", logo: "https://www.ecarx.com/assets/images/logo.png" },
-        { name: "HHOGene", logo: "https://www.hhogene.com/images/logo.png" }
-      ],
-      challenge: "Launch cutting-edge technology brands in competitive markets, from AR glasses to gaming keyboards to automotive AI.",
-      solution: "Crafted narrative-driven campaigns focusing on innovation stories, securing coverage in top-tier tech publications and building community engagement.",
-      results: [
-        "Coverage in TechCrunch, The Verge, CNET, Android Central",
-        "Successfully positioned brands as innovation leaders",
-        "Built strong community engagement and product buzz"
-      ],
-      innovations: [
-        { company: "Xreal", product: "AR Glasses", highlight: "Immersive visual experiences" },
-        { company: "Angry Miao", product: "Gaming Keyboards", highlight: "Futuristic mechanical designs" },
-        { company: "ECARX", product: "Automotive AI", highlight: "Full-stack computing platform" }
+      groupTitle: "Enterprise & B2B Solutions",
+      groupCategory: "Strategic Communications - APAC",
+      clients: [
+        {
+          name: "Cision",
+          logo: "https://www.cision.com/content/dam/cision/common/logos/cision-logo.svg",
+          challenge: "Develop content strategies for PR technology platform across APAC markets.",
+          solution: "Created tailored communication frameworks leveraging local insights across Hong Kong, Singapore, and Mainland China.",
+          results: [
+            "Successful market penetration in 3 APAC regions",
+            "Consistent coverage in regional business media",
+            "Scalable content strategy implementation"
+          ],
+          sector: "Technology",
+          region: "APAC"
+        },
+        {
+          name: "Huawei Cloud",
+          logo: "https://www-file.huawei.com/-/media/corp2020/css/logo.png",
+          challenge: "Position cloud services in competitive enterprise market while navigating geopolitical sensitivities.",
+          solution: "Focused on technical capabilities and enterprise value propositions, emphasizing innovation and reliability.",
+          results: [
+            "Increased enterprise market awareness",
+            "Technical thought leadership positioning",
+            "Strong B2B media relationships"
+          ],
+          sector: "Cloud Technology",
+          region: "HK/Macau"
+        },
+        {
+          name: "Ping An Insurance",
+          logo: "https://company.pingan.com/en/images/logo.png",
+          challenge: "Communicate fintech innovations and digital transformation initiatives to traditional finance market.",
+          solution: "Developed narratives bridging traditional insurance with cutting-edge technology innovations.",
+          results: [
+            "Enhanced digital innovation positioning",
+            "Strong fintech media coverage",
+            "Thought leadership in digital transformation"
+          ],
+          sector: "Finance",
+          region: "China"
+        },
+        {
+          name: "Tencent",
+          logo: "https://logos-world.net/wp-content/uploads/2020/09/Tencent-Logo.png",
+          challenge: "Manage communications for entertainment and gaming divisions across multiple product launches.",
+          solution: "Created integrated campaigns covering gaming, entertainment, and technology verticals with cultural sensitivity.",
+          results: [
+            "Successful multi-product campaign coordination",
+            "Strong entertainment media relationships",
+            "Cultural resonance across target markets"
+          ],
+          sector: "Entertainment",
+          region: "China"
+        }
       ]
     },
+    // Innovative Tech Startups Group
     {
-      client: "Global Events & Partnerships",
-      category: "Event Management & Corporate Communications",
-      brands: [
-        { name: "Publicis-MSL", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Publicis_logo.svg/2560px-Publicis_logo.svg.png" },
-        { name: "Koelnmesse", logo: "https://www.koelnmesse.com/typo3conf/ext/site_package/Resources/Public/Images/logo.svg" }
-      ],
-      challenge: "Execute large-scale international media event for Thaifex Anuga 2025 in Bangkok with 100+ attendees and multiple stakeholders.",
-      solution: "End-to-end event management including run-of-show design, spokesperson training, influencer outreach, and on-site coordination as emcee.",
-      results: [
-        "Successfully coordinated 100+ media and industry attendees",
-        "Secured regional food-innovation KOL participation",
-        "Amplified event content across LinkedIn, X, and Instagram"
-      ],
-      period: "February 2025 – June 2025",
-      services: ["Event Strategy", "Spokesperson Management", "Influencer Marketing", "Content Amplification"]
+      groupTitle: "Innovative Tech Startups",
+      groupCategory: "Brand Building & Market Entry",
+      clients: [
+        {
+          name: "Xreal",
+          logo: "https://www.xreal.com/assets/images/logo.png",
+          challenge: "Launch AR glasses brand in competitive wearable technology market.",
+          solution: "Crafted narrative-driven campaigns focusing on immersive experiences and practical applications of AR technology.",
+          results: [
+            "Coverage in TechCrunch, The Verge, CNET",
+            "Positioned as AR innovation leader",
+            "Strong community engagement and product buzz"
+          ],
+          innovation: "AR Glasses - Immersive visual experiences"
+        },
+        {
+          name: "Angry Miao",
+          logo: "https://angrymiao.com/wp-content/uploads/2023/07/logo-black.png",
+          challenge: "Build premium gaming keyboard brand with futuristic design aesthetic.",
+          solution: "Developed campaigns emphasizing craftsmanship, innovation, and gaming culture integration.",
+          results: [
+            "Strong gaming community adoption",
+            "Premium brand positioning established",
+            "Coverage in gaming and tech publications"
+          ],
+          innovation: "Gaming Keyboards - Futuristic mechanical designs"
+        },
+        {
+          name: "ECARX",
+          logo: "https://www.ecarx.com/assets/images/logo.png",
+          challenge: "Position automotive AI platform in rapidly evolving smart vehicle market.",
+          solution: "Created thought leadership content around automotive intelligence and full-stack computing platforms.",
+          results: [
+            "Automotive industry recognition",
+            "Technical innovation positioning",
+            "Strong B2B partnerships development"
+          ],
+          innovation: "Automotive AI - Full-stack computing platform"
+        },
+        {
+          name: "HHOGene",
+          logo: "https://www.hhogene.com/images/logo.png",
+          challenge: "Launch innovative health technology solutions in competitive wellness market.",
+          solution: "Developed health-focused communications emphasizing scientific backing and user benefits.",
+          results: [
+            "Health tech media coverage",
+            "Scientific credibility establishment",
+            "Consumer trust building"
+          ],
+          innovation: "Health Technology - Innovative wellness solutions"
+        }
+      ]
+    },
+    // Global Events & Partnerships Group
+    {
+      groupTitle: "Global Events & Partnerships",
+      groupCategory: "Event Management & Corporate Communications",
+      clients: [
+        {
+          name: "Publicis-MSL",
+          logo: "https://www.publicisgroupe.com/sites/default/files/2023-01/Logo_Publicis_Groupe_Blue_RGB.png",
+          challenge: "Execute large-scale international media event for Thaifex Anuga 2025 in Bangkok with complex stakeholder management.",
+          solution: "End-to-end event management including run-of-show design, spokesperson training, and multi-platform content amplification.",
+          results: [
+            "Successfully coordinated 100+ media and industry attendees",
+            "Seamless multi-stakeholder event execution",
+            "Strong social media amplification across platforms"
+          ],
+          period: "February 2025 – June 2025",
+          services: ["Event Strategy", "Spokesperson Management", "Content Amplification"]
+        },
+        {
+          name: "Koelnmesse",
+          logo: "https://www.koelnmesse.com/typo3conf/ext/site_package/Resources/Public/Images/logo.svg",
+          challenge: "Develop regional influencer strategy and manage on-site coordination for major trade event.",
+          solution: "Integrated influencer marketing with traditional event management, including emcee services and real-time content creation.",
+          results: [
+            "Regional food-innovation KOL participation secured",
+            "Multi-platform content distribution achieved",
+            "Enhanced event visibility and engagement"
+          ],
+          period: "February 2025 – June 2025",
+          services: ["Influencer Marketing", "Event Coordination", "On-site Management"]
+        }
+      ]
     }
   ];
 
@@ -133,168 +248,152 @@ const CaseStudies = () => {
             ))}
           </div>
 
-          {/* Featured Work */}
-          <div className="space-y-16">
+          {/* Work by Client Groups */}
+          <div className="space-y-20">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">Featured Work</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">Client Portfolio</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed">
-                Case studies showcasing strategic communications across technology, enterprise, and innovation sectors.
+                Strategic communications delivered across technology, enterprise, and innovation sectors.
               </p>
             </div>
 
-            {featuredWork.map((work, index) => (
-              <Card key={index} className="bg-white border border-gray-300 shadow-none overflow-hidden">
-                <CardHeader className="bg-gray-100 text-black p-8">
-                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                    <div>
-                      <CardTitle className="text-2xl lg:text-3xl font-bold mb-3">{work.client}</CardTitle>
-                      <CardDescription className="text-gray-600 text-lg font-normal">{work.category}</CardDescription>
-                      {work.period && (
-                        <p className="text-gray-500 text-sm mt-2 font-normal">{work.period}</p>
-                      )}
-                    </div>
-                    {work.brands && (
-                      <div className="flex flex-wrap gap-4 items-center">
-                        {work.brands.map((brand, idx) => (
-                          <div key={idx} className="bg-white p-3 flex items-center justify-center min-w-[100px] h-12 border border-gray-200">
-                            <Avatar className="w-8 h-8">
+            {workByClient.map((group, groupIndex) => (
+              <div key={groupIndex} className="space-y-8">
+                {/* Group Header */}
+                <div className="text-center mb-12">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-black mb-4">{group.groupTitle}</h3>
+                  <p className="text-lg text-gray-600 font-normal">{group.groupCategory}</p>
+                </div>
+
+                {/* Client Cards */}
+                <div className="grid gap-8">
+                  {group.clients.map((client, clientIndex) => (
+                    <Card key={clientIndex} className="bg-white border border-gray-300 shadow-none overflow-hidden">
+                      <CardHeader className="bg-gray-100 text-black p-8">
+                        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                          <div className="flex items-center gap-4">
+                            <Avatar className="w-12 h-12">
                               <AvatarImage 
-                                src={brand.logo} 
-                                alt={brand.name}
+                                src={client.logo} 
+                                alt={client.name}
                                 className="object-contain filter grayscale"
-                                onLoad={() => console.log(`Logo loaded: ${brand.name}`)}
-                                onError={() => console.log(`Logo failed to load: ${brand.name}`)}
+                                onLoad={() => console.log(`Logo loaded: ${client.name}`)}
+                                onError={() => console.log(`Logo failed to load: ${client.name}`)}
                               />
-                              <AvatarFallback className="text-xs font-medium bg-gray-100 text-black">
-                                {brand.name.slice(0, 2).toUpperCase()}
+                              <AvatarFallback className="text-sm font-medium bg-gray-100 text-black">
+                                {client.name.slice(0, 2).toUpperCase()}
                               </AvatarFallback>
                             </Avatar>
-                            <span className="ml-2 text-black text-sm font-medium">{brand.name}</span>
+                            <div>
+                              <CardTitle className="text-2xl lg:text-3xl font-bold mb-2">{client.name}</CardTitle>
+                              {client.sector && client.region && (
+                                <CardDescription className="text-gray-600 text-lg font-normal">
+                                  {client.sector} • {client.region}
+                                </CardDescription>
+                              )}
+                              {client.innovation && (
+                                <CardDescription className="text-gray-600 text-lg font-normal">
+                                  {client.innovation}
+                                </CardDescription>
+                              )}
+                              {client.period && (
+                                <p className="text-gray-500 text-sm mt-2 font-normal">{client.period}</p>
+                              )}
+                            </div>
                           </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </CardHeader>
-                
-                <CardContent className="p-8">
-                  <div className="grid lg:grid-cols-3 gap-8">
-                    {/* Challenge */}
-                    <div>
-                      <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Challenge</h4>
-                      <p className="text-gray-700 leading-relaxed font-normal">{work.challenge}</p>
-                    </div>
-                    
-                    {/* Solution */}
-                    <div>
-                      <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Solution</h4>
-                      <p className="text-gray-700 leading-relaxed font-normal">{work.solution}</p>
-                    </div>
-                    
-                    {/* Results */}
-                    <div>
-                      <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Results</h4>
-                      <ul className="space-y-2">
-                        {work.results.map((result, idx) => (
-                          <li key={idx} className="text-gray-700 flex items-start font-normal">
-                            <span className="w-2 h-2 bg-black mt-2 mr-3 flex-shrink-0"></span>
-                            {result}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                        </div>
+                      </CardHeader>
+                      
+                      <CardContent className="p-8">
+                        <div className="grid lg:grid-cols-3 gap-8">
+                          {/* Challenge */}
+                          <div>
+                            <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Challenge</h4>
+                            <p className="text-gray-700 leading-relaxed font-normal">{client.challenge}</p>
+                          </div>
+                          
+                          {/* Solution */}
+                          <div>
+                            <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Solution</h4>
+                            <p className="text-gray-700 leading-relaxed font-normal">{client.solution}</p>
+                          </div>
+                          
+                          {/* Results */}
+                          <div>
+                            <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Results</h4>
+                            <ul className="space-y-2">
+                              {client.results.map((result, idx) => (
+                                <li key={idx} className="text-gray-700 flex items-start font-normal">
+                                  <span className="w-2 h-2 bg-black mt-2 mr-3 flex-shrink-0"></span>
+                                  {result}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
 
-                  <div className="mt-8 pt-8 border-t border-gray-200">
-                    {/* Media Coverage */}
-                    {work.media && (
-                      <div className="mb-6">
-                        <h5 className="font-bold text-black mb-3">Media Coverage</h5>
-                        <div className="flex flex-wrap gap-3">
-                          {work.media.map((outlet, idx) => (
-                            <div key={idx} className="bg-gray-100 px-4 py-2 border border-gray-300">
-                              <span className="font-bold text-black">{outlet.outlet}</span>
-                              <span className="text-gray-600 text-sm ml-2 font-normal">({outlet.type})</span>
+                        <div className="mt-8 pt-8 border-t border-gray-200">
+                          {/* Media Coverage */}
+                          {client.media && (
+                            <div className="mb-6">
+                              <h5 className="font-bold text-black mb-3">Media Coverage</h5>
+                              <div className="flex flex-wrap gap-3">
+                                {client.media.map((outlet, idx) => (
+                                  <div key={idx} className="bg-gray-100 px-4 py-2 border border-gray-300">
+                                    <span className="font-bold text-black">{outlet.outlet}</span>
+                                    <span className="text-gray-600 text-sm ml-2 font-normal">({outlet.type})</span>
+                                  </div>
+                                ))}
+                              </div>
                             </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+                          )}
 
-                    {/* Client Portfolio */}
-                    {work.clients && (
-                      <div className="mb-6">
-                        <h5 className="font-bold text-black mb-4">Client Portfolio</h5>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {work.clients.map((client, idx) => (
-                            <div key={idx} className="bg-gray-50 p-4 border border-gray-200">
-                              <div className="font-bold text-black">{client.name}</div>
-                              <div className="text-sm text-gray-600 font-normal">{client.sector} • {client.region}</div>
+                          {/* Services */}
+                          {client.services && (
+                            <div className="mb-6">
+                              <h5 className="font-bold text-black mb-3">Services Delivered</h5>
+                              <div className="flex flex-wrap gap-2">
+                                {client.services.map((service, idx) => (
+                                  <span key={idx} className="bg-gray-700 text-white px-3 py-1 text-sm font-normal">
+                                    {service}
+                                  </span>
+                                ))}
+                              </div>
                             </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+                          )}
 
-                    {/* Innovation Highlights */}
-                    {work.innovations && (
-                      <div className="mb-6">
-                        <h5 className="font-bold text-black mb-4">Innovation Highlights</h5>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          {work.innovations.map((innovation, idx) => (
-                            <div key={idx} className="bg-gray-100 p-4 border border-gray-300">
-                              <div className="font-bold text-black">{innovation.company}</div>
-                              <div className="text-sm text-gray-700 font-normal">{innovation.product}</div>
-                              <div className="text-xs text-gray-600 mt-1 font-normal">{innovation.highlight}</div>
+                          {/* Links */}
+                          {client.links && (
+                            <div>
+                              <h5 className="font-bold text-black mb-3">Featured Coverage</h5>
+                              <div className="flex flex-wrap gap-3">
+                                {client.links.map((link, idx) => (
+                                  <a
+                                    key={idx}
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors border-b border-black hover:border-gray-600 font-normal"
+                                  >
+                                    {link.title}
+                                    <ExternalLink className="w-4 h-4" />
+                                  </a>
+                                ))}
+                              </div>
                             </div>
-                          ))}
+                          )}
                         </div>
-                      </div>
-                    )}
-
-                    {/* Services */}
-                    {work.services && (
-                      <div className="mb-6">
-                        <h5 className="font-bold text-black mb-3">Services Delivered</h5>
-                        <div className="flex flex-wrap gap-2">
-                          {work.services.map((service, idx) => (
-                            <span key={idx} className="bg-gray-700 text-white px-3 py-1 text-sm font-normal">
-                              {service}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Links */}
-                    {work.links && (
-                      <div>
-                        <h5 className="font-bold text-black mb-3">Featured Coverage</h5>
-                        <div className="flex flex-wrap gap-3">
-                          {work.links.map((link, idx) => (
-                            <a
-                              key={idx}
-                              href={link.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors border-b border-black hover:border-gray-600 font-normal"
-                            >
-                              {link.title}
-                              <ExternalLink className="w-4 h-4" />
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section - matching Services page */}
+      {/* CTA Section */}
       <section className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
