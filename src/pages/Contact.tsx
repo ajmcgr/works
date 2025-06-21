@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ArrowRight, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -51,20 +50,9 @@ const Contact = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-black">
               Ready to shape your story?
             </h2>
-            <p className="text-lg lg:text-xl mb-6 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
+            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
-            <div className="text-lg lg:text-xl font-normal text-gray-600 leading-relaxed space-y-2 mb-12">
-              <p>Headquarters: 1902 Lyon St APT D, San Francisco, CA 94115</p>
-              <p>
-                Email: <a 
-                  href="mailto:alex@worksapp.com" 
-                  className="hover:text-black transition-colors"
-                >
-                  alex@worksapp.com
-                </a>
-              </p>
-            </div>
           </div>
           
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
