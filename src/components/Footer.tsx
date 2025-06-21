@@ -17,9 +17,9 @@ const Footer = () => {
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="text-gray-600 font-normal text-sm space-y-1">
-              <p>Presidio Ave, San Francisco, California 94115, US</p>
+              <p>Office: 3333 Presidio Ave, San Francisco, California 94115, US</p>
               <p>
-                <a 
+                Email: <a 
                   href="mailto:alex@worksapp.com" 
                   className="hover:text-black transition-colors"
                 >

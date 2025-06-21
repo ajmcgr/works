@@ -55,9 +55,9 @@ const Contact = () => {
               Let's discuss how strategic public relations can elevate your brand.
             </p>
             <div className="text-gray-600 font-normal space-y-2 mb-12">
-              <p>Presidio Ave, San Francisco, California 94115, US</p>
+              <p>Office: 3333 Presidio Ave, San Francisco, California 94115, US</p>
               <p>
-                <a 
+                Email: <a 
                   href="mailto:alex@worksapp.com" 
                   className="hover:text-black transition-colors"
                 >
