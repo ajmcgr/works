@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -61,59 +60,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Philosophy Title */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
-          <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black leading-tight">
-              Our Philosophy - 3 C's
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      {/* Three C's Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-gray-800 leading-relaxed text-lg">
-            {/* Concept */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-bold text-black">Concept</h3>
-              <p>
-                This focuses on the importance of implementing a specific DNA into your brand – particularly the style or taste. Consistent orientation towards that style in all areas where we put our emphasis from day one.
-              </p>
-              <p>
-                The style should be highly recognisable – even on a bad day, you can still recognise the kind of work we want to do. By doing that, you create an identity across your brand.
-              </p>
-            </div>
-            
-            {/* Competence */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-bold text-black">Competence</h3>
-              <p>
-                We try to find the best possible people for each job, guaranteeing competence across your brand.
-              </p>
-              <p>
-                It is key to have a competent and excellently trained staff in every position, and to challenge them every day to make themselves and the brand better.
-              </p>
-            </div>
-            
-            {/* Capital */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-bold text-black">Capital</h3>
-              <p>
-                There is no doubt that financial backing enables us to implement the philosophy we wanted to start with, but at the same time it is by no means a replacement for concept and competence.
-              </p>
-              <p>
-                It has to work together with these other fundamental pillars.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Works Section */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-left">
             <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
@@ -149,4 +97,3 @@ const About = () => {
 };
 
 export default About;
-
