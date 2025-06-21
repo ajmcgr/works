@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -189,8 +190,8 @@ const Index = () => {
         </div>
         
         {/* Logos at bottom of viewport */}
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full pb-12">
-          <div className="text-center mb-6">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full pb-6">
+          <div className="text-center mb-4">
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 items-center justify-items-center">
