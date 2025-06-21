@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const CaseStudies = () => {
   const portfolioStats = [
-    { icon: Users, label: "Global Brands Served", value: "50+" },
-    { icon: Globe, label: "Markets Covered", value: "15+" },
-    { icon: TrendingUp, label: "Successful Campaigns", value: "200+" },
-    { icon: Award, label: "Years Experience", value: "8+" }
+    { icon: Users, label: "Years", value: "2+" },
+    { icon: Globe, label: "Campaigns", value: "50+" },
+    { icon: TrendingUp, label: "Retention", value: "98%" },
+    { icon: Award, label: "Support", value: "24/7" }
   ];
 
   const featuredWork = [
