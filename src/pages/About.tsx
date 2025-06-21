@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -72,11 +73,11 @@ const About = () => {
       </section>
 
       {/* Three C's Section */}
-      <section className="py-4 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-800 leading-relaxed text-lg">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-gray-800 leading-relaxed text-lg">
             {/* Concept */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h3 className="text-xl font-bold text-black">Concept</h3>
               <p>
                 This focuses on the importance of implementing a specific DNA into your brand – particularly the style or taste. Consistent orientation towards that style in all areas where we put our emphasis from day one.
@@ -87,7 +88,7 @@ const About = () => {
             </div>
             
             {/* Competence */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h3 className="text-xl font-bold text-black">Competence</h3>
               <p>
                 We try to find the best possible people for each job, guaranteeing competence across your brand.
@@ -98,7 +99,7 @@ const About = () => {
             </div>
             
             {/* Capital */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h3 className="text-xl font-bold text-black">Capital</h3>
               <p>
                 There is no doubt that financial backing enables us to implement the philosophy we wanted to start with, but at the same time it is by no means a replacement for concept and competence.
@@ -148,3 +149,4 @@ const About = () => {
 };
 
 export default About;
+
