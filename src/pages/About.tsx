@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -64,7 +65,7 @@ const About = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-black leading-tight">
-              Our Philosophy
+              Our Philosophy - 3 C's
             </h2>
           </div>
         </div>
