@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -173,7 +171,7 @@ const Index = () => {
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex items-center justify-center space-x-8 mb-16">
+            <div className="flex items-center justify-center space-x-8 mb-20">
               <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
@@ -188,8 +186,8 @@ const Index = () => {
               </Link>
             </div>
             
-            {/* Logos within hero section */}
-            <div className="mt-16">
+            {/* Logos within hero section - moved down slightly */}
+            <div className="mt-8">
               <div className="text-center mb-6">
                 <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
               </div>
