@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -9,7 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Work", href: "/case-studies" },
+    { name: "Work", href: "/work" },
     { name: "Services", href: "/services" },
     { name: "Apps", href: "/apps" },
     { name: "Contact", href: "#contact" },
