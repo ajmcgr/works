@@ -54,8 +54,8 @@ const Contact = () => {
             <p className="text-lg lg:text-xl mb-6 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
-            <div className="text-gray-600 font-normal space-y-2 mb-12">
-              <p>HQ: 1902 Lyon St APT D, San Francisco, CA 94115</p>
+            <div className="text-lg lg:text-xl font-normal text-gray-600 leading-relaxed space-y-2 mb-12">
+              <p>Headquarters: 1902 Lyon St APT D, San Francisco, CA 94115</p>
               <p>
                 Email: <a 
                   href="mailto:alex@worksapp.com" 
