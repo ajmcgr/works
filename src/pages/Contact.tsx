@@ -1,103 +1,132 @@
 
-import { ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Create mailto link
+    const subject = `Contact from ${formData.name} - ${formData.company}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:alex@worksapp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+
+    toast({
+      title: "Email Client Opened",
+      description: "Your default email client should open with the message pre-filled.",
+    });
+
+    setFormData({ name: "", email: "", company: "", message: "" });
+    setIsSubmitting(false);
+  };
+
   return (
     <div className="pt-20">
-      {/* Hero Contact Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+      {/* Contact Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-black">
               Ready to shape your story?
-            </h1>
-            <p className="text-xl lg:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Whether you're launching something new, navigating a challenge, or ready to elevate your narrative, we're here to help you tell your story with clarity and impact.
+            </h2>
+            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
+              Let's discuss how strategic public relations can elevate your brand.
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="bg-black hover:bg-gray-800 text-white px-8 py-4 text-lg font-medium"
-                onClick={() => window.open('mailto:hello@works-pr.com')}
-              >
-                Get in touch
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              
-              <div className="text-gray-600">
-                <p className="font-medium">Or email us directly:</p>
-                <a 
-                  href="mailto:hello@works-pr.com" 
-                  className="text-blue-600 hover:text-blue-700 transition-colors font-medium"
-                >
-                  hello@works-pr.com
-                </a>
+          </div>
+          
+          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
+                  Name *
+                </label>
+                <Input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="Your name"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
+                  Email *
+                </label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="your@email.com"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Contact Information */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Let's start a conversation</h2>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  We work with brands at every stage – from emerging companies finding their voice to established organizations evolving their narrative. Our approach is collaborative, strategic, and rooted in authentic storytelling.
-                </p>
-                
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">What to expect:</h3>
-                    <ul className="space-y-2 text-gray-600">
-                      <li className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                        Response within 24 hours
-                      </li>
-                      <li className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                        Free strategic consultation
-                      </li>
-                      <li className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                        Tailored approach proposal
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">How we can help</h2>
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Strategic Communications</h3>
-                    <p className="text-gray-600">Brand positioning, messaging strategy, and narrative development.</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Media Relations</h3>
-                    <p className="text-gray-600">Earned media strategy, press outreach, and media training.</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Crisis Communications</h3>
-                    <p className="text-gray-600">Reputation management and strategic crisis response.</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Executive Communications</h3>
-                    <p className="text-gray-600">Thought leadership, speaking opportunities, and executive positioning.</p>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
+                Company
+              </label>
+              <Input
+                id="company"
+                name="company"
+                value={formData.company}
+                onChange={handleInputChange}
+                placeholder="Your company name"
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+              />
             </div>
-          </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
+                Message *
+              </label>
+              <Textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                rows={6}
+                placeholder="Tell us about your project..."
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+              />
+            </div>
+            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4" style={{ backgroundColor: '#409EFF' }}>
+              {isSubmitting ? (
+                "Opening email client..."
+              ) : (
+                <>
+                  <Send className="h-4 w-4 mr-2" />
+                  Start a conversation
+                </>
+              )}
+            </Button>
+          </form>
         </div>
       </section>
     </div>
