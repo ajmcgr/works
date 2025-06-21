@@ -1,4 +1,5 @@
 
+
 import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -49,7 +50,7 @@ const Apps = () => {
             {apps.map((app, index) => (
               <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg">
                 <CardHeader className="space-y-4">
-                  <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <img 
                       src={app.logo} 
                       alt={app.name}
@@ -124,3 +125,4 @@ const Apps = () => {
 };
 
 export default Apps;
+
