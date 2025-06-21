@@ -3,7 +3,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const CaseStudies = () => {
   const portfolioStats = [
@@ -21,7 +20,6 @@ const CaseStudies = () => {
       clients: [
         {
           name: "OnePlus",
-          logo: "https://logos-world.net/wp-content/uploads/2020/11/OnePlus-Logo.png",
           challenge: "Navigate competitive smartphone market with multiple product launches while managing corporate restructuring.",
           solution: "Developed integrated campaigns combining product storytelling with transparent communication, securing tier-1 media coverage across global markets.",
           results: [
@@ -40,7 +38,6 @@ const CaseStudies = () => {
         },
         {
           name: "OPPO",
-          logo: "https://logos-world.net/wp-content/uploads/2020/11/Oppo-Logo.png",
           challenge: "Crisis management during corporate restructuring and merger activities while maintaining market presence.",
           solution: "Executed transparent crisis communication strategy, maintaining stakeholder confidence during transition period.",
           results: [
@@ -55,7 +52,6 @@ const CaseStudies = () => {
         },
         {
           name: "Meizu",
-          logo: "https://logos-world.net/wp-content/uploads/2020/11/Meizu-Logo.png",
           challenge: "Break into Western markets and build community engagement for Chinese smartphone brand.",
           solution: "Created community-focused campaigns including first-ever Reddit AMA, building direct user engagement.",
           results: [
@@ -76,7 +72,6 @@ const CaseStudies = () => {
       clients: [
         {
           name: "Cision",
-          logo: "https://www.cision.com/content/dam/cision/common/logos/cision-logo.svg",
           challenge: "Develop content strategies for PR technology platform across APAC markets.",
           solution: "Created tailored communication frameworks leveraging local insights across Hong Kong, Singapore, and Mainland China.",
           results: [
@@ -89,7 +84,6 @@ const CaseStudies = () => {
         },
         {
           name: "Huawei Cloud",
-          logo: "https://www-file.huawei.com/-/media/corp2020/css/logo.png",
           challenge: "Position cloud services in competitive enterprise market while navigating geopolitical sensitivities.",
           solution: "Focused on technical capabilities and enterprise value propositions, emphasizing innovation and reliability.",
           results: [
@@ -102,7 +96,6 @@ const CaseStudies = () => {
         },
         {
           name: "Ping An Insurance",
-          logo: "https://company.pingan.com/en/images/logo.png",
           challenge: "Communicate fintech innovations and digital transformation initiatives to traditional finance market.",
           solution: "Developed narratives bridging traditional insurance with cutting-edge technology innovations.",
           results: [
@@ -115,7 +108,6 @@ const CaseStudies = () => {
         },
         {
           name: "Tencent",
-          logo: "https://logos-world.net/wp-content/uploads/2020/09/Tencent-Logo.png",
           challenge: "Manage communications for entertainment and gaming divisions across multiple product launches.",
           solution: "Created integrated campaigns covering gaming, entertainment, and technology verticals with cultural sensitivity.",
           results: [
@@ -135,7 +127,6 @@ const CaseStudies = () => {
       clients: [
         {
           name: "Xreal",
-          logo: "https://www.xreal.com/assets/images/logo.png",
           challenge: "Launch AR glasses brand in competitive wearable technology market.",
           solution: "Crafted narrative-driven campaigns focusing on immersive experiences and practical applications of AR technology.",
           results: [
@@ -147,7 +138,6 @@ const CaseStudies = () => {
         },
         {
           name: "Angry Miao",
-          logo: "https://angrymiao.com/wp-content/uploads/2023/07/logo-black.png",
           challenge: "Build premium gaming keyboard brand with futuristic design aesthetic.",
           solution: "Developed campaigns emphasizing craftsmanship, innovation, and gaming culture integration.",
           results: [
@@ -159,7 +149,6 @@ const CaseStudies = () => {
         },
         {
           name: "ECARX",
-          logo: "https://www.ecarx.com/assets/images/logo.png",
           challenge: "Position automotive AI platform in rapidly evolving smart vehicle market.",
           solution: "Created thought leadership content around automotive intelligence and full-stack computing platforms.",
           results: [
@@ -171,7 +160,6 @@ const CaseStudies = () => {
         },
         {
           name: "HHOGene",
-          logo: "https://www.hhogene.com/images/logo.png",
           challenge: "Launch innovative health technology solutions in competitive wellness market.",
           solution: "Developed health-focused communications emphasizing scientific backing and user benefits.",
           results: [
@@ -190,7 +178,6 @@ const CaseStudies = () => {
       clients: [
         {
           name: "Publicis-MSL",
-          logo: "https://www.publicisgroupe.com/sites/default/files/2023-01/Logo_Publicis_Groupe_Blue_RGB.png",
           challenge: "Execute large-scale international media event for Thaifex Anuga 2025 in Bangkok with complex stakeholder management.",
           solution: "End-to-end event management including run-of-show design, spokesperson training, and multi-platform content amplification.",
           results: [
@@ -203,7 +190,6 @@ const CaseStudies = () => {
         },
         {
           name: "Koelnmesse",
-          logo: "https://www.koelnmesse.com/typo3conf/ext/site_package/Resources/Public/Images/logo.svg",
           challenge: "Develop regional influencer strategy and manage on-site coordination for major trade event.",
           solution: "Integrated influencer marketing with traditional event management, including emcee services and real-time content creation.",
           results: [
@@ -236,7 +222,7 @@ const CaseStudies = () => {
       </section>
 
       {/* Portfolio Stats */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {portfolioStats.map((stat, index) => (
@@ -271,35 +257,21 @@ const CaseStudies = () => {
                     <Card key={clientIndex} className="bg-white border border-gray-300 shadow-none overflow-hidden">
                       <CardHeader className="bg-gray-100 text-black p-8">
                         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                          <div className="flex items-center gap-4">
-                            <Avatar className="w-12 h-12">
-                              <AvatarImage 
-                                src={client.logo} 
-                                alt={client.name}
-                                className="object-contain filter grayscale"
-                                onLoad={() => console.log(`Logo loaded: ${client.name}`)}
-                                onError={() => console.log(`Logo failed to load: ${client.name}`)}
-                              />
-                              <AvatarFallback className="text-sm font-medium bg-gray-100 text-black">
-                                {client.name.slice(0, 2).toUpperCase()}
-                              </AvatarFallback>
-                            </Avatar>
-                            <div>
-                              <CardTitle className="text-2xl lg:text-3xl font-bold mb-2">{client.name}</CardTitle>
-                              {client.sector && client.region && (
-                                <CardDescription className="text-gray-600 text-lg font-normal">
-                                  {client.sector} • {client.region}
-                                </CardDescription>
-                              )}
-                              {client.innovation && (
-                                <CardDescription className="text-gray-600 text-lg font-normal">
-                                  {client.innovation}
-                                </CardDescription>
-                              )}
-                              {client.period && (
-                                <p className="text-gray-500 text-sm mt-2 font-normal">{client.period}</p>
-                              )}
-                            </div>
+                          <div>
+                            <CardTitle className="text-2xl lg:text-3xl font-bold mb-2">{client.name}</CardTitle>
+                            {client.sector && client.region && (
+                              <CardDescription className="text-gray-600 text-lg font-normal">
+                                {client.sector} • {client.region}
+                              </CardDescription>
+                            )}
+                            {client.innovation && (
+                              <CardDescription className="text-gray-600 text-lg font-normal">
+                                {client.innovation}
+                              </CardDescription>
+                            )}
+                            {client.period && (
+                              <p className="text-gray-500 text-sm mt-2 font-normal">{client.period}</p>
+                            )}
                           </div>
                         </div>
                       </CardHeader>
