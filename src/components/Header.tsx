@@ -1,5 +1,4 @@
 
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -57,7 +56,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className={`text-sm font-normal transition-colors hover:text-gray-600 ${
+                    className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -67,7 +66,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-sm font-normal transition-colors hover:text-gray-600 text-gray-700"
+                    className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-700"
                   >
                     {item.name}
                   </button>
@@ -75,7 +74,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`text-sm font-normal transition-colors hover:text-gray-600 ${
+                    className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -108,7 +107,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className={`block text-base font-normal transition-colors hover:text-gray-600 ${
+                    className={`block text-base font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -118,7 +117,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="block text-base font-normal transition-colors hover:text-gray-600 text-gray-700"
+                    className="block text-base font-medium transition-colors hover:text-gray-600 text-gray-700"
                   >
                     {item.name}
                   </button>
@@ -126,7 +125,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`block text-base font-normal transition-colors hover:text-gray-600 ${
+                    className={`block text-base font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
