@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -162,9 +161,9 @@ const Index = () => {
 
   return (
     <div className="pt-16">
-      {/* Hero Section */}
-      <section className="relative bg-white min-h-screen flex items-center">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
+      {/* Hero Section with Logos */}
+      <section className="relative bg-white min-h-screen flex flex-col justify-between">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
               Tell your story.
@@ -188,11 +187,9 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Trusted by Section */}
-      <section className="min-h-screen bg-white flex items-center">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
+        
+        {/* Logos at bottom of viewport */}
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full pb-12">
           <div className="text-center mb-6">
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
