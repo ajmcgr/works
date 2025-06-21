@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -162,8 +163,8 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative bg-white py-32 lg:py-40">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+      <section className="relative bg-white min-h-screen flex items-center">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
               Tell your story.
@@ -190,8 +191,8 @@ const Index = () => {
       </section>
 
       {/* Trusted by Section */}
-      <section className="py-8 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+      <section className="min-h-screen bg-white flex items-center">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
           <div className="text-center mb-6">
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
