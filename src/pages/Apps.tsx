@@ -47,9 +47,9 @@ const Apps = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {apps.map((app, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg">
+              <Card key={index} className="border-0 shadow-lg">
                 <CardHeader className="space-y-4">
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center">
                     <img 
                       src={app.logo} 
                       alt={app.name}
@@ -57,7 +57,7 @@ const Apps = () => {
                     />
                   </div>
                   <div>
-                    <CardTitle className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <CardTitle className="text-2xl font-bold text-gray-900">
                       {app.name}
                     </CardTitle>
                     <CardDescription className="text-gray-600 text-base mt-2">
@@ -83,7 +83,7 @@ const Apps = () => {
                   {/* Action Button */}
                   <Button 
                     asChild 
-                    className="w-full text-white font-medium py-3 group-hover:shadow-lg transition-all duration-300"
+                    className="w-full text-white font-medium py-3"
                     style={{ backgroundColor: '#409EFF' }}
                   >
                     <a href={app.url} target="_blank" rel="noopener noreferrer">
