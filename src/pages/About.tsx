@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -73,7 +71,7 @@ const About = () => {
       </section>
 
       {/* Three C's Section */}
-      <section className="py-16 bg-white">
+      <section className="py-4 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="text-left space-y-8 text-gray-800 leading-relaxed text-lg">
             <p>
@@ -136,4 +134,3 @@ const About = () => {
 };
 
 export default About;
-
