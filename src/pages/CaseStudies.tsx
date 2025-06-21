@@ -16,9 +16,9 @@ const CaseStudies = () => {
       client: "Consumer Electronics Giants",
       category: "Product Launch & Crisis Management",
       brands: [
-        { name: "OnePlus", logo: "https://logos-world.net/wp-content/uploads/2020/11/OnePlus-Logo.png" },
-        { name: "OPPO", logo: "https://logos-world.net/wp-content/uploads/2020/11/Oppo-Logo.png" },
-        { name: "Meizu", logo: "https://logos-world.net/wp-content/uploads/2020/12/Meizu-Logo.png" }
+        { name: "OnePlus", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/OnePlus_logo.svg/2560px-OnePlus_logo.svg.png" },
+        { name: "OPPO", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/OPPO_LOGO_2019.svg/2560px-OPPO_LOGO_2019.svg.png" },
+        { name: "Meizu", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Meizu_logo.svg/2560px-Meizu_logo.svg.png" }
       ],
       challenge: "Navigate competitive smartphone market with multiple product launches while managing corporate restructuring and crisis communications.",
       solution: "Developed integrated campaigns combining product storytelling with transparent crisis communication, securing tier-1 media coverage across global markets.",
@@ -42,10 +42,10 @@ const CaseStudies = () => {
       client: "Enterprise & B2B Solutions",
       category: "Strategic Communications - APAC",
       brands: [
-        { name: "Cision", logo: "https://logos-world.net/wp-content/uploads/2023/01/Cision-Logo.png" },
-        { name: "Huawei Cloud", logo: "https://logos-world.net/wp-content/uploads/2020/07/Huawei-Logo.png" },
-        { name: "Ping An", logo: "https://logos-world.net/wp-content/uploads/2022/05/Ping-An-Logo.png" },
-        { name: "Tencent", logo: "https://logos-world.net/wp-content/uploads/2021/09/Tencent-Logo.png" }
+        { name: "Cision", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cision_logo.svg/2560px-Cision_logo.svg.png" },
+        { name: "Huawei Cloud", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Huawei_Standard_logo.svg/2560px-Huawei_Standard_logo.svg.png" },
+        { name: "Ping An", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ping_An_Insurance_logo.svg/2560px-Ping_An_Insurance_logo.svg.png" },
+        { name: "Tencent", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tencent_Logo.svg/2560px-Tencent_Logo.svg.png" }
       ],
       challenge: "Develop content strategies for diverse portfolio of 12+ enterprise clients across finance, technology, and healthcare sectors in APAC markets.",
       solution: "Created tailored communication frameworks for each market, leveraging local insights and cultural nuances to drive engagement across Hong Kong, Singapore, and Mainland China.",
@@ -65,10 +65,10 @@ const CaseStudies = () => {
       client: "Innovative Tech Startups",
       category: "Brand Building & Market Entry",
       brands: [
-        { name: "Xreal", logo: "https://logos-world.net/wp-content/uploads/2023/08/Xreal-Logo.png" },
-        { name: "Angry Miao", logo: "/api/placeholder/120/60" },
-        { name: "ECARX", logo: "/api/placeholder/120/60" },
-        { name: "HHOGene", logo: "/api/placeholder/120/60" }
+        { name: "Xreal", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Xreal_logo.svg/2560px-Xreal_logo.svg.png" },
+        { name: "Angry Miao", logo: "https://angrymiao.com/wp-content/uploads/2023/07/logo-black.png" },
+        { name: "ECARX", logo: "https://www.ecarx.com/assets/images/logo.png" },
+        { name: "HHOGene", logo: "https://www.hhogene.com/images/logo.png" }
       ],
       challenge: "Launch cutting-edge technology brands in competitive markets, from AR glasses to gaming keyboards to automotive AI.",
       solution: "Crafted narrative-driven campaigns focusing on innovation stories, securing coverage in top-tier tech publications and building community engagement.",
@@ -87,8 +87,8 @@ const CaseStudies = () => {
       client: "Global Events & Partnerships",
       category: "Event Management & Corporate Communications",
       brands: [
-        { name: "Publicis-MSL", logo: "https://logos-world.net/wp-content/uploads/2023/01/Publicis-Logo.png" },
-        { name: "Koelnmesse", logo: "/api/placeholder/120/60" }
+        { name: "Publicis-MSL", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Publicis_logo.svg/2560px-Publicis_logo.svg.png" },
+        { name: "Koelnmesse", logo: "https://www.koelnmesse.com/typo3conf/ext/site_package/Resources/Public/Images/logo.svg" }
       ],
       challenge: "Execute large-scale international media event for Thaifex Anuga 2025 in Bangkok with 100+ attendees and multiple stakeholders.",
       solution: "End-to-end event management including run-of-show design, spokesperson training, influencer outreach, and on-site coordination as emcee.",
