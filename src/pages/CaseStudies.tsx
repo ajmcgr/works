@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const CaseStudies = () => {
   const portfolioStats = [
@@ -156,20 +157,19 @@ const CaseStudies = () => {
                       <div className="flex flex-wrap gap-4 items-center">
                         {work.brands.map((brand, idx) => (
                           <div key={idx} className="bg-white p-3 flex items-center justify-center min-w-[100px] h-12 border border-gray-200">
-                            <img 
-                              src={brand.logo} 
-                              alt={brand.name}
-                              className="max-h-8 max-w-[80px] object-contain filter grayscale"
-                              onError={(e) => {
-                                const target = e.currentTarget as HTMLImageElement;
-                                const sibling = target.nextElementSibling as HTMLSpanElement;
-                                target.style.display = 'none';
-                                if (sibling) {
-                                  sibling.style.display = 'block';
-                                }
-                              }}
-                            />
-                            <span className="text-black text-sm font-medium hidden">{brand.name}</span>
+                            <Avatar className="w-8 h-8">
+                              <AvatarImage 
+                                src={brand.logo} 
+                                alt={brand.name}
+                                className="object-contain filter grayscale"
+                                onLoad={() => console.log(`Logo loaded: ${brand.name}`)}
+                                onError={() => console.log(`Logo failed to load: ${brand.name}`)}
+                              />
+                              <AvatarFallback className="text-xs font-medium bg-gray-100 text-black">
+                                {brand.name.slice(0, 2).toUpperCase()}
+                              </AvatarFallback>
+                            </Avatar>
+                            <span className="ml-2 text-black text-sm font-medium">{brand.name}</span>
                           </div>
                         ))}
                       </div>
@@ -205,7 +205,6 @@ const CaseStudies = () => {
                     </div>
                   </div>
 
-                  {/* Additional Details */}
                   <div className="mt-8 pt-8 border-t border-gray-200">
                     {/* Media Coverage */}
                     {work.media && (
