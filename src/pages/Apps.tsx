@@ -1,6 +1,7 @@
 import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Apps = () => {
   const apps = [
@@ -97,27 +98,24 @@ const Apps = () => {
       </section>
 
       {/* Custom Solution Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Need a custom solution?
-            </h2>
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Looking for tailored AI technology solutions for your specific business needs? Our team specializes in creating custom applications and integrations that perfectly align with your requirements.
-            </p>
-
-            <Button 
-              asChild 
-              size="lg"
-              className="text-white font-medium px-8"
-              style={{ backgroundColor: '#409EFF' }}
-            >
-              <a href="/contact">
-                Contact Us for Custom Solutions
-              </a>
-            </Button>
-          </div>
+      <section className="py-32 bg-black text-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+            Need a custom solution?
+          </h2>
+          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">
+            Looking for tailored AI technology solutions for your specific business needs? Our team specializes in creating custom applications and integrations that perfectly align with your requirements.
+          </p>
+          <Button 
+            asChild 
+            size="lg"
+            className="text-white hover:opacity-90 px-8 py-3" 
+            style={{ backgroundColor: '#409EFF' }}
+          >
+            <Link to="/contact">
+              Contact Us for Custom Solutions
+            </Link>
+          </Button>
         </div>
       </section>
     </div>
