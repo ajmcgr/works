@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { ArrowRight, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -54,14 +54,6 @@ const Contact = () => {
             <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
-            <div className="mb-12">
-              <Button asChild className="text-white hover:opacity-90 px-8 py-3" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                  <ArrowRight className="h-4 w-4 mr-2" />
-                  Start a conversation
-                </a>
-              </Button>
-            </div>
           </div>
           
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
