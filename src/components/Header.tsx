@@ -39,19 +39,19 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-6 lg:px-12">
+      <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
               alt="Works" 
-              className="h-7"
+              className="h-5"
             />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex items-center space-x-12">
+            <div className="flex items-center space-x-8">
               {navigation.map((item) => (
                 item.href.startsWith('#') ? (
                   <button
