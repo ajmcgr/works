@@ -62,7 +62,7 @@ const About = () => {
       </section>
 
       {/* Our Philosophy Title */}
-      <section className="py-8 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-black leading-tight">
@@ -73,7 +73,7 @@ const About = () => {
       </section>
 
       {/* Three C's Section */}
-      <section className="py-16 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-gray-800 leading-relaxed text-lg">
             {/* Concept */}
