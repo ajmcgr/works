@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 
@@ -156,8 +155,12 @@ const CaseStudies = () => {
                             alt={brand.name}
                             className="max-h-8 max-w-[80px] object-contain filter grayscale"
                             onError={(e) => {
-                              e.currentTarget.style.display = 'none';
-                              e.currentTarget.nextElementSibling.style.display = 'block';
+                              const target = e.currentTarget as HTMLImageElement;
+                              const sibling = target.nextElementSibling as HTMLSpanElement;
+                              target.style.display = 'none';
+                              if (sibling) {
+                                sibling.style.display = 'block';
+                              }
                             }}
                           />
                           <span className="text-black text-sm font-medium hidden">{brand.name}</span>
