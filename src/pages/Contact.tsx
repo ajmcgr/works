@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -47,7 +48,7 @@ const Contact = () => {
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-black">
+            <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
               Ready to shape your story?
             </h2>
             <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
