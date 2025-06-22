@@ -165,7 +165,7 @@ const Index = () => {
       <section className="relative bg-white min-h-screen flex flex-col justify-between">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-7xl font-headline font-headline text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
               Tell your story.
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
@@ -248,7 +248,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 What we do
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed font-normal">
@@ -296,7 +296,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 Why Works
               </h2>
               <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
@@ -338,7 +338,7 @@ const Index = () => {
       <section id="about" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
               About Works
             </h2>
             <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
@@ -374,7 +374,7 @@ const Index = () => {
       <section id="contact" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-black">
+            <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
               Ready to shape your story?
             </h2>
             <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
@@ -460,7 +460,7 @@ const Index = () => {
       <section className="py-32 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
               Join our mailing list
             </h2>
             <p className="text-lg text-gray-600 mb-12 font-normal leading-relaxed">
