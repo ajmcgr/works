@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -166,7 +165,7 @@ const Index = () => {
       <section className="relative bg-white min-h-screen flex flex-col justify-between">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-headline font-headline text-black leading-[1.1] mb-8 tracking-tight">
               Tell your story.
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
