@@ -9,9 +9,10 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
+    { name: "Media AI", href: "https://trymedia.ai" },
+    { name: "Write AI", href: "https://www.trywrite.ai" },
     { name: "Work", href: "/work" },
     { name: "Services", href: "/services" },
-    { name: "Apps", href: "/apps" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
