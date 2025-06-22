@@ -1,5 +1,5 @@
-
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
@@ -7,7 +7,11 @@ import ContactForm from "@/components/ContactForm";
 const CaseStudyDetail = () => {
   const { id } = useParams();
 
-  // Case study data (in a real app, this would come from an API or database)
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const caseStudies = {
     "oneplus": {
       name: "OnePlus",
