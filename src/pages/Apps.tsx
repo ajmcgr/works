@@ -1,4 +1,3 @@
-
 import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -33,7 +32,7 @@ const Apps = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Our Apps
+              Our apps
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Discover our suite of AI-powered applications designed to enhance your creative and professional workflows.

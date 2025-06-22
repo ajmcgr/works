@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -72,7 +71,7 @@ const Services = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
             <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
-              Our Services
+              Our services
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
               Comprehensive public relations solutions designed to elevate your brand, 
@@ -115,7 +114,7 @@ const Services = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="mb-20">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-              Our Process
+              Our process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl font-normal leading-relaxed">
               We follow a proven methodology to ensure every campaign delivers results 
