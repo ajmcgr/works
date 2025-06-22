@@ -3,12 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font Face Definition */
+/* Font Face Definitions */
 @font-face {
-  font-family: 'RecklessTRIAL-SemiBold';
-  src: url('/fonts/RecklessTRIAL-SemiBold.woff2') format('woff2'),
-       url('/fonts/RecklessTRIAL-SemiBold.woff') format('woff');
-  font-weight: 600;
+  font-family: 'Reckless';
+  src: url('/fonts/Reckless-Bold.woff2') format('woff2'),
+       url('/fonts/Reckless-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Reckless';
+  src: url('/fonts/Reckless-Regular.woff2') format('woff2'),
+       url('/fonts/Reckless-Regular.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -114,9 +123,10 @@
     min-height: 100vh;
   }
   
-  /* Apply headline font to all headings */
+  /* Apply Reckless Bold font to all headings */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'RecklessTRIAL-SemiBold', sans-serif;
+    font-family: 'Reckless', serif;
+    font-weight: 700;
   }
 }
 
