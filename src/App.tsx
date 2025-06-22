@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import CaseStudies from "./pages/CaseStudies";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -36,6 +37,7 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/work" element={<CaseStudies />} />
+              <Route path="/case-study/:id" element={<CaseStudyDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +18,7 @@ const CaseStudies = () => {
       groupCategory: "Product Launch & Crisis Management",
       clients: [
         {
+          id: "oneplus",
           name: "OnePlus",
           challenge: "Navigate competitive smartphone market with multiple product launches while managing corporate restructuring.",
           solution: "Developed integrated campaigns combining product storytelling with transparent communication, securing tier-1 media coverage across global markets.",
@@ -37,6 +37,7 @@ const CaseStudies = () => {
           ]
         },
         {
+          id: "oppo",
           name: "OPPO",
           challenge: "Crisis management during corporate restructuring and merger activities while maintaining market presence.",
           solution: "Executed transparent crisis communication strategy, maintaining stakeholder confidence during transition period.",
@@ -51,6 +52,7 @@ const CaseStudies = () => {
           ]
         },
         {
+          id: "meizu",
           name: "Meizu",
           challenge: "Break into Western markets and build community engagement for Chinese smartphone brand.",
           solution: "Created community-focused campaigns including first-ever Reddit AMA, building direct user engagement.",
@@ -71,6 +73,7 @@ const CaseStudies = () => {
       groupCategory: "Strategic Communications - APAC",
       clients: [
         {
+          id: "cision",
           name: "Cision",
           challenge: "Develop content strategies for PR technology platform across APAC markets.",
           solution: "Created tailored communication frameworks leveraging local insights across Hong Kong, Singapore, and Mainland China.",
@@ -83,6 +86,7 @@ const CaseStudies = () => {
           region: "APAC"
         },
         {
+          id: "huawei-cloud",
           name: "Huawei Cloud",
           challenge: "Position cloud services in competitive enterprise market while navigating geopolitical sensitivities.",
           solution: "Focused on technical capabilities and enterprise value propositions, emphasizing innovation and reliability.",
@@ -95,6 +99,7 @@ const CaseStudies = () => {
           region: "HK/Macau"
         },
         {
+          id: "ping-an",
           name: "Ping An Insurance",
           challenge: "Communicate fintech innovations and digital transformation initiatives to traditional finance market.",
           solution: "Developed narratives bridging traditional insurance with cutting-edge technology innovations.",
@@ -107,6 +112,7 @@ const CaseStudies = () => {
           region: "China"
         },
         {
+          id: "tencent",
           name: "Tencent",
           challenge: "Manage communications for entertainment and gaming divisions across multiple product launches.",
           solution: "Created integrated campaigns covering gaming, entertainment, and technology verticals with cultural sensitivity.",
@@ -126,6 +132,7 @@ const CaseStudies = () => {
       groupCategory: "Brand Building & Market Entry",
       clients: [
         {
+          id: "xreal",
           name: "Xreal",
           challenge: "Launch AR glasses brand in competitive wearable technology market.",
           solution: "Crafted narrative-driven campaigns focusing on immersive experiences and practical applications of AR technology.",
@@ -137,6 +144,7 @@ const CaseStudies = () => {
           innovation: "AR Glasses - Immersive visual experiences"
         },
         {
+          id: "angry-miao",
           name: "Angry Miao",
           challenge: "Build premium gaming keyboard brand with futuristic design aesthetic.",
           solution: "Developed campaigns emphasizing craftsmanship, innovation, and gaming culture integration.",
@@ -148,6 +156,7 @@ const CaseStudies = () => {
           innovation: "Gaming Keyboards - Futuristic mechanical designs"
         },
         {
+          id: "ecarx",
           name: "ECARX",
           challenge: "Position automotive AI platform in rapidly evolving smart vehicle market.",
           solution: "Created thought leadership content around automotive intelligence and full-stack computing platforms.",
@@ -159,6 +168,7 @@ const CaseStudies = () => {
           innovation: "Automotive AI - Full-stack computing platform"
         },
         {
+          id: "hhogene",
           name: "HHOGene",
           challenge: "Launch innovative health technology solutions in competitive wellness market.",
           solution: "Developed health-focused communications emphasizing scientific backing and user benefits.",
@@ -177,6 +187,7 @@ const CaseStudies = () => {
       groupCategory: "Event Management & Corporate Communications",
       clients: [
         {
+          id: "publicis-msl",
           name: "Publicis-MSL",
           challenge: "Execute large-scale international media event for Thaifex Anuga 2025 in Bangkok with complex stakeholder management.",
           solution: "End-to-end event management including run-of-show design, spokesperson training, and multi-platform content amplification.",
@@ -189,6 +200,7 @@ const CaseStudies = () => {
           services: ["Event Strategy", "Spokesperson Management", "Content Amplification"]
         },
         {
+          id: "koelnmesse",
           name: "Koelnmesse",
           challenge: "Develop regional influencer strategy and manage on-site coordination for major trade event.",
           solution: "Integrated influencer marketing with traditional event management, including emcee services and real-time content creation.",
@@ -272,6 +284,11 @@ const CaseStudies = () => {
                             {client.period && (
                               <p className="text-gray-500 text-sm mt-2 font-normal">{client.period}</p>
                             )}
+                          </div>
+                          <div>
+                            <Button asChild className="text-white hover:opacity-90" style={{ backgroundColor: '#409EFF' }}>
+                              <Link to={`/case-study/${client.id}`}>Read Case Study</Link>
+                            </Button>
                           </div>
                         </div>
                       </CardHeader>
