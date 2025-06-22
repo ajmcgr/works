@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-xs font-medium text-black mb-6 uppercase tracking-wide">Services</h4>
+            <h4 className="text-xs font-medium text-black mb-6 tracking-wide">Services</h4>
             <ul className="space-y-3">
               <li><Link to="/services" className="text-gray-600 text-sm hover:text-black transition-colors">Media Relations</Link></li>
               <li><Link to="/services" className="text-gray-600 text-sm hover:text-black transition-colors">Crisis Communication</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Apps */}
           <div>
-            <h4 className="text-xs font-medium text-black mb-6 uppercase tracking-wide">Apps</h4>
+            <h4 className="text-xs font-medium text-black mb-6 tracking-wide">Apps</h4>
             <ul className="space-y-3">
               <li>
                 <a 
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Community */}
           <div>
-            <h4 className="text-xs font-medium text-black mb-6 uppercase tracking-wide">Community</h4>
+            <h4 className="text-xs font-medium text-black mb-6 tracking-wide">Community</h4>
             <ul className="space-y-3">
               <li>
                 <a 
