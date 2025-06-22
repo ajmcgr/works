@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font Face Definition */
+@font-face {
+  font-family: 'RecklessTRIAL-SemiBold';
+  src: url('/fonts/RecklessTRIAL-SemiBold.woff2') format('woff2'),
+       url('/fonts/RecklessTRIAL-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
 @layer base {
@@ -102,6 +112,11 @@
     @apply text-foreground;
     background: #f2f2f2;
     min-height: 100vh;
+  }
+  
+  /* Apply headline font to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'RecklessTRIAL-SemiBold', sans-serif;
   }
 }
 

@@ -64,7 +64,7 @@ const About = () => {
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
               About Works
             </h2>
             <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">

@@ -71,7 +71,7 @@ const Services = () => {
       <section className="py-32 lg:py-48 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
-            <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
               Our Services
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
@@ -88,7 +88,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {services.map((service, index) => (
               <div key={index} className="bg-white p-8 lg:p-12">
-                <h3 className="text-2xl lg:text-3xl font-bold text-black mb-6">{service.title}</h3>
+                <h3 className="text-2xl lg:text-3xl font-headline text-black mb-6">{service.title}</h3>
                 <p className="text-gray-600 font-normal leading-relaxed mb-8">{service.description}</p>
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
@@ -114,7 +114,7 @@ const Services = () => {
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="mb-20">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
               Our Process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl font-normal leading-relaxed">
@@ -126,7 +126,7 @@ const Services = () => {
             {process.map((item, index) => (
               <div key={index} className="space-y-6">
                 <div className="text-sm text-gray-400 font-normal uppercase tracking-wide">{item.step}</div>
-                <h3 className="text-xl font-bold text-black">{item.title}</h3>
+                <h3 className="text-xl font-headline text-black">{item.title}</h3>
                 <p className="text-gray-600 font-normal leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -137,7 +137,7 @@ const Services = () => {
       {/* CTA */}
       <section className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight">
             Ready to elevate your PR strategy?
           </h2>
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">

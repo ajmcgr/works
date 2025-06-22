@@ -38,7 +38,7 @@ const fetchGhostPosts = async (): Promise<GhostPost[]> => {
       {
         id: "1",
         title: "The Future of PR: How AI is Transforming Communications",
-        excerpt: "Explore how artificial intelligence is revolutionizing the public relations industry and what it means for brands.",
+        excerpt: "Explore how artificial intelligence is revolution the public relations industry and what it means for brands.",
         published_at: "2024-01-15T00:00:00.000Z",
         slug: "ai-transforming-communications",
         feature_image: "/placeholder.svg",
@@ -109,7 +109,7 @@ export const NewsSection = () => {
     <section className="py-32 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
             Latest News
           </h2>
           <p className="text-lg text-gray-600 font-normal leading-relaxed max-w-2xl mx-auto">
@@ -134,7 +134,7 @@ export const NewsSection = () => {
                   <Calendar className="h-4 w-4 mr-2" />
                   {formatDate(post.published_at)}
                 </div>
-                <CardTitle className="text-2xl font-semibold text-black leading-tight hover:text-gray-600 transition-colors mb-4">
+                <CardTitle className="text-2xl font-headline text-black leading-tight hover:text-gray-600 transition-colors mb-4">
                   {post.title}
                 </CardTitle>
               </CardHeader>
