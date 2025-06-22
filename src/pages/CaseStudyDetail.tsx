@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -50,6 +51,7 @@ const CaseStudyDetail = () => {
         { outlet: "Forbes", type: "Analysis", description: "Strategic business analysis and market positioning" },
         { outlet: "TechRadar", type: "News", description: "Breaking news coverage and industry updates" }
       ],
+      links: [],
       timeline: "12 months",
       team: "4 specialists",
       services: ["Crisis Communication", "Media Relations", "Stakeholder Management", "Internal Communications"]
@@ -95,6 +97,7 @@ const CaseStudyDetail = () => {
         { outlet: "PR Week Asia", type: "Feature", description: "Industry thought leadership and trend analysis" },
         { outlet: "Marketing Interactive", type: "Interview", description: "Executive interviews and company spotlights" }
       ],
+      links: [],
       timeline: "24 months",
       team: "6 specialists",
       services: ["Content Strategy", "Market Research", "Media Relations", "Thought Leadership"]
@@ -116,6 +119,7 @@ const CaseStudyDetail = () => {
         { outlet: "CIO Magazine", type: "Feature", description: "Enterprise technology leadership coverage" },
         { outlet: "Cloud Computing News", type: "Analysis", description: "Technical analysis and industry insights" }
       ],
+      links: [],
       timeline: "18 months",
       team: "5 specialists",
       services: ["B2B Communications", "Thought Leadership", "Content Marketing", "Analyst Relations"]
@@ -137,6 +141,7 @@ const CaseStudyDetail = () => {
         { outlet: "Fintech News", type: "Feature", description: "Digital innovation and transformation coverage" },
         { outlet: "Insurance Journal", type: "Analysis", description: "Industry analysis and trend reporting" }
       ],
+      links: [],
       timeline: "15 months",
       team: "4 specialists",
       services: ["Fintech Communications", "Digital Transformation", "Executive Positioning", "Content Strategy"]
@@ -158,6 +163,7 @@ const CaseStudyDetail = () => {
         { outlet: "GameIndustry.biz", type: "Feature", description: "Gaming industry analysis and product coverage" },
         { outlet: "Variety", type: "News", description: "Entertainment industry coverage and trends" }
       ],
+      links: [],
       timeline: "20 months",
       team: "8 specialists",
       services: ["Campaign Management", "Cultural Strategy", "Multi-vertical Communications", "Product Launch"]
@@ -180,6 +186,7 @@ const CaseStudyDetail = () => {
         { outlet: "The Verge", type: "Feature", description: "Technology innovation and trend analysis" },
         { outlet: "CNET", type: "Hands-on", description: "Consumer technology reviews and guides" }
       ],
+      links: [],
       timeline: "14 months",
       team: "5 specialists",
       services: ["Product Launch", "Narrative Development", "Experiential Marketing", "Community Building"]
@@ -201,6 +208,7 @@ const CaseStudyDetail = () => {
         { outlet: "PC Gamer", type: "Review", description: "Gaming hardware reviews and recommendations" },
         { outlet: "Mechanical Keyboards", type: "Feature", description: "Enthusiast community coverage and discussions" }
       ],
+      links: [],
       timeline: "16 months",
       team: "4 specialists",
       services: ["Brand Positioning", "Community Engagement", "Influencer Relations", "Product Marketing"]
@@ -222,6 +230,7 @@ const CaseStudyDetail = () => {
         { outlet: "Automotive News", type: "Feature", description: "Industry analysis and innovation coverage" },
         { outlet: "Wards Auto", type: "Interview", description: "Executive interviews and company profiles" }
       ],
+      links: [],
       timeline: "18 months",
       team: "6 specialists",
       services: ["Thought Leadership", "B2B Marketing", "Technical Communications", "Partnership Marketing"]
@@ -243,6 +252,7 @@ const CaseStudyDetail = () => {
         { outlet: "Health Tech Magazine", type: "Feature", description: "Health technology innovation coverage" },
         { outlet: "Wellness Today", type: "Review", description: "Consumer wellness product reviews" }
       ],
+      links: [],
       timeline: "12 months",
       team: "4 specialists",
       services: ["Health Communications", "Scientific Marketing", "Consumer Education", "Trust Building"]
@@ -264,6 +274,7 @@ const CaseStudyDetail = () => {
         { outlet: "Event Marketing", type: "Case Study", description: "Event management best practices and results" },
         { outlet: "Trade Show News", type: "Coverage", description: "Industry event coverage and analysis" }
       ],
+      links: [],
       timeline: "5 months",
       team: "7 specialists",
       services: ["Event Strategy", "Spokesperson Management", "Content Amplification", "Logistics Coordination"]
@@ -285,6 +296,7 @@ const CaseStudyDetail = () => {
         { outlet: "Trade Show Executive", type: "Feature", description: "Innovative event marketing strategies" },
         { outlet: "Influencer Marketing Hub", type: "Case Study", description: "B2B influencer marketing success stories" }
       ],
+      links: [],
       timeline: "5 months",  
       team: "6 specialists",
       services: ["Influencer Marketing", "Event Coordination", "On-site Management", "Content Creation"]
@@ -389,7 +401,7 @@ const CaseStudyDetail = () => {
           )}
 
           {/* Links */}
-          {caseStudy.links && (
+          {caseStudy.links && caseStudy.links.length > 0 && (
             <div>
               <h3 className="text-xl font-bold text-black mb-4">Featured Coverage</h3>
               <div className="space-y-2">
