@@ -1,3 +1,4 @@
+
 import { ExternalLink, Video, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,7 +32,7 @@ const Apps = () => {
       <section className="py-20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl lg:text-6xl font-headline text-gray-900 mb-6">
               Our apps
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -56,7 +57,7 @@ const Apps = () => {
                     />
                   </div>
                   <div>
-                    <CardTitle className="text-2xl font-bold text-gray-900">
+                    <CardTitle className="text-2xl font-headline text-gray-900">
                       {app.name}
                     </CardTitle>
                     <CardDescription className="text-gray-600 text-base mt-2">
@@ -100,7 +101,7 @@ const Apps = () => {
       {/* Custom Solution Section */}
       <section className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight">
             Need a custom solution?
           </h2>
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">

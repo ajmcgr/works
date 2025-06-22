@@ -222,7 +222,7 @@ const CaseStudies = () => {
       <section className="py-32 lg:py-48 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
-            <h1 className="text-5xl lg:text-7xl font-bold text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
               Our Work
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
@@ -240,7 +240,7 @@ const CaseStudies = () => {
             {portfolioStats.map((stat, index) => (
               <div key={index} className="text-center bg-white p-8 border border-gray-200">
                 <stat.icon className="w-8 h-8 mx-auto mb-4 text-black" />
-                <div className="text-3xl font-bold text-black mb-2">{stat.value}</div>
+                <div className="text-3xl font-headline text-black mb-2">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -249,7 +249,7 @@ const CaseStudies = () => {
           {/* Work by Client Groups */}
           <div className="space-y-20">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">Client Portfolio</h2>
+              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">Client Portfolio</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed">
                 Strategic communications delivered across technology, enterprise, and innovation sectors.
               </p>
@@ -259,7 +259,7 @@ const CaseStudies = () => {
               <div key={groupIndex} className="space-y-8">
                 {/* Group Header */}
                 <div className="text-center mb-12">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-black mb-4">{group.groupTitle}</h3>
+                  <h3 className="text-2xl lg:text-3xl font-headline text-black mb-4">{group.groupTitle}</h3>
                   <p className="text-lg text-gray-600 font-normal">{group.groupCategory}</p>
                 </div>
 
@@ -270,7 +270,7 @@ const CaseStudies = () => {
                       <CardHeader className="bg-gray-100 text-black p-8">
                         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                           <div>
-                            <CardTitle className="text-2xl lg:text-3xl font-bold mb-2">{client.name}</CardTitle>
+                            <CardTitle className="text-2xl lg:text-3xl font-headline mb-2">{client.name}</CardTitle>
                             {client.sector && client.region && (
                               <CardDescription className="text-gray-600 text-lg font-normal">
                                 {client.sector} • {client.region}
@@ -297,19 +297,19 @@ const CaseStudies = () => {
                         <div className="grid lg:grid-cols-3 gap-8">
                           {/* Challenge */}
                           <div>
-                            <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Challenge</h4>
+                            <h4 className="font-headline text-lg mb-3 text-black border-b border-gray-300 pb-2">Challenge</h4>
                             <p className="text-gray-700 leading-relaxed font-normal">{client.challenge}</p>
                           </div>
                           
                           {/* Solution */}
                           <div>
-                            <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Solution</h4>
+                            <h4 className="font-headline text-lg mb-3 text-black border-b border-gray-300 pb-2">Solution</h4>
                             <p className="text-gray-700 leading-relaxed font-normal">{client.solution}</p>
                           </div>
                           
                           {/* Results */}
                           <div>
-                            <h4 className="font-bold text-lg mb-3 text-black border-b border-gray-300 pb-2">Results</h4>
+                            <h4 className="font-headline text-lg mb-3 text-black border-b border-gray-300 pb-2">Results</h4>
                             <ul className="space-y-2">
                               {client.results.map((result, idx) => (
                                 <li key={idx} className="text-gray-700 flex items-start font-normal">
@@ -325,11 +325,11 @@ const CaseStudies = () => {
                           {/* Media Coverage */}
                           {client.media && (
                             <div className="mb-6">
-                              <h5 className="font-bold text-black mb-3">Media Coverage</h5>
+                              <h5 className="font-headline text-black mb-3">Media Coverage</h5>
                               <div className="flex flex-wrap gap-3">
                                 {client.media.map((outlet, idx) => (
                                   <div key={idx} className="bg-gray-100 px-4 py-2 border border-gray-300">
-                                    <span className="font-bold text-black">{outlet.outlet}</span>
+                                    <span className="font-headline text-black">{outlet.outlet}</span>
                                     <span className="text-gray-600 text-sm ml-2 font-normal">({outlet.type})</span>
                                   </div>
                                 ))}
@@ -340,7 +340,7 @@ const CaseStudies = () => {
                           {/* Services */}
                           {client.services && (
                             <div className="mb-6">
-                              <h5 className="font-bold text-black mb-3">Services Delivered</h5>
+                              <h5 className="font-headline text-black mb-3">Services Delivered</h5>
                               <div className="flex flex-wrap gap-2">
                                 {client.services.map((service, idx) => (
                                   <span key={idx} className="bg-gray-700 text-white px-3 py-1 text-sm font-normal">
@@ -354,7 +354,7 @@ const CaseStudies = () => {
                           {/* Links */}
                           {client.links && (
                             <div>
-                              <h5 className="font-bold text-black mb-3">Featured Coverage</h5>
+                              <h5 className="font-headline text-black mb-3">Featured Coverage</h5>
                               <div className="flex flex-wrap gap-3">
                                 {client.links.map((link, idx) => (
                                   <a
@@ -385,7 +385,7 @@ const CaseStudies = () => {
       {/* CTA Section */}
       <section className="py-32 bg-black text-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight">
             Ready to tell your story?
           </h2>
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">

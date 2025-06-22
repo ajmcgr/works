@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { Calendar, User, ArrowLeft, Share2, Twitter, Facebook, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -114,7 +113,7 @@ const BlogPost = () => {
               </span>
               <span>{blogPost.readTime}</span>
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl lg:text-5xl font-headline text-gray-900 mb-6">
               {blogPost.title}
             </h1>
             <div className="flex items-center justify-between">
@@ -183,7 +182,7 @@ const BlogPost = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Related Articles</h2>
+            <h2 className="text-3xl font-headline text-gray-900 mb-8">Related Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((post, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">

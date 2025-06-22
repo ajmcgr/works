@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -29,7 +28,7 @@ const About = () => {
             </div>
             
             <div className="text-left space-y-6 text-gray-800 leading-relaxed text-lg">
-              <p className="font-bold">Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
+              <p className="font-headline">Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
               
               <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
               

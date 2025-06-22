@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, User, ArrowRight, Search } from "lucide-react";
@@ -97,7 +96,7 @@ const Blog = () => {
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl lg:text-6xl font-headline text-gray-900 mb-6">
               Our Blog
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
@@ -140,7 +139,7 @@ const Blog = () => {
       {selectedCategory === "All" && !searchTerm && (
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Article</h2>
+            <h2 className="text-3xl font-headline text-gray-900 mb-8">Featured Article</h2>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <img 
@@ -163,7 +162,7 @@ const Blog = () => {
                         <span>{featuredPost.author}</span>
                       </div>
                     </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
+                    <h3 className="text-2xl lg:text-3xl font-headline text-gray-900">
                       {featuredPost.title}
                     </h3>
                     <p className="text-gray-600 text-lg">{featuredPost.excerpt}</p>
@@ -187,7 +186,7 @@ const Blog = () => {
       {/* Blog Posts Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl font-headline text-gray-900 mb-8">
             {selectedCategory === "All" && !searchTerm ? "Latest Articles" : "Articles"}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -232,7 +231,7 @@ const Blog = () => {
       {/* Newsletter Signup */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-headline mb-4">
             Stay Updated
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
