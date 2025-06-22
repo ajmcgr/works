@@ -29,7 +29,7 @@ const Header = () => {
         // If on homepage, scroll to section
         const element = document.querySelector(href);
         if (element) {
-          element.scrollInToView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: 'smooth' });
         }
       }
     } else if (href.startsWith('http')) {
