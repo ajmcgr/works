@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -164,7 +162,7 @@ const Index = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden" style={{ backgroundColor: '#f2f2f2' }}>
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full md:hidden">
           {/* Mobile Content */}
