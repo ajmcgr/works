@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -231,8 +232,8 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Desktop Video - Below content, constrained width, rounded corners */}
-          <div className="w-full max-w-4xl mx-auto px-6">
+          {/* Desktop Video - Below content, matching page body column width, rounded corners */}
+          <div className="w-full">
             <AspectRatio ratio={16/9}>
               <iframe
                 src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
