@@ -164,8 +164,8 @@ const Index = () => {
     <div className="pt-16">
       {/* Hero Section with Video Background */}
       <section className="relative bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* Video Background - Now visible on all devices */}
-        <div className="absolute inset-0 z-0">
+        {/* Desktop Video Background - Positioned behind content */}
+        <div className="absolute inset-0 z-0 hidden md:block">
           <AspectRatio ratio={16/9} className="h-full">
             <iframe
               src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
@@ -177,11 +177,51 @@ const Index = () => {
           </AspectRatio>
         </div>
         
-        {/* Dark Overlay - Now applied on all devices */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        {/* Dark Overlay - Only on desktop */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-10 hidden md:block"></div>
         
-        {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-[70vh] md:min-h-screen flex items-center">
+        {/* Mobile Layout - Video above content */}
+        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full md:hidden">
+          {/* Mobile Video */}
+          <div className="mb-8">
+            <AspectRatio ratio={16/9}>
+              <iframe
+                src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
+                className="w-full h-full object-cover rounded-lg"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="Works PR Video"
+              />
+            </AspectRatio>
+          </div>
+          
+          {/* Mobile Content */}
+          <div className="text-center py-8">
+            <h1 className="text-4xl xs:text-5xl font-headline text-black leading-tight mb-6 tracking-tight">
+              Tell your story.
+            </h1>
+            <p className="text-base xs:text-lg text-gray-700 leading-relaxed mb-8 max-w-lg mx-auto font-normal">
+              Storytelling that aligns your strategy, earns media, and drives influence.
+            </p>
+            <div className="flex flex-col items-center justify-center space-y-6">
+              <Button asChild className="text-white px-8 py-4 text-sm font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
+                  Start a conversation
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+              <Link 
+                to="/services"
+                className="text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
+              >
+                Our services
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Overlay content on video */}
+        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex">
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
             <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-white leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Tell your story.
