@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -162,24 +161,8 @@ const Index = () => {
 
   return (
     <div className="pt-16">
-      {/* Hero Section with Video Background */}
+      {/* Hero Section */}
       <section className="relative bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* Desktop Video Background - Positioned behind content */}
-        <div className="absolute inset-0 z-0 hidden md:block">
-          <AspectRatio ratio={16/9} className="h-full">
-            <iframe
-              src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-              className="w-full h-full object-cover scale-110 sm:scale-110"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              title="Works PR Video Background"
-            />
-          </AspectRatio>
-        </div>
-        
-        {/* Dark Overlay - Only on desktop */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 z-10 hidden md:block"></div>
-        
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full md:hidden">
           {/* Mobile Content */}
@@ -222,16 +205,17 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Desktop Layout - Overlay content on video */}
-        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex">
+        {/* Desktop Layout - Content above video (same as mobile) */}
+        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex flex-col justify-center">
+          {/* Desktop Content */}
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
-            <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-white leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
+            <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-black leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-white leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal opacity-90">
+            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-12">
               <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-sm font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
@@ -240,11 +224,24 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-sm font-medium text-white hover:text-gray-300 transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
               >
                 Our services
               </Link>
             </div>
+          </div>
+          
+          {/* Desktop Video - Below content, constrained width, rounded corners */}
+          <div className="w-full max-w-4xl mx-auto px-6">
+            <AspectRatio ratio={16/9}>
+              <iframe
+                src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
+                className="w-full h-full object-cover rounded-xl"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="Works PR Video"
+              />
+            </AspectRatio>
           </div>
         </div>
       </section>
