@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -181,15 +180,15 @@ const Index = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60 z-10 hidden md:block"></div>
         
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen flex items-center">
-          <div className="max-w-4xl mx-auto text-center w-full py-8">
-            <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-black md:text-white leading-tight mb-6 sm:mb-6 lg:mb-8 tracking-tight px-2">
+        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen flex items-center">
+          <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
+            <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-black md:text-white leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 md:text-white leading-relaxed mb-8 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal opacity-90 px-4">
+            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 md:text-white leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal opacity-90">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8 px-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8">
               <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-sm font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
@@ -208,8 +207,8 @@ const Index = () => {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-white py-8 sm:py-12 lg:py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full">
+      <section className="bg-white py-12 sm:py-12 lg:py-16">
+        <div className="container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full">
           <div className="text-center mb-4 sm:mb-6 lg:mb-8">
             <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
