@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -223,7 +224,7 @@ const CaseStudies = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
             <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
-              Our Work
+              Our work
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
               From global product launches to crisis management, we deliver integrated communications 
