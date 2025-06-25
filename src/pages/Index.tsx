@@ -196,7 +196,7 @@ const Index = () => {
           <div className="w-full">
             <AspectRatio ratio={16/9}>
               <iframe
-                src="https://player.vimeo.com/video/1096169142?badge=0&autopause=0&player_id=0&app_id=58479"
+                src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479"
                 className="w-full h-full rounded-lg shadow-lg"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
