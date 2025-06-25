@@ -132,10 +132,16 @@
     min-height: 100vh;
   }
   
-  /* Apply Reckless Medium font to all headings */
+  /* Apply Reckless Medium font to all headings with letter spacing 0 */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Reckless', serif;
     font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  /* Ensure font-headline class also has letter spacing 0 */
+  .font-headline {
+    letter-spacing: 0;
   }
 }
 
