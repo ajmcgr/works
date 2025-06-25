@@ -180,21 +180,8 @@ const Index = () => {
         {/* Dark Overlay - Only on desktop */}
         <div className="absolute inset-0 bg-black bg-opacity-60 z-10 hidden md:block"></div>
         
-        {/* Mobile Layout - Video above content */}
+        {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full md:hidden">
-          {/* Mobile Video */}
-          <div className="mb-8">
-            <AspectRatio ratio={16/9}>
-              <iframe
-                src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="w-full h-full object-cover rounded-lg"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Works PR Video"
-              />
-            </AspectRatio>
-          </div>
-          
           {/* Mobile Content */}
           <div className="text-center py-8">
             <h1 className="text-4xl xs:text-5xl font-headline text-black leading-tight mb-6 tracking-tight">
@@ -203,7 +190,7 @@ const Index = () => {
             <p className="text-base xs:text-lg text-gray-700 leading-relaxed mb-8 max-w-lg mx-auto font-normal">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex flex-col items-center justify-center space-y-6">
+            <div className="flex flex-col items-center justify-center space-y-6 mb-8">
               <Button asChild className="text-white px-8 py-4 text-sm font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
@@ -216,6 +203,21 @@ const Index = () => {
               >
                 Our services
               </Link>
+            </div>
+          </div>
+          
+          {/* Mobile Video - Below content, not full width, rounded corners */}
+          <div className="px-4 pb-8">
+            <div className="max-w-md mx-auto">
+              <AspectRatio ratio={16/9}>
+                <iframe
+                  src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
+                  className="w-full h-full object-cover rounded-xl"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  title="Works PR Video"
+                />
+              </AspectRatio>
             </div>
           </div>
         </div>
