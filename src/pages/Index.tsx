@@ -168,7 +168,7 @@ const Index = () => {
           <AspectRatio ratio={16/9} className="h-full">
             <iframe
               src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-              className="w-full h-full object-cover scale-110"
+              className="w-full h-full object-cover scale-110 sm:scale-110"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
               title="Works PR Video Background"
@@ -177,19 +177,19 @@ const Index = () => {
         </div>
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
         
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-headline text-white leading-[1.1] mb-6 sm:mb-8 tracking-tight px-2">
+        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen flex items-center">
+          <div className="max-w-4xl mx-auto text-center w-full py-8">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-7xl font-headline text-white leading-tight mb-4 sm:mb-6 lg:mb-8 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-white leading-relaxed mb-8 sm:mb-12 max-w-2xl mx-auto font-normal opacity-90 px-4">
+            <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white leading-relaxed mb-6 sm:mb-8 lg:mb-12 max-w-xl sm:max-w-2xl mx-auto font-normal opacity-90 px-2">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 px-4">
-              <Button asChild className="text-white px-8 sm:px-10 py-3 sm:py-4 text-sm font-medium w-full sm:w-auto" style={{ backgroundColor: '#409EFF' }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-6 lg:space-x-8 px-2">
+              <Button asChild className="text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-sm font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -207,13 +207,13 @@ const Index = () => {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className="bg-white py-8 sm:py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full">
-          <div className="text-center mb-6 sm:mb-8">
-            <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+          <div className="text-center mb-4 sm:mb-6 lg:mb-8">
+            <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 items-center justify-items-center">
-            <div className="w-24 sm:w-32 h-16 sm:h-20">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 lg:gap-6 items-center justify-items-center">
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
@@ -222,7 +222,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 sm:w-32 h-16 sm:h-20">
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
@@ -231,7 +231,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 sm:w-32 h-16 sm:h-20">
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
@@ -240,7 +240,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 sm:w-32 h-16 sm:h-20">
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
@@ -249,7 +249,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-24 sm:w-32 h-16 sm:h-20">
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
