@@ -162,7 +162,7 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section with Video Background */}
-      <section className="relative bg-white md:bg-white min-h-screen flex flex-col justify-center overflow-hidden" style={{ backgroundColor: window.innerWidth < 768 ? '#f2f2f2' : 'white' }}>
+      <section className="relative bg-white md:bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden" style={{ backgroundColor: window.innerWidth < 768 ? '#f2f2f2' : 'white' }}>
         {/* Video Background - Hidden on mobile */}
         <div className="absolute inset-0 z-0 hidden md:block">
           <AspectRatio ratio={16/9} className="h-full">
@@ -180,7 +180,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60 z-10 hidden md:block"></div>
         
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen flex items-center">
+        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-[70vh] md:min-h-screen flex items-center">
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
             <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-black md:text-white leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Tell your story.
