@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -203,20 +202,6 @@ const Index = () => {
                 Our services
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* New Hero Content Section */}
-      <section className="bg-white py-32">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-5xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
-              Strategic storytelling for modern brands
-            </h2>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
-              We help innovative companies craft compelling narratives that resonate with audiences and drive meaningful results.
-            </p>
           </div>
         </div>
       </section>
