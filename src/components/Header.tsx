@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -47,8 +48,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-center flex-1">
+          {/* Desktop Navigation - moved to right */}
+          <nav className="hidden md:flex items-center">
             <div className="flex items-center space-x-8">
               {navigation.map((item) => (
                 item.href.startsWith('#') ? (
