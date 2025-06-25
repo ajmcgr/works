@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -161,6 +162,23 @@ const Index = () => {
 
   return (
     <div className="pt-16">
+      {/* Video Section */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-12 lg:px-24 max-w-7xl">
+          <div className="w-full">
+            <AspectRatio ratio={16/9}>
+              <iframe
+                src="https://player.vimeo.com/video/1096169142?badge=0&autopause=0&player_id=0&app_id=58479"
+                className="w-full h-full rounded-lg shadow-lg"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="Works PR Video"
+              />
+            </AspectRatio>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section with Logos */}
       <section className="relative bg-white min-h-screen flex flex-col justify-between">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
