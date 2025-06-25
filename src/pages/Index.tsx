@@ -167,7 +167,7 @@ const Index = () => {
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full md:hidden">
           {/* Mobile Content */}
           <div className="text-center py-8">
-            <h1 className="text-4xl xs:text-5xl font-headline text-black leading-tight mb-6 tracking-tight">
+            <h1 className="text-3xl xs:text-4xl font-headline text-black leading-tight mb-6 tracking-tight">
               Tell your story.
             </h1>
             <p className="text-base xs:text-lg text-gray-700 leading-relaxed mb-8 max-w-lg mx-auto font-normal">
@@ -209,7 +209,7 @@ const Index = () => {
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex flex-col justify-center">
           {/* Desktop Content */}
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
-            <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-black leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-black leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Tell your story.
             </h1>
             <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
