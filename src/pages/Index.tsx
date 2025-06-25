@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send } from "lucide-react";
@@ -162,9 +163,9 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section with Video Background */}
-      <section className="relative bg-white min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0 z-0">
+      <section className="relative bg-white md:bg-white min-h-screen flex flex-col justify-center overflow-hidden" style={{ backgroundColor: window.innerWidth < 768 ? '#f2f2f2' : 'white' }}>
+        {/* Video Background - Hidden on mobile */}
+        <div className="absolute inset-0 z-0 hidden md:block">
           <AspectRatio ratio={16/9} className="h-full">
             <iframe
               src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
@@ -176,20 +177,20 @@ const Index = () => {
           </AspectRatio>
         </div>
         
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        {/* Dark Overlay - Only on desktop with video */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-10 hidden md:block"></div>
         
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen flex items-center">
           <div className="max-w-4xl mx-auto text-center w-full py-8">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-7xl font-headline text-white leading-tight mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+            <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-headline text-black md:text-white leading-tight mb-6 sm:mb-6 lg:mb-8 tracking-tight px-2">
               Tell your story.
             </h1>
-            <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white leading-relaxed mb-6 sm:mb-8 lg:mb-12 max-w-xl sm:max-w-2xl mx-auto font-normal opacity-90 px-2">
+            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 md:text-white leading-relaxed mb-8 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal opacity-90 px-4">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-6 lg:space-x-8 px-2">
-              <Button asChild className="text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-sm font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8 px-4">
+              <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-sm font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -197,7 +198,7 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-sm font-medium text-white hover:text-gray-300 transition-colors"
+                className="text-sm font-medium text-gray-700 md:text-white hover:text-gray-500 md:hover:text-gray-300 transition-colors"
               >
                 Our services
               </Link>
