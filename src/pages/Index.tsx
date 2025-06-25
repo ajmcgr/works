@@ -162,23 +162,6 @@ const Index = () => {
 
   return (
     <div className="pt-16">
-      {/* Video Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-12 lg:px-24 max-w-7xl">
-          <div className="w-full">
-            <AspectRatio ratio={16/9}>
-              <iframe
-                src="https://player.vimeo.com/video/1096169142?badge=0&autopause=0&player_id=0&app_id=58479"
-                className="w-full h-full rounded-lg shadow-lg"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Works PR Video"
-              />
-            </AspectRatio>
-          </div>
-        </div>
-      </section>
-
       {/* Hero Section with Logos */}
       <section className="relative bg-white min-h-screen flex flex-col justify-between">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
@@ -205,10 +188,29 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Logos at bottom of viewport */}
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full pb-6">
-          <div className="text-center mb-4">
+      </section>
+
+      {/* Video Section */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-12 lg:px-24 max-w-7xl">
+          <div className="w-full">
+            <AspectRatio ratio={16/9}>
+              <iframe
+                src="https://player.vimeo.com/video/1096169142?badge=0&autopause=0&player_id=0&app_id=58479"
+                className="w-full h-full rounded-lg shadow-lg"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="Works PR Video"
+              />
+            </AspectRatio>
+          </div>
+        </div>
+      </section>
+
+      {/* Logos Section */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
+          <div className="text-center mb-8">
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 items-center justify-items-center">
