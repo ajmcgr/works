@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -127,7 +128,7 @@
 
   body {
     @apply text-foreground;
-    background: #f2f2f2;
+    background: white;
     min-height: 100vh;
   }
   
