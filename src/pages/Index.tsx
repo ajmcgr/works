@@ -180,16 +180,16 @@ const Index = () => {
         <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
         
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 lg:px-12 max-w-6xl w-full">
+        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-7xl font-headline text-white leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-headline text-white leading-[1.1] mb-6 sm:mb-8 tracking-tight px-2">
               Tell your story.
             </h1>
-            <p className="text-lg lg:text-xl text-white leading-relaxed mb-12 max-w-2xl mx-auto font-normal opacity-90">
+            <p className="text-base sm:text-lg lg:text-xl text-white leading-relaxed mb-8 sm:mb-12 max-w-2xl mx-auto font-normal opacity-90 px-4">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex items-center justify-center space-x-8">
-              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 px-4">
+              <Button asChild className="text-white px-8 sm:px-10 py-3 sm:py-4 text-sm font-medium w-full sm:w-auto" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -207,13 +207,13 @@ const Index = () => {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
-          <div className="text-center mb-8">
+      <section className="bg-white py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl w-full">
+          <div className="text-center mb-6 sm:mb-8">
             <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 items-center justify-items-center">
-            <div className="w-32 h-20">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 items-center justify-items-center">
+            <div className="w-24 sm:w-32 h-16 sm:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
@@ -222,7 +222,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-24 sm:w-32 h-16 sm:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
@@ -231,7 +231,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-24 sm:w-32 h-16 sm:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
@@ -240,7 +240,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-24 sm:w-32 h-16 sm:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
@@ -249,7 +249,7 @@ const Index = () => {
                 />
               </AspectRatio>
             </div>
-            <div className="w-32 h-20">
+            <div className="w-24 sm:w-32 h-16 sm:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
