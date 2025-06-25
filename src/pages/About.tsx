@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -49,7 +50,7 @@ const About = () => {
               <div className="mt-8">
                 <p className="font-medium">Best,<br />Alex MacGregor<br />Founder & CEO</p>
                 <p className="mt-4">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
+                  <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
                     Connect with me on LinkedIn
                   </a>
                 </p>
