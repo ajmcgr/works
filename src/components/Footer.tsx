@@ -1,4 +1,5 @@
 
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
             </p>
             <div className="text-gray-600 text-sm leading-relaxed max-w-md space-y-1">
               <p>
-                Email: <a 
+                Contact us to get started: <a 
                   href="mailto:alex@worksapp.com" 
                   className="hover:text-black transition-colors"
                 >
