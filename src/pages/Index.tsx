@@ -162,14 +162,31 @@ const Index = () => {
 
   return (
     <div className="pt-16">
-      {/* Hero Section with Logos */}
-      <section className="relative bg-white min-h-screen flex flex-col justify-between">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full flex-1 flex items-center">
+      {/* Hero Section with Video Background */}
+      <section className="relative bg-white min-h-screen flex flex-col justify-center overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <AspectRatio ratio={16/9} className="h-full">
+            <iframe
+              src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
+              className="w-full h-full object-cover scale-110"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              title="Works PR Video Background"
+            />
+          </AspectRatio>
+        </div>
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+        
+        {/* Hero Content */}
+        <div className="relative z-20 container mx-auto px-6 lg:px-12 max-w-6xl w-full">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-headline text-white leading-[1.1] mb-8 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
+            <p className="text-lg lg:text-xl text-white leading-relaxed mb-12 max-w-2xl mx-auto font-normal opacity-90">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex items-center justify-center space-x-8">
@@ -181,7 +198,7 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-sm font-medium text-black hover:text-gray-600 transition-colors"
+                className="text-sm font-medium text-white hover:text-gray-300 transition-colors"
               >
                 Our services
               </Link>
@@ -190,19 +207,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-12 lg:px-24 max-w-7xl">
-          <div className="w-full">
-            <AspectRatio ratio={16/9}>
-              <iframe
-                src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479"
-                className="w-full h-full rounded-lg shadow-lg"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Works PR Video"
-              />
-            </AspectRatio>
+      {/* New Hero Content Section */}
+      <section className="bg-white py-32">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl w-full">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl lg:text-5xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
+              Strategic storytelling for modern brands
+            </h2>
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
+              We help innovative companies craft compelling narratives that resonate with audiences and drive meaningful results.
+            </p>
           </div>
         </div>
       </section>
