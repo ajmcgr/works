@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -412,7 +411,10 @@ const Index = () => {
                 Our AI tools supercharge it — turning your story into headlines and your brand into influence.
               </p>
               <p>
-                We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond. If you're building something bold, we'll make the world pay attention.
+                We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond.
+              </p>
+              <p>
+                If you're building something bold, we'll make the world pay attention.
               </p>
             </div>
             <div className="mt-12">
