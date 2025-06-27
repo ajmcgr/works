@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -78,7 +79,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-600 text-sm hover:text-black transition-colors"
                 >
-                  News
+                  Updates
                 </a>
               </li>
               <li>
