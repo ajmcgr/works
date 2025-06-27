@@ -1,5 +1,6 @@
+
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -118,7 +119,7 @@ const ContactForm = () => {
               "Opening email client..."
             ) : (
               <>
-                <Send className="h-4 w-4 mr-2" />
+                <ArrowRight className="h-4 w-4 mr-2" />
                 Start a conversation
               </>
             )}
