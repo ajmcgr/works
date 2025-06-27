@@ -521,10 +521,10 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
-              Join our mailing list
+              Join our newsletter
             </h2>
             <p className="text-lg text-gray-600 mb-12 font-normal leading-relaxed">
-              Join our mailing list for the latest from our team.
+              Get updates from our team. Only the good stuff.
             </p>
             <div id="hubspot-form" className="max-w-md mx-auto"></div>
           </div>
