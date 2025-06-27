@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -256,6 +257,15 @@ const Index = () => {
             <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
+                  src="/lovable-uploads/2c0b4b0b-9154-4ee1-9a3c-3e4a0fdd7013.png" 
+                  alt="UFC" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
+            </div>
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
                   className="w-full h-full object-contain hover:opacity-100 transition-opacity"
@@ -294,15 +304,6 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/2c0b4b0b-9154-4ee1-9a3c-3e4a0fdd7013.png" 
-                  alt="UFC" 
                   className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
