@@ -252,7 +252,7 @@ const Index = () => {
           <div className="text-center mb-4 sm:mb-6 lg:mb-8">
             <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 lg:gap-6 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-6 items-center justify-items-center">
             <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
@@ -294,6 +294,15 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
+                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                />
+              </AspectRatio>
+            </div>
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+              <AspectRatio ratio={16/10}>
+                <img 
+                  src="/lovable-uploads/2c0b4b0b-9154-4ee1-9a3c-3e4a0fdd7013.png" 
+                  alt="UFC" 
                   className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
               </AspectRatio>
