@@ -110,7 +110,7 @@ export const NewsSection = () => {
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
-            Latest news
+            Latest updates
           </h2>
           <p className="text-lg text-gray-600 font-normal leading-relaxed max-w-2xl mx-auto">
             Stay updated with the latest insights and trends in public relations and communications.

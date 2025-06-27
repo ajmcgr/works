@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, User, ArrowRight, Search } from "lucide-react";
@@ -97,10 +98,10 @@ const Blog = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-6xl font-headline text-gray-900 mb-6">
-              Our Blog
+              Our Updates
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              Insights, tutorials, and industry news from our team of experts. 
+              Insights, tutorials, and industry updates from our team of experts. 
               Stay updated with the latest trends in web development, design, and digital marketing.
             </p>
             <div className="max-w-md mx-auto relative">
