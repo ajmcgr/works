@@ -69,16 +69,16 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
               <p>
-                Works offers best-in-class public relations expertise.
+                We're the creative agency built for founders, rebels, and category creators.
               </p>
               <p>
-                Our PR services spans multiple disciplines, including strategy, planning, media relations, and influencer marketing.
+                Our playbook? Strategy. Media. Influencers. Hype.
               </p>
               <p>
-                Our PR apps aligns your strategy, earns media, and drives influence.
+                Our AI tools supercharge it — turning your story into headlines and your brand into influence.
               </p>
               <p>
-                Clients we work with are changing the world in consumer electronics, AI, blockchain, robotics, fintech, and other industries at the bleeding edge.
+                We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond. If you're building something bold, we'll make the world pay attention.
               </p>
             </div>
             <div className="mt-12">
