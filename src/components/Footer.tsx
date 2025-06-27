@@ -1,5 +1,3 @@
-
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -105,6 +103,16 @@ const Footer = () => {
                 >
                   Newsletter
                 </button>
+              </li>
+              <li>
+                <a 
+                  href="https://www.hypeworkspod.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 text-sm hover:text-black transition-colors"
+                >
+                  Podcast
+                </a>
               </li>
             </ul>
           </div>
