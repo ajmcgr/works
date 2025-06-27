@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -73,45 +72,6 @@ const CaseStudies = () => {
       groupTitle: "Enterprise & B2B Solutions",
       groupCategory: "Strategic Communications - APAC",
       clients: [
-        {
-          id: "cision",
-          name: "Cision",
-          challenge: "Develop content strategies for PR technology platform across APAC markets.",
-          solution: "Created tailored communication frameworks leveraging local insights across Hong Kong, Singapore, and Mainland China.",
-          results: [
-            "Successful market penetration in 3 APAC regions",
-            "Consistent coverage in regional business media",
-            "Scalable content strategy implementation"
-          ],
-          sector: "Technology",
-          region: "APAC"
-        },
-        {
-          id: "huawei-cloud",
-          name: "Huawei Cloud",
-          challenge: "Position cloud services in competitive enterprise market while navigating geopolitical sensitivities.",
-          solution: "Focused on technical capabilities and enterprise value propositions, emphasizing innovation and reliability.",
-          results: [
-            "Increased enterprise market awareness",
-            "Technical thought leadership positioning",
-            "Strong B2B media relationships"
-          ],
-          sector: "Cloud Technology",
-          region: "HK/Macau"
-        },
-        {
-          id: "ping-an",
-          name: "Ping An Insurance",
-          challenge: "Communicate fintech innovations and digital transformation initiatives to traditional finance market.",
-          solution: "Developed narratives bridging traditional insurance with cutting-edge technology innovations.",
-          results: [
-            "Enhanced digital innovation positioning",
-            "Strong fintech media coverage",
-            "Thought leadership in digital transformation"
-          ],
-          sector: "Finance",
-          region: "China"
-        },
         {
           id: "tencent",
           name: "Tencent",
@@ -199,19 +159,6 @@ const CaseStudies = () => {
           ],
           period: "February 2025 – June 2025",
           services: ["Event Strategy", "Spokesperson Management", "Content Amplification"]
-        },
-        {
-          id: "koelnmesse",
-          name: "Koelnmesse",
-          challenge: "Develop regional influencer strategy and manage on-site coordination for major trade event.",
-          solution: "Integrated influencer marketing with traditional event management, including emcee services and real-time content creation.",
-          results: [
-            "Regional food-innovation KOL participation secured",
-            "Multi-platform content distribution achieved",
-            "Enhanced event visibility and engagement"
-          ],
-          period: "February 2025 – June 2025",
-          services: ["Influencer Marketing", "Event Coordination", "On-site Management"]
         }
       ]
     }
