@@ -119,8 +119,8 @@ const ContactForm = () => {
               "Opening email client..."
             ) : (
               <>
-                <ArrowRight className="h-4 w-4 mr-2" />
                 Start a conversation
+                <ArrowRight className="h-4 w-4 ml-2" />
               </>
             )}
           </Button>
