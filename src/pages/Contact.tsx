@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -116,13 +116,13 @@ const Contact = () => {
                 className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4" style={{ backgroundColor: '#409EFF' }}>
+            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-lg" style={{ backgroundColor: '#409EFF' }}>
               {isSubmitting ? (
                 "Opening email client..."
               ) : (
                 <>
-                  <Send className="h-4 w-4 mr-2" />
                   Start a conversation
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </>
               )}
             </Button>
