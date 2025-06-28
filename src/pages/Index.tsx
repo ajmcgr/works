@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -175,7 +174,7 @@ const Index = () => {
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col items-center justify-center space-y-6 mb-8">
-              <Button asChild className="text-white px-8 py-4 text-sm font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
+              <Button asChild className="text-white px-8 py-4 text-xl font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -217,7 +216,7 @@ const Index = () => {
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-12">
-              <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-sm font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
+              <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-xl font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -428,7 +427,7 @@ const Index = () => {
               </p>
             </div>
             <div className="mt-12">
-              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+              <Button asChild className="text-white px-10 py-4 text-xl font-medium" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
