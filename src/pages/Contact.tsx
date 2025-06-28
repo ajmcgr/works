@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -116,7 +115,7 @@ const Contact = () => {
                 className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-lg" style={{ backgroundColor: '#409EFF' }}>
+            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
               {isSubmitting ? (
                 "Opening email client..."
               ) : (
