@@ -132,6 +132,14 @@ const Footer = () => {
                 X
               </a>
               <a 
+                href="https://www.facebook.com/worksxyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-gray-600 hover:text-black transition-colors"
+              >
+                Facebook
+              </a>
+              <a 
                 href="https://www.linkedin.com/company/worksxyz" 
                 target="_blank" 
                 rel="noopener noreferrer"
