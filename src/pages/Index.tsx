@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -61,20 +62,42 @@ const Index = () => {
   };
 
   useEffect(() => {
+    console.log('Loading HubSpot form script...');
+    
     // Load HubSpot form script
     const script = document.createElement('script');
     script.src = '//js.hsforms.net/forms/embed/v2.js';
     script.charset = 'utf-8';
     script.type = 'text/javascript';
     script.onload = () => {
+      console.log('HubSpot script loaded successfully');
       if (window.hbspt) {
-        window.hbspt.forms.create({
-          portalId: "40189621",
-          formId: "9afe8262-34a1-4c4b-bc0a-7b473ed68562",
-          region: "na1",
-          target: '#hubspot-form'
-        });
+        console.log('HubSpot object found, creating form...');
+        try {
+          window.hbspt.forms.create({
+            portalId: "40189621",
+            formId: "9afe8262-34a1-4c4b-bc0a-7b473ed68562",
+            region: "na1",
+            target: '#hubspot-form',
+            onFormReady: function() {
+              console.log('HubSpot form is ready');
+            },
+            onFormSubmit: function() {
+              console.log('HubSpot form submitted');
+            },
+            onFormSubmitted: function() {
+              console.log('HubSpot form submission completed');
+            }
+          });
+        } catch (error) {
+          console.error('Error creating HubSpot form:', error);
+        }
+      } else {
+        console.error('HubSpot object not found');
       }
+    };
+    script.onerror = () => {
+      console.error('Failed to load HubSpot script');
     };
     document.head.appendChild(script);
 
