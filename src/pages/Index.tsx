@@ -337,7 +337,7 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="space-y-16">
+          <div className="space-y-16 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 What we do
@@ -361,7 +361,7 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="flex flex-col space-y-12">
+          <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-normal text-black mb-2">2+</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
@@ -385,7 +385,7 @@ const Index = () => {
       {/* Why Works Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="space-y-16">
+          <div className="space-y-16 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 Why Works
@@ -428,7 +428,7 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-left">
+          <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
               About Works
             </h2>
