@@ -337,7 +337,7 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div className="space-y-16">
             <div>
               <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 What we do
@@ -361,7 +361,7 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 gap-12">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-normal text-black mb-2">2+</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
@@ -385,7 +385,7 @@ const Index = () => {
       {/* Why Works Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div className="space-y-16">
             <div>
               <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 Why Works
@@ -401,7 +401,7 @@ const Index = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:pl-16">
+            <div>
               <div className="space-y-6">
                 <div className="pb-6 border-b border-gray-100">
                   <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
@@ -477,7 +477,7 @@ const Index = () => {
           </div>
           
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
                   Name *
