@@ -361,7 +361,7 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="grid grid-cols-2 gap-12">
+          <div className="flex flex-col space-y-12">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-normal text-black mb-2">2+</div>
               <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
