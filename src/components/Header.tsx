@@ -56,7 +56,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                    className={`text-[13px] font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -66,7 +66,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-xs font-medium transition-colors hover:text-gray-600 text-gray-700"
+                    className="text-[13px] font-medium transition-colors hover:text-gray-600 text-gray-700"
                   >
                     {item.name}
                   </button>
@@ -74,7 +74,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                    className={`text-[13px] font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -107,7 +107,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className={`block text-xs font-medium transition-colors hover:text-gray-600 ${
+                    className={`block text-[13px] font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                   >
@@ -117,7 +117,7 @@ const Header = () => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="block text-xs font-medium transition-colors hover:text-gray-600 text-gray-700"
+                    className="block text-[13px] font-medium transition-colors hover:text-gray-600 text-gray-700"
                   >
                     {item.name}
                   </button>
@@ -125,7 +125,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`block text-xs font-medium transition-colors hover:text-gray-600 ${
+                    className={`block text-[13px] font-medium transition-colors hover:text-gray-600 ${
                       isActive(item.href) ? "text-black" : "text-gray-700"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
