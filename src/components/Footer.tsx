@@ -19,10 +19,10 @@ const Footer = () => {
             <div className="text-gray-600 text-sm leading-relaxed max-w-md space-y-1">
               <p>
                 Contact us to get started: <a 
-                  href="mailto:alex@worksapp.com" 
+                  href="mailto:alex@works.xyz" 
                   className="hover:text-black transition-colors"
                 >
-                  alex@worksapp.com
+                  alex@works.xyz
                 </a>
               </p>
             </div>
