@@ -403,15 +403,15 @@ const Index = () => {
             </div>
             <div>
               <div className="space-y-6">
-                <div className="pb-6 border-b border-gray-100">
+                <div className="pb-6">
                   <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
                   <div className="text-lg text-black font-medium">2+ years of PR excellence</div>
                 </div>
-                <div className="pb-6 border-b border-gray-100">
+                <div className="pb-6">
                   <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Network</div>
                   <div className="text-lg text-black font-medium">Extensive media relationships</div>
                 </div>
-                <div className="pb-6 border-b border-gray-100">
+                <div className="pb-6">
                   <div className="text-sm text-gray-600 font-normal uppercase tracking-wide mb-2">Response</div>
                   <div className="text-lg text-black font-medium">24/7 crisis management</div>
                 </div>
