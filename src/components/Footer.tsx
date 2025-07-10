@@ -64,17 +64,6 @@ const Footer = () => {
                 >
                   Discord
                 </a>
-                <button
-                  onClick={() => {
-                    const element = document.querySelector('#newsletter');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                  className="block text-gray-600 text-sm hover:text-black transition-colors text-left w-full"
-                >
-                  Newsletter
-                </button>
                 <a 
                   href="https://www.hypeworkspod.com/" 
                   target="_blank" 

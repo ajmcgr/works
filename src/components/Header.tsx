@@ -64,12 +64,12 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="border-t border-gray-100 bg-white">
-            <div className="py-6 space-y-4">
+            <div className="py-6 space-y-4 text-center">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block text-sm font-medium transition-colors hover:text-gray-600 ${
+                  className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
                     isActive(item.href) ? "text-black" : "text-gray-700"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
