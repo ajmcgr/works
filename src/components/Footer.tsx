@@ -79,13 +79,13 @@ const Footer = () => {
 
         <div className="border-t border-gray-100 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm xs:text-base sm:text-lg text-gray-600">&copy; 2025 Works App, Inc. All rights reserved.</p>
+            <p className="text-sm text-gray-600">&copy; 2025 Works App, Inc. All rights reserved.</p>
             <div className="flex space-x-6">
               <a 
                 href="https://x.com/worksxyz/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm xs:text-base sm:text-lg text-gray-600 hover:text-black transition-colors"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
               >
                 X
               </a>
@@ -93,7 +93,7 @@ const Footer = () => {
                 href="https://www.facebook.com/worksxyz" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm xs:text-base sm:text-lg text-gray-600 hover:text-black transition-colors"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
               >
                 Facebook
               </a>
@@ -101,7 +101,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/worksxyz" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm xs:text-base sm:text-lg text-gray-600 hover:text-black transition-colors"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
               >
                 LinkedIn
               </a>
@@ -109,7 +109,7 @@ const Footer = () => {
                 href="https://www.youtube.com/@worksxyz" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm xs:text-base sm:text-lg text-gray-600 hover:text-black transition-colors"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
               >
                 YouTube
               </a>
@@ -117,7 +117,7 @@ const Footer = () => {
                 href="https://www.instagram.com/works.xyz" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm xs:text-base sm:text-lg text-gray-600 hover:text-black transition-colors"
+                className="text-sm text-gray-600 hover:text-black transition-colors"
               >
                 Instagram
               </a>
