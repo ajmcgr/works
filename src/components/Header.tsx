@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
@@ -48,45 +48,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center">
-            <div className="flex items-center space-x-6 lg:space-x-8">
-              {navigation.map((item) => (
-                item.href.startsWith('#') ? (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className={`text-[13px] font-medium transition-colors hover:text-gray-600 ${
-                      isActive(item.href) ? "text-black" : "text-gray-700"
-                    }`}
-                  >
-                    {item.name}
-                  </button>
-                ) : item.href.startsWith('http') ? (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className="text-[13px] font-medium transition-colors hover:text-gray-600 text-gray-700"
-                  >
-                    {item.name}
-                  </button>
-                ) : (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`text-[13px] font-medium transition-colors hover:text-gray-600 ${
-                      isActive(item.href) ? "text-black" : "text-gray-700"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                )
-              ))}
-            </div>
-          </nav>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Hamburger menu button */}
+          <div>
             <Button
               variant="ghost"
               size="sm"
