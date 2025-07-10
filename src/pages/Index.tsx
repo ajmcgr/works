@@ -185,7 +185,7 @@ const Index = () => {
   return (
     <div className="pt-16 sm:pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50/40 via-indigo-50/20 to-purple-50/30 min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
+      <section className="relative bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
@@ -270,7 +270,7 @@ const Index = () => {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-gradient-to-r from-gray-50 to-gray-100 py-12 sm:py-12 lg:py-16">
+      <section className="bg-white py-12 sm:py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full">
           <div className="text-center mb-6 sm:mb-8 lg:mb-10">
             <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
