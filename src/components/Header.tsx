@@ -63,39 +63,19 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-100">
+          <div className="border-t border-gray-100 bg-white">
             <div className="py-6 space-y-4">
               {navigation.map((item) => (
-                item.href.startsWith('#') ? (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className={`block text-[13px] font-medium transition-colors hover:text-gray-600 ${
-                      isActive(item.href) ? "text-black" : "text-gray-700"
-                    }`}
-                  >
-                    {item.name}
-                  </button>
-                ) : item.href.startsWith('http') ? (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className="block text-[13px] font-medium transition-colors hover:text-gray-600 text-gray-700"
-                  >
-                    {item.name}
-                  </button>
-                ) : (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`block text-[13px] font-medium transition-colors hover:text-gray-600 ${
-                      isActive(item.href) ? "text-black" : "text-gray-700"
-                    }`}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                )
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block text-sm font-medium transition-colors hover:text-gray-600 ${
+                    isActive(item.href) ? "text-black" : "text-gray-700"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
               ))}
             </div>
           </div>

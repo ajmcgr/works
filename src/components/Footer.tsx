@@ -71,7 +71,7 @@ const Footer = () => {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="block text-gray-600 text-sm hover:text-black transition-colors"
+                  className="block text-gray-600 text-sm hover:text-black transition-colors text-left w-full"
                 >
                   Newsletter
                 </button>
