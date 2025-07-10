@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -212,7 +211,70 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Mobile Video - Below content, not full width, rounded corners */}
+          {/* Mobile Logos - Above video */}
+          <div className="px-4 sm:px-6 mb-6 sm:mb-8">
+            <div className="text-center mb-4 sm:mb-6">
+              <p className="text-xs text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center max-w-sm sm:max-w-md mx-auto">
+              <div className="w-16 sm:w-20 h-8 sm:h-10">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
+                    alt="UFC" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-16 sm:w-20 h-8 sm:h-10">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                    alt="OnePlus" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-16 sm:w-20 h-8 sm:h-10">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                    alt="OPPO" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-16 sm:w-20 h-8 sm:h-10">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                    alt="Ogilvy" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-16 sm:w-20 h-8 sm:h-10">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                    alt="Weber Shandwick" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-16 sm:w-20 h-8 sm:h-10">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                    alt="Publicis Groupe" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
+          </div>
+          
+          {/* Mobile Video - Below logos */}
           <div className="px-4 sm:px-6 pb-6 sm:pb-8">
             <div className="max-w-sm sm:max-w-md mx-auto">
               <AspectRatio ratio={16/9}>
@@ -254,7 +316,70 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Desktop Video - Below content, matching page body column width, rounded corners */}
+          {/* Desktop Logos - Above video */}
+          <div className="w-full mb-12">
+            <div className="text-center mb-8">
+              <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center max-w-4xl mx-auto">
+              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
+                    alt="UFC" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                    alt="OnePlus" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                    alt="OPPO" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                    alt="Ogilvy" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                    alt="Weber Shandwick" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                    alt="Publicis Groupe" 
+                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
+          </div>
+          
+          {/* Desktop Video - Below logos */}
           <div className="w-full">
             <AspectRatio ratio={16/9}>
               <iframe
@@ -265,71 +390,6 @@ const Index = () => {
                 title="Works PR Video"
               />
             </AspectRatio>
-          </div>
-        </div>
-      </section>
-
-      {/* Logos Section */}
-      <section className="bg-white py-12 sm:py-12 lg:py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full">
-          <div className="text-center mb-6 sm:mb-8 lg:mb-10">
-            <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6 items-center justify-items-center">
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
-                  alt="UFC" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                  alt="OnePlus" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                  alt="OPPO" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                  alt="Ogilvy" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                  alt="Weber Shandwick" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-              <AspectRatio ratio={16/10}>
-                <img 
-                  src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                  alt="Publicis Groupe" 
-                  className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                />
-              </AspectRatio>
-            </div>
           </div>
         </div>
       </section>
