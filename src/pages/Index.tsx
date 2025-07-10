@@ -276,7 +276,7 @@ const Index = () => {
             <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6 items-center justify-items-center">
-            <div className="w-16 sm:w-20 md:w-24 h-10 sm:h-12 md:h-16">
+            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
