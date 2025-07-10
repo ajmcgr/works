@@ -11,7 +11,7 @@ const Footer = () => {
             {/* Services */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Services</h4>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <Link to="/services" className="block text-gray-600 text-sm hover:text-black transition-colors">Media Relations</Link>
                 <Link to="/services" className="block text-gray-600 text-sm hover:text-black transition-colors">Crisis Communication</Link>
                 <Link to="/services" className="block text-gray-600 text-sm hover:text-black transition-colors">Brand Communications</Link>
@@ -24,7 +24,7 @@ const Footer = () => {
             {/* Apps */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Apps</h4>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <a 
                   href="https://trymedia.ai" 
                   target="_blank" 
@@ -47,7 +47,7 @@ const Footer = () => {
             {/* Community */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Community</h4>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <a 
                   href="https://blog.works.xyz/" 
                   target="_blank" 
