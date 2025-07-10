@@ -185,7 +185,7 @@ const Index = () => {
   return (
     <div className="pt-16 sm:pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50/40 via-indigo-50/20 to-purple-50/30 min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
+      <section className="relative bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
@@ -270,7 +270,7 @@ const Index = () => {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-gradient-to-r from-slate-50/30 via-zinc-50/10 to-gray-50/20 py-12 sm:py-12 lg:py-16">
+      <section className="bg-gradient-to-r from-blue-100/80 via-indigo-50/60 to-purple-100/70 py-12 sm:py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full">
           <div className="text-center mb-6 sm:mb-8 lg:mb-10">
             <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
@@ -335,7 +335,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 sm:py-32 bg-gradient-to-br from-emerald-50/35 via-green-50/15 to-teal-50/25 border-t border-gray-100">
+      <section id="services" className="py-20 sm:py-32 bg-gradient-to-br from-emerald-100/90 via-green-50/70 to-teal-100/80 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -359,7 +359,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-amber-50/40 via-yellow-50/25 to-orange-50/35">
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-amber-100/90 via-yellow-100/80 to-orange-100/85">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
@@ -383,7 +383,7 @@ const Index = () => {
       </section>
 
       {/* Why Works Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-bl from-violet-50/35 via-purple-50/15 to-indigo-50/30">
+      <section className="py-20 sm:py-32 bg-gradient-to-bl from-violet-100/85 via-purple-100/70 to-indigo-100/80">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -426,7 +426,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 bg-gradient-to-tr from-cyan-50/30 via-teal-50/15 to-sky-50/25">
+      <section id="about" className="py-20 sm:py-32 bg-gradient-to-tr from-cyan-100/80 via-teal-100/60 to-sky-100/75">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
@@ -465,7 +465,7 @@ const Index = () => {
       <NewsSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-pink-50/35 via-rose-50/20 to-red-50/25">
+      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-pink-100/85 via-rose-100/70 to-red-100/75">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
@@ -551,7 +551,7 @@ const Index = () => {
       </section>
 
       {/* Mailing List Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-neutral-50/40 via-stone-50/20 to-gray-50/30 border-t border-gray-100">
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-slate-100/80 via-gray-100/60 to-zinc-100/70 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
