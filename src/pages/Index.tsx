@@ -275,7 +275,7 @@ const Index = () => {
           </div>
           
           {/* Mobile Video - Below logos */}
-          <div className="px-4 sm:px-6 pb-12 sm:pb-16">
+          <div className="px-4 sm:px-6 pb-16 sm:pb-24">
             <div className="max-w-sm sm:max-w-md mx-auto">
               <AspectRatio ratio={16/9}>
                 <iframe
@@ -380,7 +380,7 @@ const Index = () => {
           </div>
           
           {/* Desktop Video - Below logos */}
-          <div className="w-full max-w-4xl mx-auto pb-12">
+          <div className="w-full max-w-4xl mx-auto pb-20">
             <AspectRatio ratio={16/9}>
               <iframe
                 src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
