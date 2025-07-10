@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-6">
             {/* Services */}
             <div>
-              <h4 className="text-base font-medium text-black mb-3 tracking-wide">Services</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Services</h4>
               <div className="space-y-2">
                 <Link to="/services" className="block text-gray-600 text-sm hover:text-black transition-colors">Media Relations</Link>
                 <Link to="/services" className="block text-gray-600 text-sm hover:text-black transition-colors">Crisis Communication</Link>
@@ -23,7 +23,7 @@ const Footer = () => {
 
             {/* Apps */}
             <div>
-              <h4 className="text-base font-medium text-black mb-3 tracking-wide">Apps</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Apps</h4>
               <div className="space-y-2">
                 <a 
                   href="https://trymedia.ai" 
@@ -46,7 +46,7 @@ const Footer = () => {
 
             {/* Community */}
             <div>
-              <h4 className="text-base font-medium text-black mb-3 tracking-wide">Community</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Community</h4>
               <div className="space-y-2">
                 <a 
                   href="https://blog.works.xyz/" 
