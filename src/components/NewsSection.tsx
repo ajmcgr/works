@@ -117,7 +117,7 @@ export const NewsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+        <div className="grid grid-cols-1 gap-8 mb-12 max-w-2xl mx-auto">
           {posts?.map((post) => (
             <Card key={post.id} className="bg-white border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               {post.feature_image && (

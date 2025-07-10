@@ -183,21 +183,21 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="pt-40">
+    <div className="pt-20 sm:pt-24">
       {/* Hero Section */}
-      <section className="relative bg-white min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue-50/30 via-white to-purple-50/20 min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Mobile Layout - Content above video */}
-        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full md:hidden">
+        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
-          <div className="text-center py-8">
-            <h1 className="text-3xl xs:text-4xl font-headline text-black leading-tight mb-6 tracking-tight">
+          <div className="text-center py-6 sm:py-8">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-black leading-tight mb-4 sm:mb-6 tracking-tight">
               Tell your story.
             </h1>
-            <p className="text-base xs:text-lg text-gray-700 leading-relaxed mb-8 max-w-lg mx-auto font-normal">
+            <p className="text-sm xs:text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
               Storytelling that aligns your strategy, earns media, and drives influence.
             </p>
-            <div className="flex flex-col items-center justify-center space-y-6 mb-8">
-              <Button asChild className="text-white px-8 py-4 text-base font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
+            <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-6 sm:mb-8 px-4">
+              <Button asChild className="text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -205,7 +205,7 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
+                className="text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
               >
                 Our services
               </Link>
@@ -213,12 +213,12 @@ const Index = () => {
           </div>
           
           {/* Mobile Video - Below content, not full width, rounded corners */}
-          <div className="px-4 pb-8">
-            <div className="max-w-md mx-auto">
+          <div className="px-4 sm:px-6 pb-6 sm:pb-8">
+            <div className="max-w-sm sm:max-w-md mx-auto">
               <AspectRatio ratio={16/9}>
                 <iframe
                   src="https://player.vimeo.com/video/1096169142?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-lg sm:rounded-xl"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                   title="Works PR Video"
@@ -270,13 +270,13 @@ const Index = () => {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-white py-12 sm:py-12 lg:py-16">
-        <div className="container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full">
-          <div className="text-center mb-4 sm:mb-6 lg:mb-8">
+      <section className="bg-gradient-to-r from-gray-50/50 via-white to-gray-50/50 py-12 sm:py-12 lg:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full">
+          <div className="text-center mb-6 sm:mb-8 lg:mb-10">
             <p className="text-xs sm:text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-6 items-center justify-items-center">
-            <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6 items-center justify-items-center">
+            <div className="w-16 sm:w-20 md:w-24 h-10 sm:h-12 md:h-16">
               <AspectRatio ratio={16/10}>
                 <img 
                   src="/lovable-uploads/2c0b4b0b-9154-4ee1-9a3c-3e4a0fdd7013.png" 
@@ -335,7 +335,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-32 bg-white border-t border-gray-100">
+      <section id="services" className="py-20 sm:py-32 bg-gradient-to-br from-green-50/20 via-white to-blue-50/30 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -359,7 +359,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-yellow-50/30 via-orange-50/20 to-pink-50/30">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
@@ -383,7 +383,7 @@ const Index = () => {
       </section>
 
       {/* Why Works Section */}
-      <section className="py-32 bg-white">
+      <section className="py-20 sm:py-32 bg-gradient-to-bl from-purple-50/20 via-white to-indigo-50/30">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -426,7 +426,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 bg-white">
+      <section id="about" className="py-20 sm:py-32 bg-gradient-to-tr from-teal-50/20 via-white to-cyan-50/30">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
@@ -465,7 +465,7 @@ const Index = () => {
       <NewsSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 bg-white">
+      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-rose-50/20 via-white to-pink-50/30">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
@@ -551,7 +551,7 @@ const Index = () => {
       </section>
 
       {/* Mailing List Section */}
-      <section className="py-32 bg-gray-50 border-t border-gray-100">
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-slate-50/50 via-gray-50 to-zinc-50/50 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
