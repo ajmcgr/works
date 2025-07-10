@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <div className="flex flex-col items-center py-4 space-y-4">
+        <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
@@ -48,7 +48,7 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Navigation - centered */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center">
             <div className="flex items-center space-x-6 lg:space-x-8">
               {navigation.map((item) => (
@@ -86,7 +86,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden absolute top-4 right-4">
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"
