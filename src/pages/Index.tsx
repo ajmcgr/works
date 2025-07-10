@@ -279,7 +279,7 @@ const Index = () => {
             <div className="w-16 sm:w-20 md:w-24 h-10 sm:h-12 md:h-16">
               <AspectRatio ratio={16/10}>
                 <img 
-                  src="/lovable-uploads/2c0b4b0b-9154-4ee1-9a3c-3e4a0fdd7013.png" 
+                  src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                   alt="UFC" 
                   className="w-full h-full object-contain hover:opacity-100 transition-opacity"
                 />
