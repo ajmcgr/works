@@ -335,7 +335,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 sm:py-32 bg-gradient-to-br from-gray-100 to-gray-200 border-t border-gray-100">
+      <section id="services" className="py-20 sm:py-32 bg-gradient-to-br from-gray-50 to-gray-100 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -359,7 +359,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-200 to-gray-300">
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-100 to-gray-150">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
@@ -383,7 +383,7 @@ const Index = () => {
       </section>
 
       {/* Why Works Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-bl from-gray-300 to-gray-400">
+      <section className="py-20 sm:py-32 bg-gradient-to-bl from-gray-100 to-gray-200">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -426,7 +426,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 bg-gradient-to-tr from-gray-400 to-gray-500">
+      <section id="about" className="py-20 sm:py-32 bg-gradient-to-tr from-gray-150 to-gray-200">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
@@ -465,7 +465,7 @@ const Index = () => {
       <NewsSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-gray-500 to-gray-600">
+      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-gray-200 to-gray-250">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
@@ -551,7 +551,7 @@ const Index = () => {
       </section>
 
       {/* Mailing List Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-600 to-gray-700 border-t border-gray-100">
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-100 to-gray-200 border-t border-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
