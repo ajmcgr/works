@@ -163,7 +163,7 @@ const Blog = () => {
                         <span>{featuredPost.author}</span>
                       </div>
                     </div>
-                    <h3 className="text-2xl lg:text-3xl font-headline text-gray-900">
+                    <h3 className="text-2xl lg:text-3xl text-gray-900">
                       {featuredPost.title}
                     </h3>
                     <p className="text-gray-600 text-lg">{featuredPost.excerpt}</p>
@@ -205,7 +205,7 @@ const Blog = () => {
                     </span>
                     <span>{post.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 line-clamp-2">
+                  <h3 className="text-xl text-gray-900 line-clamp-2">
                     {post.title}
                   </h3>
                   <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>

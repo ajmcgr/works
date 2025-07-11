@@ -134,7 +134,7 @@ export const NewsSection = () => {
                   <Calendar className="h-4 w-4 mr-2" />
                   {formatDate(post.published_at)}
                 </div>
-                <CardTitle className="text-2xl font-headline text-black leading-tight hover:text-gray-600 transition-colors mb-4">
+                <CardTitle className="text-2xl text-black leading-tight hover:text-gray-600 transition-colors mb-4">
                   {post.title}
                 </CardTitle>
               </CardHeader>

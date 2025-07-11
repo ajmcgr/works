@@ -21,9 +21,9 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Apps */}
+            {/* Products */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Apps</h4>
+              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Products</h4>
               <div className="space-y-3">
                 <a 
                   href="https://trymedia.ai" 
