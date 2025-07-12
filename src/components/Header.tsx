@@ -104,13 +104,13 @@ const Header = () => {
                   <div className="space-y-2 text-center">
                     <button
                       onClick={() => handleNavClick('https://trymedia.ai')}
-                      className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
+                      className="w-full text-base font-medium text-gray-600 hover:text-gray-800 transition-colors text-center"
                     >
                       Media AI
                     </button>
                     <button
                       onClick={() => handleNavClick('https://trywrite.ai')}
-                      className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
+                      className="w-full text-base font-medium text-gray-600 hover:text-gray-800 transition-colors text-center"
                     >
                       Write AI
                     </button>
