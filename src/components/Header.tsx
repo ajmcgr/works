@@ -101,7 +101,7 @@ const Header = () => {
                 </button>
                 
                 {isProductsOpen && (
-                  <div className="space-y-2 pl-4">
+                  <div className="space-y-2 text-center">
                     <button
                       onClick={() => handleNavClick('https://trymedia.ai')}
                       className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
