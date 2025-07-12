@@ -1,11 +1,12 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
@@ -61,7 +62,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="border-t border-gray-100 bg-white">
             <div className="py-6 space-y-4 text-center">
@@ -77,6 +78,40 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Products Dropdown */}
+              <div className="space-y-2">
+                <button
+                  onClick={() => setIsProductsOpen(!isProductsOpen)}
+                  className="flex items-center justify-center w-full text-lg font-medium text-gray-700 hover:text-gray-600 transition-colors"
+                >
+                  Products
+                  {isProductsOpen ? (
+                    <ChevronUp className="ml-1 h-4 w-4" />
+                  ) : (
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  )}
+                </button>
+                
+                {isProductsOpen && (
+                  <div className="space-y-2 pl-4">
+                    <Link
+                      to="/media-ai"
+                      className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Media AI
+                    </Link>
+                    <Link
+                      to="/write-ai"
+                      className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Write AI
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         )}
