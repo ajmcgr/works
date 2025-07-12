@@ -102,20 +102,18 @@ const Header = () => {
                 
                 {isProductsOpen && (
                   <div className="space-y-2 pl-4">
-                    <Link
-                      to="/media-ai"
+                    <button
+                      onClick={() => handleNavClick('https://trymedia.ai')}
                       className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
                     >
                       Media AI
-                    </Link>
-                    <Link
-                      to="/write-ai"
+                    </button>
+                    <button
+                      onClick={() => handleNavClick('https://trywrite.ai')}
                       className="block text-base font-medium text-gray-600 hover:text-gray-800 transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
                     >
                       Write AI
-                    </Link>
+                    </button>
                   </div>
                 )}
               </div>
