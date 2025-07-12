@@ -66,18 +66,25 @@ const Header = () => {
         {isMenuOpen && (
           <div className="border-t border-gray-100 bg-white">
             <div className="py-6 space-y-4 text-center">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                    isActive(item.href) ? "text-black" : "text-gray-700"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <Link
+                to="/work"
+                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
+                  isActive("/work") ? "text-black" : "text-gray-700"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Work
+              </Link>
+              
+              <Link
+                to="/services"
+                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
+                  isActive("/services") ? "text-black" : "text-gray-700"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
               
               {/* Products Dropdown */}
               <div className="space-y-2">
@@ -112,6 +119,26 @@ const Header = () => {
                   </div>
                 )}
               </div>
+              
+              <Link
+                to="/about"
+                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
+                  isActive("/about") ? "text-black" : "text-gray-700"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              
+              <Link
+                to="/contact"
+                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
+                  isActive("/contact") ? "text-black" : "text-gray-700"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
             </div>
           </div>
         )}
