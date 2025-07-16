@@ -399,7 +399,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
-              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-headline text-black mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
                 What we do
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed font-normal">
@@ -408,27 +408,27 @@ const Index = () => {
             </div>
             <div className="space-y-8">
               <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-xl font-medium text-black mb-2">Media Relations</h3>
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Media Relations</h3>
                 <p className="text-gray-600 font-normal">Building authentic relationships with journalists and securing earned media coverage</p>
               </div>
               <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-xl font-medium text-black mb-2">Crisis Communication</h3>
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Crisis Communication</h3>
                 <p className="text-gray-600 font-normal">Protecting your reputation through strategic messaging during challenging times</p>
               </div>
               <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-xl font-medium text-black mb-2">Brand Communications</h3>
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Brand Communications</h3>
                 <p className="text-gray-600 font-normal">Crafting compelling narratives that differentiate your brand in the market</p>
               </div>
               <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-xl font-medium text-black mb-2">Content Strategy</h3>
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Content Strategy</h3>
                 <p className="text-gray-600 font-normal">Creating data-driven content that engages audiences and drives business results</p>
               </div>
               <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-xl font-medium text-black mb-2">Influencer Marketing</h3>
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Influencer Marketing</h3>
                 <p className="text-gray-600 font-normal">Connecting with key voices to amplify your message and reach new audiences</p>
               </div>
               <div className="pb-6">
-                <h3 className="text-xl font-medium text-black mb-2">Event Management</h3>
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Event Management</h3>
                 <p className="text-gray-600 font-normal">Orchestrating memorable experiences that strengthen relationships and drive engagement</p>
               </div>
             </div>
