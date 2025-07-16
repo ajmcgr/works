@@ -399,7 +399,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-headline text-black mb-8 leading-tight">
                 What we do
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed font-normal">
