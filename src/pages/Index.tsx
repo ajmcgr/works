@@ -190,7 +190,7 @@ const Index = () => {
           {/* Mobile Content */}
           <div className="text-center py-6 sm:py-8">
             <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-black leading-tight mb-4 sm:mb-6 tracking-tight">
-              Tell your story.
+              Influence, Engineered
             </h1>
             <p className="text-sm xs:text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
               The global creative PR agency that aligns your strategy, earns media, and drives influence.
@@ -295,7 +295,7 @@ const Index = () => {
           {/* Desktop Content */}
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
             <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-black leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
-              Tell your story.
+              Influence, Engineered
             </h1>
             <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
               The global creative PR agency that aligns your strategy, earns media, and drives influence.
