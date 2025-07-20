@@ -38,8 +38,8 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-light-gray/95 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
@@ -49,44 +49,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/work"
-              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
-                isActive("/work") ? "text-black" : "text-gray-700"
-              }`}
-            >
-              Work
-            </Link>
-            <Link
-              to="/services"
-              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
-                isActive("/services") ? "text-black" : "text-gray-700"
-              }`}
-            >
-              Services
-            </Link>
-            <Link
-              to="/about"
-              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
-                isActive("/about") ? "text-black" : "text-gray-700"
-              }`}
-            >
-              About
-            </Link>
-            <Link
-              to="/contact"
-              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
-                isActive("/contact") ? "text-black" : "text-gray-700"
-              }`}
-            >
-              Contact
-            </Link>
-          </nav>
-
-          {/* Mobile Hamburger menu button */}
-          <div className="md:hidden">
+          {/* Hamburger menu button */}
+          <div>
             <Button
               variant="ghost"
               size="sm"
@@ -100,7 +64,7 @@ const Header = () => {
 
          {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-gray-100 bg-light-gray">
+          <div className="border-t border-gray-100 bg-white">
             <div className="py-6 space-y-4 text-center">
               <Link
                 to="/work"

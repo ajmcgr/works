@@ -37,8 +37,6 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    --light-gray: 252 251% 99%;
-    --gap-color: 240 100% 99%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -129,7 +127,8 @@
   }
 
   body {
-    @apply text-foreground bg-gap-color;
+    @apply text-foreground;
+    background: white;
     min-height: 100vh;
   }
   

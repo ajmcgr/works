@@ -26,7 +26,7 @@ const App = () => (
       <BrowserRouter>
         <div className="min-h-screen flex flex-col">
           <Header />
-          <main className="flex-1 bg-gap-color">
+          <main className="flex-1">
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
