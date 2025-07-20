@@ -82,7 +82,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'brand-blue': '#409EFF',
-				'light-gray': 'hsl(var(--light-gray))'
+				'light-gray': 'hsl(var(--light-gray))',
+				'gap-color': 'hsl(var(--gap-color))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
