@@ -50,7 +50,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center justify-center space-x-6 flex-1">
             {navigation.slice(0, 2).map((item) => (
               <Link
                 key={item.name}
@@ -68,7 +68,7 @@ const Header = () => {
               href="https://trymedia.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium text-gray-600 hover:text-gray-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
             >
               Media AI
             </a>
@@ -76,7 +76,7 @@ const Header = () => {
               href="https://www.trywrite.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium text-gray-600 hover:text-gray-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
             >
               Write AI
             </a>
