@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-light-gray/95 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
@@ -49,8 +49,44 @@ const Header = () => {
             />
           </Link>
 
-          {/* Hamburger menu button */}
-          <div>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/work"
+              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                isActive("/work") ? "text-black" : "text-gray-700"
+              }`}
+            >
+              Work
+            </Link>
+            <Link
+              to="/services"
+              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                isActive("/services") ? "text-black" : "text-gray-700"
+              }`}
+            >
+              Services
+            </Link>
+            <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                isActive("/about") ? "text-black" : "text-gray-700"
+              }`}
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                isActive("/contact") ? "text-black" : "text-gray-700"
+              }`}
+            >
+              Contact
+            </Link>
+          </nav>
+
+          {/* Mobile Hamburger menu button */}
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"
