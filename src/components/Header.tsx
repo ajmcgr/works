@@ -55,7 +55,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
@@ -68,7 +68,7 @@ const Header = () => {
               href="https://trymedia.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium text-gray-700 hover:text-gray-600 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
             >
               Media AI
             </a>
@@ -76,7 +76,7 @@ const Header = () => {
               href="https://trywrite.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium text-gray-700 hover:text-gray-600 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
             >
               Write AI
             </a>
@@ -85,7 +85,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
