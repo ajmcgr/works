@@ -73,7 +73,7 @@ const Header = () => {
               Media AI
             </a>
             <a
-              href="https://www.trywrite.ai"
+              href="https://trywrite.ai"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
