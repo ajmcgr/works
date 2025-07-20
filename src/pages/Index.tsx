@@ -182,7 +182,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="pt-16 sm:pt-20">
+    <div>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-white to-gray-100 min-h-[70vh] md:min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Mobile Layout - Content above video */}
