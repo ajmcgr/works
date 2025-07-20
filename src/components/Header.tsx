@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
@@ -55,7 +55,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
@@ -68,7 +68,7 @@ const Header = () => {
               href="https://trymedia.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
+              className="text-xs font-medium text-gray-700 hover:text-gray-600 transition-colors"
             >
               Media AI
             </a>
@@ -76,7 +76,7 @@ const Header = () => {
               href="https://www.trywrite.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
+              className="text-xs font-medium text-gray-700 hover:text-gray-600 transition-colors"
             >
               Write AI
             </a>
@@ -85,7 +85,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
