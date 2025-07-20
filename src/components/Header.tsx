@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isDesktopProductsOpen, setIsDesktopProductsOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
@@ -51,7 +52,55 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
+            {navigation.slice(0, 2).map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                  isActive(item.href) ? "text-black" : "text-gray-700"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+            
+            {/* Products Dropdown - Desktop */}
+            <div className="relative">
+              <button
+                onClick={() => setIsDesktopProductsOpen(!isDesktopProductsOpen)}
+                className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors"
+              >
+                Products
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              
+              {isDesktopProductsOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-50">
+                  <div className="py-2">
+                    <a
+                      href="https://trymedia.ai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                      onClick={() => setIsDesktopProductsOpen(false)}
+                    >
+                      Media AI
+                    </a>
+                    <a
+                      href="https://www.trywrite.ai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                      onClick={() => setIsDesktopProductsOpen(false)}
+                    >
+                      Write AI
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            {navigation.slice(2).map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
