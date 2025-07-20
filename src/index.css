@@ -129,8 +129,7 @@
   }
 
   body {
-    @apply text-foreground;
-    background: white;
+    @apply text-foreground bg-gap-color;
     min-height: 100vh;
   }
   
