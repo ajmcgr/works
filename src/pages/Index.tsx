@@ -278,15 +278,15 @@ const Index = () => {
         {/* Mobile Hero Video */}
         <div className="px-4 sm:px-6 pb-16 sm:pb-24 md:hidden">
           <div className="max-w-lg mx-auto">
-            <AspectRatio ratio={16/9}>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="w-full h-full rounded-lg sm:rounded-xl overflow-hidden"
+                className="absolute top-0 left-0 w-full h-full rounded-lg sm:rounded-xl"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 title="Works PR Video"
               />
-            </AspectRatio>
+            </div>
           </div>
           
         </div>
@@ -382,15 +382,15 @@ const Index = () => {
 
           {/* Desktop Hero Video */}
           <div className="w-full max-w-5xl mx-auto pb-20">
-            <AspectRatio ratio={16/9}>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="w-full h-full rounded-xl overflow-hidden"
+                className="absolute top-0 left-0 w-full h-full rounded-xl"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 title="Works PR Video"
               />
-            </AspectRatio>
+            </div>
           </div>
           
         </div>
