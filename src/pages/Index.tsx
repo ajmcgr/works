@@ -281,7 +281,7 @@ const Index = () => {
             <AspectRatio ratio={16/9}>
               <iframe
                 src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="w-full h-full object-cover rounded-lg sm:rounded-xl"
+                className="w-full h-full rounded-lg sm:rounded-xl overflow-hidden"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 title="Works PR Video"
@@ -385,7 +385,7 @@ const Index = () => {
             <AspectRatio ratio={16/9}>
               <iframe
                 src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full rounded-xl overflow-hidden"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 title="Works PR Video"
