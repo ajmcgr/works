@@ -1,12 +1,12 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  
   const location = useLocation();
 
   const navigation = [
@@ -63,23 +63,6 @@ const Header = () => {
               </Link>
             ))}
             
-            {/* Product Links */}
-            <a
-              href="https://trymedia.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-medium text-gray-700 hover:text-gray-600 transition-colors"
-            >
-              Media AI
-            </a>
-            <a
-              href="https://trywrite.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-medium text-gray-700 hover:text-gray-600 transition-colors"
-            >
-              Write AI
-            </a>
             
             {navigation.slice(2).map((item) => (
               <Link
@@ -131,37 +114,6 @@ const Header = () => {
                 Services
               </Link>
               
-              {/* Products Dropdown */}
-              <div className="space-y-2">
-                <button
-                  onClick={() => setIsProductsOpen(!isProductsOpen)}
-                  className="flex items-center justify-center w-full text-lg font-medium text-gray-700 hover:text-gray-600 transition-colors"
-                >
-                  Products
-                  {isProductsOpen ? (
-                    <ChevronUp className="ml-1 h-4 w-4" />
-                  ) : (
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  )}
-                </button>
-                
-                {isProductsOpen && (
-                  <div className="space-y-2 text-center">
-                    <button
-                      onClick={() => handleNavClick('https://trymedia.ai')}
-                      className="w-full text-base font-medium text-gray-600 hover:text-gray-800 transition-colors text-center"
-                    >
-                      Media AI
-                    </button>
-                    <button
-                      onClick={() => handleNavClick('https://trywrite.ai')}
-                      className="w-full text-base font-medium text-gray-600 hover:text-gray-800 transition-colors text-center"
-                    >
-                      Write AI
-                    </button>
-                  </div>
-                )}
-              </div>
               
               <Link
                 to="/about"
