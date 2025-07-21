@@ -273,6 +273,17 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Mobile Hero Image */}
+        <div className="px-4 sm:px-6 pb-16 sm:pb-24 md:hidden">
+          <div className="max-w-lg mx-auto">
+            <img 
+              src="/lovable-uploads/edaeb308-18f3-4038-a6c7-730fc66f51df.png" 
+              alt="Desert road leading to the horizon" 
+              className="w-full h-auto object-cover rounded-lg sm:rounded-xl"
+            />
+          </div>
           
         </div>
 
@@ -363,6 +374,15 @@ const Index = () => {
                 </AspectRatio>
               </div>
             </div>
+          </div>
+
+          {/* Desktop Hero Image */}
+          <div className="w-full max-w-5xl mx-auto pb-20">
+            <img 
+              src="/lovable-uploads/edaeb308-18f3-4038-a6c7-730fc66f51df.png" 
+              alt="Desert road leading to the horizon" 
+              className="w-full h-auto object-cover rounded-xl"
+            />
           </div>
           
         </div>
