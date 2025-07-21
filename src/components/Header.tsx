@@ -50,7 +50,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-center space-x-16 flex-1">
+          <nav className="hidden md:flex items-center justify-center space-x-8 flex-1">
             {navigation.slice(0, 2).map((item) => (
               <Link
                 key={item.name}
