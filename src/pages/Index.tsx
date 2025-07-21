@@ -184,7 +184,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gray-50 h-screen flex flex-col justify-center overflow-hidden pt-48">
+      <section className="relative bg-gray-50 min-h-screen flex flex-col justify-center overflow-hidden pt-48">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
@@ -273,22 +273,21 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Mobile Hero Video */}
-        <div className="px-4 sm:px-6 pb-16 sm:pb-24 md:hidden">
-          <div className="max-w-lg mx-auto">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="absolute top-0 left-0 w-full h-full rounded-lg sm:rounded-xl"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Works PR Video"
-              />
+          
+          {/* Mobile Video - Below logos */}
+          <div className="px-4 sm:px-6 pb-16 sm:pb-24">
+            <div className="max-w-sm sm:max-w-md mx-auto">
+              <AspectRatio ratio={16/9}>
+                <iframe
+                  src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
+                  className="w-full h-full object-cover rounded-lg sm:rounded-xl"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  title="Works PR Video"
+                />
+              </AspectRatio>
             </div>
           </div>
-          
         </div>
 
         {/* Desktop Layout - Content above video (same as mobile) */}
@@ -379,20 +378,19 @@ const Index = () => {
               </div>
             </div>
           </div>
-
-          {/* Desktop Hero Video */}
-          <div className="w-full max-w-5xl mx-auto pb-20">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          
+          {/* Desktop Video - Below logos */}
+          <div className="w-full max-w-4xl mx-auto pb-20">
+            <AspectRatio ratio={16/9}>
               <iframe
                 src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="absolute top-0 left-0 w-full h-full rounded-xl"
+                className="w-full h-full object-cover rounded-xl"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 title="Works PR Video"
               />
-            </div>
+            </AspectRatio>
           </div>
-          
         </div>
       </section>
 
