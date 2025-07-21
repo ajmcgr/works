@@ -45,17 +45,17 @@ const Header = () => {
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
               alt="Works" 
-              className="h-5"
+              className="h-6"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-center space-x-8 flex-1">
+          <nav className="hidden md:flex items-center justify-end space-x-8 flex-1">
             {navigation.slice(0, 2).map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
@@ -68,7 +68,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
