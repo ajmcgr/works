@@ -55,7 +55,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
@@ -68,7 +68,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium transition-colors hover:text-gray-600 ${
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
                   isActive(item.href) ? "text-black" : "text-gray-700"
                 }`}
               >
