@@ -184,7 +184,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-white min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2 border-l-8 border-brand-blue-accent">
+      <section className="relative bg-brand-blue-bg min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2 border-l-8 border-brand-blue">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
@@ -369,7 +369,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 bg-brand-red-bg border-l-8 border-brand-red">
+      <section id="services" className="py-12 sm:py-16 bg-brand-yellow-bg border-l-8 border-brand-yellow">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -415,7 +415,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 sm:py-32 bg-brand-blue-bg border-l-4 border-brand-blue-accent">
+      <section className="py-20 sm:py-32 bg-brand-red-bg border-l-8 border-brand-red">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
@@ -439,7 +439,7 @@ const Index = () => {
       </section>
 
       {/* Why Works Section */}
-      <section className="py-20 sm:py-32 bg-white border-l-4 border-brand-yellow">
+      <section className="py-20 sm:py-32 bg-brand-blue-bg border-l-8 border-brand-blue">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -482,7 +482,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 bg-brand-yellow-bg border-l-4 border-brand-yellow">
+      <section id="about" className="py-20 sm:py-32 bg-brand-red-bg border-l-8 border-brand-red">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-gray-900 mb-8 leading-tight">
@@ -521,7 +521,7 @@ const Index = () => {
       <NewsSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 sm:py-32 bg-brand-red-bg border-l-4 border-brand-red">
+      <section id="contact" className="py-20 sm:py-32 bg-brand-blue-bg border-l-8 border-brand-blue">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-gray-900">
@@ -607,7 +607,7 @@ const Index = () => {
       </section>
 
       {/* Mailing List Section */}
-      <section className="py-20 sm:py-32 bg-white border-l-4 border-brand-blue-accent">
+      <section className="py-20 sm:py-32 bg-brand-yellow-bg border-l-8 border-brand-yellow">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-gray-900 mb-6 leading-tight">

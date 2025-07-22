@@ -88,7 +88,7 @@ export const NewsSection = () => {
 
   if (isLoading) {
     return (
-      <section className="py-32 bg-gray-50">
+      <section className="py-32 bg-brand-yellow-bg border-l-8 border-brand-yellow">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="text-center">
             <div className="animate-pulse">
@@ -106,7 +106,7 @@ export const NewsSection = () => {
   }
 
   return (
-    <section className="py-32 bg-gray-50">
+    <section className="py-32 bg-brand-yellow-bg border-l-8 border-brand-yellow">
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
