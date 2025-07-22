@@ -199,7 +199,7 @@ const Index = () => {
         </div>
         
         {/* Dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/60 z-15"></div>
+        <div className="absolute inset-0 bg-black/80 z-15"></div>
         
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
