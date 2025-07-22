@@ -38,10 +38,10 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
-    /* Solid background colors */
-    --section-primary: 248 250 252;
-    --section-secondary: 241 245 249;
-    --section-accent: 255 255 255;
+    /* Brand color backgrounds - very light tints */
+    --brand-red-bg: 254 252 252; /* #da3129 at ~3% opacity */
+    --brand-yellow-bg: 254 254 248; /* #eee34d at ~3% opacity */
+    --brand-blue-bg: 248 250 254; /* #2659e3 at ~3% opacity */
     
     /* Brand accent colors */
     --brand-red: 218 49 41;
