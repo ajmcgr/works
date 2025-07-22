@@ -427,9 +427,13 @@ const Index = () => {
                 <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Influencer Marketing</h3>
                 <p className="text-gray-600 font-normal">Connecting with key voices to amplify your message and reach new audiences</p>
               </div>
-              <div className="pb-6">
+              <div className="pb-6 border-b border-gray-100">
                 <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Event Management</h3>
                 <p className="text-gray-600 font-normal">Orchestrating memorable experiences that strengthen relationships and drive engagement</p>
+              </div>
+              <div className="pb-6">
+                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">PR Software</h3>
+                <p className="text-gray-600 font-normal">Advanced tools and platforms to streamline media monitoring, relationship management, and campaign analytics</p>
               </div>
             </div>
           </div>
