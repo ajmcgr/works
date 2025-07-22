@@ -184,11 +184,11 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gray-50 min-h-screen flex flex-col justify-start overflow-hidden pt-2">
+      <section className="relative bg-gray-50 min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
-          <div className="text-center py-6 sm:py-8">
+          <div className="text-center py-8 mt-8">
             <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-black leading-tight mb-4 sm:mb-6 tracking-tight">
               Influence, Engineered
             </h1>
