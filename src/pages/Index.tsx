@@ -184,7 +184,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gray-50 min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
+      <section className="relative bg-gradient-hero min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
@@ -369,7 +369,7 @@ const Index = () => {
       </section>
 
       {/* Our Work Section */}
-      <section className="py-20 sm:py-32 bg-white">
+      <section className="py-20 sm:py-32 bg-gradient-premium">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
@@ -381,18 +381,19 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Case Study 1 */}
+            {/* Case Study 1 - UFC */}
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] mb-6">
+              <div className="relative overflow-hidden rounded-lg bg-gradient-card aspect-[4/3] mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
                   src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop" 
-                  alt="Tech Startup Launch Campaign"
+                  alt="UFC Global Media Campaign"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="space-y-3">
-                <h3 className="text-xl font-medium text-black">Tech Startup Launch Campaign</h3>
-                <p className="text-gray-600 font-normal">Strategic media campaign that secured coverage in TechCrunch, Wired, and major industry publications.</p>
+                <h3 className="text-xl font-medium text-black">UFC Global Media Campaign</h3>
+                <p className="text-gray-600 font-normal">Secured coverage across major sports networks and increased global brand awareness by 300%.</p>
                 <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
                   View case study
                   <ArrowRight className="ml-1 h-3 w-3" />
@@ -400,18 +401,19 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Case Study 2 */}
+            {/* Case Study 2 - OnePlus */}
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] mb-6">
+              <div className="relative overflow-hidden rounded-lg bg-gradient-card aspect-[4/3] mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
                   src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                  alt="Crisis Communications Response"
+                  alt="OnePlus Product Launch Strategy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="space-y-3">
-                <h3 className="text-xl font-medium text-black">Crisis Communications Response</h3>
-                <p className="text-gray-600 font-normal">Rapid response strategy that preserved brand reputation during a challenging period.</p>
+                <h3 className="text-xl font-medium text-black">OnePlus Product Launch Strategy</h3>
+                <p className="text-gray-600 font-normal">Orchestrated tech media blitz resulting in 500+ articles and 50M+ social impressions.</p>
                 <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
                   View case study
                   <ArrowRight className="ml-1 h-3 w-3" />
@@ -419,18 +421,19 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Case Study 3 */}
+            {/* Case Study 3 - OPPO */}
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] mb-6">
+              <div className="relative overflow-hidden rounded-lg bg-gradient-card aspect-[4/3] mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop" 
-                  alt="Brand Transformation Initiative"
+                  alt="OPPO Brand Transformation"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="space-y-3">
-                <h3 className="text-xl font-medium text-black">Brand Transformation Initiative</h3>
-                <p className="text-gray-600 font-normal">Complete brand repositioning that increased market share by 40% in 12 months.</p>
+                <h3 className="text-xl font-medium text-black">OPPO Brand Transformation</h3>
+                <p className="text-gray-600 font-normal">Complete brand repositioning increasing market presence across European markets by 150%.</p>
                 <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
                   View case study
                   <ArrowRight className="ml-1 h-3 w-3" />
@@ -451,7 +454,7 @@ const Index = () => {
       </section>
 
       {/* Our Process Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-20 sm:py-32 bg-gradient-elegant">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
@@ -464,8 +467,8 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Step 1 */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 1
               </div>
               <h3 className="text-xl font-medium text-black mb-4">Discovery Call</h3>
@@ -475,8 +478,8 @@ const Index = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 2
               </div>
               <h3 className="text-xl font-medium text-black mb-4">Strategic Planning</h3>
@@ -486,8 +489,8 @@ const Index = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 3
               </div>
               <h3 className="text-xl font-medium text-black mb-4">Execution & Results</h3>
@@ -500,7 +503,7 @@ const Index = () => {
       </section>
 
       {/* New CTA Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-100 to-gray-200">
+      <section className="py-20 sm:py-32 bg-gradient-sophisticated">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
@@ -528,7 +531,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section id="services" className="py-12 sm:py-16 bg-gradient-luxury">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -574,7 +577,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-100 to-gray-150">
+      <section className="py-20 sm:py-32 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
@@ -598,7 +601,7 @@ const Index = () => {
       </section>
 
       {/* Why Works Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-bl from-gray-100 to-gray-200">
+      <section className="py-20 sm:py-32 bg-gradient-elegant">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
@@ -641,7 +644,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 bg-gradient-to-tr from-gray-150 to-gray-200">
+      <section id="about" className="py-20 sm:py-32 bg-gradient-sophisticated">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
@@ -680,7 +683,7 @@ const Index = () => {
       <NewsSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-gray-200 to-gray-250">
+      <section id="contact" className="py-20 sm:py-32 bg-gradient-luxury">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
@@ -766,7 +769,7 @@ const Index = () => {
       </section>
 
       {/* Mailing List Section */}
-      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-100 to-gray-200">
+      <section className="py-20 sm:py-32 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">

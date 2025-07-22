@@ -83,6 +83,16 @@ export default {
 				},
 				'brand-blue': '#409EFF'
 			},
+			backgroundImage: {
+				'gradient-premium': 'var(--gradient-premium)',
+				'gradient-elegant': 'var(--gradient-elegant)',
+				'gradient-sophisticated': 'var(--gradient-sophisticated)',
+				'gradient-luxury': 'var(--gradient-luxury)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-section': 'var(--gradient-section)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-subtle': 'var(--gradient-subtle)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
