@@ -190,7 +190,7 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-10"
           style={{ 
             backgroundImage: 'url(/lovable-uploads/3c834b27-c55d-4d4b-9757-3ca13288dd6d.png)',
-            filter: 'contrast(1.3) saturate(1.2) brightness(1.1)'
+            filter: 'contrast(1.3) saturate(1.2) brightness(0.9)'
           }}
         ></div>
         <div className="absolute inset-0 bg-black/70 z-15"></div>
