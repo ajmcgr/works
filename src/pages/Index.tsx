@@ -188,7 +188,10 @@ const Index = () => {
         {/* Background image with blur and dark overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-10"
-          style={{ backgroundImage: 'url(/lovable-uploads/b85a9da4-42a5-4e46-8bba-10b00d58b89f.png)' }}
+          style={{ 
+            backgroundImage: 'url(/lovable-uploads/b85a9da4-42a5-4e46-8bba-10b00d58b89f.png)',
+            filter: 'contrast(1.3) saturate(1.2) brightness(1.1)'
+          }}
         ></div>
         <div className="absolute inset-0 bg-black/70 z-15"></div>
         
