@@ -411,7 +411,7 @@ const Index = () => {
             
             <Button 
               type="submit"
-              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg font-semibold rounded-2xl"
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg font-semibold"
             >
               Start the Conversation
             </Button>
