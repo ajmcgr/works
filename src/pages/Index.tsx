@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Mic, Database, Bot, Zap } from "lucide-react";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -58,11 +57,10 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-gradient-to-r from-foreground to-foreground hover:from-accent-electric hover:to-accent-electric text-background px-12 py-6 text-lg font-semibold rounded-full touch-target transition-all duration-500 transform hover:scale-105"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold rounded-full"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Let's Work
-                <ArrowRight className="ml-3 h-5 w-5" />
               </a>
             </Button>
           </div>
@@ -162,7 +160,7 @@ const Index = () => {
             ].map((tool, index) => (
               <div key={index} className="reveal-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${tool.gradient} rounded-2xl flex items-center justify-center mb-6`}>
+                  <div className={`w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6`}>
                     <span className="text-2xl font-bold text-white">{tool.number}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-background mb-2">{tool.name}</h3>
@@ -253,7 +251,6 @@ const Index = () => {
             >
               <a href="/work">
                 View Our Work
-                <ArrowRight className="ml-3 h-5 w-5" />
               </a>
             </Button>
           </div>
@@ -394,10 +391,9 @@ const Index = () => {
             
             <Button 
               type="submit"
-              className="w-full bg-gradient-to-r from-accent-electric to-blue-600 hover:from-blue-600 hover:to-accent-electric text-white py-6 text-lg font-semibold rounded-2xl touch-target transition-all duration-500"
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg font-semibold rounded-2xl"
             >
               Start the Conversation
-              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>
         </div>
@@ -408,11 +404,10 @@ const Index = () => {
         <div className="max-w-md mx-auto">
           <Button 
             asChild 
-            className="w-full bg-gradient-to-r from-foreground to-accent-electric hover:from-accent-electric hover:to-foreground text-background py-4 text-lg font-semibold rounded-full shadow-xl touch-target transition-all duration-500"
+            className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold rounded-full"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Book a Call
-              <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
         </div>
