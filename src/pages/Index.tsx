@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown, Play, Mic, Database, Bot, Zap } from "lucide-react";
+import { ArrowRight, Play, Mic, Database, Bot, Zap } from "lucide-react";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -67,9 +67,58 @@ const Index = () => {
             </Button>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 swipe-indicator">
-            <ArrowDown className="w-6 h-6 text-muted-foreground animate-bounce" />
+        </div>
+      </section>
+
+      {/* Client Logos Section - Moved from later in page */}
+      <section className="py-12 px-6 bg-background border-b border-border/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-muted-foreground text-lg font-medium">Trusted by ambitious brands</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
+            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
+                alt="UFC" 
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                alt="OnePlus" 
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                alt="OPPO" 
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                alt="Ogilvy" 
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                alt="Weber Shandwick" 
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                alt="Publicis Groupe" 
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -86,8 +135,8 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Tool Cards - Mobile First Grid */}
-          <div className="space-y-12">
+          {/* Tool Cards - Desktop Row Layout */}
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             {[
               {
                 name: "Contact Us",
@@ -111,8 +160,8 @@ const Index = () => {
                 gradient: "from-red-500 to-orange-600"
               }
             ].map((tool, index) => (
-              <div key={index} className={`reveal-on-scroll ${index % 2 === 0 ? '' : 'md:ml-auto'}`} style={{ animationDelay: `${index * 0.2}s` }}>
-                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 max-w-md touch-hover">
+              <div key={index} className="reveal-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
+                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
                   <div className={`w-16 h-16 bg-gradient-to-br ${tool.gradient} rounded-2xl flex items-center justify-center mb-6`}>
                     <tool.icon className="w-8 h-8 text-white" />
                   </div>
@@ -201,56 +250,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Client Logos Section */}
-          <div className="mt-20 reveal-on-scroll">
-            <div className="text-center mb-12">
-              <p className="text-muted-foreground text-lg font-medium">Trusted by ambitious brands</p>
-            </div>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 hover:opacity-100 transition-opacity duration-500">
-              <div className="w-20 h-12 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
-                  alt="UFC" 
-                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-              <div className="w-20 h-12 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                  alt="OnePlus" 
-                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-              <div className="w-20 h-12 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                  alt="OPPO" 
-                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-              <div className="w-20 h-12 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                  alt="Ogilvy" 
-                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-              <div className="w-20 h-12 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                  alt="Weber Shandwick" 
-                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-              <div className="w-20 h-12 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                  alt="Publicis Groupe" 
-                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -269,8 +268,12 @@ const Index = () => {
           <div className="space-y-12">
             <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover">
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent-electric to-blue-600 rounded-full flex items-center justify-center mr-6">
-                  <span className="text-white font-bold text-xl">D</span>
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                  <img 
+                    src="/lovable-uploads/f2bdfdc8-7b25-451a-b578-82b4b38994a1.png" 
+                    alt="Dana White" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg">Dana White</h4>
@@ -278,7 +281,7 @@ const Index = () => {
                 </div>
               </div>
               <blockquote className="text-xl text-foreground leading-relaxed mb-6">
-                "Works.xyz doesn't just handle our PR—they engineer our global narrative. When we expand into new markets, 
+                "Works doesn't just handle our PR—they engineer our global narrative. When we expand into new markets, 
                 they make sure we're not just arriving, we're conquering."
               </blockquote>
               <div className="text-muted-foreground font-medium">
@@ -288,8 +291,12 @@ const Index = () => {
 
             <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-6">
-                  <span className="text-white font-bold text-xl">P</span>
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                  <img 
+                    src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
+                    alt="Pete Lau" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg">Pete Lau</h4>
@@ -307,8 +314,12 @@ const Index = () => {
 
             <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.4s' }}>
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center mr-6">
-                  <span className="text-white font-bold text-xl">T</span>
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                  <img 
+                    src="/lovable-uploads/5c5a6c05-1222-4931-96e1-31741231b19f.png" 
+                    alt="Tina Sharkey" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg">Tina Sharkey</h4>
@@ -316,7 +327,7 @@ const Index = () => {
                 </div>
               </div>
               <blockquote className="text-xl text-foreground leading-relaxed mb-6">
-                "What sets Works.xyz apart is their strategic thinking. They don't just execute campaigns—
+                "What sets Works apart is their strategic thinking. They don't just execute campaigns—
                 they architect influence systems that compound over time. The ROI speaks for itself."
               </blockquote>
               <div className="text-muted-foreground font-medium">
@@ -392,7 +403,7 @@ const Index = () => {
             className="w-full bg-gradient-to-r from-foreground to-accent-electric hover:from-accent-electric hover:to-foreground text-background py-4 text-lg font-semibold rounded-full shadow-xl touch-target transition-all duration-500"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-              Let's Work
+              Book a Call
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
