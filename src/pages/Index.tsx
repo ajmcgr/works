@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -64,7 +65,7 @@ const Index = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Let's Work
+                Let's Work <ChevronRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -186,7 +187,7 @@ const Index = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Contact us
+                Contact us <ChevronRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -270,7 +271,7 @@ const Index = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="/work">
-                View Our Work
+                View Our Work <ChevronRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -413,7 +414,7 @@ const Index = () => {
               type="submit"
               className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg font-semibold"
             >
-              Start the Conversation
+              Start the Conversation <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
           </form>
         </div>
@@ -427,7 +428,7 @@ const Index = () => {
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold shadow-xl"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-              Let's Work
+              Let's Work <ChevronRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
