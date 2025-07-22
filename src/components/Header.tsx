@@ -50,21 +50,8 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-end space-x-8 flex-1">
-            {navigation.slice(0, 2).map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm tracking-tight font-medium transition-colors hover:text-gray-600 ${
-                  isActive(item.href) ? "text-black" : "text-gray-700"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-            
-            
-            {navigation.slice(2).map((item) => (
+          <nav className="hidden md:flex items-center justify-center space-x-8 flex-1">
+            {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
@@ -76,6 +63,15 @@ const Header = () => {
               </Link>
             ))}
           </nav>
+
+          {/* CTA Button - Desktop */}
+          <div className="hidden md:flex">
+            <Button asChild className="text-white px-6 py-2 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
+                Start a conversation
+              </a>
+            </Button>
+          </div>
 
           {/* Hamburger menu button - mobile only */}
           <div className="md:hidden">
@@ -94,46 +90,27 @@ const Header = () => {
         {isMenuOpen && (
           <div className="border-t border-gray-100 bg-white">
             <div className="py-6 space-y-4 text-center">
-              <Link
-                to="/work"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/work") ? "text-black" : "text-gray-700"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Work
-              </Link>
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
+                    isActive(item.href) ? "text-black" : "text-gray-700"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
               
-              <Link
-                to="/services"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/services") ? "text-black" : "text-gray-700"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              
-              
-              <Link
-                to="/about"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/about") ? "text-black" : "text-gray-700"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              
-              <Link
-                to="/contact"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/contact") ? "text-black" : "text-gray-700"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
+              {/* CTA Button - Mobile */}
+              <div className="pt-4">
+                <Button asChild className="text-white px-6 py-3 text-sm font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
+                  <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
+                    Start a conversation
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         )}

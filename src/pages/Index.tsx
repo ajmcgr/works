@@ -368,6 +368,165 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Our Work Section */}
+      <section className="py-20 sm:py-32 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
+              Our work
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed font-normal">
+              Explore case studies showcasing how we've helped brands create meaningful impact.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Case Study 1 */}
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop" 
+                  alt="Tech Startup Launch Campaign"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-medium text-black">Tech Startup Launch Campaign</h3>
+                <p className="text-gray-600 font-normal">Strategic media campaign that secured coverage in TechCrunch, Wired, and major industry publications.</p>
+                <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
+                  View case study
+                  <ArrowRight className="ml-1 h-3 w-3" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case Study 2 */}
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                  alt="Crisis Communications Response"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-medium text-black">Crisis Communications Response</h3>
+                <p className="text-gray-600 font-normal">Rapid response strategy that preserved brand reputation during a challenging period.</p>
+                <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
+                  View case study
+                  <ArrowRight className="ml-1 h-3 w-3" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case Study 3 */}
+            <div className="group cursor-pointer">
+              <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop" 
+                  alt="Brand Transformation Initiative"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-medium text-black">Brand Transformation Initiative</h3>
+                <p className="text-gray-600 font-normal">Complete brand repositioning that increased market share by 40% in 12 months.</p>
+                <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
+                  View case study
+                  <ArrowRight className="ml-1 h-3 w-3" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/work">
+              <Button variant="outline" className="px-8 py-3 text-base font-medium">
+                View all work
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Process Section */}
+      <section className="py-20 sm:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
+              Our process
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed font-normal">
+              A proven three-step approach to delivering exceptional PR results.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Step 1 */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto">
+                1
+              </div>
+              <h3 className="text-xl font-medium text-black mb-4">Discovery Call</h3>
+              <p className="text-gray-600 font-normal leading-relaxed">
+                We start with a comprehensive call to understand your goals, challenges, and target audiences.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto">
+                2
+              </div>
+              <h3 className="text-xl font-medium text-black mb-4">Strategic Planning</h3>
+              <p className="text-gray-600 font-normal leading-relaxed">
+                We develop a customized strategy and discuss requirements, timeline, and deliverables.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto">
+                3
+              </div>
+              <h3 className="text-xl font-medium text-black mb-4">Execution & Results</h3>
+              <p className="text-gray-600 font-normal leading-relaxed">
+                We sign the contract and immediately begin delivering results with ongoing communication.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New CTA Section */}
+      <section className="py-20 sm:py-32 bg-gradient-to-r from-gray-100 to-gray-200">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
+              Ready to amplify your impact?
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 font-normal leading-relaxed max-w-2xl mx-auto">
+              Join innovative companies who trust us to shape their narrative and drive meaningful change in their industries.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <Button asChild className="text-white px-10 py-4 text-base font-medium w-full sm:w-auto" style={{ backgroundColor: '#409EFF' }}>
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
+                  Start a conversation
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+              <Link 
+                to="/services"
+                className="text-base font-medium text-gray-700 hover:text-gray-500 transition-colors"
+              >
+                Explore our services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
