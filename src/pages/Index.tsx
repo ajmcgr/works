@@ -184,22 +184,9 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full z-10">
-          <iframe
-            src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&background=1&controls=0"
-            className="w-full h-full scale-150 object-cover"
-            style={{ minWidth: '100vw', minHeight: '100vh' }}
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-            title="Hero Background Video"
-          ></iframe>
-        </div>
-        
-        {/* Dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/80 z-15"></div>
+      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden bg-gradient-radial from-gray-900 via-black to-black">
+        {/* Radial gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-black to-black z-10"></div>
         
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">

@@ -105,6 +105,7 @@ export default {
 				'gradient-mint': 'var(--gradient-mint)',
 				'gradient-berry': 'var(--gradient-berry)',
 				'gradient-flame': 'var(--gradient-flame)',
+				'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
 			},
 			keyframes: {
 				'accordion-down': {
