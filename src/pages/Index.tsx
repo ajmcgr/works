@@ -369,7 +369,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 sm:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section id="services" className="py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
