@@ -189,10 +189,10 @@ const Index = () => {
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
           <div className="text-center py-8 mt-8">
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-black leading-tight mb-4 sm:mb-6 tracking-tight">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-white leading-tight mb-4 sm:mb-6 tracking-tight">
               Influence, Engineered
             </h1>
-            <p className="text-sm xs:text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
+            <p className="text-sm xs:text-base sm:text-lg text-white/90 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
               PR that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-6 sm:mb-8 px-4">
@@ -204,7 +204,7 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
+                className="text-xs sm:text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Our services
               </Link>
@@ -214,7 +214,7 @@ const Index = () => {
           {/* Mobile Logos - Above video */}
           <div className="px-4 sm:px-6 mb-6 sm:mb-8">
             <div className="text-center mb-4 sm:mb-6">
-              <p className="text-xs text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+              <p className="text-xs text-white/70 font-normal uppercase tracking-wide">Trusted by leading brands</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center max-w-sm sm:max-w-md mx-auto">
               <div className="w-16 sm:w-20 h-8 sm:h-10">
@@ -280,10 +280,10 @@ const Index = () => {
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex flex-col justify-center">
           {/* Desktop Content */}
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-black leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-white leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Influence, Engineered
             </h1>
-            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
+            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-white/90 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
               PR that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-12">
@@ -295,7 +295,7 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
+                className="text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Our services
               </Link>
@@ -305,7 +305,7 @@ const Index = () => {
           {/* Desktop Logos - Above video */}
           <div className="w-full mb-12">
             <div className="text-center mb-8">
-              <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+              <p className="text-sm text-white/70 font-normal uppercase tracking-wide">Trusted by leading brands</p>
             </div>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center max-w-4xl mx-auto">
               <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
@@ -373,41 +373,41 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="space-y-16 text-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-headline text-white mb-8 leading-tight">
                 What we do
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed font-normal">
+              <p className="text-lg text-white/90 leading-relaxed font-normal">
                 Comprehensive PR solutions tailored to your unique challenges and opportunities.
               </p>
             </div>
             <div className="space-y-8">
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Media Relations</h3>
-                <p className="text-gray-600 font-normal">Building authentic relationships with journalists and securing earned media coverage</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">Media Relations</h3>
+                <p className="text-white/80 font-normal">Building authentic relationships with journalists and securing earned media coverage</p>
               </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Crisis Communication</h3>
-                <p className="text-gray-600 font-normal">Protecting your reputation through strategic messaging during challenging times</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">Crisis Communication</h3>
+                <p className="text-white/80 font-normal">Protecting your reputation through strategic messaging during challenging times</p>
               </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Brand Communications</h3>
-                <p className="text-gray-600 font-normal">Crafting compelling narratives that differentiate your brand in the market</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">Brand Communications</h3>
+                <p className="text-white/80 font-normal">Crafting compelling narratives that differentiate your brand in the market</p>
               </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Content Strategy</h3>
-                <p className="text-gray-600 font-normal">Creating data-driven content that engages audiences and drives business results</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">Content Strategy</h3>
+                <p className="text-white/80 font-normal">Creating data-driven content that engages audiences and drives business results</p>
               </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Influencer Marketing</h3>
-                <p className="text-gray-600 font-normal">Connecting with key voices to amplify your message and reach new audiences</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">Influencer Marketing</h3>
+                <p className="text-white/80 font-normal">Connecting with key voices to amplify your message and reach new audiences</p>
               </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Event Management</h3>
-                <p className="text-gray-600 font-normal">Orchestrating memorable experiences that strengthen relationships and drive engagement</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">Event Management</h3>
+                <p className="text-white/80 font-normal">Orchestrating memorable experiences that strengthen relationships and drive engagement</p>
               </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">PR Software</h3>
-                <p className="text-gray-600 font-normal">PR tools that help you write better and reach media at scale to improve your overall communications outcomes.</p>
+              <div className="pb-6 border-b border-white/20">
+                <h3 className="text-2xl lg:text-3xl font-medium text-white mb-2">PR Software</h3>
+                <p className="text-white/80 font-normal">PR tools that help you write better and reach media at scale to improve your overall communications outcomes.</p>
               </div>
             </div>
           </div>
@@ -419,20 +419,20 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="flex flex-col space-y-12 text-center">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">2+</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
+              <div className="text-4xl lg:text-5xl font-normal text-white mb-2">2+</div>
+              <div className="text-sm text-white/70 font-normal uppercase tracking-wide">Years</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">50+</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Campaigns</div>
+              <div className="text-4xl lg:text-5xl font-normal text-white mb-2">50+</div>
+              <div className="text-sm text-white/70 font-normal uppercase tracking-wide">Campaigns</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">98%</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Retention</div>
+              <div className="text-4xl lg:text-5xl font-normal text-white mb-2">98%</div>
+              <div className="text-sm text-white/70 font-normal uppercase tracking-wide">Retention</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">24/7</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Support</div>
+              <div className="text-4xl lg:text-5xl font-normal text-white mb-2">24/7</div>
+              <div className="text-sm text-white/70 font-normal uppercase tracking-wide">Support</div>
             </div>
           </div>
         </div>

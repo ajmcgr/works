@@ -70,10 +70,10 @@ const Services = () => {
       <section className="py-32 lg:py-48 bg-gradient-cosmic">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
-            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-headline text-white leading-[1.1] mb-8 tracking-tight">
               Our services
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
+            <p className="text-lg lg:text-xl text-white/90 leading-relaxed font-normal max-w-2xl">
               Comprehensive public relations solutions designed to elevate your brand, 
               protect your reputation, and drive meaningful engagement.
             </p>
@@ -113,10 +113,10 @@ const Services = () => {
       <section className="py-32 bg-gradient-flame">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="mb-20">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-headline text-white mb-8 leading-tight">
               Our process
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl font-normal leading-relaxed">
+            <p className="text-lg text-white/90 max-w-2xl font-normal leading-relaxed">
               We follow a proven methodology to ensure every campaign delivers results 
               and builds lasting value for your brand.
             </p>
@@ -124,9 +124,9 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {process.map((item, index) => (
               <div key={index} className="space-y-6">
-                <div className="text-sm text-gray-400 font-normal uppercase tracking-wide">{item.step}</div>
-                <h3 className="text-xl font-headline text-black">{item.title}</h3>
-                <p className="text-gray-600 font-normal leading-relaxed">{item.description}</p>
+                <div className="text-sm text-white/60 font-normal uppercase tracking-wide">{item.step}</div>
+                <h3 className="text-xl font-headline text-white">{item.title}</h3>
+                <p className="text-white/80 font-normal leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
