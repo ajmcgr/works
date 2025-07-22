@@ -34,23 +34,23 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="h-screen flex flex-col justify-center items-center relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-8 px-4 md:px-6">
         {/* Kinetic background */}
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background-stone to-background">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent-electric/10 rounded-full kinetic-float blur-xl"></div>
           <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-accent-punch/5 rounded-full kinetic-pulse blur-lg"></div>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
           {/* Kinetic typography */}
-          <div className="mb-8">
-            <h1 className="font-headline text-foreground mb-6 kinetic-slide in-view">
+          <div className="mb-6 md:mb-8">
+            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view">
               Influence,
               <br />
               Engineered.
             </h1>
             
-            <p className="text-muted-foreground text-lg mb-12 max-w-md mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
+            <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-md mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
               We don't pitch brands.
               <br />
               We make them unignorable.
@@ -71,9 +71,9 @@ const Index = () => {
           </div>
 
           {/* Client Logos - Now directly below hero button */}
-          <div className="mt-16" style={{ animationDelay: '0.9s' }}>
-            <p className="text-muted-foreground text-center text-lg font-medium mb-8">Trusted by ambitious brands</p>
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
+          <div className="mt-12 md:mt-16" style={{ animationDelay: '0.9s' }}>
+            <p className="text-muted-foreground text-center text-base md:text-lg font-medium mb-6 md:mb-8">Trusted by ambitious brands</p>
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
