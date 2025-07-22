@@ -71,48 +71,48 @@ const Index = () => {
       </section>
 
       {/* Client Logos Section - Moved from later in page */}
-      <section className="py-12 px-6 bg-background border-b border-border/10">
+      <section className="py-16 px-6 bg-background border-b border-border/10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <p className="text-muted-foreground text-lg font-medium">Trusted by ambitious brands</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
-            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                 alt="UFC" 
                 className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
-            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                 alt="OnePlus" 
                 className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
-            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                 alt="OPPO" 
                 className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
-            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                 alt="Ogilvy" 
                 className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
-            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                 alt="Weber Shandwick" 
                 className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
-            <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                 alt="Publicis Groupe" 
@@ -142,28 +142,28 @@ const Index = () => {
                 name: "Contact Us",
                 tagline: "Start the conversation",
                 description: "Tell us your ambitions. We listen, understand, and identify if we're the right fit for your vision.",
-                icon: Database,
-                gradient: "from-accent-electric to-blue-600"
+                number: "1",
+                gradient: "from-primary to-blue-600"
               },
               {
                 name: "Discovery Call", 
                 tagline: "Deep dive strategy",
                 description: "90-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
-                icon: Bot,
-                gradient: "from-accent-electric to-purple-600"
+                number: "2",
+                gradient: "from-primary to-purple-600"
               },
               {
                 name: "Sign & Go",
                 tagline: "Execution mode",
                 description: "Contracts signed. Team deployed. Influence engineering begins. Results start flowing within 30 days.",
-                icon: Mic,
+                number: "3",
                 gradient: "from-red-500 to-orange-600"
               }
             ].map((tool, index) => (
               <div key={index} className="reveal-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
                   <div className={`w-16 h-16 bg-gradient-to-br ${tool.gradient} rounded-2xl flex items-center justify-center mb-6`}>
-                    <tool.icon className="w-8 h-8 text-white" />
+                    <span className="text-2xl font-bold text-white">{tool.number}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-background mb-2">{tool.name}</h3>
                   <p className="text-background/70 text-lg mb-4">{tool.tagline}</p>
@@ -191,11 +191,8 @@ const Index = () => {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-accent-electric to-blue-600 rounded-xl flex items-center justify-center mr-4">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
                 <div>
-                  <h4 className="font-bold text-foreground">UFC</h4>
+                  <h4 className="font-bold text-foreground text-2xl">UFC</h4>
                   <p className="text-muted-foreground text-sm">Global Event Launch</p>
                 </div>
               </div>
@@ -221,11 +218,8 @@ const Index = () => {
 
             <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mr-4">
-                  <Database className="w-6 h-6 text-white" />
-                </div>
                 <div>
-                  <h4 className="font-bold text-foreground">OnePlus</h4>
+                  <h4 className="font-bold text-foreground text-2xl">OnePlus</h4>
                   <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
                 </div>
               </div>
@@ -248,6 +242,20 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* CTA to Work page */}
+          <div className="text-center mt-16 reveal-on-scroll">
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold rounded-full"
+            >
+              <a href="/work">
+                View Our Work
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </a>
+            </Button>
           </div>
 
         </div>

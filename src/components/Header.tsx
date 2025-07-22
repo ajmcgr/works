@@ -10,7 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Our work", href: "/work" },
+    { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
     { name: "Contact us", href: "/contact" },
   ];
