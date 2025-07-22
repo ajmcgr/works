@@ -433,7 +433,7 @@ const Index = () => {
               </div>
               <div className="pb-6">
                 <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">PR Software</h3>
-                <p className="text-gray-600 font-normal">Advanced tools and platforms to streamline media monitoring, relationship management, and campaign analytics</p>
+                <p className="text-gray-600 font-normal">PR tools that help you write better and reach media at scale to improve your overall communications outcomes.</p>
               </div>
             </div>
           </div>
