@@ -92,6 +92,7 @@ export default {
 				'gradient-section': 'var(--gradient-section)',
 				'gradient-card': 'var(--gradient-card)',
 				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-text': 'var(--gradient-text)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

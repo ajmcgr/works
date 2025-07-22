@@ -1,796 +1,299 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { useToast } from "@/hooks/use-toast";
-import { NewsSection } from "@/components/NewsSection";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, Play, Users, Target, Zap, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const services = [
-    "Media Relations",
-    "Crisis Communication", 
-    "Brand Communications",
-    "Content Strategy",
-    "Influencer Marketing",
-    "Event Management"
-  ];
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Create mailto link
-    const subject = `Contact from ${formData.name} - ${formData.company}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:alex@works.xyz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open default email client
-    window.location.href = mailtoLink;
-
-    toast({
-      title: "Email Client Opened",
-      description: "Your default email client should open with the message pre-filled.",
-    });
-
-    setFormData({ name: "", email: "", company: "", message: "" });
-    setIsSubmitting(false);
-  };
-
-  const scrollToContact = () => {
-    const element = document.querySelector('#contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  useEffect(() => {
-    console.log('Loading HubSpot form script...');
-    
-    // Load HubSpot form script
-    const script = document.createElement('script');
-    script.src = '//js.hsforms.net/forms/embed/v2.js';
-    script.charset = 'utf-8';
-    script.type = 'text/javascript';
-    script.onload = () => {
-      console.log('HubSpot script loaded successfully');
-      if (window.hbspt) {
-        console.log('HubSpot object found, creating form...');
-        try {
-          window.hbspt.forms.create({
-            portalId: "40189621",
-            formId: "9afe8262-34a1-4c4b-bc0a-7b473ed68562",
-            region: "na1",
-            target: '#hubspot-form',
-            onFormReady: function() {
-              console.log('HubSpot form is ready');
-            },
-            onFormSubmit: function() {
-              console.log('HubSpot form submitted');
-            },
-            onFormSubmitted: function() {
-              console.log('HubSpot form submission completed');
-            }
-          });
-        } catch (error) {
-          console.error('Error creating HubSpot form:', error);
-        }
-      } else {
-        console.error('HubSpot object not found');
-      }
-    };
-    script.onerror = () => {
-      console.error('Failed to load HubSpot script');
-    };
-    document.head.appendChild(script);
-
-    // Add custom CSS for HubSpot form styling
-    const style = document.createElement('style');
-    style.textContent = `
-      #hubspot-form .hs-form {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      #hubspot-form .hs-form-field {
-        margin-bottom: 1rem;
-      }
-      #hubspot-form .hs-form-field label {
-        display: block;
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: #374151;
-        margin-bottom: 0.5rem;
-      }
-      #hubspot-form .hs-input {
-        width: 100%;
-        height: 2.5rem;
-        padding: 0.5rem 0.75rem;
-        border: 1px solid #d1d5db;
-        border-radius: 0.375rem;
-        font-size: 0.875rem;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-      }
-      #hubspot-form .hs-input:focus {
-        outline: none;
-        border-color: #000;
-        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-      }
-      #hubspot-form .hs-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        white-space: nowrap;
-        border-radius: 0.375rem;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: #000;
-        color: white;
-        padding: 0.75rem 2rem;
-        height: 2.5rem;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.15s ease-in-out;
-        width: 100%;
-        text-decoration: none;
-      }
-      #hubspot-form .hs-button:hover {
-        background-color: #1f2937;
-      }
-      #hubspot-form .hs-button:focus-visible {
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
-      }
-      #hubspot-form .hs-button:disabled {
-        pointer-events: none;
-        opacity: 0.5;
-      }
-      #hubspot-form .hs-error-msgs {
-        color: #dc2626;
-        font-size: 0.75rem;
-        margin-top: 0.25rem;
-      }
-      #hubspot-form .hs-richtext {
-        font-size: 0.875rem;
-        color: #6b7280;
-        text-align: center;
-        margin-top: 1rem;
-      }
-    `;
-    document.head.appendChild(style);
-
-    return () => {
-      document.head.removeChild(script);
-      document.head.removeChild(style);
-    };
-  }, []);
-
   return (
-    <div>
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-hero min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
-        {/* Mobile Layout - Content above video */}
-        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
-          {/* Mobile Content */}
-          <div className="text-center py-8 mt-8">
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-black leading-tight mb-4 sm:mb-6 tracking-tight">
-              Influence, Engineered
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-background/50 to-transparent" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline font-bold tracking-tight mb-8">
+              Influence,
+              <br />
+              <span className="bg-gradient-text bg-clip-text text-transparent">
+                Engineered.
+              </span>
             </h1>
-            <p className="text-sm xs:text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
-              PR that aligns your strategy, earns media, and drives influence.
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
+              We build global influence for challenger brands through strategic PR, 
+              data-driven storytelling, and AI-powered tools that scale visibility.
             </p>
-            <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-6 sm:mb-8 px-4">
-              <Button asChild className="text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-              <Link 
-                to="/services"
-                className="text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
-              >
-                Our services
-              </Link>
-            </div>
-          </div>
-          
-          {/* Mobile Logos - Above video */}
-          <div className="px-4 sm:px-6 mb-6 sm:mb-8">
-            <div className="text-center mb-4 sm:mb-6">
-              <p className="text-xs text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center max-w-sm sm:max-w-md mx-auto">
-              <div className="w-16 sm:w-20 h-8 sm:h-10">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
-                    alt="UFC" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-16 sm:w-20 h-8 sm:h-10">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                    alt="OnePlus" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-16 sm:w-20 h-8 sm:h-10">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                    alt="OPPO" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-16 sm:w-20 h-8 sm:h-10">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                    alt="Ogilvy" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-16 sm:w-20 h-8 sm:h-10">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                    alt="Weber Shandwick" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-16 sm:w-20 h-8 sm:h-10">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                    alt="Publicis Groupe" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-
-        {/* Desktop Layout - Content above video (same as mobile) */}
-        <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex flex-col justify-center">
-          {/* Desktop Content */}
-          <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-black leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
-              Influence, Engineered
-            </h1>
-            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
-              PR that aligns your strategy, earns media, and drives influence.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-12">
-              <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-base font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-              <Link 
-                to="/services"
-                className="text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors"
-              >
-                Our services
-              </Link>
-            </div>
-          </div>
-          
-          {/* Desktop Logos - Above video */}
-          <div className="w-full mb-12">
-            <div className="text-center mb-8">
-              <p className="text-sm text-gray-600 font-normal uppercase tracking-wide">Trusted by leading brands</p>
-            </div>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center max-w-4xl mx-auto">
-              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
-                    alt="UFC" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                    alt="OnePlus" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                    alt="OPPO" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                    alt="Ogilvy" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                    alt="Weber Shandwick" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-              <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
-                <AspectRatio ratio={16/10}>
-                  <img 
-                    src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                    alt="Publicis Groupe" 
-                    className="w-full h-full object-contain hover:opacity-100 transition-opacity"
-                  />
-                </AspectRatio>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
-      {/* Our Work Section */}
-      <section className="py-20 sm:py-32 bg-gradient-premium">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-              Our work
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed font-normal">
-              Explore case studies showcasing how we've helped brands create meaningful impact.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Case Study 1 - UFC */}
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-gradient-card aspect-[4/3] mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                <img 
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop" 
-                  alt="UFC Global Media Campaign"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-medium text-black">UFC Global Media Campaign</h3>
-                <p className="text-gray-600 font-normal">Secured coverage across major sports networks and increased global brand awareness by 300%.</p>
-                <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
-                  View case study
-                  <ArrowRight className="ml-1 h-3 w-3" />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
+                <Link to="/contact">
+                  Book a Call <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-              </div>
-            </div>
-
-            {/* Case Study 2 - OnePlus */}
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-gradient-card aspect-[4/3] mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                  alt="OnePlus Product Launch Strategy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-medium text-black">OnePlus Product Launch Strategy</h3>
-                <p className="text-gray-600 font-normal">Orchestrated tech media blitz resulting in 500+ articles and 50M+ social impressions.</p>
-                <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
-                  View case study
-                  <ArrowRight className="ml-1 h-3 w-3" />
-                </Link>
-              </div>
-            </div>
-
-            {/* Case Study 3 - OPPO */}
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-gradient-card aspect-[4/3] mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop" 
-                  alt="OPPO Brand Transformation"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-medium text-black">OPPO Brand Transformation</h3>
-                <p className="text-gray-600 font-normal">Complete brand repositioning increasing market presence across European markets by 150%.</p>
-                <Link to="/work" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 transition-colors">
-                  View case study
-                  <ArrowRight className="ml-1 h-3 w-3" />
-                </Link>
-              </div>
+              </Button>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 group">
+                <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                Watch Our Story
+              </Button>
             </div>
           </div>
-
-          <div className="text-center mt-12">
-            <Link to="/work">
-              <Button variant="outline" className="px-8 py-3 text-base font-medium">
-                View all work
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse" />
           </div>
         </div>
       </section>
 
-      {/* Our Process Section */}
-      <section className="py-20 sm:py-32 bg-gradient-elegant">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-              Our process
+      {/* Services Overview */}
+      <section className="py-24 bg-gradient-section">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6">
+              What We Do
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed font-normal">
-              A proven three-step approach to delivering exceptional PR results.
+            <p className="text-xl text-muted-foreground">
+              Strategic influence across every touchpoint that matters.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Step 1 */}
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                1
-              </div>
-              <h3 className="text-xl font-medium text-black mb-4">Discovery Call</h3>
-              <p className="text-gray-600 font-normal leading-relaxed">
-                We start with a comprehensive call to understand your goals, challenges, and target audiences.
-              </p>
-            </div>
-
-            {/* Step 2 */}
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                2
-              </div>
-              <h3 className="text-xl font-medium text-black mb-4">Strategic Planning</h3>
-              <p className="text-gray-600 font-normal leading-relaxed">
-                We develop a customized strategy and discuss requirements, timeline, and deliverables.
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-full flex items-center justify-center text-xl font-medium mb-6 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                3
-              </div>
-              <h3 className="text-xl font-medium text-black mb-4">Execution & Results</h3>
-              <p className="text-gray-600 font-normal leading-relaxed">
-                We sign the contract and immediately begin delivering results with ongoing communication.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                icon: <Globe className="h-8 w-8" />,
+                title: "Global PR Strategy",
+                description: "Positioning that resonates across markets and cultures."
+              },
+              {
+                icon: <Users className="h-8 w-8" />,
+                title: "Influencer Marketing",
+                description: "Authentic partnerships that drive real engagement."
+              },
+              {
+                icon: <Target className="h-8 w-8" />,
+                title: "Brand Storytelling",
+                description: "Narratives that stick in minds and hearts."
+              },
+              {
+                icon: <Zap className="h-8 w-8" />,
+                title: "AI Tools",
+                description: "Media AI & Write AI to accelerate your growth."
+              }
+            ].map((service, index) => (
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0">
+                <CardContent className="p-8 text-center">
+                  <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-headline font-semibold mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* New CTA Section */}
-      <section className="py-20 sm:py-32 bg-gradient-sophisticated">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
-              Ready to amplify your impact?
-            </h2>
-            <p className="text-lg text-gray-600 mb-12 font-normal leading-relaxed max-w-2xl mx-auto">
-              Join innovative companies who trust us to shape their narrative and drive meaningful change in their industries.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <Button asChild className="text-white px-10 py-4 text-base font-medium w-full sm:w-auto" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-              <Link 
-                to="/services"
-                className="text-base font-medium text-gray-700 hover:text-gray-500 transition-colors"
-              >
-                Explore our services
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 bg-gradient-luxury">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="space-y-16 text-center">
+      {/* Case Studies Preview */}
+      <section className="py-24 bg-gradient-elegant">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-end mb-16">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-                What we do
+              <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">
+                Our Work
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed font-normal">
-                Comprehensive PR solutions tailored to your unique challenges and opportunities.
+              <p className="text-xl text-muted-foreground">
+                Stories of influence, engineered to perfection.
               </p>
             </div>
-            <div className="space-y-8">
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Media Relations</h3>
-                <p className="text-gray-600 font-normal">Building authentic relationships with journalists and securing earned media coverage</p>
-              </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Crisis Communication</h3>
-                <p className="text-gray-600 font-normal">Protecting your reputation through strategic messaging during challenging times</p>
-              </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Brand Communications</h3>
-                <p className="text-gray-600 font-normal">Crafting compelling narratives that differentiate your brand in the market</p>
-              </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Content Strategy</h3>
-                <p className="text-gray-600 font-normal">Creating data-driven content that engages audiences and drives business results</p>
-              </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Influencer Marketing</h3>
-                <p className="text-gray-600 font-normal">Connecting with key voices to amplify your message and reach new audiences</p>
-              </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Event Management</h3>
-                <p className="text-gray-600 font-normal">Orchestrating memorable experiences that strengthen relationships and drive engagement</p>
-              </div>
-              <div className="pb-6 border-b border-gray-100">
-                <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">PR Software</h3>
-                <p className="text-gray-600 font-normal">PR tools that help you write better and reach media at scale to improve your overall communications outcomes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 sm:py-32 bg-gradient-section">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="flex flex-col space-y-12 text-center">
-            <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">2+</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Years</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">50+</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Campaigns</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">98%</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Retention</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-normal text-black mb-2">24/7</div>
-              <div className="text-sm text-gray-600 font-normal uppercase tracking-wide">Support</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Works Section */}
-      <section className="py-20 sm:py-32 bg-gradient-elegant">
-        <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-          <div className="space-y-16 text-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-                Why Works
-              </h2>
-              <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
-                <p>
-                  We believe in the power of strategic communication to shape perceptions 
-                  and drive meaningful change.
-                </p>
-                <p>
-                  Our approach combines deep industry expertise with creative storytelling 
-                  to deliver results that matter.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="space-y-6">
-                <div className="pb-6">
-                  <div className="text-base text-gray-600 font-normal uppercase tracking-wide mb-2">Expertise</div>
-                  <div className="text-xl lg:text-2xl text-black font-medium">2+ years of PR excellence</div>
-                </div>
-                <div className="pb-6">
-                  <div className="text-base text-gray-600 font-normal uppercase tracking-wide mb-2">Network</div>
-                  <div className="text-xl lg:text-2xl text-black font-medium">Extensive media relationships</div>
-                </div>
-                <div className="pb-6">
-                  <div className="text-base text-gray-600 font-normal uppercase tracking-wide mb-2">Response</div>
-                  <div className="text-xl lg:text-2xl text-black font-medium">24/7 crisis management</div>
-                </div>
-                <div>
-                  <div className="text-base text-gray-600 font-normal uppercase tracking-wide mb-2">Results</div>
-                  <div className="text-xl lg:text-2xl text-black font-medium">Proven track record</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 bg-gradient-sophisticated">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-              About Works
-            </h2>
-            <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
-              <p>
-                We're the creative agency built for founders, rebels, and category creators.
-              </p>
-              <p>
-                Our playbook? Strategy. Media. Influencers. Hype.
-              </p>
-              <p>
-                Our AI tools supercharge it — turning your story into headlines and your brand into influence.
-              </p>
-              <p>
-                We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond.
-              </p>
-              <p>
-                If you're building something bold, we'll make the world pay attention.
-              </p>
-            </div>
-            <div className="mt-12">
-              <Button asChild className="text-white px-10 py-4 text-base font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* News Section */}
-      <NewsSection />
-
-      {/* Contact Section */}
-      <section id="contact" className="py-20 sm:py-32 bg-gradient-luxury">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
-              Ready to shape your story?
-            </h2>
-            <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
-              Let's discuss how strategic public relations can elevate your brand.
-            </p>
-          </div>
-          
-          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
-            <div className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
-                  Name *
-                </label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="Your name"
-                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
-                  Email *
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="your@email.com"
-                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
-                Company
-              </label>
-              <Input
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleInputChange}
-                placeholder="Your company name"
-                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
-                Message *
-              </label>
-              <Textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                required
-                rows={6}
-                placeholder="Tell us about your project..."
-                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
-              />
-            </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
-              {isSubmitting ? (
-                "Opening email client..."
-              ) : (
-                <>
-                  Start a conversation
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </>
-              )}
+            <Button variant="outline" asChild className="hidden md:inline-flex">
+              <Link to="/case-studies">
+                View All Cases <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
-          </form>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                client: "UFC",
+                title: "Global Fight Night Domination",
+                description: "800M+ earned impressions across 50 markets",
+                image: "/lovable-uploads/ufc-case.jpg",
+                metrics: "800M+ Impressions"
+              },
+              {
+                client: "OnePlus",
+                title: "Never Settle Campaign",
+                description: "Challenger brand positioning in premium mobile",
+                image: "/lovable-uploads/oneplus-case.jpg", 
+                metrics: "150% Brand Lift"
+              },
+              {
+                client: "OPPO",
+                title: "Portrait Master Series",
+                description: "AI photography narrative across global markets",
+                image: "/lovable-uploads/oppo-case.jpg",
+                metrics: "2.5B+ Reach"
+              }
+            ].map((study, index) => (
+              <Card key={index} className="group cursor-pointer hover:shadow-xl transition-all duration-500 hover:-translate-y-3 bg-gradient-card border-0 overflow-hidden">
+                <div className="aspect-video bg-gradient-sophisticated relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <div className="text-sm font-medium mb-1">{study.client}</div>
+                    <div className="text-lg font-headline font-bold">{study.metrics}</div>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">
+                    {study.title}
+                  </h3>
+                  <p className="text-muted-foreground">{study.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12 md:hidden">
+            <Button variant="outline" asChild>
+              <Link to="/case-studies">
+                View All Cases <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* Mailing List Section */}
-      <section className="py-20 sm:py-32 bg-gradient-section">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-6 leading-tight">
-              Join our newsletter
+      {/* Process Section */}
+      <section className="py-24 bg-gradient-luxury">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6">
+              Our Process
             </h2>
-            <p className="text-lg text-gray-600 mb-12 font-normal leading-relaxed">
-              Get updates from our team. Only the good stuff.
+            <p className="text-xl text-muted-foreground">
+              Three steps to engineered influence.
             </p>
-            <div id="hubspot-form" className="max-w-md mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                step: "01",
+                title: "Discovery Call",
+                description: "We dive deep into your brand, market position, and growth ambitions to understand what influence means for you."
+              },
+              {
+                step: "02", 
+                title: "Strategy & Planning",
+                description: "We craft a comprehensive influence strategy tailored to your audience, markets, and business objectives."
+              },
+              {
+                step: "03",
+                title: "Execute & Scale",
+                description: "We implement, measure, and optimize campaigns while providing real-time insights and continuous growth."
+              }
+            ].map((process, index) => (
+              <div key={index} className="group text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+                <div className="text-6xl font-headline font-bold text-primary/20 mb-4 group-hover:text-primary/40 transition-colors">
+                  {process.step}
+                </div>
+                <h3 className="text-2xl font-headline font-bold mb-4 group-hover:text-primary transition-colors">
+                  {process.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {process.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tools Section */}
+      <section className="py-24 bg-gradient-sophisticated">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6">
+              AI-Powered Tools
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              The competitive advantage you've been looking for.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-3 bg-gradient-card border-0">
+              <CardContent className="p-8">
+                <div className="text-primary text-4xl font-headline font-bold mb-4">
+                  Media AI
+                </div>
+                <h3 className="text-2xl font-headline font-bold mb-4">
+                  Press Database Intelligence
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Access 50,000+ journalist contacts, track coverage sentiment, and identify trending opportunities in real-time.
+                </p>
+                <Button variant="outline" asChild>
+                  <Link to="/tools">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-3 bg-gradient-card border-0">
+              <CardContent className="p-8">
+                <div className="text-primary text-4xl font-headline font-bold mb-4">
+                  Write AI
+                </div>
+                <h3 className="text-2xl font-headline font-bold mb-4">
+                  Copywriting Assistant
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Generate compelling press releases, social copy, and campaign content that resonates with your target audience.
+                </p>
+                <Button variant="outline" asChild>
+                  <Link to="/tools">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-24 bg-gradient-hero">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-headline font-bold mb-6">
+              Ready to Engineer
+              <br />
+              Your Influence?
+            </h2>
+            <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Join the challenger brands who chose to stand out. 
+              Let's build something remarkable together.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
+                <Link to="/contact">
+                  Book a Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="text-lg px-8 py-6">
+                <Link to="/case-studies">
+                  See Our Work
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
     </div>
   );
 };
-
-// Declare global hbspt for TypeScript
-declare global {
-  interface Window {
-    hbspt: any;
-  }
-}
 
 export default Index;

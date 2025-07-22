@@ -74,15 +74,16 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Premium gradient variables */
-    --gradient-premium: linear-gradient(135deg, 0 0% 100%, 240 5% 96%);
-    --gradient-elegant: linear-gradient(135deg, 240 5% 96%, 220 10% 92%);
-    --gradient-sophisticated: linear-gradient(135deg, 220 10% 92%, 200 15% 88%);
-    --gradient-luxury: linear-gradient(135deg, 240 6% 90%, 220 8% 85%, 200 12% 80%);
-    --gradient-hero: linear-gradient(135deg, 0 0% 98%, 240 5% 94%, 220 8% 90%);
-    --gradient-section: linear-gradient(135deg, 240 4% 95%, 220 6% 90%);
-    --gradient-card: linear-gradient(135deg, 0 0% 100%, 240 3% 97%);
-    --gradient-subtle: linear-gradient(180deg, 0 0% 99%, 240 3% 96%);
+    /* Premium gradient variables for bold, editorial look */
+    --gradient-premium: linear-gradient(135deg, 222.2 84% 4.9%, 222.2 47.4% 11.2%);
+    --gradient-elegant: linear-gradient(135deg, 0 0% 2%, 222.2 84% 4.9%);
+    --gradient-sophisticated: linear-gradient(135deg, 222.2 47.4% 11.2%, 0 0% 8%);
+    --gradient-luxury: linear-gradient(135deg, 0 0% 3%, 222.2 84% 4.9%, 222.2 47.4% 11.2%);
+    --gradient-hero: linear-gradient(135deg, 0 0% 4%, 222.2 84% 4.9%);
+    --gradient-section: linear-gradient(135deg, 222.2 84% 4.9%, 0 0% 6%);
+    --gradient-card: linear-gradient(135deg, 0 0% 2%, 222.2 84% 4.9%);
+    --gradient-subtle: linear-gradient(180deg, 0 0% 3%, 222.2 84% 4.9%);
+    --gradient-text: linear-gradient(135deg, 210 40% 98%, 215.4 16.3% 46.9%);
   }
 
   .dark {
@@ -131,7 +132,8 @@
 
   body {
     @apply text-foreground;
-    background: white;
+    background: hsl(222.2 84% 4.9%);
+    color: hsl(210 40% 98%);
     min-height: 100vh;
   }
   
