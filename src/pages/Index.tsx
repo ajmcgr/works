@@ -90,23 +90,23 @@ const Index = () => {
           <div className="space-y-12">
             {[
               {
-                name: "Strategic Intelligence",
-                tagline: "Know before you go",
-                description: "Deep market analysis. Competitive positioning. Narrative architecture that positions you as inevitable.",
+                name: "Contact Us",
+                tagline: "Start the conversation",
+                description: "Tell us your ambitions. We listen, understand, and identify if we're the right fit for your vision.",
                 icon: Database,
                 gradient: "from-accent-electric to-blue-600"
               },
               {
-                name: "Precision Execution", 
-                tagline: "Every story placed",
-                description: "AI-powered targeting. Human relationship craft. Media coverage that compounds over time.",
+                name: "Discovery Call", 
+                tagline: "Deep dive strategy",
+                description: "90-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
                 icon: Bot,
                 gradient: "from-accent-electric to-purple-600"
               },
               {
-                name: "Scale & Amplify",
-                tagline: "Influence that spreads",
-                description: "Multi-channel orchestration. Cross-platform amplification. Results that get competitors talking.",
+                name: "Sign & Go",
+                tagline: "Execution mode",
+                description: "Contracts signed. Team deployed. Influence engineering begins. Results start flowing within 30 days.",
                 icon: Mic,
                 gradient: "from-red-500 to-orange-600"
               }
@@ -146,26 +146,26 @@ const Index = () => {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground">TechFlow</h4>
-                  <p className="text-muted-foreground text-sm">Fintech Series C Launch</p>
+                  <h4 className="font-bold text-foreground">UFC</h4>
+                  <p className="text-muted-foreground text-sm">Global Event Launch</p>
                 </div>
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Positioned TechFlow as the "future of payments" during their $85M Series C. 
-                Our narrative engineering placed them in 47 countries, driving massive pipeline impact.
+                Positioned UFC's expansion into new markets with strategic narrative that dominated sports media. 
+                Our crisis-proof architecture handled regulatory and cultural challenges across 47 countries.
               </p>
               <div className="space-y-4">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Tier-1 Coverage</span>
-                  <span className="font-bold text-foreground">TechCrunch, Forbes, WSJ</span>
+                  <span className="text-muted-foreground">Global Coverage</span>
+                  <span className="font-bold text-foreground">ESPN, BBC, Fox Sports</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Pipeline Impact</span>
-                  <span className="font-bold text-foreground">$12.3M in 90 days</span>
+                  <span className="text-muted-foreground">Viewership Impact</span>
+                  <span className="font-bold text-foreground">+340% in new markets</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Global Reach</span>
-                  <span className="font-bold text-foreground">47 countries</span>
+                  <span className="text-muted-foreground">Media Sentiment</span>
+                  <span className="font-bold text-foreground">92% positive</span>
                 </div>
               </div>
             </div>
@@ -176,27 +176,151 @@ const Index = () => {
                   <Database className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground">NeuralLabs</h4>
-                  <p className="text-muted-foreground text-sm">AI Startup Product Launch</p>
+                  <h4 className="font-bold text-foreground">OnePlus</h4>
+                  <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
                 </div>
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Launched NeuralLabs' AI platform with strategic media blitz. Our crisis-proof 
-                architecture helped them navigate regulatory scrutiny while maintaining momentum.
+                Engineered OnePlus's "Never Settle" narrative for global smartphone launch. Our influence network 
+                orchestration turned tech reviewers into brand advocates, driving unprecedented pre-order numbers.
               </p>
               <div className="space-y-4">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Launch Day Signups</span>
-                  <span className="font-bold text-foreground">25,000+ users</span>
+                  <span className="text-muted-foreground">Pre-orders Day 1</span>
+                  <span className="font-bold text-foreground">847K units</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Valuation Increase</span>
-                  <span className="font-bold text-foreground">3.2x in 6 months</span>
+                  <span className="text-muted-foreground">Tech Review Score</span>
+                  <span className="font-bold text-foreground">9.2/10 average</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Media Sentiment</span>
-                  <span className="font-bold text-foreground">94% positive</span>
+                  <span className="text-muted-foreground">Market Share Gain</span>
+                  <span className="font-bold text-foreground">+23% in 6 months</span>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Client Logos Section */}
+          <div className="mt-20 reveal-on-scroll">
+            <div className="text-center mb-12">
+              <p className="text-muted-foreground text-lg font-medium">Trusted by ambitious brands</p>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 hover:opacity-100 transition-opacity duration-500">
+              <div className="w-20 h-12 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
+                  alt="UFC" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-20 h-12 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                  alt="OnePlus" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-20 h-12 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                  alt="OPPO" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-20 h-12 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                  alt="Ogilvy" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-20 h-12 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                  alt="Weber Shandwick" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-20 h-12 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                  alt="Publicis Groupe" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Recommendations Section */}
+      <section className="py-20 px-6 bg-background">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16 reveal-on-scroll">
+            <h2 className="font-headline text-foreground mb-6">
+              What clients say
+            </h2>
+            <p className="text-muted-foreground text-xl">
+              The words that matter most
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent-electric to-blue-600 rounded-full flex items-center justify-center mr-6">
+                  <span className="text-white font-bold text-xl">D</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground text-lg">Dana White</h4>
+                  <p className="text-muted-foreground">President, UFC</p>
+                </div>
+              </div>
+              <blockquote className="text-xl text-foreground leading-relaxed mb-6">
+                "Works.xyz doesn't just handle our PR—they engineer our global narrative. When we expand into new markets, 
+                they make sure we're not just arriving, we're conquering."
+              </blockquote>
+              <div className="text-muted-foreground font-medium">
+                UFC Global Expansion Campaign
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-6">
+                  <span className="text-white font-bold text-xl">P</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground text-lg">Pete Lau</h4>
+                  <p className="text-muted-foreground">CEO, OnePlus</p>
+                </div>
+              </div>
+              <blockquote className="text-xl text-foreground leading-relaxed mb-6">
+                "They turned our product launch into a cultural moment. The way they orchestrated influence across 
+                every touchpoint—from tech reviewers to lifestyle publications—was masterful."
+              </blockquote>
+              <div className="text-muted-foreground font-medium">
+                OnePlus Flagship Launch
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.4s' }}>
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center mr-6">
+                  <span className="text-white font-bold text-xl">T</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground text-lg">Tina Sharkey</h4>
+                  <p className="text-muted-foreground">Former CEO, Sheryl Sandberg & Associates</p>
+                </div>
+              </div>
+              <blockquote className="text-xl text-foreground leading-relaxed mb-6">
+                "What sets Works.xyz apart is their strategic thinking. They don't just execute campaigns—
+                they architect influence systems that compound over time. The ROI speaks for itself."
+              </blockquote>
+              <div className="text-muted-foreground font-medium">
+                Executive Brand Positioning
               </div>
             </div>
           </div>
