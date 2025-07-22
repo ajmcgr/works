@@ -187,8 +187,8 @@ const Index = () => {
       <section className="relative min-h-screen flex flex-col justify-start overflow-hidden">
         {/* Background image with blur and dark overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-10"
-          style={{ backgroundImage: 'url(/lovable-uploads/44928851-599f-4942-ab0a-c95e692140b2.png)' }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat filter blur-sm z-10"
+          style={{ backgroundImage: 'url(/lovable-uploads/7b7fe41e-08d7-40a2-97c1-2cb2926f5d1c.png)' }}
         ></div>
         <div className="absolute inset-0 bg-black/70 z-15"></div>
         

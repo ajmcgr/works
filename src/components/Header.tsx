@@ -38,14 +38,14 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white backdrop-blur-sm z-50 border-b border-gray-100">
+    <header className="fixed top-0 w-full bg-transparent z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
               alt="Works" 
-              className="h-6"
+              className="h-6 brightness-0 invert"
             />
           </Link>
 
@@ -55,8 +55,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm tracking-tight font-medium transition-colors hover:text-gray-600 ${
-                  isActive(item.href) ? "text-black" : "text-gray-900"
+                className={`text-sm tracking-tight font-medium transition-colors hover:text-white/80 ${
+                  isActive(item.href) ? "text-white" : "text-white/90"
                 }`}
               >
                 {item.name}
@@ -68,8 +68,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm tracking-tight font-medium transition-colors hover:text-gray-600 ${
-                  isActive(item.href) ? "text-black" : "text-gray-900"
+                className={`text-sm tracking-tight font-medium transition-colors hover:text-white/80 ${
+                  isActive(item.href) ? "text-white" : "text-white/90"
                 }`}
               >
                 {item.name}
@@ -83,7 +83,7 @@ const Header = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-gray-900 hover:bg-gray-100"
+              className="p-2 text-white hover:bg-white/10"
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -92,12 +92,12 @@ const Header = () => {
 
          {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-gray-200 bg-white">
+          <div className="border-t border-white/20 bg-black/40 backdrop-blur-sm">
             <div className="py-6 space-y-4 text-center">
               <Link
                 to="/work"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/work") ? "text-black" : "text-gray-900"
+                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
+                  isActive("/work") ? "text-white" : "text-white/90"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -106,8 +106,8 @@ const Header = () => {
               
               <Link
                 to="/services"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/services") ? "text-black" : "text-gray-900"
+                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
+                  isActive("/services") ? "text-white" : "text-white/90"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -117,8 +117,8 @@ const Header = () => {
               
               <Link
                 to="/about"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/about") ? "text-black" : "text-gray-900"
+                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
+                  isActive("/about") ? "text-white" : "text-white/90"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -127,8 +127,8 @@ const Header = () => {
               
               <Link
                 to="/contact"
-                className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                  isActive("/contact") ? "text-black" : "text-gray-900"
+                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
+                  isActive("/contact") ? "text-white" : "text-white/90"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
