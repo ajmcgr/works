@@ -184,7 +184,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex flex-col justify-start overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden">
         {/* Hero background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
