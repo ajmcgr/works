@@ -88,6 +88,18 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			backgroundImage: {
+				'gradient-purple-blue': 'var(--gradient-purple-blue)',
+				'gradient-orange-red': 'var(--gradient-orange-red)',
+				'gradient-teal-green': 'var(--gradient-teal-green)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-ocean': 'var(--gradient-ocean)',
+				'gradient-lavender': 'var(--gradient-lavender)',
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-mint': 'var(--gradient-mint)',
+				'gradient-berry': 'var(--gradient-berry)',
+				'gradient-flame': 'var(--gradient-flame)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
