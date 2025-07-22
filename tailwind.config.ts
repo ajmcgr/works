@@ -42,7 +42,16 @@ export default {
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
+				'background-secondary': 'hsl(var(--background-secondary))',
 				foreground: 'hsl(var(--foreground))',
+				
+				// Editorial color palette
+				'electric-blue': 'hsl(var(--electric-blue))',
+				'coral': 'hsl(var(--coral))',
+				'warm-gray': 'hsl(var(--warm-gray))',
+				'cool-gray': 'hsl(var(--cool-gray))',
+				'charcoal': 'hsl(var(--charcoal))',
+				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

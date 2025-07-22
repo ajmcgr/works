@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 z-50">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white/90 backdrop-blur-md border-b border-warm-gray/30 z-50">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
@@ -62,8 +62,8 @@ const Header = () => {
                     handleNavClick(item.href);
                   }
                 }}
-                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
-                  isActive(item.href) ? "text-gray-900" : "text-gray-700"
+                className={`text-sm font-medium transition-colors hover:text-charcoal ${
+                  isActive(item.href) ? "text-charcoal" : "text-cool-gray"
                 }`}
               >
                 {item.name}
@@ -72,10 +72,10 @@ const Header = () => {
             
             <Button 
               asChild 
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-xl"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-medium"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Get Started
+                Book a Call
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
@@ -87,7 +87,7 @@ const Header = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-gray-700 hover:bg-gray-100"
+              className="p-2 text-cool-gray hover:bg-warm-gray/50"
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -96,14 +96,14 @@ const Header = () => {
 
          {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-gray-100 bg-white/95 backdrop-blur-sm md:hidden">
+          <div className="border-t border-warm-gray/30 bg-white/95 backdrop-blur-sm md:hidden">
             <div className="py-6 space-y-4 text-center">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
-                    isActive(item.href) ? "text-gray-900" : "text-gray-700"
+                  className={`block text-lg font-medium transition-colors hover:text-charcoal ${
+                    isActive(item.href) ? "text-charcoal" : "text-cool-gray"
                   }`}
                   onClick={(e) => {
                     if (item.href.includes('#')) {
@@ -120,10 +120,10 @@ const Header = () => {
               <div className="pt-4">
                 <Button 
                   asChild 
-                  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-xl"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-medium"
                 >
                   <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                    Get Started
+                    Book a Call
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
