@@ -184,9 +184,12 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden bg-gradient-radial from-gray-900 via-black to-black">
-        {/* Radial gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-black to-black z-10"></div>
+      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden">
+        {/* Hero background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/lovable-uploads/295e7672-68ab-4894-8f39-da63a4aa82e9.png)' }}
+        ></div>
         
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
