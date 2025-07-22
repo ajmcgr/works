@@ -184,15 +184,30 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-white min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
+      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full z-10">
+          <iframe
+            src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&background=1&controls=0"
+            className="w-full h-full object-cover"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            title="Hero Background Video"
+          ></iframe>
+        </div>
+        
+        {/* Dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/40 z-15"></div>
+        
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
           <div className="text-center py-8 mt-8">
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-gray-900 leading-tight mb-4 sm:mb-6 tracking-tight">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl font-headline text-white leading-tight mb-4 sm:mb-6 tracking-tight">
               Influence, Engineered
             </h1>
-            <p className="text-sm xs:text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
+            <p className="text-sm xs:text-base sm:text-lg text-white/90 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
               PR that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-6 sm:mb-8 px-4">
@@ -202,9 +217,9 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              <Link 
+               <Link 
                 to="/services"
-                className="text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-xs sm:text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Our services
               </Link>
@@ -214,7 +229,7 @@ const Index = () => {
           {/* Mobile Logos - Above video */}
           <div className="px-4 sm:px-6 mb-6 sm:mb-8">
             <div className="text-center mb-4 sm:mb-6">
-              <p className="text-xs text-gray-500 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+              <p className="text-xs text-white/70 font-normal uppercase tracking-wide">Trusted by leading brands</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center max-w-sm sm:max-w-md mx-auto">
               <div className="w-16 sm:w-20 h-8 sm:h-10">
@@ -280,10 +295,10 @@ const Index = () => {
         <div className="relative z-20 container mx-auto px-6 sm:px-6 lg:px-12 max-w-6xl w-full min-h-screen items-center hidden md:flex flex-col justify-center">
           {/* Desktop Content */}
           <div className="max-w-4xl mx-auto text-center w-full py-12 sm:py-8">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-gray-900 leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-headline text-white leading-tight mb-8 sm:mb-6 lg:mb-8 tracking-tight">
               Influence, Engineered
             </h1>
-            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-600 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
+            <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-white/90 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
               PR that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-12">
@@ -295,7 +310,7 @@ const Index = () => {
               </Button>
               <Link 
                 to="/services"
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Our services
               </Link>
@@ -305,7 +320,7 @@ const Index = () => {
           {/* Desktop Logos - Above video */}
           <div className="w-full mb-12">
             <div className="text-center mb-8">
-              <p className="text-sm text-gray-500 font-normal uppercase tracking-wide">Trusted by leading brands</p>
+              <p className="text-sm text-white/70 font-normal uppercase tracking-wide">Trusted by leading brands</p>
             </div>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center max-w-4xl mx-auto">
               <div className="w-20 sm:w-24 lg:w-32 h-12 sm:h-16 lg:h-20">
