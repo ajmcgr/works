@@ -8,19 +8,6 @@ const Footer = () => {
         <div className="text-center space-y-8">
           {/* Navigation Links */}
           <div className="space-y-6">
-            {/* Services */}
-            <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Services</h4>
-              <div className="space-y-3">
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Relations</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Communication</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Communications</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Content Strategy</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Marketing</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Event Management</Link>
-              </div>
-            </div>
-
             {/* Products */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Products</h4>
@@ -41,6 +28,19 @@ const Footer = () => {
                 >
                   Write AI
                 </a>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Services</h4>
+              <div className="space-y-3">
+                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Relations</Link>
+                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Communication</Link>
+                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Communications</Link>
+                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Content Strategy</Link>
+                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Marketing</Link>
+                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Event Management</Link>
               </div>
             </div>
 
