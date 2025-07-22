@@ -35,65 +35,77 @@
 
 @layer base {
   :root {
-    /* Warm neutral background system */
-    --background: 32 8% 97%; /* Warm off-white */
-    --background-secondary: 28 12% 95%; /* Slightly warmer */
-    --foreground: 222.2 84% 4.9%;
+    /* Sophisticated light theme - not flat white */
+    --background: 32 12% 97%; /* Eggshell */
+    --background-secondary: 30 15% 95%; /* Cream */
+    --background-tertiary: 35 8% 92%; /* Soft stone */
+    --foreground: 220 15% 12%; /* Deep charcoal */
 
-    /* Editorial color palette */
-    --electric-blue: 214 100% 58%; /* Electric blue for CTAs */
-    --coral: 16 90% 64%; /* Coral accent */
-    --warm-gray: 32 6% 88%; /* Warm gray backgrounds */
-    --cool-gray: 215 16% 47%; /* Cool gray text */
-    --charcoal: 222 16% 28%; /* Charcoal headings */
+    /* Premium editorial palette */
+    --stone: 35 8% 92%; /* Soft stone */
+    --warm-gray: 30 6% 85%; /* Warm gray */
+    --charcoal: 220 15% 12%; /* Deep charcoal */
+    --charcoal-light: 220 10% 25%; /* Light charcoal */
+    --accent-electric: 214 100% 55%; /* Electric blue */
+    --accent-coral: 16 85% 58%; /* Refined coral */
     
-    /* Brand colors - sophisticated palette */
-    --brand-primary: 214 100% 58%; /* Electric blue */
-    --brand-secondary: 16 90% 64%; /* Coral */
-    --brand-neutral: 32 6% 88%; /* Warm gray */
-    --brand-dark: 222 16% 28%; /* Charcoal */
+    /* Cinematic gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(32 12% 97%) 0%, hsl(30 15% 95%) 50%, hsl(35 8% 92%) 100%);
+    --gradient-premium: linear-gradient(180deg, hsl(32 12% 97%) 0%, hsl(30 15% 95%) 100%);
+    --gradient-electric: linear-gradient(135deg, hsl(214 100% 55%) 0%, hsl(214 100% 48%) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(16 85% 58%) 0%, hsl(16 85% 52%) 100%);
+    --gradient-cinematic: linear-gradient(180deg, 
+      hsl(32 12% 97%) 0%, 
+      hsl(30 15% 95%) 25%, 
+      hsl(35 8% 92%) 50%, 
+      hsl(30 15% 95%) 75%, 
+      hsl(32 12% 97%) 100%);
     
-    /* Advanced gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(32 8% 97%) 0%, hsl(220 20% 96%) 50%, hsl(214 30% 95%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(32 8% 97%) 0%, hsl(28 12% 95%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(214 100% 58%) 0%, hsl(214 100% 52%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(16 90% 64%) 0%, hsl(16 90% 58%) 100%);
+    /* Apple-level spacing and typography */
+    --spacing-cinematic: 8rem;
+    --spacing-section: 6rem;
+    --spacing-content: 4rem;
+    
+    /* Premium shadows and effects */
+    --shadow-premium: 0 32px 64px -12px hsl(220 15% 12% / 0.08);
+    --shadow-cinematic: 0 20px 40px -8px hsl(220 15% 12% / 0.12);
+    --shadow-hover: 0 40px 80px -16px hsl(214 100% 55% / 0.15);
 
     --card: 0 0% 100%;
-    --card-foreground: 222 16% 28%;
+    --card-foreground: 220 15% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 16% 28%;
+    --popover-foreground: 220 15% 12%;
 
-    --primary: 214 100% 58%;
+    --primary: 214 100% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 32 6% 88%;
-    --secondary-foreground: 222 16% 28%;
+    --secondary: 35 8% 92%;
+    --secondary-foreground: 220 15% 12%;
 
-    --muted: 32 6% 88%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 35 8% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 16 90% 64%;
+    --accent: 16 85% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 32 6% 88%;
-    --input: 32 6% 88%;
-    --ring: 214 100% 58%;
+    --border: 35 8% 88%;
+    --input: 35 8% 88%;
+    --ring: 214 100% 55%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 32 12% 97%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 220 15% 12%;
+    --sidebar-primary-foreground: 32 12% 97%;
+    --sidebar-accent: 35 8% 92%;
+    --sidebar-accent-foreground: 220 15% 12%;
+    --sidebar-border: 35 8% 88%;
+    --sidebar-ring: 214 100% 55%;
   }
 
   .dark {
@@ -142,21 +154,102 @@
 
   body {
     @apply text-foreground;
-    background: var(--gradient-hero);
+    background: var(--gradient-cinematic);
     min-height: 100vh;
     color: hsl(var(--charcoal));
+    font-feature-settings: "liga", "kern";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
-  /* Apply Reckless Medium font to all headings with letter spacing 0 */
+  /* Ultra-sharp typography hierarchy */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Reckless', serif;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: hsl(var(--charcoal));
   }
   
-  /* Ensure font-headline class also has letter spacing 0 */
+  /* Cinematic text sizes */
+  h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+  
+  h2 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+  
+  h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  
+  /* Premium body text */
+  p {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    line-height: 1.6;
+    color: hsl(var(--charcoal-light));
+    font-weight: 400;
+  }
+  
+  /* Ensure font-headline class also has premium spacing */
   .font-headline {
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  
+  /* Smooth transitions everywhere */
+  * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Premium hover effects */
+  .hover-lift {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+  }
+  
+  /* Cinematic animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 }
 
