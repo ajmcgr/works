@@ -184,7 +184,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gray-50 min-h-screen flex flex-col justify-center overflow-hidden pt-24">
+      <section className="relative bg-gray-50 min-h-screen flex flex-col justify-start overflow-hidden pt-8">
         {/* Mobile Layout - Content above video */}
         <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl w-full md:hidden">
           {/* Mobile Content */}
