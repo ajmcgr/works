@@ -160,8 +160,8 @@ const Index = () => {
             ].map((tool, index) => (
               <div key={index} className="reveal-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
-                  <div className={`w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6`}>
-                    <span className="text-2xl font-bold text-white">{tool.number}</span>
+                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                    <span className="text-2xl font-bold text-foreground">{tool.number}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-background mb-2">{tool.name}</h3>
                   <p className="text-background/70 text-lg mb-4">{tool.tagline}</p>
@@ -407,7 +407,7 @@ const Index = () => {
             className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold rounded-full"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-              Book a Call
+              Let's Work
             </a>
           </Button>
         </div>

@@ -67,16 +67,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            
-            <Button 
-              asChild 
-              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-medium"
-            >
-              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Book a Call
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
           </nav>
 
           {/* Hamburger menu button - mobile only */}
@@ -112,20 +102,8 @@ const Header = () => {
                   }}
                 >
                   {item.name}
-                </Link>
+              </Link>
               ))}
-              
-              <div className="pt-4">
-                <Button 
-                  asChild 
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-medium"
-                >
-                  <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                    Book a Call
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              </div>
             </div>
           </div>
         )}
