@@ -274,20 +274,6 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Mobile Video - Below logos */}
-          <div className="px-4 sm:px-6 pb-16 sm:pb-24">
-            <div className="max-w-sm sm:max-w-md mx-auto">
-              <AspectRatio ratio={16/9}>
-                <iframe
-                  src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                  className="w-full h-full object-cover rounded-lg sm:rounded-xl"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                  title="Works PR Video"
-                />
-              </AspectRatio>
-            </div>
-          </div>
         </div>
 
         {/* Desktop Layout - Content above video (same as mobile) */}
@@ -379,18 +365,6 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Desktop Video - Below logos */}
-          <div className="w-full max-w-4xl mx-auto pb-20">
-            <AspectRatio ratio={16/9}>
-              <iframe
-                src="https://player.vimeo.com/video/1103093516?h=9c7c3f3f3e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-                className="w-full h-full object-cover rounded-xl"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Works PR Video"
-              />
-            </AspectRatio>
-          </div>
         </div>
       </section>
 
