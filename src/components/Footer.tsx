@@ -5,8 +5,12 @@ const Footer = () => {
     <footer className="bg-gradient-hero border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <Link to="/" className="text-2xl font-headline font-bold tracking-tight text-primary mb-4 inline-block">
-            .works
+          <Link to="/" className="flex items-center justify-center mb-4">
+            <img 
+              src="/lovable-uploads/70b37b99-761a-4f2c-af5f-68abfb740aed.png" 
+              alt="Works" 
+              className="h-8"
+            />
           </Link>
           <p className="text-muted-foreground mb-8">
             Influence, Engineered.

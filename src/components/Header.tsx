@@ -22,8 +22,12 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-headline font-bold tracking-tight text-primary">
-            .works
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/70b37b99-761a-4f2c-af5f-68abfb740aed.png" 
+              alt="Works" 
+              className="h-8"
+            />
           </Link>
 
           {/* Desktop Navigation */}
