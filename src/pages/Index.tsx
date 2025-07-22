@@ -78,6 +78,7 @@ const Index = () => {
                   src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                   alt="UFC" 
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="eager"
                 />
               </div>
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
@@ -85,6 +86,7 @@ const Index = () => {
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="eager"
                 />
               </div>
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
@@ -92,6 +94,7 @@ const Index = () => {
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                   alt="OPPO" 
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="eager"
                 />
               </div>
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
@@ -99,6 +102,7 @@ const Index = () => {
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                   alt="Ogilvy" 
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="eager"
                 />
               </div>
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
@@ -106,6 +110,7 @@ const Index = () => {
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                   alt="Weber Shandwick" 
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="eager"
                 />
               </div>
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
@@ -113,6 +118,7 @@ const Index = () => {
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="eager"
                 />
               </div>
             </div>
@@ -170,6 +176,19 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+          
+          {/* Contact Us CTA */}
+          <div className="text-center mt-16 reveal-on-scroll">
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold rounded-full"
+            >
+              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                Contact us
+              </a>
+            </Button>
           </div>
         </div>
       </section>
