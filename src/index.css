@@ -38,17 +38,22 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
-    /* Custom brand gradient backgrounds using #da3129, #eee34d, #2659e3 */
-    --gradient-purple-blue: linear-gradient(135deg, #2659e3 0%, #da3129 100%);
-    --gradient-orange-red: linear-gradient(135deg, #da3129 0%, #eee34d 100%);
-    --gradient-teal-green: linear-gradient(135deg, #2659e3 0%, #eee34d 100%);
-    --gradient-sunset: linear-gradient(135deg, #eee34d 0%, #da3129 100%);
-    --gradient-ocean: linear-gradient(135deg, #2659e3 0%, #da3129 50%, #eee34d 100%);
-    --gradient-lavender: linear-gradient(135deg, #da3129 0%, #2659e3 100%);
-    --gradient-cosmic: linear-gradient(135deg, #2659e3 0%, #eee34d 50%, #da3129 100%);
-    --gradient-mint: linear-gradient(135deg, #eee34d 0%, #2659e3 100%);
-    --gradient-berry: linear-gradient(135deg, #da3129 0%, #2659e3 100%);
-    --gradient-flame: linear-gradient(135deg, #eee34d 0%, #da3129 50%, #2659e3 100%);
+    /* Neutral gradient backgrounds with subtle variations */
+    --gradient-purple-blue: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    --gradient-orange-red: linear-gradient(135deg, #fafafa 0%, #f4f4f5 100%);
+    --gradient-teal-green: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+    --gradient-sunset: linear-gradient(135deg, #fefefe 0%, #f8f9fa 100%);
+    --gradient-ocean: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+    --gradient-lavender: linear-gradient(135deg, #fafbfb 0%, #f4f5f7 100%);
+    --gradient-cosmic: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
+    --gradient-mint: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+    --gradient-berry: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    --gradient-flame: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #f1f3f4 100%);
+    
+    /* Brand accent colors */
+    --brand-red: #da3129;
+    --brand-yellow: #eee34d;
+    --brand-blue: #2659e3;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
