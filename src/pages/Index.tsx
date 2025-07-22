@@ -184,7 +184,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden pt-16 md:pt-2">
+      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden">
         {/* Video Background */}
         <div className="absolute inset-0 w-full h-full z-10">
           <iframe
