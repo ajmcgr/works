@@ -3,12 +3,16 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
+  const [showFloatingCTA, setShowFloatingCTA] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const section = Math.floor(scrollY / window.innerHeight);
       setCurrentSection(section);
+      
+      // Show floating CTA after scrolling past hero section
+      setShowFloatingCTA(scrollY > window.innerHeight * 0.8);
       
       // Reveal animations on scroll
       const reveals = document.querySelectorAll('.reveal-on-scroll');
@@ -65,61 +69,58 @@ const Index = () => {
             </Button>
           </div>
 
+          {/* Client Logos - Now directly below hero button */}
+          <div className="mt-16 reveal-on-scroll" style={{ animationDelay: '0.9s' }}>
+            <p className="text-muted-foreground text-center text-lg font-medium mb-8">Trusted by ambitious brands</p>
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
+              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
+                  alt="UFC" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                  alt="OnePlus" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                  alt="OPPO" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                  alt="Ogilvy" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                  alt="Weber Shandwick" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                  alt="Publicis Groupe" 
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      {/* Client Logos Section - Moved from later in page */}
-      <section className="py-16 px-6 bg-background border-b border-border/10">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-muted-foreground text-lg font-medium">Trusted by ambitious brands</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
-            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
-                alt="UFC" 
-                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                alt="OnePlus" 
-                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                alt="OPPO" 
-                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                alt="Ogilvy" 
-                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                alt="Weber Shandwick" 
-                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="w-40 h-24 md:w-48 md:h-28 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                alt="Publicis Groupe" 
-                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Product Showcase - Scroll Reveals */}
       <section className="min-h-screen py-20 px-6 bg-foreground text-background">
@@ -399,19 +400,19 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sticky Footer CTA */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 p-6">
-        <div className="max-w-md mx-auto">
+      {/* Floating CTA that appears on scroll */}
+      {showFloatingCTA && (
+        <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
           <Button 
             asChild 
-            className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold rounded-full"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full shadow-xl"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Let's Work
             </a>
           </Button>
         </div>
-      </div>
+      )}
 
       {/* Spacer for sticky footer */}
       <div className="h-24"></div>
