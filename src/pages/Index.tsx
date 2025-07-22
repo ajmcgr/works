@@ -193,7 +193,7 @@ const Index = () => {
               Influence, Engineered
             </h1>
             <p className="text-sm xs:text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto font-normal px-4">
-              Global PR that aligns your strategy, earns media, and drives influence.
+              PR that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-6 sm:mb-8 px-4">
               <Button asChild className="text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium w-full max-w-xs" style={{ backgroundColor: '#409EFF' }}>
@@ -298,7 +298,7 @@ const Index = () => {
               Influence, Engineered
             </h1>
             <p className="text-base xs:text-lg sm:text-xl lg:text-xl text-gray-700 leading-relaxed mb-10 sm:mb-8 lg:mb-12 max-w-lg sm:max-w-2xl mx-auto font-normal">
-              Global PR that aligns your strategy, earns media, and drives influence.
+              PR that aligns your strategy, earns media, and drives influence.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-12">
               <Button asChild className="text-white px-8 sm:px-8 lg:px-10 py-4 sm:py-4 text-base font-medium w-full sm:w-auto max-w-xs sm:max-w-none" style={{ backgroundColor: '#409EFF' }}>
