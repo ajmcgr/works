@@ -405,7 +405,7 @@ const Index = () => {
                 <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">Event Management</h3>
                 <p className="text-gray-600 font-normal">Orchestrating memorable experiences that strengthen relationships and drive engagement</p>
               </div>
-              <div className="pb-6">
+              <div className="pb-6 border-b border-gray-100">
                 <h3 className="text-2xl lg:text-3xl font-medium text-black mb-2">PR Software</h3>
                 <p className="text-gray-600 font-normal">PR tools that help you write better and reach media at scale to improve your overall communications outcomes.</p>
               </div>
