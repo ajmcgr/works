@@ -189,7 +189,8 @@ const Index = () => {
         <div className="absolute inset-0 w-full h-full z-10">
           <iframe
             src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&background=1&controls=0"
-            className="w-full h-full object-cover"
+            className="w-full h-full scale-150 object-cover"
+            style={{ minWidth: '100vw', minHeight: '100vh' }}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
