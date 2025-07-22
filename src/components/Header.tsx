@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-white/90 backdrop-blur-md border-b border-warm-gray/30 z-50">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white/90 backdrop-blur-md z-50">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
@@ -96,7 +96,7 @@ const Header = () => {
 
          {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-warm-gray/30 bg-white/95 backdrop-blur-sm md:hidden">
+          <div className="bg-white/95 backdrop-blur-sm md:hidden">
             <div className="py-6 space-y-4 text-center">
               {navigation.map((item) => (
                 <Link

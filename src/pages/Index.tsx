@@ -79,10 +79,10 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 reveal-on-scroll">
             <h2 className="font-headline text-background mb-6">
-              The Stack
+              Our Process
             </h2>
             <p className="text-background/70 text-xl max-w-2xl mx-auto">
-              Software that makes influence inevitable
+              How we engineer influence that sticks
             </p>
           </div>
 
@@ -90,23 +90,23 @@ const Index = () => {
           <div className="space-y-12">
             {[
               {
-                name: "Media AI",
-                tagline: "Press that finds you",
-                description: "200K verified contacts. AI-powered pitch matching. Real-time journalist tracking.",
+                name: "Strategic Intelligence",
+                tagline: "Know before you go",
+                description: "Deep market analysis. Competitive positioning. Narrative architecture that positions you as inevitable.",
                 icon: Database,
                 gradient: "from-accent-electric to-blue-600"
               },
               {
-                name: "Write AI", 
-                tagline: "Copy that converts",
-                description: "Brand voice that scales. Press releases that land. Pitches that get opens.",
+                name: "Precision Execution", 
+                tagline: "Every story placed",
+                description: "AI-powered targeting. Human relationship craft. Media coverage that compounds over time.",
                 icon: Bot,
                 gradient: "from-accent-electric to-purple-600"
               },
               {
-                name: "HYPEWORKS",
-                tagline: "Stories behind stories",
-                description: "Founder raw talk. Campaign breakdowns. Industry secrets.",
+                name: "Scale & Amplify",
+                tagline: "Influence that spreads",
+                description: "Multi-channel orchestration. Cross-platform amplification. Results that get competitors talking.",
                 icon: Mic,
                 gradient: "from-red-500 to-orange-600"
               }
@@ -131,10 +131,10 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6">
-              Unignorable Results
+              Case Studies
             </h2>
             <p className="text-muted-foreground text-xl">
-              Case studies that make competitors nervous
+              Real campaigns. Real results. Real impact.
             </p>
           </div>
 
@@ -146,22 +146,26 @@ const Index = () => {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground">Fintech Unicorn</h4>
-                  <p className="text-muted-foreground text-sm">Series C Launch</p>
+                  <h4 className="font-bold text-foreground">TechFlow</h4>
+                  <p className="text-muted-foreground text-sm">Fintech Series C Launch</p>
                 </div>
               </div>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Positioned TechFlow as the "future of payments" during their $85M Series C. 
+                Our narrative engineering placed them in 47 countries, driving massive pipeline impact.
+              </p>
               <div className="space-y-4">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Media Mentions</span>
-                  <span className="font-bold text-foreground">2,847</span>
+                  <span className="text-muted-foreground">Tier-1 Coverage</span>
+                  <span className="font-bold text-foreground">TechCrunch, Forbes, WSJ</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Pipeline Impact</span>
-                  <span className="font-bold text-foreground">$12.3M</span>
+                  <span className="font-bold text-foreground">$12.3M in 90 days</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Countries</span>
-                  <span className="font-bold text-foreground">47</span>
+                  <span className="text-muted-foreground">Global Reach</span>
+                  <span className="font-bold text-foreground">47 countries</span>
                 </div>
               </div>
             </div>
@@ -172,26 +176,87 @@ const Index = () => {
                   <Database className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground">AI Startup</h4>
-                  <p className="text-muted-foreground text-sm">Product Launch</p>
+                  <h4 className="font-bold text-foreground">NeuralLabs</h4>
+                  <p className="text-muted-foreground text-sm">AI Startup Product Launch</p>
                 </div>
               </div>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Launched NeuralLabs' AI platform with strategic media blitz. Our crisis-proof 
+                architecture helped them navigate regulatory scrutiny while maintaining momentum.
+              </p>
               <div className="space-y-4">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">TechCrunch Features</span>
-                  <span className="font-bold text-foreground">3</span>
+                  <span className="text-muted-foreground">Launch Day Signups</span>
+                  <span className="font-bold text-foreground">25,000+ users</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Sign-ups D1</span>
-                  <span className="font-bold text-foreground">12K</span>
+                  <span className="text-muted-foreground">Valuation Increase</span>
+                  <span className="font-bold text-foreground">3.2x in 6 months</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Runway Extended</span>
-                  <span className="font-bold text-foreground">18mo</span>
+                  <span className="text-muted-foreground">Media Sentiment</span>
+                  <span className="font-bold text-foreground">94% positive</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-20 px-6 bg-foreground text-background">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-16 reveal-on-scroll">
+            <h2 className="font-headline text-background mb-6">
+              Ready to be unignorable?
+            </h2>
+            <p className="text-background/70 text-xl">
+              Tell us your story. We'll engineer the influence.
+            </p>
+          </div>
+
+          <form className="space-y-6 reveal-on-scroll" style={{ animationDelay: '0.2s' }}>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <input 
+                  type="text" 
+                  placeholder="Your name" 
+                  className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors touch-target"
+                />
+              </div>
+              <div>
+                <input 
+                  type="email" 
+                  placeholder="Email address" 
+                  className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors touch-target"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <input 
+                type="text" 
+                placeholder="Company name" 
+                className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors touch-target"
+              />
+            </div>
+            
+            <div>
+              <textarea 
+                placeholder="Tell us about your ambitions..." 
+                rows={4}
+                className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors resize-none"
+              ></textarea>
+            </div>
+            
+            <Button 
+              type="submit"
+              className="w-full bg-gradient-to-r from-accent-electric to-blue-600 hover:from-blue-600 hover:to-accent-electric text-white py-6 text-lg font-semibold rounded-2xl touch-target transition-all duration-500"
+            >
+              Start the Conversation
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </form>
         </div>
       </section>
 
