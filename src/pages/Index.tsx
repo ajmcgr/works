@@ -61,7 +61,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold rounded-full"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Let's Work
@@ -183,7 +183,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold rounded-full"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Contact us
@@ -267,7 +267,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold rounded-full"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="/work">
                 View Our Work
@@ -424,7 +424,7 @@ const Index = () => {
         <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
           <Button 
             asChild 
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full shadow-xl"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold shadow-xl"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Let's Work
