@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -10,10 +10,11 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Work", href: "/work" },
-    { name: "Services", href: "/services" },
+    { name: "Our work", href: "/work" },
+    { name: "Pricing", href: "/#pricing" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact us", href: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -38,52 +39,55 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-transparent backdrop-blur-sm z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 z-50">
+      <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
               alt="Works" 
-              className="h-6 brightness-0 invert"
+              className="h-6"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-end space-x-8 flex-1">
-            {navigation.slice(0, 2).map((item) => (
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm tracking-tight font-medium transition-colors hover:text-white/80 ${
-                  isActive(item.href) ? "text-white" : "text-white/90"
+                onClick={(e) => {
+                  if (item.href.includes('#')) {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }
+                }}
+                className={`text-sm font-medium transition-colors hover:text-gray-600 ${
+                  isActive(item.href) ? "text-gray-900" : "text-gray-700"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
             
-            
-            {navigation.slice(2).map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm tracking-tight font-medium transition-colors hover:text-white/80 ${
-                  isActive(item.href) ? "text-white" : "text-white/90"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+            <Button 
+              asChild 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-xl"
+            >
+              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
           </nav>
 
           {/* Hamburger menu button - mobile only */}
           <div className="md:hidden">
-              <Button
+            <Button
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-white hover:bg-white/10"
+              className="p-2 text-gray-700 hover:bg-gray-100"
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -92,48 +96,38 @@ const Header = () => {
 
          {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-white/20 bg-black/40 backdrop-blur-sm">
+          <div className="border-t border-gray-100 bg-white/95 backdrop-blur-sm md:hidden">
             <div className="py-6 space-y-4 text-center">
-              <Link
-                to="/work"
-                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
-                  isActive("/work") ? "text-white" : "text-white/90"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Work
-              </Link>
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block text-lg font-medium transition-colors hover:text-gray-600 ${
+                    isActive(item.href) ? "text-gray-900" : "text-gray-700"
+                  }`}
+                  onClick={(e) => {
+                    if (item.href.includes('#')) {
+                      e.preventDefault();
+                      handleNavClick(item.href);
+                    }
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {item.name}
+                </Link>
+              ))}
               
-              <Link
-                to="/services"
-                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
-                  isActive("/services") ? "text-white" : "text-white/90"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              
-              
-              <Link
-                to="/about"
-                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
-                  isActive("/about") ? "text-white" : "text-white/90"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              
-              <Link
-                to="/contact"
-                className={`block text-lg font-medium transition-colors hover:text-white/80 ${
-                  isActive("/contact") ? "text-white" : "text-white/90"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
+              <div className="pt-4">
+                <Button 
+                  asChild 
+                  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-xl"
+                >
+                  <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         )}
