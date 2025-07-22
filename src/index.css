@@ -38,10 +38,10 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
-    /* Brand color backgrounds - very light tints */
-    --brand-red-bg: 254 252 252; /* #da3129 at ~3% opacity */
-    --brand-yellow-bg: 254 254 248; /* #eee34d at ~3% opacity */
-    --brand-blue-bg: 248 250 254; /* #2659e3 at ~3% opacity */
+    /* Brand color backgrounds - bolder tints */
+    --brand-red-bg: 253 240 239; /* #da3129 at ~8% opacity */
+    --brand-yellow-bg: 252 251 235; /* #eee34d at ~8% opacity */
+    --brand-blue-bg: 240 246 253; /* #2659e3 at ~8% opacity */
     
     /* Brand accent colors */
     --brand-red: 218 49 41;

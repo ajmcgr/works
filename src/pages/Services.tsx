@@ -67,7 +67,7 @@ const Services = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="py-32 lg:py-48 bg-brand-blue-bg border-l-4 border-brand-blue-accent">
+      <section className="py-32 lg:py-48 bg-brand-blue-bg border-l-8 border-brand-blue-accent">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="max-w-4xl">
             <h1 className="text-5xl lg:text-7xl font-headline text-gray-900 leading-[1.1] mb-8 tracking-tight">
@@ -82,7 +82,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-32 bg-brand-yellow-bg border-l-4 border-brand-yellow">
+      <section className="py-32 bg-brand-yellow-bg border-l-8 border-brand-yellow">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {services.map((service, index) => (
@@ -110,7 +110,7 @@ const Services = () => {
       </section>
 
       {/* Process */}
-      <section className="py-32 bg-brand-red-bg border-l-4 border-brand-red">
+      <section className="py-32 bg-brand-red-bg border-l-8 border-brand-red">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
           <div className="mb-20">
             <h2 className="text-3xl lg:text-4xl font-headline text-gray-900 mb-8 leading-tight">
@@ -134,7 +134,7 @@ const Services = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-32 bg-white text-gray-900 border-l-4 border-brand-blue-accent">
+      <section className="py-32 bg-white text-gray-900 border-l-8 border-brand-blue-accent">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
           <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight">
             Ready to elevate your PR strategy?
