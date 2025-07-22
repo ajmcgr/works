@@ -35,77 +35,48 @@
 
 @layer base {
   :root {
-    /* Sophisticated light theme - not flat white */
-    --background: 32 12% 97%; /* Eggshell */
-    --background-secondary: 30 15% 95%; /* Cream */
-    --background-tertiary: 35 8% 92%; /* Soft stone */
-    --foreground: 220 15% 12%; /* Deep charcoal */
-
-    /* Premium editorial palette */
-    --stone: 35 8% 92%; /* Soft stone */
-    --warm-gray: 30 6% 85%; /* Warm gray */
-    --charcoal: 220 15% 12%; /* Deep charcoal */
-    --charcoal-light: 220 10% 25%; /* Light charcoal */
-    --accent-electric: 214 100% 55%; /* Electric blue */
-    --accent-coral: 16 85% 58%; /* Refined coral */
+    /* High-contrast mobile-first palette */
+    --background: 35 25% 96%; /* Cream */
+    --background-stone: 30 15% 92%; /* Stone */
+    --foreground: 0 0% 8%; /* Deep black */
+    --accent-electric: 214 100% 50%; /* Electric blue */
+    --accent-punch: 0 0% 8%; /* Pure black for contrast */
     
-    /* Cinematic gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(32 12% 97%) 0%, hsl(30 15% 95%) 50%, hsl(35 8% 92%) 100%);
-    --gradient-premium: linear-gradient(180deg, hsl(32 12% 97%) 0%, hsl(30 15% 95%) 100%);
-    --gradient-electric: linear-gradient(135deg, hsl(214 100% 55%) 0%, hsl(214 100% 48%) 100%);
-    --gradient-coral: linear-gradient(135deg, hsl(16 85% 58%) 0%, hsl(16 85% 52%) 100%);
-    --gradient-cinematic: linear-gradient(180deg, 
-      hsl(32 12% 97%) 0%, 
-      hsl(30 15% 95%) 25%, 
-      hsl(35 8% 92%) 50%, 
-      hsl(30 15% 95%) 75%, 
-      hsl(32 12% 97%) 100%);
+    /* Kinetic gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(35 25% 96%) 0%, hsl(30 15% 92%) 100%);
+    --gradient-punch: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(220 15% 15%) 100%);
+    --gradient-electric: linear-gradient(135deg, hsl(214 100% 50%) 0%, hsl(214 100% 40%) 100%);
     
-    /* Apple-level spacing and typography */
-    --spacing-cinematic: 8rem;
-    --spacing-section: 6rem;
-    --spacing-content: 4rem;
+    /* Motion system */
+    --timing-instant: 0.1s cubic-bezier(0.4, 0, 1, 1);
+    --timing-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --timing-smooth: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --timing-cinematic: 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Premium shadows and effects */
-    --shadow-premium: 0 32px 64px -12px hsl(220 15% 12% / 0.08);
-    --shadow-cinematic: 0 20px 40px -8px hsl(220 15% 12% / 0.12);
-    --shadow-hover: 0 40px 80px -16px hsl(214 100% 55% / 0.15);
+    /* Touch-native spacing */
+    --touch-target: 44px;
+    --spacing-mobile: 1rem;
+    --spacing-section: 4rem;
+    --spacing-hero: 8rem;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 12%;
-
+    --card-foreground: 0 0% 8%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 12%;
-
-    --primary: 214 100% 55%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 35 8% 92%;
-    --secondary-foreground: 220 15% 12%;
-
-    --muted: 35 8% 92%;
-    --muted-foreground: 220 10% 45%;
-
-    --accent: 16 85% 58%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 0 0% 8%;
+    --primary-foreground: 35 25% 96%;
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 0 0% 8%;
+    --muted: 30 15% 92%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 214 100% 50%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 35 8% 88%;
-    --input: 35 8% 88%;
-    --ring: 214 100% 55%;
-
-    --radius: 1rem;
-
-    --sidebar-background: 32 12% 97%;
-    --sidebar-foreground: 220 15% 25%;
-    --sidebar-primary: 220 15% 12%;
-    --sidebar-primary-foreground: 32 12% 97%;
-    --sidebar-accent: 35 8% 92%;
-    --sidebar-accent-foreground: 220 15% 12%;
-    --sidebar-border: 35 8% 88%;
-    --sidebar-ring: 214 100% 55%;
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 0 0% 8%;
+    --radius: 1.5rem;
   }
 
   .dark {
@@ -154,102 +125,119 @@
 
   body {
     @apply text-foreground;
-    background: var(--gradient-cinematic);
+    background: var(--gradient-hero);
     min-height: 100vh;
-    color: hsl(var(--charcoal));
+    color: hsl(var(--foreground));
     font-feature-settings: "liga", "kern";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
   
-  /* Ultra-sharp typography hierarchy */
+  /* Kinetic typography system */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Reckless', serif;
     font-weight: 500;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-    color: hsl(var(--charcoal));
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+    color: hsl(var(--foreground));
   }
   
-  /* Cinematic text sizes */
   h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(3rem, 12vw, 8rem);
     font-weight: 500;
-    letter-spacing: -0.04em;
   }
   
   h2 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 8vw, 5rem);
     font-weight: 500;
-    letter-spacing: -0.03em;
   }
   
   h3 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: 500;
-    letter-spacing: -0.02em;
   }
   
-  /* Premium body text */
+  /* Mobile-first body text */
   p {
-    font-size: clamp(1.125rem, 2vw, 1.375rem);
-    line-height: 1.6;
-    color: hsl(var(--charcoal-light));
-    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.5;
+    color: hsl(var(--muted-foreground));
   }
   
-  /* Ensure font-headline class also has premium spacing */
-  .font-headline {
-    letter-spacing: -0.02em;
-    line-height: 1.1;
+  /* Touch-native interactions */
+  .touch-target {
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
   }
   
-  /* Smooth transitions everywhere */
-  * {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Kinetic animations */
+  .kinetic-slide {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform var(--timing-cinematic), opacity var(--timing-cinematic);
   }
   
-  /* Premium hover effects */
-  .hover-lift {
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  .kinetic-slide.in-view {
+    transform: translateY(0);
+    opacity: 1;
   }
   
-  .hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
+  .kinetic-float {
+    animation: float 6s ease-in-out infinite;
   }
   
-  /* Cinematic animations */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
   }
   
-  @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
+  .kinetic-pulse {
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  /* Touch-responsive hover states */
+  @media (hover: hover) {
+    .touch-hover:hover {
+      transform: scale(1.02);
+      transition: transform var(--timing-fast);
     }
   }
   
-  .animate-fade-in-up {
-    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  /* Mobile gesture indicators */
+  .swipe-indicator {
+    position: relative;
   }
   
-  .animate-scale-in {
-    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  .swipe-indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: hsl(var(--muted-foreground));
+    border-radius: 2px;
+    opacity: 0.3;
+  }
+  
+  /* Scroll-triggered reveals */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity var(--timing-smooth), transform var(--timing-smooth);
+  }
+  
+  .reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
