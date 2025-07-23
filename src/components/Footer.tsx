@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-4xl">
         <div className="text-center space-y-8">
           {/* Navigation Links */}
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {/* Products */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Products</h4>
