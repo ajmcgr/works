@@ -443,9 +443,20 @@ const Index = () => {
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-left">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-              About Works
-            </h2>
+            <div className="flex items-start gap-8 mb-8">
+              <div className="w-24 h-24 flex-shrink-0">
+                <img 
+                  src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
+                  alt="Alex MacGregor" 
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <div>
+                <h2 className="text-3xl lg:text-4xl font-headline text-black mb-0 leading-tight">
+                  About Works
+                </h2>
+              </div>
+            </div>
             <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
               <p>
                 We're the PR & Influencer Marketing agency built for founders, rebels, and category creators.
@@ -465,8 +476,8 @@ const Index = () => {
             </div>
             <div className="mt-12">
               <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
+                <a href="/about" className="hover:opacity-90">
+                  Learn more about us
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
