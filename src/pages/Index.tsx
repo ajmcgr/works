@@ -281,6 +281,82 @@ const Index = () => {
         </div>
       </section>
 
+      {/* How We Can Help Section */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16 reveal-on-scroll">
+            <h2 className="font-headline text-foreground mb-6">
+              How we can help
+            </h2>
+            <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
+              Comprehensive PR solutions designed to elevate your brand and drive meaningful engagement
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            {[
+              {
+                title: "Media Relations",
+                description: "Build and maintain relationships with key journalists, influencers, and media outlets to secure strategic coverage.",
+                features: ["Press Release Distribution", "Media Outreach", "Journalist Relationships", "Story Pitching"]
+              },
+              {
+                title: "Crisis Communication", 
+                description: "Rapid response strategies to protect and restore your reputation during challenging situations.",
+                features: ["24/7 Crisis Support", "Reputation Management", "Stakeholder Communication", "Media Training"]
+              },
+              {
+                title: "Brand Communications",
+                description: "Develop consistent messaging that builds trust and strengthens your brand across all touchpoints.",
+                features: ["Message Development", "Brand Positioning", "Thought Leadership", "Executive Communications"]
+              },
+              {
+                title: "Content Strategy",
+                description: "Create compelling narratives and content that engage your audience and drive meaningful conversations.",
+                features: ["Content Planning", "Storytelling", "Editorial Calendar", "Multi-Channel Distribution"]
+              },
+              {
+                title: "Influencer Marketing",
+                description: "Connect with influential voices that authentically align with your brand to amplify your message.",
+                features: ["Influencer Identification", "Partnership Management", "Campaign Strategy", "Performance Tracking"]
+              },
+              {
+                title: "Event Management",
+                description: "Create memorable experiences that strengthen relationships and position your brand as an industry leader.",
+                features: ["Event Planning", "Media Events", "Product Launches", "Conference Management"]
+              }
+            ].map((service, index) => (
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg reveal-on-scroll touch-hover" style={{ animationDelay: `${index * 0.1}s` }}>
+                <h3 className="text-xl font-bold text-foreground mb-4">{service.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-center space-x-3">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span className="text-sm text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA to Services page */}
+          <div className="text-center mt-16 reveal-on-scroll">
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+            >
+              <a href="/services">
+                View All Services <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+
       {/* Client Recommendations Section */}
       <section className="py-20 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
