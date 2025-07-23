@@ -65,11 +65,11 @@ const About = () => {
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="text-left">
             <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">
-              About works
+              About Works
             </h2>
             <div className="space-y-6 text-lg text-gray-600 font-normal leading-relaxed">
               <p>
-                We're the creative agency built for founders, rebels, and category creators.
+                We're the PR & Influencer Marketing agency built for founders, rebels, and category creators.
               </p>
               <p>
                 Our playbook? Strategy. Media. Influencers. Hype.
