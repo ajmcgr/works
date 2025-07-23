@@ -419,7 +419,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/5c5a6c05-1222-4931-96e1-31741231b19f.png" 
                     alt="Tina Sharkey" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-full"
                   />
                 </div>
                 <div>
