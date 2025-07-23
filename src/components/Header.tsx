@@ -40,7 +40,11 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+    <header className={`w-full z-50 border-b border-gray-100 ${
+      location.pathname === '/' 
+        ? 'bg-gradient-to-b from-background via-background-stone to-background' 
+        : 'bg-white/90 backdrop-blur-md'
+    }`}>
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
