@@ -51,6 +51,8 @@ const Index = () => {
             </h1>
             
             <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-md mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
+              PR & Influencer Marketing.
+              <br />
               We don't pitch brands.
               <br />
               We make them unignorable.
