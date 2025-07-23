@@ -12,8 +12,8 @@ const Header = () => {
   const navigation = [
     { name: "Media AI", href: "https://trymedia.ai/" },
     { name: "Write AI", href: "https://www.trywrite.ai/" },
-    { name: "Work", href: "/work" },
     { name: "Services", href: "/services" },
+    { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
     { name: "Contact us", href: "/contact" },
   ];
