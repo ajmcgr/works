@@ -63,7 +63,7 @@ const Index = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Contact us <ArrowRight className="ml-2 h-4 w-4" />
+                Let's Work <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
