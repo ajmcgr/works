@@ -227,7 +227,7 @@ const Index = () => {
               {
                 name: "Discovery Call", 
                 tagline: "Deep dive strategy",
-                description: "90-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
+                description: "30-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
                 number: "2",
                 gradient: "from-primary to-purple-600"
               },
