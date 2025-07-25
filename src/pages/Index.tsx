@@ -126,6 +126,49 @@ const Index = () => {
         </div>
       </section>
 
+      {/* We are Works Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16 reveal-on-scroll">
+            <h2 className="font-headline text-foreground mb-6">
+              We are Works
+            </h2>
+          </div>
+          
+          <div className="text-left max-w-3xl mx-auto">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed reveal-on-scroll">
+              <p>
+                We're the PR & Influencer Marketing agency built for founders, rebels, and category creators.
+              </p>
+              <p>
+                Our playbook? Strategy. Media. Influencers. Hype.
+              </p>
+              <p>
+                Our AI tools supercharge it — turning your story into headlines and your brand into influence.
+              </p>
+              <p>
+                We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond.
+              </p>
+              <p>
+                If you're building something bold, we'll make the world pay attention.
+              </p>
+            </div>
+            
+            <div className="text-center mt-12 reveal-on-scroll">
+              <Button 
+                asChild 
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+              >
+                <a href="/about">
+                  Learn More About Us <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How We Can Help Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
