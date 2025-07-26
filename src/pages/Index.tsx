@@ -487,11 +487,11 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6">
-              We ❤️ Startups
+              We ♥️ Startups
             </h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-foreground mb-4">
-                We love working with founders and startups and created something just for you.
+                We love working with founders and startups; here's something just for you.
               </p>
             </div>
           </div>
