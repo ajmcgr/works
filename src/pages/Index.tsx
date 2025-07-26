@@ -525,6 +525,10 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-foreground">1 round of media pitching</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
                   <span className="text-foreground">1-month free access to Media AI</span>
                 </li>
               </ul>
@@ -539,7 +543,7 @@ const Index = () => {
               <div className="text-center mb-8">
                 <h3 className="font-headline text-2xl text-foreground mb-2">Launch PR Sprint Pro</h3>
                 <div className="text-4xl font-bold text-foreground mb-4">$1,499</div>
-                <p className="text-muted-foreground text-lg">A deep narrative strategy</p>
+                <p className="text-muted-foreground text-lg">Pro launch-ready PR kit + deep strategy</p>
               </div>
               
               <ul className="space-y-4 mb-8">
@@ -553,23 +557,15 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">5 pitchable angles</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">Full media persona</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">3 pitch templates</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">Custom media map</span>
+                  <span className="text-foreground">3 pitch emails</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
                   <span className="text-foreground">30-min coaching</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-foreground">2 rounds of media pitching</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
