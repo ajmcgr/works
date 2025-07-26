@@ -23,7 +23,7 @@ const Startups = () => {
             {/* Sprint Tier */}
             <div className="bg-gray-50 rounded-3xl p-10 shadow-lg border border-gray-200">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-black mb-2">Sprint</h3>
+                <h3 className="text-2xl font-bold text-black mb-2">Launch PR Sprint</h3>
                 <div className="text-4xl font-bold text-black mb-4">$999</div>
                 <p className="text-gray-600 text-lg">7-day launch-ready PR kit</p>
               </div>
@@ -52,14 +52,14 @@ const Startups = () => {
               </ul>
               
               <Button asChild className="w-full bg-blue-600 text-white hover:bg-blue-700 py-4 text-lg font-semibold">
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Sprint</a>
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint</a>
               </Button>
             </div>
 
             {/* Sprint Pro Tier */}
             <div className="bg-gray-50 rounded-3xl p-10 shadow-lg border border-gray-200">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-black mb-2">Sprint Pro</h3>
+                <h3 className="text-2xl font-bold text-black mb-2">Launch PR Sprint Pro</h3>
                 <div className="text-4xl font-bold text-black mb-4">$1,499</div>
                 <p className="text-gray-600 text-lg">A deep narrative strategy</p>
               </div>
@@ -100,7 +100,7 @@ const Startups = () => {
               </ul>
               
               <Button asChild className="w-full bg-blue-600 text-white hover:bg-blue-700 py-4 text-lg font-semibold">
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Sprint Pro</a>
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint Pro</a>
               </Button>
             </div>
           </div>
