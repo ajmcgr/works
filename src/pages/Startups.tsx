@@ -51,7 +51,7 @@ const Startups = () => {
                 </li>
               </ul>
               
-              <Button asChild className="w-full bg-blue-600 text-white hover:bg-blue-700 py-4 text-lg font-semibold">
+              <Button asChild className="w-full text-white py-4 text-lg font-semibold" style={{ backgroundColor: '#1988f0' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint</a>
               </Button>
             </div>
@@ -99,7 +99,7 @@ const Startups = () => {
                 </li>
               </ul>
               
-              <Button asChild className="w-full bg-blue-600 text-white hover:bg-blue-700 py-4 text-lg font-semibold">
+              <Button asChild className="w-full text-white py-4 text-lg font-semibold" style={{ backgroundColor: '#1988f0' }}>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint Pro</a>
               </Button>
             </div>
@@ -137,7 +137,7 @@ const Startups = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Join hundreds of founders who've accelerated their growth with our startup-focused PR solutions.
           </p>
-          <Button asChild className="bg-blue-600 text-white hover:bg-blue-700 px-12 py-6 text-lg font-semibold">
+          <Button asChild className="text-white px-12 py-6 text-lg font-semibold" style={{ backgroundColor: '#1988f0' }}>
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Get Started Today <ArrowRight className="ml-2 h-4 w-4" />
             </a>
