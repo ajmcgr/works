@@ -8,7 +8,7 @@ const Startups = () => {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h1 className="text-6xl font-bold text-black mb-6">
+            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
               We ♥️ Startups
             </h1>
             <div className="max-w-2xl mx-auto">
