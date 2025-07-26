@@ -47,6 +47,10 @@ const Startups = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-black">1 round of media pitching</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
                   <span className="text-black">1-month free access to Media AI</span>
                 </li>
               </ul>
@@ -61,7 +65,7 @@ const Startups = () => {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-black mb-2">Launch PR Sprint Pro</h3>
                 <div className="text-4xl font-bold text-black mb-4">$1,499</div>
-                <p className="text-gray-600 text-lg">A deep narrative strategy</p>
+                <p className="text-gray-600 text-lg">Pro launch-ready PR kit + deep strategy</p>
               </div>
               
               <ul className="space-y-4 mb-8">
@@ -92,6 +96,10 @@ const Startups = () => {
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
                   <span className="text-black">30-min coaching</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-black">1 round of media pitching</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
