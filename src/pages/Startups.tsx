@@ -4,21 +4,20 @@ import { ArrowRight } from "lucide-react";
 const Startups = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* We ♥️ Startups Section - Exact Copy from Homepage */}
       <section className="py-24 px-6 bg-background">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-headline text-foreground mb-8">
-            We ♥️ Startups
-          </h1>
-          <p className="text-xl text-foreground mb-12 max-w-2xl mx-auto">
-            We love working with founders and startups; here's something just for you.
-          </p>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-20 reveal-on-scroll">
+            <h2 className="font-headline text-foreground mb-6">
+              We ♥️ Startups
+            </h2>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-xl text-foreground mb-4">
+                We love working with founders and startups; here's something just for you.
+              </p>
+            </div>
+          </div>
+
           {/* Pricing Tiers */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Sprint Tier */}
