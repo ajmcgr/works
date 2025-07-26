@@ -87,7 +87,7 @@ const Startups = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-black">1 round of media pitching</span>
+                  <span className="text-black">2 rounds of media pitching</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
