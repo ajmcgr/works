@@ -529,8 +529,8 @@ const Index = () => {
                 </li>
               </ul>
               
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                Book Sprint
+              <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Sprint</a>
               </Button>
             </div>
 
@@ -577,8 +577,8 @@ const Index = () => {
                 </li>
               </ul>
               
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                Book Sprint Pro
+              <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Sprint Pro</a>
               </Button>
             </div>
           </div>
