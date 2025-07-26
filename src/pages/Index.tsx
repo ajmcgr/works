@@ -569,11 +569,11 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">Access to private PR WhatsApp group</span>
+                  <span className="text-foreground">3 months free access to Media AI Pro</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">3 months free access to Media AI Pro</span>
+                  <span className="text-foreground">Access to private PR WhatsApp group</span>
                 </li>
               </ul>
               
