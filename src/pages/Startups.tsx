@@ -79,19 +79,7 @@ const Startups = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-black">5 pitchable angles</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-black">Full media persona</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-black">3 pitch templates</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-black">Custom media map</span>
+                  <span className="text-black">3 pitch emails</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></div>
