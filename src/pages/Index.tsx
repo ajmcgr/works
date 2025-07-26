@@ -490,7 +490,7 @@ const Index = () => {
               Start a Partnership
             </h2>
             <div className="max-w-2xl mx-auto">
-              <p className="text-xl font-bold text-foreground mb-4">
+              <p className="text-xl text-foreground mb-4">
                 "Most PR agencies hide behind bloated retainers. We don't. Our pricing is public, simple, and built for speed."
               </p>
             </div>
@@ -530,7 +530,7 @@ const Index = () => {
               </ul>
               
               <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                Book Your Sprint
+                Book Sprint
               </Button>
             </div>
 
@@ -543,6 +543,10 @@ const Index = () => {
               </div>
               
               <ul className="space-y-4 mb-8">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-foreground">Custom press list (50–150 journalists)</span>
+                </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
                   <span className="text-foreground">Brand story framework</span>
@@ -574,7 +578,7 @@ const Index = () => {
               </ul>
               
               <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                Schedule a Call
+                Book Sprint Pro
               </Button>
             </div>
           </div>
