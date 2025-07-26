@@ -487,11 +487,11 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6">
-              Start a Partnership
+              We ❤️ Startups
             </h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-foreground mb-4">
-                "Most PR agencies hide behind bloated retainers. We don't. Our pricing is public, simple, and built for speed."
+                We love working with founders and startups and created something just for you.
               </p>
             </div>
           </div>
@@ -538,7 +538,7 @@ const Index = () => {
             <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 reveal-on-scroll" style={{ animationDelay: '0.2s' }}>
               <div className="text-center mb-8">
                 <h3 className="font-headline text-2xl text-foreground mb-2">Sprint Pro</h3>
-                <div className="text-4xl font-bold text-foreground mb-4">$1,500</div>
+                <div className="text-4xl font-bold text-foreground mb-4">$1,499</div>
                 <p className="text-muted-foreground text-lg">A deep narrative strategy</p>
               </div>
               
