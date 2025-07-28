@@ -18,31 +18,10 @@ const Startups = () => {
             </div>
           </div>
 
-          {/* Alex MacGregor Quote & Pete Lau Testimonial */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {/* Alex MacGregor */}
-            <div className="bg-white rounded-3xl p-12 shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                  <img 
-                    src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
-                    alt="Alex MacGregor" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground text-lg">Alex MacGregor</h4>
-                  <p className="text-muted-foreground">Works founder & PR consultant</p>
-                </div>
-              </div>
-              <blockquote className="text-xl text-foreground leading-relaxed italic">
-                "I've spent the last eight years proving that great storytelling is equal parts art, science, and street‑level hustle."
-              </blockquote>
-            </div>
-
-            {/* Pete Lau */}
-            <div className="bg-white rounded-3xl p-12 shadow-lg">
-              <div className="flex items-center mb-6">
+          {/* Pete Lau Testimonial */}
+          <div className="text-center mb-16">
+            <div className="bg-white rounded-3xl p-12 shadow-lg max-w-4xl mx-auto">
+              <div className="flex items-center justify-center mb-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
                   <img 
                     src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
@@ -50,16 +29,16 @@ const Startups = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div>
+                <div className="text-left">
                   <h4 className="font-bold text-foreground text-lg">Pete Lau</h4>
                   <p className="text-muted-foreground">CEO, OnePlus</p>
                 </div>
               </div>
-              <blockquote className="text-xl text-foreground leading-relaxed">
+              <blockquote className="text-xl text-foreground leading-relaxed mb-4">
                 "They turned our product launch into a cultural moment. The way they orchestrated influence across 
                 every touchpoint—from tech reviewers to lifestyle publications—was masterful."
               </blockquote>
-              <div className="text-muted-foreground font-medium mt-4">
+              <div className="text-muted-foreground font-medium">
                 OnePlus Flagship Launch
               </div>
             </div>
