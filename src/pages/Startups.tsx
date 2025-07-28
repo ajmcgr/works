@@ -128,6 +128,34 @@ const Startups = () => {
         </div>
       </section>
 
+      {/* Pete Lau Testimonial */}
+      <section className="py-20 px-6 bg-background">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-12 shadow-xl">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                <img 
+                  src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
+                  alt="Pete Lau" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 className="font-bold text-foreground text-lg">Pete Lau</h4>
+                <p className="text-muted-foreground">CEO, OnePlus</p>
+              </div>
+            </div>
+            <blockquote className="text-xl text-foreground leading-relaxed mb-6">
+              "They turned our product launch into a cultural moment. The way they orchestrated influence across 
+              every touchpoint—from tech reviewers to lifestyle publications—was masterful."
+            </blockquote>
+            <div className="text-muted-foreground font-medium">
+              OnePlus Flagship Launch
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA Section */}
       <section className="py-20 px-6 bg-gray-100">
         <div className="max-w-4xl mx-auto text-center">
