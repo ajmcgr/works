@@ -18,10 +18,37 @@ const Startups = () => {
             </div>
           </div>
 
+          {/* Alex MacGregor Quote */}
+          <div className="text-center mb-16">
+            <div className="bg-white rounded-3xl p-12 shadow-lg max-w-4xl mx-auto">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                  <img 
+                    src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
+                    alt="Alex MacGregor" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-bold text-foreground text-lg">Alex MacGregor</h4>
+                  <p className="text-muted-foreground">PR Consultant</p>
+                </div>
+              </div>
+              <blockquote className="text-xl text-foreground leading-relaxed italic">
+                "I've spent the last eight years proving that great storytelling is equal parts art, science, and street‑level hustle."
+              </blockquote>
+            </div>
+          </div>
+
           {/* Pricing Tiers */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Sprint Tier */}
-            <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100">
+            <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 relative">
+              {/* Limited Time Offer Ribbon */}
+              <div className="absolute -top-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg transform rotate-12">
+                Limited Time Offer
+              </div>
+              
               <div className="text-center mb-8">
                 <h3 className="font-headline text-2xl text-foreground mb-2">Launch PR Sprint</h3>
                 <div className="text-4xl font-bold text-foreground mb-4">$999</div>
