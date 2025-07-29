@@ -223,17 +223,17 @@ const CrisisReputationManagement = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-6">
-              <div className="text-3xl font-bold text-primary mb-3">< 2 hrs</div>
+              <div className="text-3xl font-bold text-primary mb-3">&lt; 2 hrs</div>
               <div className="font-semibold text-foreground mb-2">Initial Response</div>
               <div className="text-muted-foreground">Crisis assessment and initial strategy development</div>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
-              <div className="text-3xl font-bold text-primary mb-3">< 6 hrs</div>
+              <div className="text-3xl font-bold text-primary mb-3">&lt; 6 hrs</div>
               <div className="font-semibold text-foreground mb-2">Full Activation</div>
               <div className="text-muted-foreground">Complete crisis team deployment and response execution</div>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
-              <div className="text-3xl font-bold text-primary mb-3">< 24 hrs</div>
+              <div className="text-3xl font-bold text-primary mb-3">&lt; 24 hrs</div>
               <div className="font-semibold text-foreground mb-2">Recovery Plan</div>
               <div className="text-muted-foreground">Long-term reputation recovery strategy and implementation</div>
             </div>
@@ -284,7 +284,7 @@ const CrisisReputationManagement = () => {
               <div className="text-muted-foreground">Client retention through crisis periods</div>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">< 2hrs</div>
+              <div className="text-4xl font-bold text-primary mb-2">&lt; 2hrs</div>
               <div className="text-muted-foreground">Average crisis response activation time</div>
             </div>
           </div>
