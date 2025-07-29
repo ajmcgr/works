@@ -104,7 +104,7 @@ const Header = () => {
 
          {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '3px' }}>
+          <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
               {navigation.map((item) => (
                 item.external ? (
