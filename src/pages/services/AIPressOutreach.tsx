@@ -16,8 +16,8 @@ const AIPressOutreach = () => {
             and data-driven pitch optimization powered by Media AI.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
-            <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer">
-              Try Media AI Free <ArrowRight className="ml-2 h-4 w-4" />
+            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+              Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
@@ -259,8 +259,8 @@ const AIPressOutreach = () => {
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
-              <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer">
-                Try Media AI Free <ArrowRight className="ml-2 h-4 w-4" />
+              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-4">

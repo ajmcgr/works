@@ -401,11 +401,6 @@ const LaunchSprint = () => {
                 Start Your Sprint <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-4">
-              <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer">
-                Try Media AI Free
-              </a>
-            </Button>
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
