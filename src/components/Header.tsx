@@ -14,7 +14,6 @@ const Header = () => {
     { name: "Write AI", href: "https://trywrite.ai", external: true },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
-    { name: "About", href: "/about" },
     { name: "Contact us", href: "/contact" },
   ];
 

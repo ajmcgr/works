@@ -62,10 +62,12 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Community */}
+            {/* Company */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Community</h4>
+              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Company</h4>
               <div className="space-y-3">
+                <Link to="/about" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">About</Link>
+                <Link to="/contact" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Contact us</Link>
                 <a 
                   href="https://blog.works.xyz/" 
                   target="_blank" 
