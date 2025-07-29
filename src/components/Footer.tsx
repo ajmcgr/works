@@ -49,16 +49,16 @@ const Footer = () => {
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Resources</h4>
               <div className="space-y-3">
-                <Link to="/services/startup-pr" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Startup PR Agency</Link>
-                <Link to="/services/influencer-marketing" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Marketing</Link>
-                <Link to="/services/ai-press-outreach" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">AI Press Outreach</Link>
-                <Link to="/services/global-pr-strategy" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Global PR Strategy</Link>
-                <Link to="/services/b2b-pr-saas" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">B2B PR for SaaS</Link>
-                <Link to="/services/consumer-tech-hardware-pr" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Consumer Tech PR</Link>
-                <Link to="/services/crisis-reputation-management" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Management</Link>
-                <Link to="/services/creative-storytelling" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Creative Storytelling</Link>
-                <Link to="/services/media-training" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Training</Link>
-                <Link to="/services/launch-sprint" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Launch Sprint</Link>
+                <Link to="/services/startup-pr" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Startup PR Guide</Link>
+                <Link to="/services/influencer-marketing" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Launch Amplification</Link>
+                <Link to="/services/ai-press-outreach" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">AI Media Tools</Link>
+                <Link to="/services/global-pr-strategy" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">International Expansion</Link>
+                <Link to="/services/b2b-pr-saas" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">SaaS Marketing</Link>
+                <Link to="/services/consumer-tech-hardware-pr" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Hardware Launches</Link>
+                <Link to="/services/crisis-reputation-management" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Reputation Defense</Link>
+                <Link to="/services/creative-storytelling" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Storytelling</Link>
+                <Link to="/services/media-training" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Founder Training</Link>
+                <Link to="/services/launch-sprint" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">14-Day Sprint</Link>
               </div>
             </div>
 

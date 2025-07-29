@@ -342,7 +342,7 @@ const CrisisReputationManagement = () => {
                 Schedule Crisis Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-background text-background hover:bg-background hover:text-foreground px-8 py-4">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-4">
               <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer">
                 Try Media AI Monitoring
               </a>

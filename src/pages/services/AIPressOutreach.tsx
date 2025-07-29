@@ -263,7 +263,7 @@ const AIPressOutreach = () => {
                 Try Media AI Free <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-background text-background hover:bg-background hover:text-foreground px-8 py-4">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-4">
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Book a Demo
               </a>
