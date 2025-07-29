@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-4xl">
         <div className="space-y-8">
           {/* Navigation Links */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
             {/* Products */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Products</h4>
@@ -42,6 +42,23 @@ const Footer = () => {
                 <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Marketing</Link>
                 <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Event Management</Link>
                 <Link to="/startups" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Startups</Link>
+              </div>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Resources</h4>
+              <div className="space-y-3">
+                <Link to="/services/startup-pr" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Startup PR Agency</Link>
+                <Link to="/services/influencer-marketing" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Marketing</Link>
+                <Link to="/services/ai-press-outreach" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">AI Press Outreach</Link>
+                <Link to="/services/global-pr-strategy" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Global PR Strategy</Link>
+                <Link to="/services/b2b-pr-saas" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">B2B PR for SaaS</Link>
+                <Link to="/services/consumer-tech-hardware-pr" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Consumer Tech PR</Link>
+                <Link to="/services/crisis-reputation-management" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Management</Link>
+                <Link to="/services/creative-storytelling" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Creative Storytelling</Link>
+                <Link to="/services/media-training" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Training</Link>
+                <Link to="/services/launch-sprint" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Launch Sprint</Link>
               </div>
             </div>
 
