@@ -9,7 +9,7 @@ const LaunchSprint = () => {
       <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-headline text-foreground mb-6">
-            Launch Sprint: PR in 14 Days - Fast, Focused Visibility for Critical Moments
+            Launch Sprint: PR in 7 Days - Fast, Focused Visibility for Critical Moments
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             A time-boxed offering for startups needing rapid, strategic visibility around launches, 
@@ -29,13 +29,13 @@ const LaunchSprint = () => {
           <h2 className="text-3xl font-headline text-foreground mb-8">What Is a Launch Sprint?</h2>
           <div className="prose max-w-none text-lg text-muted-foreground leading-relaxed space-y-6">
             <p>
-              A Launch Sprint is an intensive 14-day PR campaign designed for startups and companies that need immediate, high-impact visibility around critical business moments. Unlike traditional PR campaigns that unfold over months, Launch Sprints compress strategic planning, execution, and results into two focused weeks of coordinated media outreach and brand amplification.
+              A Launch Sprint is an intensive 7-day PR campaign designed for startups and companies that need immediate, high-impact visibility around critical business moments. Unlike traditional PR campaigns that unfold over months, Launch Sprints compress strategic planning, execution, and results into one focused week of coordinated media outreach and brand amplification.
             </p>
             <p>
               Perfect for funding announcements, product launches, major partnerships, or competitive responses that require rapid market response, Launch Sprints combine the urgency of breaking news with the strategic depth of comprehensive campaigns. Every hour is planned, every contact is purposeful, and every piece of content is optimized for maximum viral potential and business impact.
             </p>
             <p>
-              At Works, our Launch Sprint methodology leverages AI-powered tools like <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Media AI</a> for rapid journalist identification and <a href="https://trywrite.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Write AI</a> for fast content creation, allowing us to execute campaigns that would traditionally take months in just 14 days. This integrates with our broader <Link to="/" className="text-primary hover:underline">PR services</Link> and specialized <Link to="/services/startup-pr" className="text-primary hover:underline">startup campaigns</Link>.
+              At Works, our Launch Sprint methodology leverages AI-powered tools like <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Media AI</a> for rapid journalist identification and <a href="https://trywrite.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Write AI</a> for fast content creation, allowing us to execute campaigns that would traditionally take months in just 7 days. This integrates with our broader <Link to="/" className="text-primary hover:underline">PR services</Link> and specialized <Link to="/services/startup-pr" className="text-primary hover:underline">startup campaigns</Link>.
             </p>
             <p>
               When timing is everything and you can't afford to wait for slow traditional PR cycles, Launch Sprints deliver the focused intensity and measurable results that critical business moments demand.
@@ -47,54 +47,51 @@ const LaunchSprint = () => {
       {/* How It Works Section */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-headline text-foreground mb-12">14-Day Sprint Timeline</h2>
+          <h2 className="text-3xl font-headline text-foreground mb-12">7-Day Sprint Timeline</h2>
           <div className="space-y-8">
             {/* Week 1 */}
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center">
                 <Clock className="w-6 h-6 text-primary mr-3" />
-                Week 1: Strategy & Setup (Days 1-7)
+                Phase 1: Strategy & Setup (Days 1-3)
               </h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Days 1-2: Planning</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Day 1: Planning</h4>
                   <div className="space-y-1 text-muted-foreground text-sm">
                     <div>• Strategy session and goal setting</div>
                     <div>• Message development and narrative</div>
                     <div>• Media list building with AI tools</div>
-                    <div>• Content calendar creation</div>
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Days 3-5: Creation</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Day 2: Creation</h4>
                   <div className="space-y-1 text-muted-foreground text-sm">
                     <div>• Press release and pitch development</div>
                     <div>• Social media asset creation</div>
                     <div>• Media kit and fact sheet prep</div>
-                    <div>• Stakeholder communication plan</div>
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Days 6-7: Pre-Launch</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Day 3: Pre-Launch</h4>
                   <div className="space-y-1 text-muted-foreground text-sm">
                     <div>• Exclusive briefings to tier 1 media</div>
                     <div>• Influencer and partner outreach</div>
                     <div>• Final content reviews and approvals</div>
-                    <div>• Launch day coordination setup</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Week 2 */}
+            {/* Phase 2 */}
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center">
                 <Zap className="w-6 h-6 text-primary mr-3" />
-                Week 2: Execution & Amplification (Days 8-14)
+                Phase 2: Execution & Amplification (Days 4-7)
               </h3>
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Days 8-10: Launch</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Days 4-5: Launch</h4>
                   <div className="space-y-1 text-muted-foreground text-sm">
                     <div>• Coordinated media outreach blast</div>
                     <div>• Social media campaign activation</div>
@@ -103,20 +100,11 @@ const LaunchSprint = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Days 11-12: Amplify</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Days 6-7: Optimize</h4>
                   <div className="space-y-1 text-muted-foreground text-sm">
                     <div>• Follow-up with interested journalists</div>
                     <div>• Additional angle development</div>
-                    <div>• Community and partner amplification</div>
-                    <div>• Content repurposing and distribution</div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Days 13-14: Optimize</h4>
-                  <div className="space-y-1 text-muted-foreground text-sm">
-                    <div>• Final outreach push and follow-ups</div>
                     <div>• Results analysis and reporting</div>
-                    <div>• Long-term strategy recommendations</div>
                     <div>• Momentum continuation planning</div>
                   </div>
                 </div>
@@ -210,7 +198,7 @@ const LaunchSprint = () => {
       {/* Sprint Deliverables Section */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-headline text-foreground mb-8">What You Get in 14 Days</h2>
+          <h2 className="text-3xl font-headline text-foreground mb-8">What You Get in 7 Days</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <Target className="w-8 h-8 text-primary mb-4" />
@@ -271,14 +259,14 @@ const LaunchSprint = () => {
                 <Zap className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Focused Energy</h3>
-                  <p className="text-muted-foreground">Concentrated 14-day campaigns generate more momentum than scattered long-term efforts. Intensity creates viral potential and sustained coverage.</p>
+                  <p className="text-muted-foreground">Concentrated 7-day campaigns generate more momentum than scattered long-term efforts. Intensity creates viral potential and sustained coverage.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Zap className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Resource Efficiency</h3>
-                  <p className="text-muted-foreground">Sprint structure requires complete team focus for two weeks, often more effective than months of partial attention and competing priorities.</p>
+                  <p className="text-muted-foreground">Sprint structure requires complete team focus for one week, often more effective than months of partial attention and competing priorities.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -304,7 +292,7 @@ const LaunchSprint = () => {
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-sm">
               <div className="text-4xl font-bold text-primary mb-2">12</div>
-              <div className="text-muted-foreground">Average media placements secured in 14 days</div>
+              <div className="text-muted-foreground">Average media placements secured in 7 days</div>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-sm">
               <div className="text-4xl font-bold text-primary mb-2">73%</div>
@@ -322,7 +310,7 @@ const LaunchSprint = () => {
               <span className="ml-2 text-muted-foreground">Sprint Success Story</span>
             </div>
             <blockquote className="text-lg text-muted-foreground italic mb-4">
-              "We needed immediate visibility for our Series B announcement with a hard deadline for investor communications. Works delivered our sprint in exactly 14 days with coverage in TechCrunch, Forbes, and The Information. The concentrated approach generated more coverage than our previous 6-month campaign."
+              "We needed immediate visibility for our Series B announcement with a hard deadline for investor communications. Works delivered our sprint in exactly 7 days with coverage in TechCrunch, Forbes, and The Information. The concentrated approach generated more coverage than our previous 6-month campaign."
             </blockquote>
             <div className="font-semibold text-foreground">– Michael Chang, CEO, NeuralFlow</div>
           </div>
