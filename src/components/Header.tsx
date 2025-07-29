@@ -10,11 +10,11 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
+    { name: "Media AI", href: "https://trymedia.ai", external: true },
+    { name: "Write AI", href: "https://trywrite.ai", external: true },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
-    { name: "Media AI", href: "https://trymedia.ai", external: true },
-    { name: "Write AI", href: "https://trywrite.ai", external: true },
     { name: "Contact us", href: "/contact" },
   ];
 
