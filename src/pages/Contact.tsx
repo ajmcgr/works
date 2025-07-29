@@ -68,7 +68,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="Your name"
-                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-md"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-[5px]"
                 />
               </div>
               <div>
@@ -83,7 +83,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="your@email.com"
-                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-md"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-[5px]"
                 />
               </div>
             </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                 value={formData.company}
                 onChange={handleInputChange}
                 placeholder="Your company name"
-                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-md"
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-[5px]"
               />
             </div>
             <div>
@@ -112,7 +112,7 @@ const Contact = () => {
                 required
                 rows={6}
                 placeholder="Tell us about your project..."
-                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-md"
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 !rounded-[5px]"
               />
             </div>
             <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
