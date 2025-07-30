@@ -9,7 +9,7 @@ const Startups = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
-              Real Press. No Retainers. No Fluff.
+              We ♥️ Startups
             </h1>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-700 mb-4">
