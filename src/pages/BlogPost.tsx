@@ -92,7 +92,7 @@ const BlogPost = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div>
       {/* Back Button */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Button asChild variant="ghost">

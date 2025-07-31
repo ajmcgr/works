@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const InfluencerMarketing = () => {
   return (
-    <div className="pt-16 bg-white">
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">

@@ -92,7 +92,7 @@ const Blog = () => {
   const regularPosts = filteredPosts.slice(1);
 
   return (
-    <div className="pt-16">
+    <div>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

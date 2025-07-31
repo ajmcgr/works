@@ -58,7 +58,6 @@ const Footer = () => {
                 <Link to="/services/crisis-reputation-management" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Reputation Defense</Link>
                 <Link to="/services/creative-storytelling" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Storytelling</Link>
                 <Link to="/services/media-training" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Founder Training</Link>
-                <Link to="/services/launch-sprint" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">7-Day Sprint</Link>
               </div>
             </div>
 

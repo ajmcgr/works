@@ -27,7 +27,7 @@ const Apps = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div>
       {/* Hero Section */}
       <section className="py-20">
         <div className="container mx-auto px-6 lg:px-12">
