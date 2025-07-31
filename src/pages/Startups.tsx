@@ -80,27 +80,27 @@ const Startups = () => {
               <img 
                 src="/lovable-uploads/36118ee4-9d99-4234-82af-08e5811f87dd.png" 
                 alt="TechCrunch" 
-                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
               />
               <img 
                 src="/lovable-uploads/666bbafa-c6bc-414a-958c-4108280e68e3.png" 
                 alt="Forbes" 
-                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
               />
               <img 
                 src="/lovable-uploads/9d924a2b-2302-49d6-a273-6b55a85f558d.png" 
                 alt="Fast Company" 
-                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
               />
               <img 
                 src="/lovable-uploads/cd28c3a3-5024-4cdc-b219-e35360e460d2.png" 
                 alt="VentureBeat" 
-                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
               />
               <img 
                 src="/lovable-uploads/498c69fa-819a-4dd4-833a-2c3655a30b54.png" 
                 alt="The Verge" 
-                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
               />
             </div>
           </div>
