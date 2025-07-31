@@ -11,10 +11,37 @@ const Startups = () => {
             <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
               We ♥️ Startups
             </h1>
-            <div className="max-w-2xl mx-auto">
-              <p className="text-xl text-gray-700 mb-4">
-                We love working with founders and startups; here's something just for you.
-              </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
+                <div className="text-left space-y-6 text-gray-900">
+                  <p className="text-xl md:text-2xl font-medium leading-relaxed">
+                    Your startup lives or dies by attention.
+                  </p>
+                  <p className="text-lg md:text-xl leading-relaxed">
+                    Investors won't take the meeting. Customers won't trust you. Talent won't join—unless they've heard of you.
+                  </p>
+                  <p className="text-lg md:text-xl font-semibold text-primary">
+                    That's where we come in.
+                  </p>
+                  <div className="space-y-4">
+                    <p className="text-lg md:text-xl leading-relaxed">
+                      We get your story into real press, fast.
+                      <br />
+                      Not strategy decks. Not ghostwritten LinkedIn posts.
+                      <br />
+                      Actual coverage in outlets people recognize. The kind that builds trust, raises rounds, and turns your startup into a brand.
+                    </p>
+                    <p className="text-lg md:text-xl leading-relaxed">
+                      Our PR Sprint is built for founders who move fast.
+                      <br />
+                      Fixed price. Tight timeline. Real results.
+                    </p>
+                    <p className="text-xl md:text-2xl font-bold text-black">
+                      If you're launching, raising, or hiring — this is how you get seen.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -96,7 +123,7 @@ const Startups = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-foreground">3 months free access to Media AI Pro</span>
+                  <span className="text-foreground">3 months free access to Media AI</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
