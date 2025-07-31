@@ -12,7 +12,7 @@ const Startups = () => {
             <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-16 tracking-tight">
               We ♥️ Startups
             </h1>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-2xl mx-auto">
               <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
                 {/* Alex Profile Photo */}
                 <div className="text-center mb-8">
