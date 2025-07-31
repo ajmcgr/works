@@ -61,7 +61,7 @@ const Startups = () => {
               </ul>
               
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint</a>
+                <a href="https://buy.stripe.com/5kQ14o9aO46M3D483wcMM0i" target="_blank" rel="noopener noreferrer">Buy Launch PR Sprint</a>
               </Button>
             </div>
 
@@ -105,7 +105,7 @@ const Startups = () => {
               </ul>
               
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint Pro</a>
+                <a href="https://buy.stripe.com/8x04gA0Ei1YE3D42JccMM0j" target="_blank" rel="noopener noreferrer">Buy Launch PR Sprint Pro</a>
               </Button>
             </div>
           </div>
