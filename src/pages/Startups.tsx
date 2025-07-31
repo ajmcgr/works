@@ -18,32 +18,6 @@ const Startups = () => {
             </div>
           </div>
 
-          {/* Pete Lau Testimonial */}
-          <div className="text-center mb-16">
-            <div className="bg-white rounded-3xl p-12 shadow-lg max-w-4xl mx-auto">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                  <img 
-                    src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
-                    alt="Pete Lau" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-bold text-foreground text-lg">Pete Lau</h4>
-                  <p className="text-muted-foreground">CEO, OnePlus</p>
-                </div>
-              </div>
-              <blockquote className="text-xl text-foreground leading-relaxed mb-4">
-                "They turned our product launch into a cultural moment. The way they orchestrated influence across 
-                every touchpoint—from tech reviewers to lifestyle publications—was masterful."
-              </blockquote>
-              <div className="text-muted-foreground font-medium">
-                OnePlus Flagship Launch
-              </div>
-            </div>
-          </div>
-
           {/* Pricing Tiers */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Sprint Tier */}
@@ -133,6 +107,32 @@ const Startups = () => {
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Book Launch PR Sprint Pro</a>
               </Button>
+            </div>
+          </div>
+
+          {/* Pete Lau Testimonial */}
+          <div className="text-center mb-16">
+            <div className="bg-white rounded-3xl p-12 shadow-lg max-w-4xl mx-auto">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                  <img 
+                    src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
+                    alt="Pete Lau" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-bold text-foreground text-lg">Pete Lau</h4>
+                  <p className="text-muted-foreground">CEO, OnePlus</p>
+                </div>
+              </div>
+              <blockquote className="text-xl text-foreground leading-relaxed mb-4">
+                "They turned our product launch into a cultural moment. The way they orchestrated influence across 
+                every touchpoint—from tech reviewers to lifestyle publications—was masterful."
+              </blockquote>
+              <div className="text-muted-foreground font-medium">
+                OnePlus Flagship Launch
+              </div>
             </div>
           </div>
 
