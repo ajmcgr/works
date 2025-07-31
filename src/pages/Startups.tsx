@@ -16,7 +16,7 @@ const Startups = () => {
               <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
                 {/* Alex Profile Photo */}
                 <div className="text-center mb-8">
-                  <div className="w-24 h-24 mx-auto mb-4">
+                  <div className="w-32 h-32 mx-auto mb-4">
                     <AspectRatio ratio={1}>
                       <img 
                         src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
@@ -57,7 +57,7 @@ const Startups = () => {
                   
                   {/* Signature */}
                   <div className="mt-8">
-                    <p className="text-2xl leading-relaxed">
+                    <p className="text-2xl leading-relaxed font-bold">
                       Best,<br />
                       Alex MacGregor<br />
                       Founder & CEO
