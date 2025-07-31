@@ -57,13 +57,13 @@ const Startups = () => {
                   
                   {/* Signature */}
                   <div className="mt-8">
-                    <p className="font-medium text-xl">
+                    <p className="text-xl leading-relaxed">
                       Best,<br />
                       Alex MacGregor<br />
                       Founder & CEO
                     </p>
                     <p className="mt-4">
-                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary font-medium text-lg">
+                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary text-xl">
                         Connect with me on LinkedIn
                       </a>
                     </p>
