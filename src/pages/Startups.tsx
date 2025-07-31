@@ -8,8 +8,8 @@ const Startups = () => {
       {/* Test Section to see if page loads */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-32">
-            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-12 tracking-tight">
+          <div className="text-center mb-40">
+            <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-16 tracking-tight">
               We ♥️ Startups
             </h1>
             <div className="max-w-3xl mx-auto">
