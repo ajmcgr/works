@@ -13,11 +13,12 @@ const About = () => {
   return (
     <div className="pt-16">
       {/* Personal Letter Section */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-32">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
-          <div className="text-center">
-            <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6">
+          <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
+            {/* Alex Profile Photo */}
+            <div className="text-center mb-8">
+              <div className="w-32 h-32 mx-auto mb-4">
                 <AspectRatio ratio={1}>
                   <img 
                     src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
@@ -28,7 +29,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className="text-left space-y-6 text-gray-800 leading-relaxed text-lg">
+            <div className="text-left space-y-6 text-black leading-relaxed text-lg">
               <p className="font-sans">Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
               
               <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
