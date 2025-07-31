@@ -28,29 +28,29 @@ const Startups = () => {
                 </div>
                 
                 <div className="text-left space-y-6 text-black">
-                  <p className="text-2xl md:text-3xl font-medium leading-relaxed">
+                  <p className="text-xl leading-relaxed">
                     Your startup lives or dies by attention.
                   </p>
-                  <p className="text-xl md:text-2xl leading-relaxed">
+                  <p className="text-xl leading-relaxed">
                     Investors won't take the meeting. Customers won't trust you. Talent won't join—unless they've heard of you.
                   </p>
-                  <p className="text-xl md:text-2xl font-semibold">
+                  <p className="text-xl leading-relaxed">
                     That's where we come in.
                   </p>
                   <div className="space-y-4">
-                    <p className="text-xl md:text-2xl leading-relaxed">
+                    <p className="text-xl leading-relaxed">
                       We get your story into real press, fast.
                       <br />
                       Not strategy decks. Not ghostwritten LinkedIn posts.
                       <br />
                       Actual coverage in outlets people recognize. The kind that builds trust, raises rounds, and turns your startup into a brand.
                     </p>
-                    <p className="text-xl md:text-2xl leading-relaxed">
+                    <p className="text-xl leading-relaxed">
                       Our PR Sprint is built for founders who move fast.
                       <br />
                       Fixed price. Tight timeline. Real results.
                     </p>
-                    <p className="text-2xl md:text-3xl font-bold">
+                    <p className="text-xl leading-relaxed">
                       If you're launching, raising, or hiring — this is how you get seen.
                     </p>
                   </div>
@@ -75,7 +75,7 @@ const Startups = () => {
 
           {/* Media Outlet Logos */}
           <div className="text-center mb-20">
-            <p className="text-gray-600 mb-8 text-lg">As featured in:</p>
+            <p className="text-gray-600 mb-8 text-lg">We've secured coverage in:</p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <img 
                 src="/lovable-uploads/36118ee4-9d99-4234-82af-08e5811f87dd.png" 
