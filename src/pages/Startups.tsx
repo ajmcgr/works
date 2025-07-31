@@ -28,42 +28,42 @@ const Startups = () => {
                 </div>
                 
                 <div className="text-left space-y-6 text-black">
-                  <p className="text-xl leading-relaxed">
+                  <p className="text-2xl leading-relaxed font-bold">
                     Your startup lives or dies by attention.
                   </p>
-                  <p className="text-xl leading-relaxed">
+                  <p className="text-2xl leading-relaxed">
                     Investors won't take the meeting. Customers won't trust you. Talent won't join—unless they've heard of you.
                   </p>
-                  <p className="text-xl leading-relaxed">
+                  <p className="text-2xl leading-relaxed">
                     That's where we come in.
                   </p>
                   <div className="space-y-4">
-                    <p className="text-xl leading-relaxed">
+                    <p className="text-2xl leading-relaxed">
                       We get your story into real press, fast.
                       <br />
                       Not strategy decks. Not ghostwritten LinkedIn posts.
                       <br />
                       Actual coverage in outlets people recognize. The kind that builds trust, raises rounds, and turns your startup into a brand.
                     </p>
-                    <p className="text-xl leading-relaxed">
+                    <p className="text-2xl leading-relaxed">
                       Our PR Sprint is built for founders who move fast.
                       <br />
                       Fixed price. Tight timeline. Real results.
                     </p>
-                    <p className="text-xl leading-relaxed">
+                    <p className="text-2xl leading-relaxed">
                       If you're launching, raising, or hiring — this is how you get seen.
                     </p>
                   </div>
                   
                   {/* Signature */}
                   <div className="mt-8">
-                    <p className="text-xl leading-relaxed">
+                    <p className="text-2xl leading-relaxed">
                       Best,<br />
                       Alex MacGregor<br />
                       Founder & CEO
                     </p>
                     <p className="mt-4">
-                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary text-xl">
+                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary text-2xl">
                         Connect with me on LinkedIn
                       </a>
                     </p>
