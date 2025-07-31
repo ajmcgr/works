@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="pt-16">
       {/* Personal Letter Section */}
-      <section className="py-32">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
           <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
             {/* Alex Profile Photo */}
