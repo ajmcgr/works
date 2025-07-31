@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Startups = () => {
   return (
@@ -13,6 +14,19 @@ const Startups = () => {
             </h1>
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
+                {/* Alex Profile Photo */}
+                <div className="text-center mb-8">
+                  <div className="w-24 h-24 mx-auto mb-4">
+                    <AspectRatio ratio={1}>
+                      <img 
+                        src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
+                        alt="Alex MacGregor" 
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    </AspectRatio>
+                  </div>
+                </div>
+                
                 <div className="text-left space-y-6 text-gray-900">
                   <p className="text-xl md:text-2xl font-medium leading-relaxed">
                     Your startup lives or dies by attention.
@@ -40,7 +54,58 @@ const Startups = () => {
                       If you're launching, raising, or hiring — this is how you get seen.
                     </p>
                   </div>
+                  
+                  {/* Signature */}
+                  <div className="mt-8 pt-6 border-t border-gray-200">
+                    <p className="font-medium text-lg">
+                      Best,<br />
+                      Alex MacGregor<br />
+                      Founder & CEO
+                    </p>
+                    <p className="mt-4">
+                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary font-medium">
+                        Connect with me on LinkedIn
+                      </a>
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Media Outlet Logos */}
+          <div className="text-center mb-20">
+            <p className="text-gray-600 mb-8 text-lg">As featured in:</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
+              <div className="flex items-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=120&h=40&fit=crop&crop=entropy" 
+                  alt="TechCrunch" 
+                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+                <span className="ml-2 font-semibold text-gray-700">TechCrunch</span>
+              </div>
+              <div className="flex items-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=120&h=40&fit=crop&crop=entropy" 
+                  alt="Forbes" 
+                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+                <span className="ml-2 font-semibold text-gray-700">Forbes</span>
+              </div>
+              <div className="flex items-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=120&h=40&fit=crop&crop=entropy" 
+                  alt="Fast Company" 
+                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+                <span className="ml-2 font-semibold text-gray-700">Fast Company</span>
+              </div>
+              <div className="flex items-center">
+                <span className="font-semibold text-gray-700">VentureBeat</span>
+              </div>
+              <div className="flex items-center">
+                <span className="font-semibold text-gray-700">The Verge</span>
               </div>
             </div>
           </div>
