@@ -11,7 +11,7 @@ const About = () => {
   };
 
   return (
-    <div className="pt-16">
+    <div>
       {/* Personal Letter Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">

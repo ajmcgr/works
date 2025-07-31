@@ -311,7 +311,7 @@ const CaseStudyDetail = () => {
 
   if (!caseStudy) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-black mb-4">Case Study Not Found</h1>
           <p className="text-gray-600 mb-8">The case study you're looking for doesn't exist.</p>
@@ -324,7 +324,7 @@ const CaseStudyDetail = () => {
   }
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Header */}
       <section className="py-16 bg-white border-b border-gray-200">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">

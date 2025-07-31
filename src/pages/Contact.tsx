@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Contact Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
