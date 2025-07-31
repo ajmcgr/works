@@ -12,7 +12,7 @@ const Startups = () => {
             <h1 className="text-5xl lg:text-7xl font-headline text-black leading-[1.1] mb-8 tracking-tight">
               We ♥️ Startups
             </h1>
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
                 {/* Alex Profile Photo */}
                 <div className="text-center mb-8">
@@ -27,43 +27,43 @@ const Startups = () => {
                   </div>
                 </div>
                 
-                <div className="text-left space-y-6 text-gray-900">
-                  <p className="text-xl md:text-2xl font-medium leading-relaxed">
+                <div className="text-left space-y-6 text-black">
+                  <p className="text-2xl md:text-3xl font-medium leading-relaxed">
                     Your startup lives or dies by attention.
                   </p>
-                  <p className="text-lg md:text-xl leading-relaxed">
+                  <p className="text-xl md:text-2xl leading-relaxed">
                     Investors won't take the meeting. Customers won't trust you. Talent won't join—unless they've heard of you.
                   </p>
-                  <p className="text-lg md:text-xl font-semibold text-primary">
+                  <p className="text-xl md:text-2xl font-semibold">
                     That's where we come in.
                   </p>
                   <div className="space-y-4">
-                    <p className="text-lg md:text-xl leading-relaxed">
+                    <p className="text-xl md:text-2xl leading-relaxed">
                       We get your story into real press, fast.
                       <br />
                       Not strategy decks. Not ghostwritten LinkedIn posts.
                       <br />
                       Actual coverage in outlets people recognize. The kind that builds trust, raises rounds, and turns your startup into a brand.
                     </p>
-                    <p className="text-lg md:text-xl leading-relaxed">
+                    <p className="text-xl md:text-2xl leading-relaxed">
                       Our PR Sprint is built for founders who move fast.
                       <br />
                       Fixed price. Tight timeline. Real results.
                     </p>
-                    <p className="text-xl md:text-2xl font-bold text-black">
+                    <p className="text-2xl md:text-3xl font-bold">
                       If you're launching, raising, or hiring — this is how you get seen.
                     </p>
                   </div>
                   
                   {/* Signature */}
-                  <div className="mt-8 pt-6 border-t border-gray-200">
-                    <p className="font-medium text-lg">
+                  <div className="mt-8">
+                    <p className="font-medium text-xl">
                       Best,<br />
                       Alex MacGregor<br />
                       Founder & CEO
                     </p>
                     <p className="mt-4">
-                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary font-medium">
+                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors text-primary font-medium text-lg">
                         Connect with me on LinkedIn
                       </a>
                     </p>
@@ -76,37 +76,32 @@ const Startups = () => {
           {/* Media Outlet Logos */}
           <div className="text-center mb-20">
             <p className="text-gray-600 mb-8 text-lg">As featured in:</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
-              <div className="flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=120&h=40&fit=crop&crop=entropy" 
-                  alt="TechCrunch" 
-                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <span className="ml-2 font-semibold text-gray-700">TechCrunch</span>
-              </div>
-              <div className="flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=120&h=40&fit=crop&crop=entropy" 
-                  alt="Forbes" 
-                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <span className="ml-2 font-semibold text-gray-700">Forbes</span>
-              </div>
-              <div className="flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=120&h=40&fit=crop&crop=entropy" 
-                  alt="Fast Company" 
-                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <span className="ml-2 font-semibold text-gray-700">Fast Company</span>
-              </div>
-              <div className="flex items-center">
-                <span className="font-semibold text-gray-700">VentureBeat</span>
-              </div>
-              <div className="flex items-center">
-                <span className="font-semibold text-gray-700">The Verge</span>
-              </div>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <img 
+                src="/lovable-uploads/36118ee4-9d99-4234-82af-08e5811f87dd.png" 
+                alt="TechCrunch" 
+                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+              />
+              <img 
+                src="/lovable-uploads/666bbafa-c6bc-414a-958c-4108280e68e3.png" 
+                alt="Forbes" 
+                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+              />
+              <img 
+                src="/lovable-uploads/9d924a2b-2302-49d6-a273-6b55a85f558d.png" 
+                alt="Fast Company" 
+                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+              />
+              <img 
+                src="/lovable-uploads/cd28c3a3-5024-4cdc-b219-e35360e460d2.png" 
+                alt="VentureBeat" 
+                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+              />
+              <img 
+                src="/lovable-uploads/498c69fa-819a-4dd4-833a-2c3655a30b54.png" 
+                alt="The Verge" 
+                className="h-8 w-auto opacity-60 hover:opacity-100 transition-all duration-300"
+              />
             </div>
           </div>
 
