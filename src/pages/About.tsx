@@ -14,7 +14,8 @@ const About = () => {
     <div>
       {/* Personal Letter Section */}
       <section className="py-32 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-2xl">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-2xl mx-auto">
           <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
             {/* Alex Profile Photo */}
             <div className="text-center mb-8">
@@ -57,6 +58,7 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
