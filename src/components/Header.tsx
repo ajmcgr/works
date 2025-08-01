@@ -1,11 +1,12 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   
   const location = useLocation();
 
@@ -13,6 +14,11 @@ const Header = () => {
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/work" },
     { name: "Contact us", href: "/contact" },
+  ];
+
+  const products = [
+    { name: "Media AI", href: "https://trymedia.ai/" },
+    { name: "Write AI", href: "https://www.trywrite.ai/" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -56,6 +62,41 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            {/* Products Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsProductsOpen(!isProductsOpen)}
+                onMouseEnter={() => setIsProductsOpen(true)}
+                onMouseLeave={() => setIsProductsOpen(false)}
+                className="flex items-center text-sm font-medium transition-colors hover:text-charcoal text-cool-gray"
+              >
+                Products
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              
+              {isProductsOpen && (
+                <div 
+                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-50"
+                  onMouseEnter={() => setIsProductsOpen(true)}
+                  onMouseLeave={() => setIsProductsOpen(false)}
+                >
+                  <div className="py-2">
+                    {products.map((product) => (
+                      <a
+                        key={product.name}
+                        href={product.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-2 text-sm text-cool-gray hover:text-charcoal hover:bg-gray-50 transition-colors"
+                      >
+                        {product.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -92,6 +133,23 @@ const Header = () => {
         {isMenuOpen && (
           <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
+              {/* Products section for mobile */}
+              <div className="space-y-2">
+                <div className="text-lg font-medium text-charcoal">Products</div>
+                {products.map((product) => (
+                  <a
+                    key={product.name}
+                    href={product.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-base text-cool-gray hover:text-charcoal transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {product.name}
+                  </a>
+                ))}
+              </div>
+              
               {navigation.map((item) => (
                 <Link
                   key={item.name}
