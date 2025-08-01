@@ -49,7 +49,7 @@ const Index = () => {
             </h1>
             
             <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
-              At Works, we specialize in high-impact, accountable PR and influencer campaigns designed to scale AI companies. From strategic media placements and thought leadership to influencer partnerships and brand positioning, our strategies prioritize visibility, credibility, and revenue growth.
+              At Works, we specialize in high-impact AI enabled PR and influencer campaigns designed to scale ambitious brands. From strategic media placements and thought leadership to influencer partnerships and brand positioning, our strategies prioritize visibility, credibility, and revenue growth.
             </p>
           </div>
 
