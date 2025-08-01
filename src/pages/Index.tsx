@@ -127,7 +127,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6">
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
               We are Works
             </h2>
           </div>
@@ -170,7 +170,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6">
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
               How we can help
             </h2>
             <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
@@ -246,7 +246,7 @@ const Index = () => {
       <section className="min-h-screen py-20 px-6 bg-foreground text-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 reveal-on-scroll">
-            <h2 className="font-headline text-background mb-6">
+            <h2 className="font-headline text-background mb-6 text-3xl md:text-4xl lg:text-5xl">
               Our Process
             </h2>
             <p className="text-background/70 text-xl max-w-2xl mx-auto">
@@ -311,7 +311,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6">
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
               Case Studies
             </h2>
             <p className="text-muted-foreground text-xl">
