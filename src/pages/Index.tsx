@@ -67,7 +67,7 @@ const Index = () => {
           </div>
 
           {/* Client Logos - Now directly below hero button */}
-          <div className="mt-12 md:mt-16" style={{ animationDelay: '0.9s' }}>
+          <div className="mt-8 md:mt-10" style={{ animationDelay: '0.9s' }}>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
