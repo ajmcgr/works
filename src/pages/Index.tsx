@@ -45,13 +45,11 @@ const Index = () => {
           {/* Kinetic typography */}
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view">
-              Influence,
-              <br />
-              Engineered.
+              High-Performance PR & Influencer Marketing for Ambitious AI Brands.
             </h1>
             
-            <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-md mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
-              PR & Influencer Marketing for the AI era.
+            <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
+              At Works, we specialize in high-impact, accountable PR and influencer campaigns designed to scale AI companies. From strategic media placements and thought leadership to influencer partnerships and brand positioning, our strategies prioritize visibility, credibility, and revenue growth.
             </p>
           </div>
 
