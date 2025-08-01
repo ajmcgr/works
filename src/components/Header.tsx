@@ -10,8 +10,6 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Media AI", href: "https://trymedia.ai", external: true },
-    { name: "Write AI", href: "https://trywrite.ai", external: true },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
     { name: "Contact us", href: "/contact" },
@@ -59,33 +57,21 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              item.external ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium transition-colors hover:text-charcoal text-cool-gray"
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  onClick={(e) => {
-                    if (item.href.includes('#')) {
-                      e.preventDefault();
-                      handleNavClick(item.href);
-                    }
-                  }}
-                  className={`text-sm font-medium transition-colors hover:text-charcoal ${
-                    isActive(item.href) ? "text-charcoal" : "text-cool-gray"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              )
+              <Link
+                key={item.name}
+                to={item.href}
+                onClick={(e) => {
+                  if (item.href.includes('#')) {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }
+                }}
+                className={`text-sm font-medium transition-colors hover:text-charcoal ${
+                  isActive(item.href) ? "text-charcoal" : "text-cool-gray"
+                }`}
+              >
+                {item.name}
+              </Link>
             ))}
           </nav>
 
@@ -102,40 +88,27 @@ const Header = () => {
           </div>
         </div>
 
-         {/* Mobile Navigation */}
+             {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
               {navigation.map((item) => (
-                item.external ? (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                ) : (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`block text-lg font-medium transition-colors hover:text-charcoal ${
-                      isActive(item.href) ? "text-charcoal" : "text-cool-gray"
-                    }`}
-                    onClick={(e) => {
-                      if (item.href.includes('#')) {
-                        e.preventDefault();
-                        handleNavClick(item.href);
-                      }
-                      setIsMenuOpen(false);
-                    }}
-                  >
-                    {item.name}
-                  </Link>
-                )
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block text-lg font-medium transition-colors hover:text-charcoal ${
+                    isActive(item.href) ? "text-charcoal" : "text-cool-gray"
+                  }`}
+                  onClick={(e) => {
+                    if (item.href.includes('#')) {
+                      e.preventDefault();
+                      handleNavClick(item.href);
+                    }
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {item.name}
+                </Link>
               ))}
             </div>
           </div>
