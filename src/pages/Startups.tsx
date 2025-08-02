@@ -115,7 +115,7 @@ const Startups = () => {
               </div>
               
               <div className="text-center mb-8">
-                <h3 className="font-headline text-2xl text-foreground mb-2">Launch PR Sprint</h3>
+                <h3 className="font-headline text-2xl text-foreground mb-2">PR Sprint</h3>
                 <div className="text-4xl font-bold text-foreground mb-4">$999</div>
                 <p className="text-muted-foreground text-lg">7-day launch-ready PR kit</p>
               </div>
@@ -148,14 +148,14 @@ const Startups = () => {
               </ul>
               
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                <a href="https://buy.stripe.com/5kQ14o9aO46M3D483wcMM0i" target="_blank" rel="noopener noreferrer">Buy Launch PR Sprint</a>
+                <a href="https://buy.stripe.com/5kQ14o9aO46M3D483wcMM0i" target="_blank" rel="noopener noreferrer">PR Sprint</a>
               </Button>
             </div>
 
             {/* Sprint Pro Tier */}
             <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100">
               <div className="text-center mb-8">
-                <h3 className="font-headline text-2xl text-foreground mb-2">Launch PR Sprint Pro</h3>
+                <h3 className="font-headline text-2xl text-foreground mb-2">PR Sprint Pro</h3>
                 <div className="text-4xl font-bold text-foreground mb-4">$1,499</div>
                 <p className="text-muted-foreground text-lg">Pro launch-ready PR kit + deep strategy</p>
               </div>
@@ -192,7 +192,7 @@ const Startups = () => {
               </ul>
               
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
-                <a href="https://buy.stripe.com/8x24gA0Ei1YE3D42JccMM0j" target="_blank" rel="noopener noreferrer">Buy Launch PR Sprint Pro</a>
+                <a href="https://buy.stripe.com/8x24gA0Ei1YE3D42JccMM0j" target="_blank" rel="noopener noreferrer">PR Sprint Pro</a>
               </Button>
             </div>
           </div>
