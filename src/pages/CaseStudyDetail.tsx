@@ -316,7 +316,7 @@ const CaseStudyDetail = () => {
           <h1 className="text-4xl font-bold text-black mb-4">Case Study Not Found</h1>
           <p className="text-gray-600 mb-8">The case study you're looking for doesn't exist.</p>
           <Button asChild>
-            <Link to="/work">Back to Our Work</Link>
+            <Link to="/resources/our-customers">Back to Our Work</Link>
           </Button>
         </div>
       </div>
@@ -329,7 +329,7 @@ const CaseStudyDetail = () => {
       <section className="py-16 bg-white border-b border-gray-200">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <Button asChild variant="ghost" className="mb-8 -ml-4">
-            <Link to="/work">
+            <Link to="/resources/our-customers">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Our Work
             </Link>
