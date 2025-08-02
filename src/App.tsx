@@ -48,18 +48,18 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/startups" element={<Startups />} />
-              <Route path="/work" element={<CaseStudies />} />
+              <Route path="/resources/our-customers" element={<CaseStudies />} />
               <Route path="/case-study/:id" element={<CaseStudyDetail />} />
-              <Route path="/services/startup-pr" element={<StartupPR />} />
+              <Route path="/resources/startup-pr-guide" element={<StartupPR />} />
               <Route path="/services/influencer-marketing" element={<InfluencerMarketing />} />
-              <Route path="/services/ai-press-outreach" element={<AIPressOutreach />} />
-              <Route path="/services/global-pr-strategy" element={<GlobalPRStrategy />} />
-              <Route path="/services/b2b-pr-saas" element={<B2BPRSaaS />} />
-              <Route path="/services/consumer-tech-hardware-pr" element={<ConsumerTechHardwarePR />} />
-              <Route path="/services/crisis-reputation-management" element={<CrisisReputationManagement />} />
-              <Route path="/services/creative-storytelling" element={<CreativeStorytelling />} />
-              <Route path="/services/media-training" element={<MediaTraining />} />
-              <Route path="/services/launch-sprint" element={<LaunchSprint />} />
+              <Route path="/resources/ai-media-tools" element={<AIPressOutreach />} />
+              <Route path="/resources/international-expansion" element={<GlobalPRStrategy />} />
+              <Route path="/resources/saas-marketing" element={<B2BPRSaaS />} />
+              <Route path="/resources/hardware-launches" element={<ConsumerTechHardwarePR />} />
+              <Route path="/resources/reputation-defense" element={<CrisisReputationManagement />} />
+              <Route path="/resources/brand-storytelling" element={<CreativeStorytelling />} />
+              <Route path="/resources/founder-training" element={<MediaTraining />} />
+              <Route path="/resources/launch-amplification" element={<LaunchSprint />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
