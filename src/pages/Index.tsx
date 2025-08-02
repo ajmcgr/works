@@ -398,7 +398,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6">
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
               What clients say
             </h2>
             <p className="text-muted-foreground text-xl">
@@ -484,7 +484,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-foreground text-background">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-background mb-6">
+            <h2 className="font-headline text-background mb-6 text-3xl md:text-4xl lg:text-5xl">
               Ready to get started?
             </h2>
             <p className="text-background/70 text-xl">
