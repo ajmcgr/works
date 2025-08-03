@@ -333,7 +333,7 @@ const CaseStudies = () => {
       {/* CTA Section */}
       <section className="py-32 bg-white text-black">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight text-black">
             Ready to tell your story?
           </h2>
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-600 font-normal leading-relaxed">
