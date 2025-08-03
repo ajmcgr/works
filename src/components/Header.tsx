@@ -65,7 +65,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
-                className="flex items-center text-sm font-medium transition-colors hover:text-foreground text-muted-foreground"
+                className="flex items-center text-sm font-medium transition-colors text-muted-foreground"
               >
                 Products
                 <ChevronDown className="ml-1 h-4 w-4" />
@@ -184,7 +184,7 @@ const Header = () => {
                 className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Contact us
               </Link>
             </div>
           </div>
