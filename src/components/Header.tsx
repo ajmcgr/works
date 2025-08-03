@@ -65,8 +65,6 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
-                onMouseEnter={() => setIsProductsOpen(true)}
-                onMouseLeave={() => setIsProductsOpen(false)}
                 className="flex items-center text-sm font-medium transition-colors hover:text-charcoal text-cool-gray"
               >
                 Products
@@ -74,25 +72,29 @@ const Header = () => {
               </button>
               
               {isProductsOpen && (
-                <div 
-                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-50"
-                  onMouseEnter={() => setIsProductsOpen(true)}
-                  onMouseLeave={() => setIsProductsOpen(false)}
-                >
-                  <div className="py-2">
-                    {products.map((product) => (
-                      <a
-                        key={product.name}
-                        href={product.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-2 text-sm text-cool-gray hover:text-charcoal hover:bg-gray-50 transition-colors"
-                      >
-                        {product.name}
-                      </a>
-                    ))}
+                <>
+                  {/* Backdrop to close dropdown */}
+                  <div 
+                    className="fixed inset-0 z-40" 
+                    onClick={() => setIsProductsOpen(false)}
+                  />
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-50">
+                    <div className="py-2">
+                      {products.map((product) => (
+                        <a
+                          key={product.name}
+                          href={product.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-4 py-2 text-sm text-cool-gray hover:text-charcoal hover:bg-gray-50 transition-colors"
+                          onClick={() => setIsProductsOpen(false)}
+                        >
+                          {product.name}
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                </>
               )}
             </div>
             
