@@ -13,7 +13,6 @@ const Header = () => {
   const navigation = [
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/resources/our-customers" },
-    { name: "Contact us", href: "/contact" },
   ];
 
   const products = [
@@ -118,7 +117,7 @@ const Header = () => {
 
           {/* Contact CTA Button - desktop only */}
           <div className="hidden md:block">
-            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
               <Link to="/contact">
                 Contact <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
