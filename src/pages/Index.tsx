@@ -1,10 +1,21 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
   const [showFloatingCTA, setShowFloatingCTA] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +41,32 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Create mailto link
+    const subject = `Contact from ${formData.name} - ${formData.company}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:alex@works.xyz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+
+    toast({
+      title: "Email Client Opened",
+      description: "Your default email client should open with the message pre-filled.",
+    });
+
+    setFormData({ name: "", email: "", company: "", message: "" });
+    setIsSubmitting(false);
+  };
 
   return (
     <div className="min-h-screen">
@@ -481,57 +518,90 @@ const Index = () => {
 
 
       {/* Contact Form Section */}
-      <section className="py-20 px-6 bg-card text-card-foreground">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-card-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
-              Ready to tell your story?
+            <h2 className="font-headline text-black mb-6 text-3xl md:text-4xl lg:text-5xl">
+              Ready to shape your story?
             </h2>
-            <p className="text-muted-foreground text-xl">
-              Tell us your story. We'll engineer the influence.
+            <p className="text-gray-600 text-xl">
+              Let's discuss how strategic public relations can elevate your brand.
             </p>
           </div>
 
-          <form className="space-y-6 reveal-on-scroll" style={{ animationDelay: '0.2s' }}>
-            <div className="grid md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-6 reveal-on-scroll" style={{ animationDelay: '0.2s' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <input 
-                  type="text" 
-                  placeholder="Your name" 
-                  className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors touch-target"
+                <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
+                  Name *
+                </label>
+                <Input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="Your name"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                  style={{ borderRadius: '12px' }}
                 />
               </div>
               <div>
-                <input 
-                  type="email" 
-                  placeholder="Email address" 
-                  className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors touch-target"
+                <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
+                  Email *
+                </label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="your@email.com"
+                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                  style={{ borderRadius: '12px' }}
                 />
               </div>
             </div>
-            
             <div>
-              <input 
-                type="text" 
-                placeholder="Company name" 
-                className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors touch-target"
+              <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
+                Company
+              </label>
+              <Input
+                id="company"
+                name="company"
+                value={formData.company}
+                onChange={handleInputChange}
+                placeholder="Your company name"
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                style={{ borderRadius: '12px' }}
               />
             </div>
-            
             <div>
-              <textarea 
-                placeholder="Tell us about your ambitions..." 
-                rows={4}
-                className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors resize-none"
-              ></textarea>
+              <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
+                Message *
+              </label>
+              <Textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                rows={6}
+                placeholder="Tell us about your project..."
+                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                style={{ borderRadius: '12px' }}
+              />
             </div>
-            
-            <Button 
-              type="submit"
-              size="lg"
-              className="w-full py-6 text-lg font-semibold"
-            >
-              Start the Conversation <ArrowRight className="ml-2 h-4 w-4" />
+            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
+              {isSubmitting ? (
+                "Opening email client..."
+              ) : (
+                <>
+                  Start a conversation
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </>
+              )}
             </Button>
           </form>
         </div>
