@@ -176,6 +176,14 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              <Link
+                to="/contact"
+                className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
             </div>
           </div>
         )}
