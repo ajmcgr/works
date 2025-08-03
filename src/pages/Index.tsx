@@ -481,13 +481,13 @@ const Index = () => {
 
 
       {/* Contact Form Section */}
-      <section className="py-20 px-6 bg-foreground text-background">
+      <section className="py-20 px-6 bg-card text-card-foreground">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-background mb-6 text-3xl md:text-4xl lg:text-5xl">
-              Ready to get started?
+            <h2 className="font-headline text-card-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
+              Ready to tell your story?
             </h2>
-            <p className="text-background/70 text-xl">
+            <p className="text-muted-foreground text-xl">
               Tell us your story. We'll engineer the influence.
             </p>
           </div>
@@ -498,14 +498,14 @@ const Index = () => {
                 <input 
                   type="text" 
                   placeholder="Your name" 
-                  className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors touch-target"
+                  className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors touch-target"
                 />
               </div>
               <div>
                 <input 
                   type="email" 
                   placeholder="Email address" 
-                  className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors touch-target"
+                  className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors touch-target"
                 />
               </div>
             </div>
@@ -514,7 +514,7 @@ const Index = () => {
               <input 
                 type="text" 
                 placeholder="Company name" 
-                className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors touch-target"
+                className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors touch-target"
               />
             </div>
             
@@ -522,13 +522,14 @@ const Index = () => {
               <textarea 
                 placeholder="Tell us about your ambitions..." 
                 rows={4}
-                className="w-full bg-background/10 border border-background/20 rounded-2xl px-6 py-4 text-background placeholder-background/50 focus:outline-none focus:border-accent-electric transition-colors resize-none"
+                className="w-full bg-input border border-border rounded-2xl px-6 py-4 text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring transition-colors resize-none"
               ></textarea>
             </div>
             
             <Button 
               type="submit"
-              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg font-semibold"
+              size="lg"
+              className="w-full py-6 text-lg font-semibold"
             >
               Start the Conversation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
