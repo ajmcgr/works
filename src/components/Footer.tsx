@@ -77,7 +77,7 @@ const Footer = () => {
                   Updates
                 </a>
                 <a 
-                  href="https://discord.gg/JvzSsyNf" 
+                  href="https://discord.gg/Cet49cDcSr" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors"
