@@ -99,7 +99,7 @@ const Services = () => {
                 </ul>
                 <div className="pt-6 border-t border-gray-100">
                   <div className="text-lg font-bold text-black mb-6">{service.price}</div>
-                  <Button asChild variant="outline">
+                  <Button asChild>
                     <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Get Quote</a>
                   </Button>
                 </div>
