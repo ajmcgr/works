@@ -65,7 +65,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
-                className="flex items-center text-sm font-medium transition-colors hover:text-charcoal text-cool-gray"
+                className="flex items-center text-sm font-medium transition-colors hover:text-foreground text-muted-foreground"
               >
                 Products
                 <ChevronDown className="ml-1 h-4 w-4" />
@@ -78,7 +78,7 @@ const Header = () => {
                     className="fixed inset-0 z-40" 
                     onClick={() => setIsProductsOpen(false)}
                   />
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-50">
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-popover rounded-lg shadow-lg border border-border z-50">
                     <div className="py-2">
                       {products.map((product) => (
                         <a
@@ -86,7 +86,7 @@ const Header = () => {
                           href={product.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block px-4 py-2 text-sm text-cool-gray hover:text-charcoal hover:bg-gray-50 transition-colors"
+                          className="block px-4 py-2 text-sm text-popover-foreground hover:text-accent-foreground hover:bg-accent transition-colors"
                           onClick={() => setIsProductsOpen(false)}
                         >
                           {product.name}
@@ -108,8 +108,8 @@ const Header = () => {
                     handleNavClick(item.href);
                   }
                 }}
-                className={`text-sm font-medium transition-colors hover:text-charcoal ${
-                  isActive(item.href) ? "text-charcoal" : "text-cool-gray"
+                className={`text-sm font-medium transition-colors hover:text-foreground ${
+                  isActive(item.href) ? "text-foreground" : "text-muted-foreground"
                 }`}
               >
                 {item.name}

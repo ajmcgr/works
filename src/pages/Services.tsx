@@ -99,7 +99,7 @@ const Services = () => {
                 </ul>
                 <div className="pt-6 border-t border-gray-100">
                   <div className="text-lg font-bold text-black mb-6">{service.price}</div>
-                  <Button asChild variant="outline" className="border-[#409EFF] text-[#409EFF] hover:bg-[#409EFF] hover:text-white">
+                  <Button asChild variant="outline">
                     <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Get Quote</a>
                   </Button>
                 </div>
@@ -142,7 +142,7 @@ const Services = () => {
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-600 font-normal leading-relaxed">
             Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
-          <Button asChild size="lg" className="text-white hover:opacity-90 px-8 py-3" style={{ backgroundColor: '#409EFF' }}>
+          <Button asChild size="lg">
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Start a conversation</a>
           </Button>
         </div>
