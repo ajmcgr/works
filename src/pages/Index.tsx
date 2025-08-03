@@ -621,8 +621,6 @@ const Index = () => {
         </div>
       )}
 
-      {/* Spacer for sticky footer */}
-      <div className="h-24"></div>
     </div>
   );
 };
