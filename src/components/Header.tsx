@@ -121,7 +121,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm">
               <Link to="/contact">
-                Contact <ArrowRight className="ml-2 h-4 w-4" />
+                Contact us <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
