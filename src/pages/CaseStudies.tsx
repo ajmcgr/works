@@ -331,12 +331,12 @@ const CaseStudies = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-black text-white">
+      <section className="py-32 bg-white text-black">
         <div className="container mx-auto px-6 lg:px-12 max-w-6xl text-center">
           <h2 className="text-4xl lg:text-5xl font-headline mb-8 leading-tight">
             Ready to tell your story?
           </h2>
-          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-300 font-normal leading-relaxed">
+          <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-600 font-normal leading-relaxed">
             Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
           <Button asChild size="lg" className="text-white hover:opacity-90 px-8 py-3" style={{ backgroundColor: '#409EFF' }}>
