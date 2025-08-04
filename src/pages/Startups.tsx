@@ -32,7 +32,7 @@ const Startups = () => {
                     Your startup lives or dies by attention.
                   </p>
                   <p className="text-xl leading-relaxed">
-                    Investors won't take the meeting. Customers won't trust you. Talent won't join—unless they've heard of you.
+                    Investors won't take the meeting. Customers won't trust you. Talent won't join unless they've heard of you.
                   </p>
                   <p className="text-xl leading-relaxed">
                     That's where we come in.
@@ -51,7 +51,7 @@ const Startups = () => {
                       Fixed price. Tight timeline. Real results.
                     </p>
                     <p className="text-xl leading-relaxed">
-                      If you're launching, raising, or hiring — this is how you get seen.
+                      If you're launching, raising, or hiring, this is how you get seen.
                     </p>
                   </div>
                   
