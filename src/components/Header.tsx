@@ -67,7 +67,7 @@ const Header = () => {
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
                 className="flex items-center text-sm font-medium transition-colors text-muted-foreground"
               >
-                Products
+                Apps
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               
@@ -145,7 +145,7 @@ const Header = () => {
             <div className="py-6 space-y-4 text-center">
               {/* Products section for mobile */}
               <div className="space-y-2">
-                <div className="text-lg font-medium text-charcoal">Products</div>
+                <div className="text-lg font-medium text-charcoal">Apps</div>
                 {products.map((product) => (
                   <a
                     key={product.name}
