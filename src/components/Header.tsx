@@ -1,23 +1,17 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isProductsOpen, setIsProductsOpen] = useState(false);
   
   const location = useLocation();
 
   const navigation = [
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/resources/our-customers" },
-  ];
-
-  const products = [
-    { name: "Media AI", href: "https://trymedia.ai/" },
-    { name: "Write AI", href: "https://www.trywrite.ai/" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -61,42 +55,22 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center space-x-8 flex-1">
-            {/* Products Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setIsProductsOpen(!isProductsOpen)}
-                className="flex items-center text-sm font-medium transition-colors text-muted-foreground hover:text-foreground"
-              >
-                Apps
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              
-              {isProductsOpen && (
-                <>
-                  {/* Backdrop to close dropdown */}
-                  <div 
-                    className="fixed inset-0 z-40" 
-                    onClick={() => setIsProductsOpen(false)}
-                  />
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
-                    <div className="py-2">
-                      {products.map((product) => (
-                        <a
-                          key={product.name}
-                          href={product.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors"
-                          onClick={() => setIsProductsOpen(false)}
-                        >
-                          {product.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
+            <a
+              href="https://trymedia.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium transition-colors text-muted-foreground hover:text-foreground"
+            >
+              Media AI
+            </a>
+            <a
+              href="https://www.trywrite.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium transition-colors text-muted-foreground hover:text-foreground"
+            >
+              Write AI
+            </a>
             
             {navigation.map((item) => (
               <Link
@@ -143,22 +117,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
-              {/* Products section for mobile */}
-              <div className="space-y-2">
-                <div className="text-lg font-medium text-charcoal">Apps</div>
-                {products.map((product) => (
-                  <a
-                    key={product.name}
-                    href={product.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-base text-cool-gray hover:text-charcoal transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {product.name}
-                  </a>
-                ))}
-              </div>
+              <a
+                href="https://trymedia.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Media AI
+              </a>
+              <a
+                href="https://www.trywrite.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Write AI
+              </a>
               
               {navigation.map((item) => (
                 <Link
