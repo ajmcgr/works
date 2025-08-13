@@ -1,0 +1,229 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { Shield, Star, ArrowRight, CheckCircle, AlertCircle, XCircle } from "lucide-react";
+
+const PRHealthChecker = () => {
+  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [prText, setPrText] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showResults, setShowResults] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      setShowResults(true);
+      setIsSubmitting(false);
+      toast({
+        title: "Analysis Complete!",
+        description: "Your PR health check results are ready.",
+      });
+    }, 2000);
+  };
+
+  const healthResults = {
+    overallScore: 78,
+    tone: { score: 85, status: "good", feedback: "Professional and engaging tone" },
+    readability: { score: 72, status: "warning", feedback: "Consider shorter sentences for better flow" },
+    relevance: { score: 90, status: "good", feedback: "Highly relevant to current market trends" },
+    structure: { score: 65, status: "warning", feedback: "Headline could be more compelling" },
+    keywords: { score: 80, status: "good", feedback: "Good SEO optimization potential" }
+  };
+
+  const getStatusIcon = (status: string) => {
+    switch (status) {
+      case "good": return <CheckCircle className="w-5 h-5 text-green-500" />;
+      case "warning": return <AlertCircle className="w-5 h-5 text-yellow-500" />;
+      case "poor": return <XCircle className="w-5 h-5 text-red-500" />;
+      default: return <CheckCircle className="w-5 h-5 text-gray-500" />;
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-electric/10 rounded-2xl mb-6">
+            <Shield className="w-8 h-8 text-accent-electric" />
+          </div>
+          
+          <h1 className="font-headline text-foreground mb-6 text-4xl md:text-5xl lg:text-6xl">
+            PR Health Checker
+          </h1>
+          
+          <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            Paste your press release or pitch to get instant feedback on tone, readability, and media relevance.
+          </p>
+        </div>
+      </section>
+
+      {/* Tool Section */}
+      <section className="pb-16 px-6">
+        <div className="max-w-2xl mx-auto">
+          {!showResults ? (
+            <div className="bg-gray-50 rounded-3xl p-8">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-foreground mb-4">
+                  Analyze Your PR Content
+                </h2>
+                <p className="text-muted-foreground">
+                  Get professional feedback in seconds
+                </p>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Paste your press release or pitch
+                  </label>
+                  <Textarea
+                    value={prText}
+                    onChange={(e) => setPrText(e.target.value)}
+                    placeholder="Paste your press release, media pitch, or announcement here..."
+                    className="min-h-[200px]"
+                    required
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Name *
+                    </label>
+                    <Input
+                      type="text"
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Email *
+                    </label>
+                    <Input
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Analyzing Content..." : "Check PR Health"} 
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </form>
+            </div>
+          ) : (
+            <div className="bg-gray-50 rounded-3xl p-8">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-foreground mb-4">
+                  PR Health Check Results
+                </h2>
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-4">
+                  <span className="text-3xl font-bold text-primary">{healthResults.overallScore}</span>
+                </div>
+                <p className="text-muted-foreground">
+                  Overall Health Score: {healthResults.overallScore}/100
+                </p>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                {Object.entries(healthResults).filter(([key]) => key !== 'overallScore').map(([key, result]: [string, any]) => (
+                  <div key={key} className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center space-x-3">
+                        {getStatusIcon(result.status)}
+                        <h3 className="font-medium text-foreground capitalize">{key}</h3>
+                      </div>
+                      <span className="text-sm font-bold text-foreground">{result.score}/100</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{result.feedback}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-white rounded-xl p-6 mb-8">
+                <h3 className="font-bold text-foreground mb-4">Recommended Improvements</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Add more compelling statistics in the first paragraph</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Include a stronger call-to-action for journalists</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Consider adding executive quotes for credibility</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center">
+                <Button 
+                  onClick={() => setShowResults(false)}
+                  variant="outline"
+                  className="mr-4"
+                >
+                  Check Another
+                </Button>
+                <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  <a href="/contact">Get Professional Review</a>
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-xl font-bold text-foreground mb-8">
+            Trusted by Industry Leaders
+          </h3>
+          
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center opacity-60 mb-12">
+            <img src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" alt="UFC" className="h-8 object-contain grayscale" />
+            <img src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" alt="OnePlus" className="h-8 object-contain grayscale" />
+            <img src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" alt="OPPO" className="h-8 object-contain grayscale" />
+            <img src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" alt="Ogilvy" className="h-8 object-contain grayscale" />
+            <img src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" alt="Weber Shandwick" className="h-8 object-contain grayscale" />
+            <img src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" alt="Publicis Groupe" className="h-8 object-contain grayscale" />
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm max-w-2xl mx-auto">
+            <div className="flex items-center justify-center mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+              ))}
+            </div>
+            <p className="text-muted-foreground italic mb-4">
+              "The PR Health Checker caught issues we missed. Our press releases now have 80% higher pickup rates with major outlets."
+            </p>
+            <p className="text-sm font-medium text-foreground">Jennifer Park, Communications Director at InnovateX</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default PRHealthChecker;

@@ -28,6 +28,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
+// Free Tools
+import PRHeadlineGenerator from "./pages/tools/PRHeadlineGenerator";
+import InfluencerBriefBuilder from "./pages/tools/InfluencerBriefBuilder";
+import PRHealthChecker from "./pages/tools/PRHealthChecker";
+import PitchTimer from "./pages/tools/PitchTimer";
+import JournalistAlertFeed from "./pages/tools/JournalistAlertFeed";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -60,6 +67,14 @@ const App = () => (
               <Route path="/resources/brand-storytelling" element={<CreativeStorytelling />} />
               <Route path="/resources/founder-training" element={<MediaTraining />} />
               <Route path="/resources/launch-amplification" element={<LaunchSprint />} />
+              
+              {/* Free Tools */}
+              <Route path="/tools/pr-headline-generator" element={<PRHeadlineGenerator />} />
+              <Route path="/tools/influencer-brief-builder" element={<InfluencerBriefBuilder />} />
+              <Route path="/tools/pr-health-checker" element={<PRHealthChecker />} />
+              <Route path="/tools/pitch-timer" element={<PitchTimer />} />
+              <Route path="/tools/journalist-alert-feed" element={<JournalistAlertFeed />} />
+              
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
