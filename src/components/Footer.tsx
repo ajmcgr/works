@@ -7,16 +7,16 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-4xl">
         <div className="space-y-8">
           {/* Navigation Links */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
             {/* Products */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Apps</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Apps</h4>
               <div className="space-y-3">
                 <a 
                   href="https://trymedia.ai" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
                   Media AI
                 </a>
@@ -24,7 +24,7 @@ const Footer = () => {
                   href="https://trywrite.ai" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
                   Write AI
                 </a>
@@ -33,63 +33,63 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Services</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Services</h4>
               <div className="space-y-3">
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Relations</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Communication</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Communications</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Content Strategy</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Marketing</Link>
-                <Link to="/services" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Event Management</Link>
-                <Link to="/startups" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Startups</Link>
+                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Media Relations</Link>
+                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Crisis Communication</Link>
+                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Brand Communications</Link>
+                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Content Strategy</Link>
+                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Marketing</Link>
+                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Event Management</Link>
+                <Link to="/startups" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startups</Link>
               </div>
             </div>
 
             {/* Resources */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Resources</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Resources</h4>
               <div className="space-y-3">
-                <Link to="/resources/our-customers" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Our Customers</Link>
-                <Link to="/resources/startup-pr-guide" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Startup PR Guide</Link>
-                <Link to="/resources/launch-amplification" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Launch Amplification</Link>
-                <Link to="/resources/ai-media-tools" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">AI Media Tools</Link>
-                <Link to="/resources/international-expansion" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">International Expansion</Link>
-                <Link to="/resources/saas-marketing" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">SaaS Marketing</Link>
-                <Link to="/resources/hardware-launches" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Hardware Launches</Link>
-                <Link to="/resources/reputation-defense" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Reputation Defense</Link>
-                <Link to="/resources/brand-storytelling" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Storytelling</Link>
-                <Link to="/resources/founder-training" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Founder Training</Link>
+                <Link to="/resources/our-customers" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Our Customers</Link>
+                <Link to="/resources/startup-pr-guide" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startup PR Guide</Link>
+                <Link to="/resources/launch-amplification" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Launch Amplification</Link>
+                <Link to="/resources/ai-media-tools" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">AI Media Tools</Link>
+                <Link to="/resources/international-expansion" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">International Expansion</Link>
+                <Link to="/resources/saas-marketing" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">SaaS Marketing</Link>
+                <Link to="/resources/hardware-launches" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Hardware Launches</Link>
+                <Link to="/resources/reputation-defense" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Reputation Defense</Link>
+                <Link to="/resources/brand-storytelling" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Brand Storytelling</Link>
+                <Link to="/resources/founder-training" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Founder Training</Link>
               </div>
             </div>
 
             {/* Free Tools */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Free Tools</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Free Tools</h4>
               <div className="space-y-3">
-                <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Headlines</Link>
-                <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Briefs</Link>
-                <Link to="/tools/pr-health-checker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Health Check</Link>
-                <Link to="/tools/pitch-timer" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Pitch Timer</Link>
-                <Link to="/tools/pr-crisis-response-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Response</Link>
-                <Link to="/tools/influencer-roi-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer ROI Calculator</Link>
-                <Link to="/tools/influencer-content-brief-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Content Briefs</Link>
-                <Link to="/tools/influencer-rate-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Rate Calculator</Link>
-                <Link to="/tools/influencer-campaign-timeline" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Campaign Timeline</Link>
-                <Link to="/tools/influencer-performance-tracker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Performance Tracker</Link>
+                <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Headlines</Link>
+                <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Briefs</Link>
+                <Link to="/tools/pr-health-checker" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Health Check</Link>
+                <Link to="/tools/pitch-timer" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Pitch Timer</Link>
+                <Link to="/tools/pr-crisis-response-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Crisis Response</Link>
+                <Link to="/tools/influencer-roi-calculator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer ROI Calculator</Link>
+                <Link to="/tools/influencer-content-brief-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Content Briefs</Link>
+                <Link to="/tools/influencer-rate-calculator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Rate Calculator</Link>
+                <Link to="/tools/influencer-campaign-timeline" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Campaign Timeline</Link>
+                <Link to="/tools/influencer-performance-tracker" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Performance Tracker</Link>
               </div>
             </div>
 
             {/* Company */}
             <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Company</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Company</h4>
               <div className="space-y-3">
-                <Link to="/about" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">About</Link>
-                <Link to="/contact" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Contact us</Link>
+                <Link to="/about" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">About</Link>
+                <Link to="/contact" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Contact us</Link>
                 <a 
                   href="https://blog.works.xyz/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
                   Updates
                 </a>
@@ -97,7 +97,7 @@ const Footer = () => {
                   href="https://discord.gg/Cet49cDcSr" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
                   Discord
                 </a>
@@ -105,7 +105,7 @@ const Footer = () => {
                   href="https://www.hypeworkspod.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
                   Podcast
                 </a>
