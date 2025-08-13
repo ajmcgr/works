@@ -55,13 +55,13 @@ const InfluencerBriefBuilder = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-electric/10 rounded-2xl mb-6">
-            <Users className="w-8 h-8 text-accent-electric" />
-          </div>
-          
           <h1 className="font-headline text-foreground mb-6 text-4xl md:text-5xl lg:text-6xl">
             Influencer Brief Builder
           </h1>
+          
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-electric/10 rounded-2xl mb-6">
+            <Users className="w-8 h-8 text-accent-electric" />
+          </div>
           
           <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             Generate a ready-to-send creative brief for influencers, including goals, deliverables, timelines, and brand guidelines.
