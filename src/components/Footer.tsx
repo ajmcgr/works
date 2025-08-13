@@ -31,23 +31,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Free Tools */}
-            <div>
-              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Free Tools</h4>
-              <div className="space-y-3">
-                <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Headlines</Link>
-                <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Briefs</Link>
-                <Link to="/tools/pr-health-checker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Health Check</Link>
-                <Link to="/tools/pitch-timer" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Pitch Timer</Link>
-                <Link to="/tools/pr-crisis-response-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Response</Link>
-                <Link to="/tools/influencer-roi-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer ROI Calculator</Link>
-                <Link to="/tools/influencer-content-brief-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Content Briefs</Link>
-                <Link to="/tools/influencer-rate-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Rate Calculator</Link>
-                <Link to="/tools/influencer-campaign-timeline" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Campaign Timeline</Link>
-                <Link to="/tools/influencer-performance-tracker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Performance Tracker</Link>
-              </div>
-            </div>
-
             {/* Services */}
             <div>
               <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Services</h4>
@@ -76,6 +59,23 @@ const Footer = () => {
                 <Link to="/resources/reputation-defense" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Reputation Defense</Link>
                 <Link to="/resources/brand-storytelling" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Brand Storytelling</Link>
                 <Link to="/resources/founder-training" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Founder Training</Link>
+              </div>
+            </div>
+
+            {/* Free Tools */}
+            <div>
+              <h4 className="text-2xl font-medium text-black mb-3 tracking-wide">Free Tools</h4>
+              <div className="space-y-3">
+                <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Headlines</Link>
+                <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Briefs</Link>
+                <Link to="/tools/pr-health-checker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Health Check</Link>
+                <Link to="/tools/pitch-timer" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Pitch Timer</Link>
+                <Link to="/tools/pr-crisis-response-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Response</Link>
+                <Link to="/tools/influencer-roi-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer ROI Calculator</Link>
+                <Link to="/tools/influencer-content-brief-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Content Briefs</Link>
+                <Link to="/tools/influencer-rate-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Rate Calculator</Link>
+                <Link to="/tools/influencer-campaign-timeline" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Campaign Timeline</Link>
+                <Link to="/tools/influencer-performance-tracker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Performance Tracker</Link>
               </div>
             </div>
 
