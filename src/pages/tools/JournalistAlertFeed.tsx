@@ -5,7 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Bell, Star, ArrowRight, Newspaper, Clock, User } from "lucide-react";
 
 const JournalistAlertFeed = () => {
-  const [formData, setFormData] = useState({ name: "", email: "" });
+  
   const [interests, setInterests] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showResults, setShowResults] = useState(false);
@@ -131,32 +131,6 @@ const JournalistAlertFeed = () => {
                   )}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Name *
-                    </label>
-                    <Input
-                      type="text"
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Email *
-                    </label>
-                    <Input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      placeholder="your@email.com"
-                      required
-                    />
-                  </div>
-                </div>
 
                 <div className="bg-white rounded-xl p-4 border border-gray-200">
                   <h4 className="font-medium text-foreground mb-2">What You'll Receive:</h4>

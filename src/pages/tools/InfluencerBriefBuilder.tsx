@@ -6,7 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Users, Star, ArrowRight } from "lucide-react";
 
 const InfluencerBriefBuilder = () => {
-  const [formData, setFormData] = useState({ name: "", email: "" });
+  
   const [briefData, setBriefData] = useState({
     campaign: "",
     goals: "",
@@ -121,32 +121,6 @@ const InfluencerBriefBuilder = () => {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Name *
-                    </label>
-                    <Input
-                      type="text"
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Email *
-                    </label>
-                    <Input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      placeholder="your@email.com"
-                      required
-                    />
-                  </div>
-                </div>
 
                 <Button 
                   type="submit" 
