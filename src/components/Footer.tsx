@@ -39,7 +39,7 @@ const Footer = () => {
                 <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Influencer Briefs</Link>
                 <Link to="/tools/pr-health-checker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Health Check</Link>
                 <Link to="/tools/pitch-timer" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Pitch Timer</Link>
-                <Link to="/tools/journalist-alert-feed" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Alerts</Link>
+                <Link to="/tools/pr-crisis-response-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Response</Link>
                 <Link to="/tools/press-release-angle-finder" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Angles</Link>
                 <Link to="/tools/campaign-hashtag-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Hashtag Generator</Link>
                 <Link to="/tools/pr-buzzword-buster" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Buzzword Buster</Link>
