@@ -233,35 +233,6 @@ const InfluencerBriefBuilder = () => {
         </div>
       </section>
 
-      {/* Trust Signals */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-xl font-bold text-foreground mb-8">
-            Trusted by Industry Leaders
-          </h3>
-          
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center opacity-60 mb-12">
-            <img src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" alt="UFC" className="h-8 object-contain grayscale" />
-            <img src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" alt="OnePlus" className="h-8 object-contain grayscale" />
-            <img src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" alt="OPPO" className="h-8 object-contain grayscale" />
-            <img src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" alt="Ogilvy" className="h-8 object-contain grayscale" />
-            <img src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" alt="Weber Shandwick" className="h-8 object-contain grayscale" />
-            <img src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" alt="Publicis Groupe" className="h-8 object-contain grayscale" />
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm max-w-2xl mx-auto">
-            <div className="flex items-center justify-center mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-              ))}
-            </div>
-            <p className="text-muted-foreground italic mb-4">
-              "The influencer brief builder saved us hours of work. Our response rates improved 300% with these professional briefs."
-            </p>
-            <p className="text-sm font-medium text-foreground">Marcus Rivera, Head of Partnerships at GrowthCo</p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
