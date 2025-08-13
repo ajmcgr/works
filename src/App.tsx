@@ -34,6 +34,11 @@ import InfluencerBriefBuilder from "./pages/tools/InfluencerBriefBuilder";
 import PRHealthChecker from "./pages/tools/PRHealthChecker";
 import PitchTimer from "./pages/tools/PitchTimer";
 import JournalistAlertFeed from "./pages/tools/JournalistAlertFeed";
+import PressReleaseAngleFinder from "./pages/tools/PressReleaseAngleFinder";
+import CampaignHashtagGenerator from "./pages/tools/CampaignHashtagGenerator";
+import PRBuzzwordBuster from "./pages/tools/PRBuzzwordBuster";
+import MediaOutreachPersonalizer from "./pages/tools/MediaOutreachPersonalizer";
+import EventPitchCalendar from "./pages/tools/EventPitchCalendar";
 
 const queryClient = new QueryClient();
 
@@ -69,11 +74,16 @@ const App = () => (
               <Route path="/resources/launch-amplification" element={<LaunchSprint />} />
               
               {/* Free Tools */}
-              <Route path="/tools/pr-headline-generator" element={<PRHeadlineGenerator />} />
-              <Route path="/tools/influencer-brief-builder" element={<InfluencerBriefBuilder />} />
-              <Route path="/tools/pr-health-checker" element={<PRHealthChecker />} />
-              <Route path="/tools/pitch-timer" element={<PitchTimer />} />
-              <Route path="/tools/journalist-alert-feed" element={<JournalistAlertFeed />} />
+            <Route path="/tools/pr-headline-generator" element={<PRHeadlineGenerator />} />
+            <Route path="/tools/influencer-brief-builder" element={<InfluencerBriefBuilder />} />
+            <Route path="/tools/pr-health-checker" element={<PRHealthChecker />} />
+            <Route path="/tools/pitch-timer" element={<PitchTimer />} />
+            <Route path="/tools/journalist-alert-feed" element={<JournalistAlertFeed />} />
+            <Route path="/tools/press-release-angle-finder" element={<PressReleaseAngleFinder />} />
+            <Route path="/tools/campaign-hashtag-generator" element={<CampaignHashtagGenerator />} />
+            <Route path="/tools/pr-buzzword-buster" element={<PRBuzzwordBuster />} />
+            <Route path="/tools/media-outreach-personalizer" element={<MediaOutreachPersonalizer />} />
+            <Route path="/tools/event-pitch-calendar" element={<EventPitchCalendar />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>
