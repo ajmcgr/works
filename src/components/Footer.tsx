@@ -40,11 +40,11 @@ const Footer = () => {
                 <Link to="/tools/pr-health-checker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Health Check</Link>
                 <Link to="/tools/pitch-timer" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Pitch Timer</Link>
                 <Link to="/tools/pr-crisis-response-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Crisis Response</Link>
-                <Link to="/tools/press-release-angle-finder" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">PR Angles</Link>
-                <Link to="/tools/campaign-hashtag-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Hashtag Generator</Link>
-                <Link to="/tools/pr-buzzword-buster" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Buzzword Buster</Link>
-                <Link to="/tools/media-outreach-personalizer" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Media Personalizer</Link>
-                <Link to="/tools/event-pitch-calendar" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Event Calendar</Link>
+                <Link to="/tools/influencer-roi-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">ROI Calculator</Link>
+                <Link to="/tools/influencer-content-brief-generator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Content Briefs</Link>
+                <Link to="/tools/influencer-rate-calculator" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Rate Calculator</Link>
+                <Link to="/tools/influencer-campaign-timeline" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Campaign Timeline</Link>
+                <Link to="/tools/influencer-performance-tracker" className="block text-gray-600 text-sm xs:text-base sm:text-lg hover:text-black transition-colors">Performance Tracker</Link>
               </div>
             </div>
 

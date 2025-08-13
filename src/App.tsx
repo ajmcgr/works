@@ -34,11 +34,11 @@ import InfluencerBriefBuilder from "./pages/tools/InfluencerBriefBuilder";
 import PRHealthChecker from "./pages/tools/PRHealthChecker";
 import PitchTimer from "./pages/tools/PitchTimer";
 import PRCrisisResponseGenerator from "./pages/tools/PRCrisisResponseGenerator";
-import PressReleaseAngleFinder from "./pages/tools/PressReleaseAngleFinder";
-import CampaignHashtagGenerator from "./pages/tools/CampaignHashtagGenerator";
-import PRBuzzwordBuster from "./pages/tools/PRBuzzwordBuster";
-import MediaOutreachPersonalizer from "./pages/tools/MediaOutreachPersonalizer";
-import EventPitchCalendar from "./pages/tools/EventPitchCalendar";
+import InfluencerROICalculator from "./pages/tools/InfluencerROICalculator";
+import InfluencerContentBriefGenerator from "./pages/tools/InfluencerContentBriefGenerator";
+import InfluencerRateCalculator from "./pages/tools/InfluencerRateCalculator";
+import InfluencerCampaignTimeline from "./pages/tools/InfluencerCampaignTimeline";
+import InfluencerPerformanceTracker from "./pages/tools/InfluencerPerformanceTracker";
 
 const queryClient = new QueryClient();
 
@@ -79,11 +79,11 @@ const App = () => (
             <Route path="/tools/pr-health-checker" element={<PRHealthChecker />} />
             <Route path="/tools/pitch-timer" element={<PitchTimer />} />
             <Route path="/tools/pr-crisis-response-generator" element={<PRCrisisResponseGenerator />} />
-            <Route path="/tools/press-release-angle-finder" element={<PressReleaseAngleFinder />} />
-            <Route path="/tools/campaign-hashtag-generator" element={<CampaignHashtagGenerator />} />
-            <Route path="/tools/pr-buzzword-buster" element={<PRBuzzwordBuster />} />
-            <Route path="/tools/media-outreach-personalizer" element={<MediaOutreachPersonalizer />} />
-            <Route path="/tools/event-pitch-calendar" element={<EventPitchCalendar />} />
+            <Route path="/tools/influencer-roi-calculator" element={<InfluencerROICalculator />} />
+            <Route path="/tools/influencer-content-brief-generator" element={<InfluencerContentBriefGenerator />} />
+            <Route path="/tools/influencer-rate-calculator" element={<InfluencerRateCalculator />} />
+            <Route path="/tools/influencer-campaign-timeline" element={<InfluencerCampaignTimeline />} />
+            <Route path="/tools/influencer-performance-tracker" element={<InfluencerPerformanceTracker />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>
