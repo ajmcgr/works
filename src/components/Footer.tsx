@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-4xl">
         <div className="space-y-8">
           {/* Navigation Links */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-20">
             {/* Products */}
             <div>
-              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Apps</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide font-sans">Apps</h4>
               <div className="space-y-3">
                 <a 
                   href="https://trymedia.ai" 
@@ -33,7 +33,7 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Services</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide font-sans">Services</h4>
               <div className="space-y-3">
                 <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Media Relations</Link>
                 <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Crisis Communication</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
 
             {/* Resources */}
             <div>
-              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Resources</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide font-sans">Resources</h4>
               <div className="space-y-3">
                 <Link to="/resources/our-customers" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Our Customers</Link>
                 <Link to="/resources/startup-pr-guide" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startup PR Guide</Link>
@@ -64,7 +64,7 @@ const Footer = () => {
 
             {/* Free Tools */}
             <div>
-              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Free Tools</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide font-sans">Free Tools</h4>
               <div className="space-y-3">
                 <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Headlines</Link>
                 <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Briefs</Link>
@@ -81,7 +81,7 @@ const Footer = () => {
 
             {/* Company */}
             <div>
-              <h4 className="text-lg font-medium text-black mb-3 tracking-wide">Company</h4>
+              <h4 className="text-lg font-medium text-black mb-3 tracking-wide font-sans">Company</h4>
               <div className="space-y-3">
                 <Link to="/about" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">About</Link>
                 <Link to="/contact" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Contact us</Link>
