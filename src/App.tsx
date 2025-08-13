@@ -33,7 +33,7 @@ import PRHeadlineGenerator from "./pages/tools/PRHeadlineGenerator";
 import InfluencerBriefBuilder from "./pages/tools/InfluencerBriefBuilder";
 import PRHealthChecker from "./pages/tools/PRHealthChecker";
 import PitchTimer from "./pages/tools/PitchTimer";
-import JournalistAlertFeed from "./pages/tools/JournalistAlertFeed";
+import PRCrisisResponseGenerator from "./pages/tools/PRCrisisResponseGenerator";
 import PressReleaseAngleFinder from "./pages/tools/PressReleaseAngleFinder";
 import CampaignHashtagGenerator from "./pages/tools/CampaignHashtagGenerator";
 import PRBuzzwordBuster from "./pages/tools/PRBuzzwordBuster";
@@ -78,7 +78,7 @@ const App = () => (
             <Route path="/tools/influencer-brief-builder" element={<InfluencerBriefBuilder />} />
             <Route path="/tools/pr-health-checker" element={<PRHealthChecker />} />
             <Route path="/tools/pitch-timer" element={<PitchTimer />} />
-            <Route path="/tools/journalist-alert-feed" element={<JournalistAlertFeed />} />
+            <Route path="/tools/pr-crisis-response-generator" element={<PRCrisisResponseGenerator />} />
             <Route path="/tools/press-release-angle-finder" element={<PressReleaseAngleFinder />} />
             <Route path="/tools/campaign-hashtag-generator" element={<CampaignHashtagGenerator />} />
             <Route path="/tools/pr-buzzword-buster" element={<PRBuzzwordBuster />} />
