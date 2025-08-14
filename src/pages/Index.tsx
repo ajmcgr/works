@@ -80,7 +80,19 @@ const Index = () => {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
 
-          {/* Kinetic typography */}
+          {/* Video with no controls */}
+          <div className="mb-8 md:mb-12 kinetic-slide in-view w-full" style={{ animationDelay: '0.1s' }}>
+            <div className="aspect-[2.77/1] w-full">
+              <iframe
+                src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
+                className="w-full h-full"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                title="Hero Video"
+              ></iframe>
+            </div>
+          </div>
+
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s' }}>
               PR & Influencer Marketing for Ambitious Brands.
