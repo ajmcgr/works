@@ -159,7 +159,7 @@ const Index = () => {
 
           {/* Video with no controls - Now below brand logos */}
           <div className="mt-8 md:mt-12 kinetic-slide in-view w-full" style={{ animationDelay: '1.2s' }}>
-            <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black rounded-sm">
+            <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black rounded-[2.5px]">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
                 className="absolute inset-0 w-full h-full transform scale-150"
