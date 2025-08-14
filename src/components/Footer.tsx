@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-6xl">
         <div className="space-y-8">
           {/* Navigation Links */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-24">
             {/* Company */}
             <div>
               <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Company</h4>
@@ -75,54 +75,59 @@ const Footer = () => {
               </div>
             </div>
 
+            {/* Connect */}
+            <div>
+              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Connect</h4>
+              <div className="space-y-3">
+                <a 
+                  href="https://x.com/worksxyz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  X
+                </a>
+                <a 
+                  href="https://www.facebook.com/worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Facebook
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://www.youtube.com/@worksxyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  YouTube
+                </a>
+                <a 
+                  href="https://www.instagram.com/works.xyz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
 
         <div className="border-t border-gray-100 mt-16 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex justify-center">
             <p className="text-xs text-gray-600">&copy; 2025 Works App, Inc. All rights reserved.</p>
-            <div className="flex space-x-6">
-              <a 
-                href="https://x.com/worksxyz/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-xs text-gray-600 hover:text-black transition-colors"
-              >
-                X
-              </a>
-              <a 
-                href="https://www.facebook.com/worksxyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-xs text-gray-600 hover:text-black transition-colors"
-              >
-                Facebook
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/worksxyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-xs text-gray-600 hover:text-black transition-colors"
-              >
-                LinkedIn
-              </a>
-              <a 
-                href="https://www.youtube.com/@worksxyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-xs text-gray-600 hover:text-black transition-colors"
-              >
-                YouTube
-              </a>
-              <a 
-                href="https://www.instagram.com/works.xyz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-xs text-gray-600 hover:text-black transition-colors"
-              >
-                Instagram
-              </a>
-            </div>
           </div>
         </div>
       </div>
