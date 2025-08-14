@@ -81,8 +81,8 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
 
           {/* Video with no controls */}
-          <div className="mb-8 md:mb-12 kinetic-slide in-view w-full" style={{ animationDelay: '0.1s' }}>
-            <div className="aspect-[2.77/1] w-full overflow-hidden relative bg-black">
+          <div className="mb-8 md:mb-12 kinetic-slide in-view fixed inset-0 z-0" style={{ animationDelay: '0.1s' }}>
+            <div className="w-screen h-screen overflow-hidden relative bg-black">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
                 className="absolute inset-0 w-full h-full transform scale-150"
