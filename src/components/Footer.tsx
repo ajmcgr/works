@@ -7,41 +7,37 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-6xl">
         <div className="space-y-8">
           {/* Navigation Links */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-16 md:gap-24">
-            {/* Products */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
+            {/* Company */}
             <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Apps</h4>
+              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Company</h4>
               <div className="space-y-3">
+                <Link to="/about" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">About</Link>
+                <Link to="/contact" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Contact us</Link>
                 <a 
-                  href="https://trymedia.ai" 
+                  href="https://blog.works.xyz/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
-                  Media AI
+                  Updates
                 </a>
                 <a 
-                  href="https://trywrite.ai" 
+                  href="https://discord.gg/Cet49cDcSr" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
-                  Write AI
+                  Discord
                 </a>
-              </div>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Services</h4>
-              <div className="space-y-3">
-                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Media Relations</Link>
-                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Crisis Communication</Link>
-                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Brand Communications</Link>
-                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Content Strategy</Link>
-                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Marketing</Link>
-                <Link to="/services" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Event Management</Link>
-                <Link to="/startups" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startups</Link>
+                <a 
+                  href="https://www.hypeworkspod.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Podcast
+                </a>
               </div>
             </div>
 
@@ -79,38 +75,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Company */}
-            <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Company</h4>
-              <div className="space-y-3">
-                <Link to="/about" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">About</Link>
-                <Link to="/contact" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Contact us</Link>
-                <a 
-                  href="https://blog.works.xyz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Updates
-                </a>
-                <a 
-                  href="https://discord.gg/Cet49cDcSr" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Discord
-                </a>
-                <a 
-                  href="https://www.hypeworkspod.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Podcast
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
