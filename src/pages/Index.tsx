@@ -71,7 +71,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden pt-4 pb-8 px-4 md:px-6">
+      <section className="min-h-[120vh] flex flex-col justify-center items-center relative overflow-hidden pt-8 pb-16 px-4 md:px-6">
         {/* Kinetic background */}
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background-stone to-background">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent-electric/10 rounded-full kinetic-float blur-xl"></div>
@@ -159,7 +159,7 @@ const Index = () => {
 
           {/* Video with no controls - Now below brand logos */}
           <div className="mt-8 md:mt-12 kinetic-slide in-view w-full" style={{ animationDelay: '1.2s' }}>
-            <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden relative bg-black rounded-lg">
+            <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black rounded-lg">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
                 className="absolute inset-0 w-full h-full transform scale-150"
