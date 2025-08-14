@@ -30,14 +30,6 @@ const Footer = () => {
                 >
                   Discord
                 </a>
-                <a 
-                  href="https://www.hypeworkspod.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Podcast
-                </a>
               </div>
             </div>
 
