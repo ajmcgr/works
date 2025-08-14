@@ -82,11 +82,17 @@ const Index = () => {
 
           {/* Video with no controls */}
           <div className="mb-8 md:mb-12 kinetic-slide in-view w-full" style={{ animationDelay: '0.1s' }}>
-            <div className="aspect-[2.77/1] w-full overflow-hidden">
+            <div className="aspect-[2.77/1] w-full overflow-hidden relative">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
-                className="w-full h-full scale-105 -translate-x-0"
-                style={{ minWidth: '102%', minHeight: '102%', marginLeft: '-1%', marginTop: '-1%' }}
+                className="absolute inset-0 w-full h-full"
+                style={{ 
+                  width: '120%', 
+                  height: '120%', 
+                  left: '-10%', 
+                  top: '-10%',
+                  objectFit: 'cover'
+                }}
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 title="Hero Video"
