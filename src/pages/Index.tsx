@@ -80,30 +80,13 @@ const Index = () => {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
 
-          {/* Video with no controls */}
-          <div className="mb-8 md:mb-12 kinetic-slide in-view w-full" style={{ animationDelay: '0.1s' }}>
-            <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden relative bg-black rounded-lg">
-              <iframe
-                src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
-                className="absolute inset-0 w-full h-full transform scale-150"
-                style={{ 
-                  transform: 'scale(1.5) translateX(0%) translateY(0%)',
-                  transformOrigin: 'center center'
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                title="Hero Video"
-              ></iframe>
-            </div>
-          </div>
-
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s' }}>
               PR & Influencer Marketing for Ambitious Brands.
             </h1>
             
             <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
-              We run high-impact AI enabled PR and influencer campaigns designed to scale ambitious brands. From strategic media placements and thought leadership to influencer partnerships and brand positioning,  we prioritize visibility, credibility, and revenue growth.
+              We run high-impact AI enabled PR and influencer campaigns designed to scale ambitious brands.
             </p>
           </div>
 
@@ -171,6 +154,23 @@ const Index = () => {
                   loading="eager"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Video with no controls - Now below brand logos */}
+          <div className="mt-8 md:mt-12 kinetic-slide in-view w-full" style={{ animationDelay: '1.2s' }}>
+            <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden relative bg-black rounded-lg">
+              <iframe
+                src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
+                className="absolute inset-0 w-full h-full transform scale-150"
+                style={{ 
+                  transform: 'scale(1.5) translateX(0%) translateY(0%)',
+                  transformOrigin: 'center center'
+                }}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                title="Hero Video"
+              ></iframe>
             </div>
           </div>
 
