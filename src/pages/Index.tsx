@@ -81,7 +81,7 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
           {/* Kinetic typography */}
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-6xl md:text-7xl lg:text-8xl">
+            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl">
               PR & Influencer Marketing for Ambitious Brands.
             </h1>
             
