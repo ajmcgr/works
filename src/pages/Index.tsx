@@ -607,20 +607,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Floating CTA that appears on scroll */}
-      {showFloatingCTA && (
-        <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
-          <Button 
-            asChild 
-            size="icon"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 w-14 h-14 rounded-full shadow-xl"
-          >
-            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" aria-label="Contact us">
-              <MessageCircle className="h-6 w-6" />
-            </a>
-          </Button>
-        </div>
-      )}
 
     </div>
   );
