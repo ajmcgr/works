@@ -72,30 +72,28 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
       <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden pt-4 pb-8 px-4 md:px-6">
-        {/* Kinetic background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background-stone to-background">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden bg-black">
+          <iframe
+            src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
+            className="absolute inset-0 w-full h-full transform scale-150"
+            style={{ 
+              transform: 'scale(1.5) translateX(0%) translateY(0%)',
+              transformOrigin: 'center center'
+            }}
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Hero Video"
+          ></iframe>
+        </div>
+
+        {/* Kinetic background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/10 to-background/20">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent-electric/10 rounded-full kinetic-float blur-xl"></div>
           <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-accent-punch/5 rounded-full kinetic-pulse blur-lg"></div>
         </div>
 
         <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
-
-          {/* Video with no controls */}
-          <div className="mb-8 md:mb-12 kinetic-slide in-view fixed inset-0 z-0" style={{ animationDelay: '0.1s' }}>
-            <div className="w-screen h-screen overflow-hidden relative bg-black">
-              <iframe
-                src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
-                className="absolute inset-0 w-full h-full transform scale-150"
-                style={{ 
-                  transform: 'scale(1.5) translateX(0%) translateY(0%)',
-                  transformOrigin: 'center center'
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                title="Hero Video"
-              ></iframe>
-            </div>
-          </div>
 
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s' }}>
