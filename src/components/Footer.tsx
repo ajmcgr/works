@@ -45,7 +45,6 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Resources</h4>
               <div className="space-y-3">
-                <Link to="/resources/our-customers" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Our Customers</Link>
                 <Link to="/resources/startup-pr-guide" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startup PR Guide</Link>
                 <Link to="/resources/launch-amplification" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Launch Amplification</Link>
                 <Link to="/resources/ai-media-tools" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">AI Media Tools</Link>
