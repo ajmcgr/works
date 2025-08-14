@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -612,10 +612,11 @@ const Index = () => {
         <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
           <Button 
             asChild 
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold shadow-xl"
+            size="icon"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 w-14 h-14 rounded-full shadow-xl"
           >
-            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-              Let's Work Together <ArrowRight className="ml-2 h-4 w-4" />
+            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" aria-label="Contact us">
+              <MessageCircle className="h-6 w-6" />
             </a>
           </Button>
         </div>
