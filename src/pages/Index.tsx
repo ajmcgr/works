@@ -80,8 +80,8 @@ const Index = () => {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto w-full">
           {/* Video with narrow aspect ratio */}
-          <div className="mb-8 md:mb-12 kinetic-slide in-view" style={{ animationDelay: '0.1s' }}>
-            <div className="aspect-[1.85/1] max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+          <div className="mb-8 md:mb-12 kinetic-slide in-view w-full" style={{ animationDelay: '0.1s' }}>
+            <div className="aspect-[2.77/1] w-full">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
                 className="w-full h-full"
