@@ -11,7 +11,7 @@ const Header = () => {
 
   const navigation = [
     { name: "Services", href: "/services" },
-    { name: "Customers", href: "/resources/our-customers" },
+    { name: "Customers", href: "/customers" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
