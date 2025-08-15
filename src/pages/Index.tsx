@@ -71,7 +71,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-[150vh] flex flex-col justify-start items-center relative overflow-hidden pt-12 pb-16 px-4 md:px-6">
+      <section className="min-h-[150vh] flex flex-col justify-start items-center relative overflow-hidden pt-20 pb-16 px-4 md:px-6">
         {/* Kinetic background */}
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background-stone to-background">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent-electric/10 rounded-full kinetic-float blur-xl"></div>
