@@ -78,7 +78,7 @@ const Index = () => {
           <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-accent-punch/5 rounded-full kinetic-pulse blur-lg"></div>
         </div>
 
-        <div className="relative z-10 text-center max-w-5xl mx-auto w-full">
+        <div className="relative z-10 text-center max-w-5xl mx-auto w-full -mt-8">
 
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s' }}>
