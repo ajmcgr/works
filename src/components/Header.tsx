@@ -72,7 +72,7 @@ const Header = () => {
               Write AI
             </a>
             <span className="text-sm font-medium text-muted-foreground/60 cursor-default">
-              Content (soon)
+              Content AI (soon)
             </span>
             
             {navigation.map((item) => (
@@ -139,7 +139,7 @@ const Header = () => {
                 Write AI
               </a>
               <span className="block text-lg font-medium text-cool-gray/60 cursor-default">
-                Content (soon)
+                Content AI (soon)
               </span>
               
               {navigation.map((item) => (
