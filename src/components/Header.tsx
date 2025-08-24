@@ -38,11 +38,7 @@ const Header = () => {
   return (
     <header className={`w-full z-50 ${
       location.pathname === '/startups' ? '' : 'border-b border-gray-100'
-    } ${
-      location.pathname === '/' 
-        ? 'bg-gradient-to-b from-background via-background-stone to-background' 
-        : 'bg-white/90 backdrop-blur-md'
-    }`}>
+    } bg-white`}>
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
