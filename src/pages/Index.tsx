@@ -71,7 +71,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-0 pb-16 px-4 md:px-6">
+      <section className="min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-0 pb-6 px-4 md:px-6">
         {/* Kinetic background */}
         <div className="absolute inset-0 bg-white">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent-electric/10 rounded-full kinetic-float blur-xl"></div>
@@ -178,7 +178,7 @@ const Index = () => {
       </section>
 
       {/* We are Works Section */}
-      <section className="pt-16 pb-8 px-6 bg-white">
+      <section className="pt-6 pb-10 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
@@ -205,7 +205,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="text-center mt-16 reveal-on-scroll">
+            <div className="text-center mt-20 reveal-on-scroll">
               <Button 
                 asChild 
                 size="lg"
