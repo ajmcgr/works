@@ -178,7 +178,7 @@ const Index = () => {
       </section>
 
       {/* We are Works Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-8 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
