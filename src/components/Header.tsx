@@ -36,9 +36,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 ${
-      location.pathname === '/startups' ? '' : 'border-b border-gray-100'
-    } bg-white`}>
+    <header className="w-full z-50 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
