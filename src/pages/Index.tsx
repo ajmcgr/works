@@ -178,9 +178,9 @@ const Index = () => {
       </section>
 
       {/* We are Works Section */}
-      <section className="py-8 px-6 bg-white">
+      <section className="pt-16 pb-8 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 reveal-on-scroll">
+          <div className="text-center mb-12 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl">
               We are Works
             </h2>
@@ -205,7 +205,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="text-center mt-12 reveal-on-scroll">
+            <div className="text-center mt-16 reveal-on-scroll">
               <Button 
                 asChild 
                 size="lg"
