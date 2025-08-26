@@ -49,23 +49,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center space-x-8 flex-1">
-            <a
-              href="https://trymedia.ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium transition-colors text-muted-foreground hover:text-foreground"
-            >
-              Media AI
-            </a>
-            <a
-              href="https://www.trywrite.ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium transition-colors text-muted-foreground hover:text-foreground"
-            >
-              Write AI
-            </a>
-            
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -111,25 +94,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
-              <a
-                href="https://trymedia.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Media AI
-              </a>
-              <a
-                href="https://www.trywrite.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-lg font-medium transition-colors hover:text-charcoal text-cool-gray"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Write AI
-              </a>
-              
               {navigation.map((item) => (
                 <Link
                   key={item.name}
