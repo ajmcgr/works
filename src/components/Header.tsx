@@ -39,16 +39,13 @@ const Header = () => {
     <header className="w-full z-50 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
-          <div className="flex flex-col">
-            <p className="text-xs text-muted-foreground mb-1">Trusted by agencies and marketing teams worldwide</p>
-            <Link to="/" className="hover:opacity-80 transition-opacity">
-              <img 
-                src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
-                alt="Works" 
-                className="h-6"
-              />
-            </Link>
-          </div>
+          <Link to="/" className="hover:opacity-80 transition-opacity">
+            <img 
+              src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
+              alt="Works" 
+              className="h-6"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center space-x-8 flex-1">
