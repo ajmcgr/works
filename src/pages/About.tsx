@@ -23,16 +23,16 @@ const About = () => {
                 <h1 className="text-4xl lg:text-5xl font-headline text-black mb-6">Our story</h1>
                 
                 {/* Centered Opening Paragraph */}
-                <p className="text-base leading-relaxed" style={{ color: '#374151' }}>
+                <p className="text-sm leading-relaxed" style={{ color: '#374151' }}>
                   Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
               
               {/* Letter Content */}
               <div className="text-left">
-                <p className="text-base font-medium mb-6" style={{ color: '#374151' }}>Hello there!</p>
+                <p className="text-sm font-medium mb-6" style={{ color: '#374151' }}>Hello there!</p>
                 
-                <div className="space-y-6 leading-relaxed text-base" style={{ color: '#374151' }}>
+                <div className="space-y-6 leading-relaxed text-sm" style={{ color: '#374151' }}>
                   <p>I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
                   
                   <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
