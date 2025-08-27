@@ -70,11 +70,12 @@ const Header = () => {
               </Link>
             ))}
             
-            <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm">
-              <Link to="/contact">
-                Contact us <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            <Link
+              to="/contact"
+              className="text-sm font-medium transition-colors hover:text-foreground text-muted-foreground"
+            >
+              Contact us
+            </Link>
           </div>
 
           {/* Hamburger menu button - mobile only */}

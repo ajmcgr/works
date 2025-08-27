@@ -18,6 +18,14 @@ const About = () => {
           <div className="max-w-2xl mx-auto">
           <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
             
+            {/* Our Story Section */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-headline text-black mb-4">Our story</h2>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
+              </p>
+            </div>
+            
             <div className="text-left space-y-6 text-black leading-relaxed text-lg">
               <p className="font-sans">Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
               
@@ -38,19 +46,19 @@ const About = () => {
               <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
               
               <div className="mt-8">
-                {/* Alex Profile Photo */}
-                <div className="text-center mb-6">
-                  <div className="w-24 h-24 mx-auto mb-4">
-                    <AspectRatio ratio={1}>
-                      <img 
-                        src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
-                        alt="Alex MacGregor" 
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                    </AspectRatio>
+                <div className="flex items-start gap-4">
+                  {/* Alex Profile Photo */}
+                  <div className="w-24 h-24 flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
+                      alt="Alex MacGregor" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-medium">Best,<br />Alex MacGregor<br />Founder & CEO</p>
                   </div>
                 </div>
-                <p className="font-medium">Best,<br />Alex MacGregor<br />Founder & CEO</p>
                 <p className="mt-4">
                   <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
                     Connect with me on LinkedIn
