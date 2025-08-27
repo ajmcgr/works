@@ -16,14 +16,14 @@ const About = () => {
       <section className="py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
+            <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg p-8 md:p-12">
               
               {/* Centered Headline */}
               <div className="text-center mb-8">
                 <h1 className="text-4xl lg:text-5xl font-headline text-black mb-6">Our story</h1>
                 
                 {/* Centered Opening Paragraph */}
-                <p className="text-lg text-gray-700 leading-relaxed" style={{ color: '#374151' }}>
+                <p className="text-lg leading-relaxed" style={{ color: '#374151' }}>
                   Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
@@ -52,23 +52,29 @@ const About = () => {
                   <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
                   
                   {/* Left-aligned Signature Section */}
-                  <div className="mt-12 flex items-start gap-4">
-                    {/* Square Image - Larger */}
-                    <div className="w-32 h-32 flex-shrink-0">
+                  <div className="mt-12">
+                    {/* Square Image - No Radius */}
+                    <div className="w-32 h-32 mb-4">
                       <img 
                         src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
                         alt="Alex MacGregor" 
-                        className="w-full h-full object-cover rounded-lg"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                     
-                    <div className="flex-1">
-                      {/* Signature Style - Same Font Size */}
+                    {/* Signature Text Below Image */}
+                    <div className="text-left">
                       <p className="text-lg font-medium mb-1" style={{ color: '#374151' }}>— Alex MacGregor</p>
                       <p className="text-lg mb-6" style={{ color: '#374151' }}>Founder & CEO, Works</p>
                       
                       <p className="text-lg">
-                        <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
+                        <a 
+                          href="https://www.linkedin.com/in/alexmacgregor2/" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="hover:opacity-80 transition-colors underline" 
+                          style={{ color: '#2563eb' }}
+                        >
                           Connect with me on LinkedIn
                         </a>
                       </p>
