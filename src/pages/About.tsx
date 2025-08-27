@@ -23,7 +23,7 @@ const About = () => {
                 <h1 className="text-4xl lg:text-5xl font-headline text-black mb-6">Our story</h1>
                 
                 {/* Centered Opening Paragraph */}
-                <p className="text-lg leading-snug" style={{ color: '#374151' }}>
+                <p className="text-xl leading-snug" style={{ color: '#374151' }}>
                   Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
