@@ -30,9 +30,9 @@ const About = () => {
               
               {/* Letter Content */}
               <div className="text-left">
-                <p className="text-xs font-medium mb-6" style={{ color: '#374151' }}>Hello there!</p>
+                <p className="text-lg font-medium mb-6" style={{ color: '#374151' }}>Hello there!</p>
                 
-                <div className="space-y-6 leading-relaxed text-xs" style={{ color: '#374151' }}>
+                <div className="space-y-6 leading-relaxed text-lg" style={{ color: '#374151' }}>
                   <p>I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
                   
                   <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
