@@ -23,16 +23,16 @@ const About = () => {
                 <h1 className="text-4xl lg:text-5xl font-headline text-black mb-6">Our story</h1>
                 
                 {/* Centered Opening Paragraph */}
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-lg text-gray-700 leading-relaxed" style={{ color: '#374151' }}>
                   Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
               
               {/* Letter Content */}
               <div className="text-left">
-                <p className="text-lg font-medium text-black mb-6">Hello there!</p>
+                <p className="text-lg font-medium mb-6" style={{ color: '#374151' }}>Hello there!</p>
                 
-                <div className="space-y-6 text-black leading-relaxed text-lg">
+                <div className="space-y-6 leading-relaxed text-lg" style={{ color: '#374151' }}>
                   <p>I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
                   
                   <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
@@ -51,10 +51,10 @@ const About = () => {
                   
                   <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
                   
-                  {/* Centered Signature Section */}
-                  <div className="mt-12 text-center">
-                    {/* Square Image */}
-                    <div className="w-24 h-24 mx-auto mb-6">
+                  {/* Left-aligned Signature Section */}
+                  <div className="mt-12 flex items-start gap-4">
+                    {/* Square Image - Larger */}
+                    <div className="w-32 h-32 flex-shrink-0">
                       <img 
                         src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
                         alt="Alex MacGregor" 
@@ -62,15 +62,17 @@ const About = () => {
                       />
                     </div>
                     
-                    {/* Signature Style */}
-                    <p className="text-lg text-black font-medium">— Alex MacGregor</p>
-                    <p className="text-base text-gray-600 mt-1">Founder & CEO, Works</p>
-                    
-                    <p className="mt-6">
-                      <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
-                        Connect with me on LinkedIn
-                      </a>
-                    </p>
+                    <div className="flex-1">
+                      {/* Signature Style - Same Font Size */}
+                      <p className="text-lg font-medium mb-1" style={{ color: '#374151' }}>— Alex MacGregor</p>
+                      <p className="text-lg mb-6" style={{ color: '#374151' }}>Founder & CEO, Works</p>
+                      
+                      <p className="text-lg">
+                        <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
+                          Connect with me on LinkedIn
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
