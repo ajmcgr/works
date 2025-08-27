@@ -14,59 +14,61 @@ const About = () => {
     <div>
       {/* Personal Letter Section */}
       <section className="py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-2xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="text-center">
+            {/* Centered Headline */}
+            <h1 className="text-4xl lg:text-5xl font-headline text-black mb-6">Our story</h1>
             
-            {/* Our Story Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-headline text-black mb-4">Our story</h2>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
-              </p>
-            </div>
+            {/* Centered Opening Paragraph */}
+            <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto">
+              Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
+            </p>
             
-            <div className="text-left space-y-6 text-black leading-relaxed text-lg">
-              <p className="font-sans">Hey there I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
+            {/* Letter Content */}
+            <div className="text-left max-w-2xl mx-auto">
+              <p className="text-lg font-medium text-black mb-6">Hello there!</p>
               
-              <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
-              
-              <p>Navigating multiple languages, time zones, and regulatory mazes taught me how to craft stories that resonate and hit revenue targets while we're at it.</p>
-              
-              <p>Collaborating with world‑class agencies like Ogilvy and Weber Shandwick sharpened my instincts for turning relationships into rocket fuel.</p>
-              
-              <p>Add in hands‑on mastery of PR software and AI tools, and I operate with real‑time data as my compass no guesswork, no vanity metrics.</p>
-              
-              <p>Why should you choose us to deliver PR? Because the team and I have delivered successful PR work for clients time and time again.</p>
-              
-              <p>I've chased embargoes at 3 a.m., soothed skeptical editors with fresh angles, and built influencer programs that survived algorithm earthquakes.</p>
-              
-              <p>I know the pressure of quarterly targets, the thrill of a viral moment, and the discipline it takes to turn buzz into long‑term brand equity.</p>
-              
-              <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
-              
-              <div className="mt-8">
-                <div className="flex items-start gap-4">
-                  {/* Alex Profile Photo */}
-                  <div className="w-24 h-24 flex-shrink-0">
+              <div className="space-y-6 text-black leading-relaxed text-lg">
+                <p>I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
+                
+                <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
+                
+                <p>Navigating multiple languages, time zones, and regulatory mazes taught me how to craft stories that resonate and hit revenue targets while we're at it.</p>
+                
+                <p>Collaborating with world‑class agencies like Ogilvy and Weber Shandwick sharpened my instincts for turning relationships into rocket fuel.</p>
+                
+                <p>Add in hands‑on mastery of PR software and AI tools, and I operate with real‑time data as my compass no guesswork, no vanity metrics.</p>
+                
+                <p>Why should you choose us to deliver PR? Because the team and I have delivered successful PR work for clients time and time again.</p>
+                
+                <p>I've chased embargoes at 3 a.m., soothed skeptical editors with fresh angles, and built influencer programs that survived algorithm earthquakes.</p>
+                
+                <p>I know the pressure of quarterly targets, the thrill of a viral moment, and the discipline it takes to turn buzz into long‑term brand equity.</p>
+                
+                <p>If you want PR advice that's battle‑tested, culturally fluent, and laser‑focused on measurable impact, don't hesitate to reach out.</p>
+                
+                <div className="mt-12 text-center">
+                  {/* Square Image */}
+                  <div className="w-24 h-24 mx-auto mb-6">
                     <img 
                       src="/lovable-uploads/8296d5d8-def8-4222-ba5f-8b6b0fe9b6f5.png" 
                       alt="Alex MacGregor" 
                       className="w-full h-full object-cover rounded-lg"
                     />
                   </div>
-                  <div>
-                    <p className="font-medium">Best,<br />Alex MacGregor<br />Founder & CEO</p>
-                  </div>
+                  
+                  {/* Signature Style */}
+                  <p className="text-lg text-black">— Alex MacGregor</p>
+                  <p className="text-base text-gray-600 mt-1">Founder & CEO, Works</p>
+                  
+                  <p className="mt-6">
+                    <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
+                      Connect with me on LinkedIn
+                    </a>
+                  </p>
                 </div>
-                <p className="mt-4">
-                  <a href="https://www.linkedin.com/in/alexmacgregor2/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-colors" style={{ color: '#409EFF' }}>
-                    Connect with me on LinkedIn
-                  </a>
-                </p>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
