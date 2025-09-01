@@ -66,13 +66,13 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg">
                 <DropdownMenuItem onClick={() => handleNavClick('https://trymedia.ai/')}>
-                  TryMedia.ai
+                  Media AI
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleNavClick('https://www.trywrite.ai/')}>
-                  TryWrite.ai
+                  Write AI
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleNavClick('https://www.trycontent.ai/')}>
-                  TryContent.ai
+                  Content AI
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -128,19 +128,19 @@ const Header = () => {
                     onClick={() => handleNavClick('https://trymedia.ai/')}
                     className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
                   >
-                    TryMedia.ai
+                    Media AI
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trywrite.ai/')}
                     className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
                   >
-                    TryWrite.ai
+                    Write AI
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trycontent.ai/')}
                     className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
                   >
-                    TryContent.ai
+                    Content AI
                   </button>
                 </div>
               </div>
