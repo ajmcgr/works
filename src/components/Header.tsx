@@ -1,8 +1,14 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,6 +76,25 @@ const Header = () => {
               </Link>
             ))}
             
+            {/* Products dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium transition-colors hover:text-foreground text-muted-foreground flex items-center space-x-1">
+                <span>Products</span>
+                <ChevronDown className="h-3 w-3" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg">
+                <DropdownMenuItem onClick={() => handleNavClick('https://trymedia.ai/')}>
+                  TryMedia.ai
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleNavClick('https://www.trywrite.ai/')}>
+                  TryWrite.ai
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleNavClick('https://www.trycontent.ai/')}>
+                  TryContent.ai
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <Link
               to="/contact"
               className="text-sm font-medium transition-colors hover:text-foreground text-muted-foreground"
@@ -113,6 +138,31 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Products section for mobile */}
+              <div className="space-y-2">
+                <div className="text-lg font-medium text-cool-gray">Products</div>
+                <div className="space-y-2">
+                  <button
+                    onClick={() => handleNavClick('https://trymedia.ai/')}
+                    className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
+                  >
+                    TryMedia.ai
+                  </button>
+                  <button
+                    onClick={() => handleNavClick('https://www.trywrite.ai/')}
+                    className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
+                  >
+                    TryWrite.ai
+                  </button>
+                  <button
+                    onClick={() => handleNavClick('https://www.trycontent.ai/')}
+                    className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
+                  >
+                    TryContent.ai
+                  </button>
+                </div>
+              </div>
               
               <Link
                 to="/contact"
