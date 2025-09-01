@@ -58,24 +58,6 @@ const Header = () => {
 
           {/* Right side navigation and contact */}
           <div className="hidden md:flex items-center space-x-6">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={(e) => {
-                  if (item.href.includes('#')) {
-                    e.preventDefault();
-                    handleNavClick(item.href);
-                  }
-                }}
-                className={`text-sm font-medium transition-colors hover:text-foreground ${
-                  isActive(item.href) ? "text-foreground" : "text-muted-foreground"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-            
             {/* Products dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium transition-colors hover:text-foreground text-muted-foreground flex items-center space-x-1">
@@ -94,6 +76,24 @@ const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                onClick={(e) => {
+                  if (item.href.includes('#')) {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }
+                }}
+                className={`text-sm font-medium transition-colors hover:text-foreground ${
+                  isActive(item.href) ? "text-foreground" : "text-muted-foreground"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
             
             <Link
               to="/contact"
@@ -120,25 +120,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block text-lg font-medium transition-colors hover:text-charcoal ${
-                    isActive(item.href) ? "text-charcoal" : "text-cool-gray"
-                  }`}
-                  onClick={(e) => {
-                    if (item.href.includes('#')) {
-                      e.preventDefault();
-                      handleNavClick(item.href);
-                    }
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              
               {/* Products section for mobile */}
               <div className="space-y-2">
                 <div className="text-lg font-medium text-cool-gray">Products</div>
@@ -163,6 +144,25 @@ const Header = () => {
                   </button>
                 </div>
               </div>
+              
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block text-lg font-medium transition-colors hover:text-charcoal ${
+                    isActive(item.href) ? "text-charcoal" : "text-cool-gray"
+                  }`}
+                  onClick={(e) => {
+                    if (item.href.includes('#')) {
+                      e.preventDefault();
+                      handleNavClick(item.href);
+                    }
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {item.name}
+                </Link>
+              ))}
               
               <Link
                 to="/contact"
