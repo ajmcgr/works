@@ -81,7 +81,7 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full -mt-8">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s' }}>
+            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl tracking-wide" style={{ animationDelay: '0.3s' }}>
               PR & Influencer Marketing for Ambitious Brands
             </h1>
             
