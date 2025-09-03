@@ -81,7 +81,7 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full -mt-8">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s', letterSpacing: '0.12px' }}>
+            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-7xl" style={{ animationDelay: '0.3s', letterSpacing: '.005em' }}>
               PR & Influencer Marketing for Ambitious Brands
             </h1>
             
@@ -183,7 +183,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0.12px' }}>
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '.005em' }}>
               How we can help
             </h2>
             <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
@@ -225,7 +225,7 @@ const Index = () => {
               }
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-3xl p-8 shadow-lg reveal-on-scroll touch-hover" style={{ animationDelay: `${index * 0.1}s` }}>
-                <h3 className="text-xl font-bold text-foreground mb-4" style={{ letterSpacing: '0.12px' }}>{service.title}</h3>
+                <h3 className="text-xl font-bold text-foreground mb-4" style={{ letterSpacing: '.005em' }}>{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
@@ -259,7 +259,7 @@ const Index = () => {
       <section className="min-h-screen py-20 px-6 bg-foreground text-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 reveal-on-scroll">
-            <h2 className="font-headline text-background mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0.12px' }}>
+            <h2 className="font-headline text-background mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '.005em' }}>
               Our Process
             </h2>
             <p className="text-background/70 text-xl max-w-2xl mx-auto">
@@ -297,7 +297,7 @@ const Index = () => {
                   <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
                     <span className="text-2xl font-bold text-foreground">{tool.number}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-background mb-2" style={{ letterSpacing: '0.12px' }}>{tool.name}</h3>
+                  <h3 className="text-2xl font-bold text-background mb-2" style={{ letterSpacing: '.005em' }}>{tool.name}</h3>
                   <p className="text-background/70 text-lg mb-4">{tool.tagline}</p>
                   <p className="text-background/60 leading-relaxed">{tool.description}</p>
                 </div>
@@ -324,7 +324,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0.12px' }}>
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '.005em' }}>
               Case Studies
             </h2>
             <p className="text-muted-foreground text-xl">
@@ -337,7 +337,7 @@ const Index = () => {
             <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover">
               <div className="flex items-center mb-6">
                 <div>
-                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0.12px' }}>UFC</h4>
+                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '.005em' }}>UFC</h4>
                   <p className="text-muted-foreground text-sm">Global Event Launch</p>
                 </div>
               </div>
@@ -364,7 +364,7 @@ const Index = () => {
             <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center mb-6">
                 <div>
-                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0.12px' }}>OnePlus</h4>
+                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '.005em' }}>OnePlus</h4>
                   <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
                 </div>
               </div>
@@ -411,7 +411,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0.12px' }}>
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '.005em' }}>
               What clients say
             </h2>
             <p className="text-muted-foreground text-xl">
@@ -430,7 +430,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0.12px' }}>Dana White</h4>
+                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '.005em' }}>Dana White</h4>
                   <p className="text-muted-foreground">President, UFC</p>
                 </div>
               </div>
@@ -453,7 +453,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0.12px' }}>Pete Lau</h4>
+                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '.005em' }}>Pete Lau</h4>
                   <p className="text-muted-foreground">CEO, OnePlus</p>
                 </div>
               </div>
@@ -476,7 +476,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0.12px' }}>Tina Sharkey</h4>
+                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '.005em' }}>Tina Sharkey</h4>
                   <p className="text-muted-foreground">Former CEO, Sheryl Sandberg & Associates</p>
                 </div>
               </div>
@@ -497,7 +497,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
-            <h2 className="font-headline text-black mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0.12px' }}>
+            <h2 className="font-headline text-black mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '.005em' }}>
               Ready to shape your story?
             </h2>
             <p className="text-gray-600 text-xl">
