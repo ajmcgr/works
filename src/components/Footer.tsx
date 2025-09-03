@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-24">
             {/* Company */}
             <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Company</h4>
+              <h4 className="text-lg font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.25px' }}>Company</h4>
               <div className="space-y-3">
                 <Link to="/about" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">About</Link>
                 <Link to="/contact" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Contact us</Link>
@@ -35,7 +35,7 @@ const Footer = () => {
 
             {/* Resources */}
             <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Resources</h4>
+              <h4 className="text-lg font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.25px' }}>Resources</h4>
               <div className="space-y-3">
                 <Link to="/resources/startup-pr-guide" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startup PR Guide</Link>
                 <Link to="/resources/launch-amplification" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Launch Amplification</Link>
@@ -51,7 +51,7 @@ const Footer = () => {
 
             {/* Free Tools */}
             <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Free Tools</h4>
+              <h4 className="text-lg font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.25px' }}>Free Tools</h4>
               <div className="space-y-3">
                 <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Headlines Generator</Link>
                 <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Briefs Generator</Link>
@@ -68,7 +68,7 @@ const Footer = () => {
 
             {/* Connect */}
             <div>
-              <h4 className="text-lg font-semibold text-black mb-3 tracking-wide font-sans">Connect</h4>
+              <h4 className="text-lg font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.25px' }}>Connect</h4>
               <div className="space-y-3">
                 <a 
                   href="https://x.com/worksxyz/" 
