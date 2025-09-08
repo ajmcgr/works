@@ -64,15 +64,57 @@ const Header = () => {
                 <span>Products</span>
                 <ChevronDown className="h-3 w-3" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg">
-                <DropdownMenuItem onClick={() => handleNavClick('https://trymedia.ai/')}>
-                  Media AI
+              <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-50">
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://trymedia.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
+                >
+                  <img 
+                    src="https://trymedia.ai/favicon.ico" 
+                    alt="Media AI" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Media AI</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Find journalist and creators email</span>
+                  </div>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleNavClick('https://www.trywrite.ai/')}>
-                  Write AI
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://www.trywrite.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
+                >
+                  <img 
+                    src="https://www.trywrite.ai/favicon.ico" 
+                    alt="Write AI" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Write AI</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
+                  </div>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleNavClick('https://www.trycontent.ai/')}>
-                  Content AI
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://www.trycontent.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
+                >
+                  <img 
+                    src="https://www.trycontent.ai/favicon.ico" 
+                    alt="Content AI" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Content AI</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
+                  </div>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -121,26 +163,59 @@ const Header = () => {
           <div className="bg-white/95 backdrop-blur-sm md:hidden" style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
               {/* Products section for mobile */}
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <div className="text-lg font-medium text-cool-gray">Products</div>
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <button
                     onClick={() => handleNavClick('https://trymedia.ai/')}
-                    className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
+                    className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-50"
                   >
-                    Media AI
+                    <img 
+                      src="https://trymedia.ai/favicon.ico" 
+                      alt="Media AI" 
+                      className="w-5 h-5 mt-0.5 flex-shrink-0"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                    <div className="flex flex-col">
+                      <span className="font-medium text-base text-cool-gray">Media AI</span>
+                      <span className="text-sm text-gray-500 mt-0.5">Find journalist and creators email</span>
+                    </div>
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                    className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
+                    className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-50"
                   >
-                    Write AI
+                    <img 
+                      src="https://www.trywrite.ai/favicon.ico" 
+                      alt="Write AI" 
+                      className="w-5 h-5 mt-0.5 flex-shrink-0"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                    <div className="flex flex-col">
+                      <span className="font-medium text-base text-cool-gray">Write AI</span>
+                      <span className="text-sm text-gray-500 mt-0.5">Your press release writing assistant</span>
+                    </div>
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                    className="block text-base font-medium transition-colors hover:text-charcoal text-cool-gray mx-auto"
+                    className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-50"
                   >
-                    Content AI
+                    <img 
+                      src="https://www.trycontent.ai/favicon.ico" 
+                      alt="Content AI" 
+                      className="w-5 h-5 mt-0.5 flex-shrink-0"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                    <div className="flex flex-col">
+                      <span className="font-medium text-base text-cool-gray">Content AI</span>
+                      <span className="text-sm text-gray-500 mt-0.5">Your blog content writing assistant</span>
+                    </div>
                   </button>
                 </div>
               </div>
