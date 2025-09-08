@@ -70,12 +70,9 @@ const Header = () => {
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
                 >
                   <img 
-                    src="https://trymedia.ai/favicon.ico" 
+                    src="/lovable-uploads/096b8f6b-93c0-46d3-b167-548b4ef262b8.png" 
                     alt="Media AI" 
-                    className="w-5 h-5 mt-0.5 flex-shrink-0"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Media AI</span>
@@ -87,12 +84,9 @@ const Header = () => {
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
                 >
                   <img 
-                    src="https://www.trywrite.ai/favicon.ico" 
+                    src="/lovable-uploads/e5a2a908-9b3f-4e0f-baae-26488532ae85.png" 
                     alt="Write AI" 
-                    className="w-5 h-5 mt-0.5 flex-shrink-0"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Write AI</span>
@@ -104,12 +98,9 @@ const Header = () => {
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
                 >
                   <img 
-                    src="https://www.trycontent.ai/favicon.ico" 
+                    src="/lovable-uploads/a296467d-2236-48cb-8225-54f13fc83da4.png" 
                     alt="Content AI" 
-                    className="w-5 h-5 mt-0.5 flex-shrink-0"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Content AI</span>
@@ -171,12 +162,9 @@ const Header = () => {
                     className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-50"
                   >
                     <img 
-                      src="https://trymedia.ai/favicon.ico" 
+                      src="/lovable-uploads/096b8f6b-93c0-46d3-b167-548b4ef262b8.png" 
                       alt="Media AI" 
-                      className="w-5 h-5 mt-0.5 flex-shrink-0"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
+                      className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
                       <span className="font-medium text-base text-cool-gray">Media AI</span>
@@ -188,12 +176,9 @@ const Header = () => {
                     className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-50"
                   >
                     <img 
-                      src="https://www.trywrite.ai/favicon.ico" 
+                      src="/lovable-uploads/e5a2a908-9b3f-4e0f-baae-26488532ae85.png" 
                       alt="Write AI" 
-                      className="w-5 h-5 mt-0.5 flex-shrink-0"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
+                      className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
                       <span className="font-medium text-base text-cool-gray">Write AI</span>
@@ -205,12 +190,9 @@ const Header = () => {
                     className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-50"
                   >
                     <img 
-                      src="https://www.trycontent.ai/favicon.ico" 
+                      src="/lovable-uploads/a296467d-2236-48cb-8225-54f13fc83da4.png" 
                       alt="Content AI" 
-                      className="w-5 h-5 mt-0.5 flex-shrink-0"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
+                      className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
                       <span className="font-medium text-base text-cool-gray">Content AI</span>
