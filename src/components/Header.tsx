@@ -79,7 +79,7 @@ const Header = () => {
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
-                    src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
+                    src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
                     alt="Media AI" 
                     className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
@@ -107,7 +107,7 @@ const Header = () => {
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
-                    src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
+                    src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
                     alt="Content AI" 
                     className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
@@ -171,7 +171,7 @@ const Header = () => {
                     className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-100"
                   >
                     <img 
-                      src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
+                      src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
                       alt="Media AI" 
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
@@ -199,7 +199,7 @@ const Header = () => {
                     className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-100"
                   >
                     <img 
-                      src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
+                      src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
                       alt="Content AI" 
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
