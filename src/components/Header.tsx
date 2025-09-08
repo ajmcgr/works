@@ -12,6 +12,7 @@ import {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   
   const location = useLocation();
 
@@ -59,12 +60,20 @@ const Header = () => {
           {/* Right side navigation and contact */}
           <div className="hidden md:flex items-center space-x-6">
             {/* Products dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-sm font-medium transition-colors hover:text-foreground text-muted-foreground flex items-center space-x-1">
+            <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
+              <DropdownMenuTrigger 
+                className="text-sm font-medium transition-colors hover:text-foreground text-muted-foreground flex items-center space-x-1"
+                onMouseEnter={() => setIsProductsOpen(true)}
+                onMouseLeave={() => setIsProductsOpen(false)}
+              >
                 <span>Products</span>
                 <ChevronDown className="h-3 w-3" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-50">
+              <DropdownMenuContent 
+                className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-50"
+                onMouseEnter={() => setIsProductsOpen(true)}
+                onMouseLeave={() => setIsProductsOpen(false)}
+              >
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('https://trymedia.ai/')}
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-50 cursor-pointer"
