@@ -85,7 +85,7 @@ const Header = () => {
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Media AI</span>
-                    <span className="text-xs text-gray-500 mt-0.5">Find journalist and creators email</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
@@ -177,7 +177,7 @@ const Header = () => {
                     />
                     <div className="flex flex-col">
                       <span className="font-medium text-base text-cool-gray">Media AI</span>
-                      <span className="text-sm text-gray-500 mt-0.5">Find journalist and creators email</span>
+                      <span className="text-sm text-gray-500 mt-0.5">Find any journalist or creator email</span>
                     </div>
                   </button>
                   <button
