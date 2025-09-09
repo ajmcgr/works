@@ -1,8 +1,6 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,7 +9,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   
   const location = useLocation();
@@ -21,8 +18,6 @@ const Header = () => {
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/customers" },
   ];
-
-  const isActive = (path: string) => location.pathname === path;
 
   const handleNavClick = (href: string) => {
     if (href.startsWith('#')) {
@@ -40,13 +35,13 @@ const Header = () => {
     } else if (href.startsWith('http')) {
       window.open(href, '_blank');
     }
-    setIsMenuOpen(false);
   };
 
   return (
     <header className={`w-full z-50 ${isHomepage ? 'bg-transparent' : 'bg-white shadow-sm'}`}>
       <div className="container mx-auto px-6 max-w-6xl">
-        <div className="flex items-center justify-between h-16">
+        {/* Desktop Layout */}
+        <div className="hidden md:flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src={isHomepage ? "/lovable-uploads/389975af-e8ab-45ab-a4fb-c329d9b46f9c.png" : "/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png"} 
@@ -59,7 +54,7 @@ const Header = () => {
           <div className="flex-1"></div>
 
           {/* Right side navigation and contact */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="flex items-center space-x-6">
             {/* Products dropdown */}
             <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
               <DropdownMenuTrigger 
@@ -147,31 +142,38 @@ const Header = () => {
               Contact us
             </Link>
           </div>
-
-          {/* Hamburger menu button - mobile only */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`p-2 ${isHomepage ? 'text-white hover:bg-white/20' : 'text-gray-900 hover:bg-gray-100'}`}
-            >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
-          </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className={`${isHomepage ? 'bg-black/80 backdrop-blur-sm' : 'bg-white border border-gray-200 shadow-lg'} md:hidden`} style={{ borderRadius: '12px' }}>
-            <div className="py-6 space-y-4 text-center">
-              {/* Products section for mobile */}
-              <div className="space-y-3">
-                <div className={`text-lg font-medium ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Products</div>
-                <div className="space-y-3">
-                  <button
+        {/* Mobile Layout */}
+        <div className="md:hidden py-4">
+          {/* Logo */}
+          <div className="flex justify-center mb-4">
+            <Link to="/" className="hover:opacity-80 transition-opacity">
+              <img 
+                src={isHomepage ? "/lovable-uploads/389975af-e8ab-45ab-a4fb-c329d9b46f9c.png" : "/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png"} 
+                alt="Works" 
+                className="h-6"
+              />
+            </Link>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+            {/* Products */}
+            <div className="relative">
+              <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
+                <DropdownMenuTrigger 
+                  className={`font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
+                >
+                  <span>Products</span>
+                  <ChevronDown className="h-3 w-3" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent 
+                  className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-50"
+                >
+                  <DropdownMenuItem 
                     onClick={() => handleNavClick('https://trymedia.ai/')}
-                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
+                    className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
                       src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
@@ -179,13 +181,13 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className={`font-medium text-base ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Media AI</span>
-                      <span className={`text-sm mt-0.5 ${isHomepage ? 'text-white/70' : 'text-gray-500'}`}>Find any journalist or creator email</span>
+                      <span className="font-medium text-sm text-gray-900">Media AI</span>
+                      <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
                     </div>
-                  </button>
-                  <button
+                  </DropdownMenuItem>
+                  <DropdownMenuItem 
                     onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
+                    className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
                       src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
@@ -193,13 +195,13 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className={`font-medium text-base ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Write AI</span>
-                      <span className={`text-sm mt-0.5 ${isHomepage ? 'text-white/70' : 'text-gray-500'}`}>Your press release writing assistant</span>
+                      <span className="font-medium text-sm text-gray-900">Write AI</span>
+                      <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
                     </div>
-                  </button>
-                  <button
+                  </DropdownMenuItem>
+                  <DropdownMenuItem 
                     onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
+                    className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
                       src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
@@ -207,44 +209,42 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className={`font-medium text-base ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Content AI</span>
-                      <span className={`text-sm mt-0.5 ${isHomepage ? 'text-white/70' : 'text-gray-500'}`}>Your blog content writing assistant</span>
+                      <span className="font-medium text-sm text-gray-900">Content AI</span>
+                      <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
                     </div>
-                  </button>
-                </div>
-              </div>
-              
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block text-lg font-medium transition-colors ${
-                    isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
-                  }`}
-                  onClick={(e) => {
-                    if (item.href.includes('#')) {
-                      e.preventDefault();
-                      handleNavClick(item.href);
-                    }
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+
+            {navigation.map((item) => (
               <Link
-                to="/contact"
-                className={`block text-lg font-medium transition-colors ${
+                key={item.name}
+                to={item.href}
+                onClick={(e) => {
+                  if (item.href.includes('#')) {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }
+                }}
+                className={`font-medium transition-colors ${
                   isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
-                Contact us
+                {item.name}
               </Link>
-            </div>
+            ))}
+            
+            <Link
+              to="/contact"
+              className={`font-medium transition-colors ${
+                isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
+              }`}
+            >
+              Contact us
+            </Link>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );
