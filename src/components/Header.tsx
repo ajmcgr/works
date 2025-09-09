@@ -66,7 +66,7 @@ const Header = () => {
                 <ChevronDown className="h-3 w-3" />
               </DropdownMenuTrigger>
               <DropdownMenuContent 
-                className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-50"
+                className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-[60]"
                 onMouseEnter={() => setIsProductsOpen(true)}
                 onMouseLeave={() => setIsProductsOpen(false)}
               >
@@ -169,7 +169,7 @@ const Header = () => {
                   <ChevronDown className="h-3 w-3" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent 
-                  className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-50"
+                  className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-[60]"
                 >
                   <DropdownMenuItem 
                     onClick={() => handleNavClick('https://trymedia.ai/')}
