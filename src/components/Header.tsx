@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 ${isHomepage ? 'absolute top-0 left-0 md:relative bg-transparent' : 'bg-transparent md:bg-white md:shadow-sm'}`}>
+    <header className={`w-full z-50 ${isHomepage ? 'absolute top-0 left-0 md:relative bg-transparent' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-between h-16">
