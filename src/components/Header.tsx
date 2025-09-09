@@ -169,7 +169,7 @@ const Header = () => {
                 >
                   <DropdownMenuItem 
                     onClick={() => handleNavClick('https://trymedia.ai/')}
-                    className="flex items-start space-x-2 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
                       src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
@@ -183,7 +183,7 @@ const Header = () => {
                   </DropdownMenuItem>
                   <DropdownMenuItem 
                     onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                    className="flex items-start space-x-2 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
                       src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
@@ -197,7 +197,7 @@ const Header = () => {
                   </DropdownMenuItem>
                   <DropdownMenuItem 
                     onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                    className="flex items-start space-x-2 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
                       src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
