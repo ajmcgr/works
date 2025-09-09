@@ -71,21 +71,21 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-0 pb-0 px-4 md:px-6">
+      <section className="min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-0 pb-0 px-4 md:px-6" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         {/* Kinetic background */}
-        <div className="absolute inset-0 bg-white">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-accent-electric/10 rounded-full kinetic-float blur-xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-accent-punch/5 rounded-full kinetic-pulse blur-lg"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/10 rounded-full kinetic-float blur-xl"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-white/5 rounded-full kinetic-pulse blur-lg"></div>
         </div>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full -mt-20">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-foreground mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-6xl" style={{ animationDelay: '0.3s', letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4rem)' }}>
+            <h1 className="font-headline text-white mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-6xl" style={{ animationDelay: '0.3s', letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4rem)' }}>
               PR & Influencer Marketing for Ambitious Brands
             </h1>
             
-            <p className="text-muted-foreground text-base md:text-lg mb-4 md:mb-6 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
+            <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
               We run high-impact PR and influencer campaigns designed to scale ambitious brands — powered by AI.
             </p>
           </div>
@@ -105,7 +105,7 @@ const Index = () => {
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10" style={{ animationDelay: '0.9s' }}>
-            <p className="text-muted-foreground text-sm mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
+            <p className="text-white/70 text-sm mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
               <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
