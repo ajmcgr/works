@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header className={`w-full z-50 absolute top-0 left-0 bg-transparent`}>
-      <div className="container mx-auto px-6 max-w-4xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
