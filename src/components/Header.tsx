@@ -43,12 +43,12 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full z-50" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <header className="w-full z-50 bg-transparent">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/e130fbc2-ad47-45b2-af25-7a0c40ea095f.png" 
+              src="/lovable-uploads/d716965d-1db9-429a-b080-9037470ea04d.png" 
               alt="Works" 
               className="h-6"
             />
