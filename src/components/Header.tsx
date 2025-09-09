@@ -161,9 +161,9 @@ const Header = () => {
           </div>
         </div>
 
-             {/* Mobile Navigation */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className={`${isHomepage ? 'bg-white/10 backdrop-blur-sm' : 'bg-white border border-gray-200 shadow-lg'} md:hidden`} style={{ borderRadius: '12px' }}>
+          <div className={`${isHomepage ? 'bg-black/90 backdrop-blur-sm' : 'bg-white border border-gray-200 shadow-lg'} md:hidden`} style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
               {/* Products section for mobile */}
               <div className="space-y-3">
