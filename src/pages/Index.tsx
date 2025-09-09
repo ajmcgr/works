@@ -105,9 +105,9 @@ const Index = () => {
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10" style={{ animationDelay: '0.9s' }}>
-            <p className="text-white/70 text-sm mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
-              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+            <p className="text-white/70 text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                   alt="UFC" 
@@ -115,7 +115,7 @@ const Index = () => {
                   loading="eager"
                 />
               </div>
-              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
@@ -123,7 +123,7 @@ const Index = () => {
                   loading="eager"
                 />
               </div>
-              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                   alt="OPPO" 
@@ -131,7 +131,7 @@ const Index = () => {
                   loading="eager"
                 />
               </div>
-              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                   alt="Ogilvy" 
@@ -139,7 +139,7 @@ const Index = () => {
                   loading="eager"
                 />
               </div>
-              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                   alt="Weber Shandwick" 
@@ -147,7 +147,7 @@ const Index = () => {
                   loading="eager"
                 />
               </div>
-              <div className="w-32 h-20 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
