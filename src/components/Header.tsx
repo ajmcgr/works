@@ -43,7 +43,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full z-50 bg-transparent">
+    <header className="w-full z-50" style={{ backgroundColor: '#222222' }}>
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
