@@ -49,7 +49,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png" 
+              src={isHomepage ? "/lovable-uploads/389975af-e8ab-45ab-a4fb-c329d9b46f9c.png" : "/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png"} 
               alt="Works" 
               className="h-6"
             />
