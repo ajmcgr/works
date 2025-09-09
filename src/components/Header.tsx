@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import {
@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const Header = () => {
-  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  
   
   const location = useLocation();
   const isHomepage = location.pathname === '/';
@@ -56,19 +56,15 @@ const Header = () => {
           {/* Right side navigation and contact */}
           <div className="flex items-center space-x-6">
             {/* Products dropdown */}
-            <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
+            <DropdownMenu>
               <DropdownMenuTrigger 
                 className={`text-sm font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
-                onMouseEnter={() => setIsProductsOpen(true)}
-                onMouseLeave={() => setIsProductsOpen(false)}
               >
                 <span>Products</span>
                 <ChevronDown className="h-3 w-3" />
               </DropdownMenuTrigger>
               <DropdownMenuContent 
                 className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-80 z-[60]"
-                onMouseEnter={() => setIsProductsOpen(true)}
-                onMouseLeave={() => setIsProductsOpen(false)}
               >
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('https://trymedia.ai/')}
@@ -161,7 +157,7 @@ const Header = () => {
           <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
             {/* Products */}
             <div className="relative">
-              <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
+              <DropdownMenu>
                 <DropdownMenuTrigger 
                   className={`font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
                 >
