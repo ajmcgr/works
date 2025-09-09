@@ -163,15 +163,15 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="bg-white border border-gray-200 shadow-lg md:hidden" style={{ borderRadius: '12px' }}>
+          <div className={`${isHomepage ? 'bg-black/80 backdrop-blur-sm' : 'bg-white border border-gray-200 shadow-lg'} md:hidden`} style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
               {/* Products section for mobile */}
               <div className="space-y-3">
-                <div className="text-lg font-medium text-gray-900">Products</div>
+                <div className={`text-lg font-medium ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Products</div>
                 <div className="space-y-3">
                   <button
                     onClick={() => handleNavClick('https://trymedia.ai/')}
-                    className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-100"
+                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
                   >
                     <img 
                       src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
@@ -179,13 +179,13 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className="font-medium text-base text-gray-900">Media AI</span>
-                      <span className="text-sm mt-0.5 text-gray-500">Find any journalist or creator email</span>
+                      <span className={`font-medium text-base ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Media AI</span>
+                      <span className={`text-sm mt-0.5 ${isHomepage ? 'text-white/70' : 'text-gray-500'}`}>Find any journalist or creator email</span>
                     </div>
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                    className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-100"
+                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
                   >
                     <img 
                       src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
@@ -193,13 +193,13 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className="font-medium text-base text-gray-900">Write AI</span>
-                      <span className="text-sm mt-0.5 text-gray-500">Your press release writing assistant</span>
+                      <span className={`font-medium text-base ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Write AI</span>
+                      <span className={`text-sm mt-0.5 ${isHomepage ? 'text-white/70' : 'text-gray-500'}`}>Your press release writing assistant</span>
                     </div>
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                    className="flex items-start space-x-3 p-3 w-full text-left rounded-md hover:bg-gray-100"
+                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
                   >
                     <img 
                       src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
@@ -207,8 +207,8 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className="font-medium text-base text-gray-900">Content AI</span>
-                      <span className="text-sm mt-0.5 text-gray-500">Your blog content writing assistant</span>
+                      <span className={`font-medium text-base ${isHomepage ? 'text-white' : 'text-gray-900'}`}>Content AI</span>
+                      <span className={`text-sm mt-0.5 ${isHomepage ? 'text-white/70' : 'text-gray-500'}`}>Your blog content writing assistant</span>
                     </div>
                   </button>
                 </div>
@@ -218,7 +218,9 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block text-lg font-medium transition-colors hover:text-gray-600 text-gray-900"
+                  className={`block text-lg font-medium transition-colors ${
+                    isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
+                  }`}
                   onClick={(e) => {
                     if (item.href.includes('#')) {
                       e.preventDefault();
@@ -233,7 +235,9 @@ const Header = () => {
               
               <Link
                 to="/contact"
-                className="block text-lg font-medium transition-colors hover:text-gray-600 text-gray-900"
+                className={`block text-lg font-medium transition-colors ${
+                  isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact us
