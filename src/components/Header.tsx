@@ -163,7 +163,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className={`${isHomepage ? 'bg-black/90 backdrop-blur-sm' : 'bg-white border border-gray-200 shadow-lg'} md:hidden`} style={{ borderRadius: '12px' }}>
+          <div className={`${isHomepage ? 'bg-gray-900 border border-gray-700' : 'bg-white border border-gray-200 shadow-lg'} md:hidden`} style={{ borderRadius: '12px' }}>
             <div className="py-6 space-y-4 text-center">
               {/* Products section for mobile */}
               <div className="space-y-3">
@@ -171,7 +171,7 @@ const Header = () => {
                 <div className="space-y-3">
                   <button
                     onClick={() => handleNavClick('https://trymedia.ai/')}
-                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
+                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
                   >
                     <img 
                       src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
@@ -185,7 +185,7 @@ const Header = () => {
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
+                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
                   >
                     <img 
                       src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
@@ -199,7 +199,7 @@ const Header = () => {
                   </button>
                   <button
                     onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-white/20' : 'hover:bg-gray-100'}`}
+                    className={`flex items-start space-x-3 p-3 w-full text-left rounded-md ${isHomepage ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
                   >
                     <img 
                       src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
