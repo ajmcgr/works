@@ -125,7 +125,6 @@
 
   body {
     @apply text-foreground;
-    background: var(--gradient-hero);
     min-height: 100vh;
     color: hsl(var(--foreground));
     font-feature-settings: "liga", "kern";
