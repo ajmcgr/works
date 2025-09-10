@@ -175,7 +175,7 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
@@ -316,7 +316,7 @@ const Index = () => {
       </section>
 
       {/* Case Study Reel - Touch Native */}
-      <section className="py-20 px-6 bg-background">
+      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
@@ -403,7 +403,7 @@ const Index = () => {
 
 
       {/* Client Recommendations Section */}
-      <section className="py-20 px-6 bg-background">
+      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 reveal-on-scroll">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
