@@ -72,11 +72,6 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
       <section className="min-h-[125vh] md:min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-16 md:pt-16 pb-0 px-4 md:px-6" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        {/* Kinetic background */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/10 rounded-full kinetic-float blur-xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-white/5 rounded-full kinetic-pulse blur-lg"></div>
-        </div>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full">
 
