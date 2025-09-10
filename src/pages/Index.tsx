@@ -85,7 +85,7 @@ const Index = () => {
               PR & Influencer Marketing for Ambitious Brands
             </h1>
             
-            <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
+            <p className="text-white font-semibold text-base md:text-lg mb-4 md:mb-6 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
               We run high-impact PR and influencer campaigns designed to scale ambitious brands — powered by AI.
             </p>
           </div>
