@@ -17,30 +17,7 @@ const Index = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const section = Math.floor(scrollY / window.innerHeight);
-      setCurrentSection(section);
-      
-      // Show floating CTA after scrolling past hero section
-      setShowFloatingCTA(scrollY > window.innerHeight * 0.8);
-      
-      // Reveal animations on scroll
-      const reveals = document.querySelectorAll('.reveal-on-scroll');
-      reveals.forEach((reveal) => {
-        const elementTop = reveal.getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementTop < window.innerHeight - elementVisible) {
-          reveal.classList.add('revealed');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // Removed scroll effects - load everything at once
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -76,17 +53,17 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-white mb-4 md:mb-6 kinetic-slide in-view text-5xl md:text-6xl lg:text-6xl" style={{ animationDelay: '0.3s', letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4rem)' }}>
+            <h1 className="font-headline text-white mb-4 md:mb-6 text-5xl md:text-6xl lg:text-6xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4rem)' }}>
               PR & Influencer Marketing for Ambitious Brands
             </h1>
             
-            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto kinetic-slide in-view" style={{ animationDelay: '0.3s' }}>
+            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto">
               We run high-impact PR and influencer campaigns designed to scale ambitious brands — powered by AI.
             </p>
           </div>
 
           {/* Touch-native CTA */}
-          <div className="kinetic-slide in-view" style={{ animationDelay: '0.6s' }}>
+          <div>
             <Button 
               asChild 
               size="lg"
@@ -99,7 +76,7 @@ const Index = () => {
           </div>
 
           {/* Client Logos - Now directly below hero button */}
-          <div className="mt-8 md:mt-10" style={{ animationDelay: '0.9s' }}>
+          <div className="mt-8 md:mt-10">
             <p className="text-white/70 text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
               <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
@@ -154,7 +131,7 @@ const Index = () => {
           </div>
 
           {/* Video with no controls - Now below brand logos */}
-          <div className="mt-8 md:mt-12 kinetic-slide in-view w-full" style={{ animationDelay: '1.2s' }}>
+          <div className="mt-8 md:mt-12 w-full">
             <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black rounded-[10px]">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
@@ -177,7 +154,7 @@ const Index = () => {
       {/* How We Can Help Section */}
       <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 reveal-on-scroll">
+          <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               How we can help
             </h2>
@@ -219,7 +196,7 @@ const Index = () => {
                 features: ["Event Planning", "Media Events", "Product Launches", "Conference Management"]
               }
             ].map((service, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg reveal-on-scroll touch-hover" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg touch-hover">
                 <h3 className="text-xl font-bold text-foreground mb-4" style={{ letterSpacing: '0px' }}>{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                 <ul className="space-y-2">
@@ -235,7 +212,7 @@ const Index = () => {
           </div>
 
           {/* CTA to Services page */}
-          <div className="text-center mt-16 reveal-on-scroll">
+          <div className="text-center mt-16">
             <Button 
               asChild 
               size="lg"
@@ -253,7 +230,7 @@ const Index = () => {
       {/* Product Showcase - Scroll Reveals */}
       <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20 reveal-on-scroll">
+          <div className="text-center mb-20">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Our Process
             </h2>
@@ -287,7 +264,7 @@ const Index = () => {
                 gradient: "from-red-500 to-orange-600"
               }
             ].map((tool, index) => (
-              <div key={index} className="reveal-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
+              <div key={index}>
                 <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
                   <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
                     <span className="text-2xl font-bold text-foreground">{tool.number}</span>
@@ -301,7 +278,7 @@ const Index = () => {
           </div>
           
           {/* Contact Us CTA */}
-          <div className="text-center mt-16 reveal-on-scroll">
+          <div className="text-center mt-16">
             <Button 
               asChild 
               size="lg"
@@ -318,7 +295,7 @@ const Index = () => {
       {/* Case Study Reel - Touch Native */}
       <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 reveal-on-scroll">
+          <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Case Studies
             </h2>
@@ -329,7 +306,7 @@ const Index = () => {
 
           {/* Mobile-first case study cards */}
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover">
+            <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover">
               <div className="flex items-center mb-6">
                 <div>
                   <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>UFC</h4>
@@ -356,7 +333,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover">
               <div className="flex items-center mb-6">
                 <div>
                   <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>OnePlus</h4>
@@ -405,7 +382,7 @@ const Index = () => {
       {/* Client Recommendations Section */}
       <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 reveal-on-scroll">
+          <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               What clients say
             </h2>
@@ -415,7 +392,7 @@ const Index = () => {
           </div>
 
           <div className="space-y-12">
-            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover">
+            <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
                   <img 
@@ -438,7 +415,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
                   <img 
@@ -461,7 +438,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.4s' }}>
+            <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
                   <img 
@@ -491,7 +468,7 @@ const Index = () => {
       {/* Contact Form Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-16 reveal-on-scroll">
+          <div className="text-center mb-16">
             <h2 className="font-headline text-black mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Ready to shape your story?
             </h2>
@@ -500,7 +477,7 @@ const Index = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6 reveal-on-scroll" style={{ animationDelay: '0.2s' }}>
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
