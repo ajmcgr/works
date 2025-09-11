@@ -86,11 +86,11 @@ const Index = () => {
           </div>
 
           {/* Touch-native CTA */}
-          <div className="kinetic-slide in-view" style={{ animationDelay: '0.6s' }}>
+          <div className="kinetic-slide in-view floating" style={{ animationDelay: '0.6s' }}>
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold magnetic-hover btn-interactive"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Let's Work Together <ArrowRight className="ml-2 h-4 w-4" />
@@ -99,54 +99,54 @@ const Index = () => {
           </div>
 
           {/* Client Logos - Now directly below hero button */}
-          <div className="mt-8 md:mt-10" style={{ animationDelay: '0.9s' }}>
-            <p className="text-white/70 text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
+          <div className="mt-8 md:mt-10 kinetic-slide in-view" style={{ animationDelay: '0.9s' }}>
+            <p className="text-white/70 text-sm mb-3 md:mb-6 text-center floating">Trusted by agencies and marketing teams worldwide</p>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
-              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center stagger-1">
                 <img 
                   src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                   alt="UFC" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300 logo-hover"
                   loading="eager"
                 />
               </div>
-              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center stagger-2">
                 <img 
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300 logo-hover"
                   loading="eager"
                 />
               </div>
-              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center stagger-3">
                 <img 
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                   alt="OPPO" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300 logo-hover"
                   loading="eager"
                 />
               </div>
-              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center stagger-4">
                 <img 
                   src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                   alt="Ogilvy" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300 logo-hover"
                   loading="eager"
                 />
               </div>
-              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center stagger-5">
                 <img 
                   src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                   alt="Weber Shandwick" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300 logo-hover"
                   loading="eager"
                 />
               </div>
-              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center">
+              <div className="w-24 h-14 md:w-40 md:h-24 flex items-center justify-center stagger-6">
                 <img 
                   src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                   alt="Publicis Groupe" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300 logo-hover"
                   loading="eager"
                 />
               </div>
@@ -219,13 +219,13 @@ const Index = () => {
                 features: ["Event Planning", "Media Events", "Product Launches", "Conference Management"]
               }
             ].map((service, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg reveal-on-scroll touch-hover" style={{ animationDelay: `${index * 0.1}s` }}>
-                <h3 className="text-xl font-bold text-foreground mb-4" style={{ letterSpacing: '0px' }}>{service.title}</h3>
+              <div key={index} className={`bg-white rounded-3xl p-8 shadow-lg reveal-on-scroll gradient-hover touch-hover stagger-${Math.min(index + 1, 6)}`} style={{ animationDelay: `${index * 0.1}s` }}>
+                <h3 className="text-xl font-bold text-foreground mb-4 floating" style={{ letterSpacing: '0px' }}>{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-3">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full kinetic-pulse"></div>
                       <span className="text-sm text-muted-foreground">{feature}</span>
                     </li>
                   ))}
@@ -239,7 +239,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold magnetic-hover btn-interactive"
             >
               <a href="/services">
                 View All Services <ArrowRight className="ml-2 h-4 w-4" />
@@ -287,9 +287,9 @@ const Index = () => {
                 gradient: "from-red-500 to-orange-600"
               }
             ].map((tool, index) => (
-              <div key={index} className="reveal-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
-                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
-                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
+              <div key={index} className={`reveal-on-scroll stagger-${index + 1}`} style={{ animationDelay: `${index * 0.2}s` }}>
+                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full floating">
+                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md kinetic-pulse">
                     <span className="text-2xl font-bold text-foreground">{tool.number}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
@@ -305,7 +305,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold magnetic-hover btn-interactive"
             >
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Let's Work Together <ArrowRight className="ml-2 h-4 w-4" />
@@ -329,10 +329,10 @@ const Index = () => {
 
           {/* Mobile-first case study cards */}
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover">
+            <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll gradient-hover touch-hover stagger-1">
               <div className="flex items-center mb-6">
                 <div>
-                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>UFC</h4>
+                  <h4 className="font-bold text-foreground text-2xl floating" style={{ letterSpacing: '0px' }}>UFC</h4>
                   <p className="text-muted-foreground text-sm">Global Event Launch</p>
                 </div>
               </div>
@@ -356,10 +356,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white rounded-3xl p-8 shadow-xl reveal-on-scroll gradient-hover touch-hover stagger-2" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center mb-6">
                 <div>
-                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>OnePlus</h4>
+                  <h4 className="font-bold text-foreground text-2xl floating" style={{ letterSpacing: '0px' }}>OnePlus</h4>
                   <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
                 </div>
               </div>
@@ -389,7 +389,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold magnetic-hover btn-interactive"
             >
               <a href="https://works.xyz/customers">
                 View Our Work <ArrowRight className="ml-2 h-4 w-4" />
@@ -415,9 +415,9 @@ const Index = () => {
           </div>
 
           <div className="space-y-12">
-            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover">
+            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll gradient-hover touch-hover stagger-1">
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6 magnetic-hover">
                   <img 
                     src="/lovable-uploads/f2bdfdc8-7b25-451a-b578-82b4b38994a1.png" 
                     alt="Dana White" 
@@ -425,7 +425,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Dana White</h4>
+                  <h4 className="font-bold text-foreground text-lg floating" style={{ letterSpacing: '0px' }}>Dana White</h4>
                   <p className="text-muted-foreground">President, UFC</p>
                 </div>
               </div>
@@ -438,9 +438,9 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll gradient-hover touch-hover stagger-2" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6 magnetic-hover">
                   <img 
                     src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
                     alt="Pete Lau" 
@@ -448,7 +448,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Pete Lau</h4>
+                  <h4 className="font-bold text-foreground text-lg floating" style={{ letterSpacing: '0px' }}>Pete Lau</h4>
                   <p className="text-muted-foreground">CEO, OnePlus</p>
                 </div>
               </div>
@@ -461,9 +461,9 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll touch-hover" style={{ animationDelay: '0.4s' }}>
+            <div className="bg-white rounded-3xl p-12 shadow-xl reveal-on-scroll gradient-hover touch-hover stagger-3" style={{ animationDelay: '0.4s' }}>
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-6 magnetic-hover">
                   <img 
                     src="/lovable-uploads/5c5a6c05-1222-4931-96e1-31741231b19f.png" 
                     alt="Tina Sharkey" 
@@ -471,7 +471,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Tina Sharkey</h4>
+                  <h4 className="font-bold text-foreground text-lg floating" style={{ letterSpacing: '0px' }}>Tina Sharkey</h4>
                   <p className="text-muted-foreground">Former CEO, Sheryl Sandberg & Associates</p>
                 </div>
               </div>
@@ -564,7 +564,7 @@ const Index = () => {
                 style={{ borderRadius: '12px' }}
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
+            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base magnetic-hover btn-interactive" style={{ backgroundColor: '#409EFF' }}>
               {isSubmitting ? (
                 "Opening email client..."
               ) : (
