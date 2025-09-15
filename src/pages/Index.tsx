@@ -227,71 +227,6 @@ const Index = () => {
       </section>
 
 
-      {/* Product Showcase - Scroll Reveals */}
-      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center', transform: 'scaleY(-1)' }}>
-        <div className="max-w-6xl mx-auto" style={{ transform: 'scaleY(-1)' }}>
-          <div className="text-center mb-20">
-            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
-              Our Process
-            </h2>
-            <p className="text-white/70 text-xl max-w-2xl mx-auto">
-              How we engineer influence that sticks
-            </p>
-          </div>
-
-          {/* Tool Cards - Desktop Row Layout */}
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {[
-              {
-                name: "Contact Us",
-                tagline: "Start the conversation",
-                description: "Tell us your ambitions. We listen, understand, and identify if we're the right fit for your vision.",
-                number: "1",
-                gradient: "from-primary to-blue-600"
-              },
-              {
-                name: "Discovery Call", 
-                tagline: "Deep dive strategy",
-                description: "30-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
-                number: "2",
-                gradient: "from-primary to-purple-600"
-              },
-              {
-                name: "Sign & Go",
-                tagline: "Execution mode",
-                description: "Contracts signed. Team deployed. Influence engineering begins. Results start flowing within 30 days.",
-                number: "3",
-                gradient: "from-red-500 to-orange-600"
-              }
-            ].map((tool, index) => (
-              <div key={index}>
-                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
-                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
-                    <span className="text-2xl font-bold text-foreground">{tool.number}</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
-                  <p className="text-white/70 text-lg mb-4">{tool.tagline}</p>
-                  <p className="text-white/60 leading-relaxed">{tool.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          {/* Contact Us CTA */}
-          <div className="text-center mt-16">
-            <Button 
-              asChild 
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
-            >
-              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Let's Work Together <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Case Study Reel - Touch Native */}
       <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
@@ -377,6 +312,70 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Our Process Section - Moved after Case Studies */}
+      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center', transform: 'scaleY(-1)' }}>
+        <div className="max-w-6xl mx-auto" style={{ transform: 'scaleY(-1)' }}>
+          <div className="text-center mb-20">
+            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+              Our Process
+            </h2>
+            <p className="text-white/70 text-xl max-w-2xl mx-auto">
+              How we engineer influence that sticks
+            </p>
+          </div>
+
+          {/* Tool Cards - Desktop Row Layout */}
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            {[
+              {
+                name: "Contact Us",
+                tagline: "Start the conversation",
+                description: "Tell us your ambitions. We listen, understand, and identify if we're the right fit for your vision.",
+                number: "1",
+                gradient: "from-primary to-blue-600"
+              },
+              {
+                name: "Discovery Call", 
+                tagline: "Deep dive strategy",
+                description: "30-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
+                number: "2",
+                gradient: "from-primary to-purple-600"
+              },
+              {
+                name: "Sign & Go",
+                tagline: "Execution mode",
+                description: "Contracts signed. Team deployed. Influence engineering begins. Results start flowing within 30 days.",
+                number: "3",
+                gradient: "from-red-500 to-orange-600"
+              }
+            ].map((tool, index) => (
+              <div key={index}>
+                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
+                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                    <span className="text-2xl font-bold text-foreground">{tool.number}</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
+                  <p className="text-white/70 text-lg mb-4">{tool.tagline}</p>
+                  <p className="text-white/60 leading-relaxed">{tool.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Contact Us CTA */}
+          <div className="text-center mt-16">
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+            >
+              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                Let's Work Together <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
 
       {/* Client Recommendations Section */}
