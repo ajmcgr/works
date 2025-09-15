@@ -152,7 +152,7 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="pt-20 pb-6 px-6" style={{ backgroundColor: '#FFFFFF' }}>
+      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
@@ -227,9 +227,9 @@ const Index = () => {
       </section>
 
 
-      {/* Our Process Section - Above Case Studies with reduced top margin */}
-      <section className="min-h-screen pt-5 pb-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center', transform: 'scaleY(-1)' }}>
-        <div className="max-w-6xl mx-auto" style={{ transform: 'scaleY(-1)' }}>
+      {/* Product Showcase - Scroll Reveals */}
+      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Our Process
@@ -376,6 +376,8 @@ const Index = () => {
 
         </div>
       </section>
+
+
 
       {/* Client Recommendations Section */}
       <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
