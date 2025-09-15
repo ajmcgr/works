@@ -228,7 +228,7 @@ const Index = () => {
 
 
       {/* Product Showcase - Scroll Reveals */}
-      <section className="min-h-screen pt-10 pb-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center', transform: 'scaleY(-1)' }}>
+      <section className="min-h-screen pt-2 pb-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center', transform: 'scaleY(-1)' }}>
         <div className="max-w-6xl mx-auto" style={{ transform: 'scaleY(-1)' }}>
           <div className="text-center mb-20">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
