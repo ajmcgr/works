@@ -152,7 +152,7 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
+      <section className="pt-20 pb-6 px-6" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
