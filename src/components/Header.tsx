@@ -54,7 +54,7 @@ const Header = () => {
           <div className="flex-1"></div>
 
           {/* Right side navigation and contact */}
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-8">
             {/* Products dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger 
@@ -154,7 +154,7 @@ const Header = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
             {/* Products */}
             <div className="relative">
               <DropdownMenu>
