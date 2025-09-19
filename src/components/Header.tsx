@@ -154,7 +154,7 @@ const Header = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-6 text-xs">
             {/* Products */}
             <div className="relative">
               <DropdownMenu>
