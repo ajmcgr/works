@@ -119,7 +119,7 @@ const Header = () => {
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Creators</span>
-                    <span className="text-xs text-gray-500 mt-0.5">World's most popular creators</span>
+                    <span className="text-xs text-gray-500 mt-0.5">The world's most popular creators</span>
                   </div>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -234,7 +234,7 @@ const Header = () => {
                     />
                     <div className="flex flex-col">
                       <span className="font-medium text-sm text-gray-900">Creators</span>
-                      <span className="text-xs text-gray-500 mt-0.5">World's most popular creators</span>
+                      <span className="text-xs text-gray-500 mt-0.5">The world's most popular creators</span>
                     </div>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
