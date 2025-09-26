@@ -118,7 +118,7 @@ const Header = () => {
                     className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
-                    <span className="font-medium text-sm text-gray-900">Creators</span>
+                    <span className="font-medium text-sm text-gray-900">Creators 200</span>
                     <span className="text-xs text-gray-500 mt-0.5">The world's most popular creators</span>
                   </div>
                 </DropdownMenuItem>
@@ -233,7 +233,7 @@ const Header = () => {
                       className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                     />
                     <div className="flex flex-col">
-                      <span className="font-medium text-sm text-gray-900">Creators</span>
+                      <span className="font-medium text-sm text-gray-900">Creators 200</span>
                       <span className="text-xs text-gray-500 mt-0.5">The world's most popular creators</span>
                     </div>
                   </DropdownMenuItem>
