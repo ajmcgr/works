@@ -109,7 +109,7 @@ const Header = () => {
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
-                  onClick={() => handleNavClick('https://trycreators.ai/')}
+                  onClick={() => handleNavClick('https://creators200.com/')}
                   className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
@@ -224,7 +224,7 @@ const Header = () => {
                     </div>
                   </DropdownMenuItem>
                   <DropdownMenuItem 
-                    onClick={() => handleNavClick('https://trycreators.ai/')}
+                    onClick={() => handleNavClick('https://creators200.com/')}
                     className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                   >
                     <img 
