@@ -46,6 +46,14 @@ const Footer = () => {
                 <Link to="/resources/reputation-defense" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Reputation Defense</Link>
                 <Link to="/resources/brand-storytelling" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Brand Storytelling</Link>
                 <Link to="/resources/founder-training" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Founder Training</Link>
+                <a 
+                  href="https://creators200.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Top 200 Creators
+                </a>
               </div>
             </div>
 

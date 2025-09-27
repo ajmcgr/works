@@ -111,29 +111,6 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             
-            {/* Resources dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger 
-                className={`text-sm font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
-              >
-                <span>Resources</span>
-                <ChevronDown className="h-3 w-3" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent 
-                className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 w-60 z-[60]"
-              >
-                <DropdownMenuItem 
-                  onClick={() => handleNavClick('https://creators200.com/')}
-                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                >
-                  <div className="flex flex-col">
-                    <span className="font-medium text-sm text-gray-900">Top 200 Creators</span>
-                    <span className="text-xs text-gray-500 mt-0.5">The world's most popular creators</span>
-                  </div>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -230,31 +207,6 @@ const Header = () => {
                     <div className="flex flex-col">
                       <span className="font-medium text-sm text-gray-900">Content AI</span>
                       <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
-                    </div>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-
-            {/* Resources */}
-            <div className="relative">
-              <DropdownMenu>
-                <DropdownMenuTrigger 
-                  className={`font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
-                >
-                  <span>Resources</span>
-                  <ChevronDown className="h-3 w-3" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent 
-                  className="bg-white border border-gray-200 shadow-lg rounded-lg p-1 w-60 z-[60]"
-                >
-                  <DropdownMenuItem 
-                    onClick={() => handleNavClick('https://creators200.com/')}
-                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                  >
-                    <div className="flex flex-col">
-                      <span className="font-medium text-sm text-gray-900">Top 200 Creators</span>
-                      <span className="text-xs text-gray-500 mt-0.5">The world's most popular creators</span>
                     </div>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
