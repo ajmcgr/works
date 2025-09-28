@@ -130,23 +130,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Video with no controls - Now below brand logos */}
-          <div className="mt-8 md:mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-0">
-            <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black">
-              <iframe
-                src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
-                className="absolute inset-0 w-full h-full transform scale-150"
-                style={{ 
-                  transform: 'scale(1.5) translateX(0%) translateY(0%)',
-                  transformOrigin: 'center center'
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                title="Hero Video"
-              ></iframe>
-            </div>
-          </div>
-
         </div>
       </section>
 
