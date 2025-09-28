@@ -48,7 +48,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ backgroundImage: 'url(/brands/oppo/hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ backgroundImage: 'url(/brands/hero-workspace.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
@@ -164,11 +164,11 @@ const Index = () => {
               { 
                 title: "Content Strategy", 
                 description: "Develop content that educates, entertains, and converts across all marketing channels.",
-                url: "/case-study/tencent", 
+                url: "/case-study/content-strategy", 
                 delay: "300ms", 
-                client: "Tencent", 
-                clientSlug: "tencent",
-                backgroundImage: "/brands/tencent/hero.jpg"
+                client: "Content Studio", 
+                clientSlug: "content-strategy",
+                backgroundImage: "/brands/content-studio.jpg"
               },
               { 
                 title: "Influencer Marketing", 
