@@ -235,32 +235,42 @@ const Index = () => {
                 tagline: "Start the conversation",
                 description: "Tell us your ambitions. We listen, understand, and identify if we're the right fit for your vision.",
                 number: "1",
-                gradient: "from-primary to-blue-600"
+                gradient: "from-primary to-blue-600",
+                link: "/contact"
               },
               {
                 name: "Discovery Call", 
                 tagline: "Deep dive strategy",
                 description: "30-minute strategy session. Market analysis. Competitive landscape. Narrative architecture blueprint.",
                 number: "2",
-                gradient: "from-primary to-purple-600"
+                gradient: "from-primary to-purple-600",
+                link: "https://cal.com/works",
+                external: true
               },
               {
                 name: "Sign & Go",
                 tagline: "Execution mode",
                 description: "Contracts signed. Team deployed. Influence engineering begins. Results start flowing within 30 days.",
                 number: "3",
-                gradient: "from-red-500 to-orange-600"
+                gradient: "from-red-500 to-orange-600",
+                link: "/contact"
               }
             ].map((tool, index) => (
               <div key={index}>
-                <div className="bg-white rounded-3xl p-8 shadow-md h-full">
-                  <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-md">
-                    <span className="text-2xl font-bold text-white">{tool.number}</span>
+                <a 
+                  href={tool.link}
+                  {...(tool.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="block"
+                >
+                  <div className="bg-white rounded-3xl p-8 shadow-md h-full hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                      <span className="text-2xl font-bold text-white">{tool.number}</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
+                    <p className="text-muted-foreground text-lg mb-4">{tool.tagline}</p>
+                    <p className="text-muted-foreground leading-relaxed">{tool.description}</p>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
-                  <p className="text-muted-foreground text-lg mb-4">{tool.tagline}</p>
-                  <p className="text-muted-foreground leading-relaxed">{tool.description}</p>
-                </div>
+                </a>
               </div>
             ))}
           </div>
@@ -294,59 +304,63 @@ const Index = () => {
 
           {/* Case study cards - Vertical Stack */}
           <div className="flex flex-col gap-8 max-w-3xl mx-auto">
-            <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover">
-              <div className="flex items-center mb-6">
-                <div>
-                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>UFC</h4>
-                  <p className="text-muted-foreground text-sm">Global Event Launch</p>
+            <a href="/case-study/ufc" className="block">
+              <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center mb-6">
+                  <div>
+                    <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>UFC</h4>
+                    <p className="text-muted-foreground text-sm">Global Event Launch</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Positioned UFC's expansion into new markets with strategic narrative that dominated sports media. 
+                  Our crisis-proof architecture handled regulatory and cultural challenges across 47 countries.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Global Coverage</span>
+                    <span className="font-bold text-foreground">ESPN, BBC, Fox Sports</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Viewership Impact</span>
+                    <span className="font-bold text-foreground">+340% in new markets</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Media Sentiment</span>
+                    <span className="font-bold text-foreground">92% positive</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Positioned UFC's expansion into new markets with strategic narrative that dominated sports media. 
-                Our crisis-proof architecture handled regulatory and cultural challenges across 47 countries.
-              </p>
-              <div className="space-y-4">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Global Coverage</span>
-                  <span className="font-bold text-foreground">ESPN, BBC, Fox Sports</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Viewership Impact</span>
-                  <span className="font-bold text-foreground">+340% in new markets</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Media Sentiment</span>
-                  <span className="font-bold text-foreground">92% positive</span>
-                </div>
-              </div>
-            </div>
+            </a>
 
-            <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover">
-              <div className="flex items-center mb-6">
-                <div>
-                  <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>OnePlus</h4>
-                  <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
+            <a href="/case-study/oneplus" className="block">
+              <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center mb-6">
+                  <div>
+                    <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>OnePlus</h4>
+                    <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Engineered OnePlus's "Never Settle" narrative for global smartphone launch. Our influence network 
+                  orchestration turned tech reviewers into brand advocates, driving unprecedented pre-order numbers.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Pre-orders Day 1</span>
+                    <span className="font-bold text-foreground">847K units</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Tech Review Score</span>
+                    <span className="font-bold text-foreground">9.2/10 average</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Market Share Gain</span>
+                    <span className="font-bold text-foreground">+23% in 6 months</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Engineered OnePlus's "Never Settle" narrative for global smartphone launch. Our influence network 
-                orchestration turned tech reviewers into brand advocates, driving unprecedented pre-order numbers.
-              </p>
-              <div className="space-y-4">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Pre-orders Day 1</span>
-                  <span className="font-bold text-foreground">847K units</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Tech Review Score</span>
-                  <span className="font-bold text-foreground">9.2/10 average</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Market Share Gain</span>
-                  <span className="font-bold text-foreground">+23% in 6 months</span>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
 
           {/* CTA to Customers page */}
@@ -380,74 +394,55 @@ const Index = () => {
           </div>
 
           <div className="space-y-12">
-            <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover">
-              <div className="flex items-center mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                  <img 
-                    src="/lovable-uploads/f2bdfdc8-7b25-451a-b578-82b4b38994a1.png" 
-                    alt="Dana White" 
-                    className="w-full h-full object-cover"
-                  />
+            <a href="/case-study/ufc" className="block">
+              <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center mb-8">
+                  <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                    <img 
+                      src="/lovable-uploads/f2bdfdc8-7b25-451a-b578-82b4b38994a1.png" 
+                      alt="Dana White" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Dana White</h4>
+                    <p className="text-muted-foreground">President, UFC</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Dana White</h4>
-                  <p className="text-muted-foreground">President, UFC</p>
+                <blockquote className="text-xl text-foreground leading-relaxed mb-6">
+                  "Works doesn't just handle our PR—they engineer our global narrative. When we expand into new markets, 
+                  they make sure we're not just arriving, we're conquering."
+                </blockquote>
+                <div className="text-muted-foreground font-medium">
+                  UFC Global Expansion Campaign
                 </div>
               </div>
-              <blockquote className="text-xl text-foreground leading-relaxed mb-6">
-                "Works doesn't just handle our PR—they engineer our global narrative. When we expand into new markets, 
-                they make sure we're not just arriving, we're conquering."
-              </blockquote>
-              <div className="text-muted-foreground font-medium">
-                UFC Global Expansion Campaign
-              </div>
-            </div>
+            </a>
 
-            <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover">
-              <div className="flex items-center mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                  <img 
-                    src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
-                    alt="Pete Lau" 
-                    className="w-full h-full object-cover"
-                  />
+            <a href="/case-study/oneplus" className="block">
+              <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center mb-8">
+                  <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                    <img 
+                      src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
+                      alt="Pete Lau" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Pete Lau</h4>
+                    <p className="text-muted-foreground">CEO, OnePlus</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Pete Lau</h4>
-                  <p className="text-muted-foreground">CEO, OnePlus</p>
-                </div>
-              </div>
-              <blockquote className="text-xl text-foreground leading-relaxed mb-6">
-                "They turned our product launch into a cultural moment. The way they orchestrated influence across 
-                every touchpoint—from tech reviewers to lifestyle publications—was masterful."
-              </blockquote>
-              <div className="text-muted-foreground font-medium">
-                OnePlus Flagship Launch
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover">
-              <div className="flex items-center mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                  <img 
-                    src="/lovable-uploads/5c5a6c05-1222-4931-96e1-31741231b19f.png" 
-                    alt="Tina Sharkey" 
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Tina Sharkey</h4>
-                  <p className="text-muted-foreground">Former CEO, Sheryl Sandberg & Associates</p>
+                <blockquote className="text-xl text-foreground leading-relaxed mb-6">
+                  "They turned our product launch into a cultural moment. The way they orchestrated influence across 
+                  every touchpoint—from tech reviewers to lifestyle publications—was masterful."
+                </blockquote>
+                <div className="text-muted-foreground font-medium">
+                  OnePlus Flagship Launch
                 </div>
               </div>
-              <blockquote className="text-xl text-foreground leading-relaxed mb-6">
-                "What sets Works apart is their strategic thinking. They don't just execute campaigns—
-                they architect influence systems that compound over time. The ROI speaks for itself."
-              </blockquote>
-              <div className="text-muted-foreground font-medium">
-                Executive Brand Positioning
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
