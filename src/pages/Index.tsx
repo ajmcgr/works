@@ -135,7 +135,7 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="py-32 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
+      <section className="py-24 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
