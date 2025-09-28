@@ -136,7 +136,7 @@ const Index = () => {
 
       {/* How We Can Help Section */}
       <section className="py-24 px-6 overflow-hidden" style={{ background: 'var(--gradient-gray-subtle)' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
               How we can help
@@ -146,7 +146,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-6 max-w-4xl mx-auto">
+          <div className="flex flex-col gap-6 max-w-3xl mx-auto">
             {[
               { title: "Media Relations", url: "/case-study/ufc", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
               { title: "Crisis Communication", url: "/case-study/oneplus", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
@@ -158,7 +158,7 @@ const Index = () => {
               <a 
                 key={index} 
                 href={service.url} 
-                className={`group relative block ${service.bgColor} rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 animate-fade-in border border-gray-100/50 hover:border-primary/20 overflow-hidden`}
+                className={`group relative block ${service.bgColor} rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100/50 hover:border-primary/20 overflow-hidden`}
                 style={{ animationDelay: service.delay }}
               >
                 {/* Gradient overlay that appears on hover */}
@@ -217,7 +217,7 @@ const Index = () => {
 
       {/* Product Showcase - Scroll Reveals */}
       <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ background: 'var(--gradient-dark-elegant)' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Our Process
@@ -228,7 +228,7 @@ const Index = () => {
           </div>
 
           {/* Tool Cards - Vertical Stack Layout */}
-          <div className="flex flex-col gap-8 max-w-4xl mx-auto">
+          <div className="flex flex-col gap-8 max-w-3xl mx-auto">
             {[
               {
                 name: "Contact Us",
@@ -282,7 +282,7 @@ const Index = () => {
 
       {/* Case Study Reel - Touch Native */}
       <section className="py-20 px-6" style={{ background: 'var(--gradient-blue-mist)' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Case Studies
@@ -293,7 +293,7 @@ const Index = () => {
           </div>
 
           {/* Case study cards - Vertical Stack */}
-          <div className="flex flex-col gap-8 max-w-4xl mx-auto">
+          <div className="flex flex-col gap-8 max-w-3xl mx-auto">
             <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover">
               <div className="flex items-center mb-6">
                 <div>
@@ -369,7 +369,7 @@ const Index = () => {
 
       {/* Client Recommendations Section */}
       <section className="py-20 px-6" style={{ background: 'var(--gradient-blue-deep)' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               What clients say
