@@ -208,6 +208,10 @@ const Index = () => {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                   loading={index < 2 ? "eager" : "lazy"}
                   decoding={index < 2 ? "sync" : "async"}
+                  onLoad={(e) => {
+                    e.currentTarget.style.opacity = '1';
+                  }}
+                  style={{ opacity: 0 }}
                 />
               </div>
               
@@ -217,7 +221,7 @@ const Index = () => {
               {/* Content pinned to bottom */}
               <div className="absolute inset-x-0 bottom-0 p-8 lg:p-12">
                 <div className="space-y-4 max-w-2xl">
-                  <h3 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                  <h3 className="text-4xl lg:text-6xl font-medium text-white leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
                     {service.title}
                   </h3>
                   <p className="text-white/90 text-lg lg:text-xl leading-relaxed mb-6">
@@ -229,9 +233,6 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              
-              {/* Loading state */}
-              <div className="absolute inset-0 bg-gray-800 animate-pulse opacity-0 transition-opacity duration-300" />
             </a>
           ))}
         </div>
@@ -241,7 +242,7 @@ const Index = () => {
       <section className="py-20 px-6" style={{ background: 'var(--gradient-navy-rich)' }}>
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px', fontWeight: 500 }}>
               Ready to shape your story?
             </h2>
             <p className="text-white/70 text-xl">
