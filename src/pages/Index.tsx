@@ -152,43 +152,75 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
+      <section className="py-20 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+          <div className="text-center mb-20">
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
               How we can help
             </h2>
-            <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-xl max-w-2xl mx-auto animate-fade-in">
               Comprehensive PR solutions designed to elevate your brand and drive meaningful engagement
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { title: "Media Relations", url: "/services/media-relations" },
-              { title: "Crisis Communication", url: "/services/crisis-communication" },
-              { title: "Brand Communications", url: "/services/brand-communications" },
-              { title: "Content Strategy", url: "/services/content-strategy" },
-              { title: "Influencer Marketing", url: "/services/influencer-marketing" },
-              { title: "Event Management", url: "/services/event-management" }
+              { title: "Media Relations", url: "/services/media-relations", delay: "0ms" },
+              { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms" },
+              { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms" },
+              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms" },
+              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms" },
+              { title: "Event Management", url: "/services/event-management", delay: "500ms" }
             ].map((service, index) => (
-              <a key={index} href={service.url} className="block bg-white rounded-2xl p-12 shadow-sm hover:shadow-lg transition-all group">
-                <h3 className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors text-center">{service.title}</h3>
+              <a 
+                key={index} 
+                href={service.url} 
+                className="group relative block bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 animate-fade-in border border-gray-100/50 hover:border-primary/20 overflow-hidden"
+                style={{ animationDelay: service.delay }}
+              >
+                {/* Gradient overlay that appears on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                
+                {/* Dynamic background pattern */}
+                <div className="absolute -top-10 -right-10 w-20 h-20 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-primary/5 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
+                
+                {/* Service number */}
+                <div className="relative z-10 flex items-center justify-between mb-6">
+                  <span className="text-6xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <div className="w-8 h-8 rounded-full bg-primary/10 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <ArrowRight className="w-4 h-4 text-primary group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+                
+                {/* Service title */}
+                <h3 className="relative z-10 text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
+                  {service.title}
+                </h3>
+                
+                {/* Animated underline */}
+                <div className="relative z-10 mt-4 h-1 w-0 bg-gradient-to-r from-primary to-primary/60 group-hover:w-full transition-all duration-500 rounded-full"></div>
               </a>
             ))}
           </div>
 
-          {/* CTA to Services page */}
-          <div className="text-center mt-16">
-            <Button 
-              asChild 
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
-            >
-              <a href="/services">
-                View All Services <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+          {/* Enhanced CTA to Services page */}
+          <div className="text-center mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
+            <div className="relative inline-block">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary to-primary/80 rounded-full blur opacity-30 group-hover:opacity-70 transition duration-1000"></div>
+              <Button 
+                asChild 
+                size="lg"
+                className="relative bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold hover:scale-105 transition-transform duration-200"
+              >
+                <a href="/services" className="group">
+                  View All Services 
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
