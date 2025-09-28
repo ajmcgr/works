@@ -1,0 +1,40 @@
+{
+  "service_backgrounds": {
+    "media-relations": {
+      "client_slug": "ufc",
+      "background_source": "/clients/ufc/hero.jpg",
+      "background_source_reason": "homepage_hero",
+      "last_updated": "2024-01-15T10:30:00Z"
+    },
+    "crisis-communication": {
+      "client_slug": "oneplus", 
+      "background_source": "/clients/oneplus/hero.jpg",
+      "background_source_reason": "homepage_hero",
+      "last_updated": "2024-01-15T10:30:00Z"
+    },
+    "brand-communications": {
+      "client_slug": "oppo",
+      "background_source": "/clients/oppo/hero.jpg", 
+      "background_source_reason": "homepage_hero",
+      "last_updated": "2024-01-15T10:30:00Z"
+    },
+    "content-strategy": {
+      "client_slug": "ogilvy",
+      "background_source": "/clients/ogilvy/hero.jpg",
+      "background_source_reason": "homepage_hero",
+      "last_updated": "2024-01-15T10:30:00Z"
+    },
+    "influencer-marketing": {
+      "client_slug": "weber-shandwick",
+      "background_source": "/clients/weber-shandwick/hero.jpg",
+      "background_source_reason": "homepage_hero", 
+      "last_updated": "2024-01-15T10:30:00Z"
+    },
+    "event-management": {
+      "client_slug": "publicis-groupe",
+      "background_source": "/clients/publicis-groupe/hero.jpg",
+      "background_source_reason": "homepage_hero",
+      "last_updated": "2024-01-15T10:30:00Z"
+    }
+  }
+}

@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { ClientHeroGallery } from '@/components/ClientHeroGallery';
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -147,56 +146,121 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Media Relations", url: "/case-study/ufc", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
-              { title: "Crisis Communication", url: "/case-study/oneplus", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
-              { title: "Brand Communications", url: "/case-study/oppo", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-emerald-600", textColor: "text-white" },
-              { title: "Content Strategy", url: "/case-study/ogilvy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-600", textColor: "text-white" },
-              { title: "Influencer Marketing", url: "/case-study/weber-shandwick", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-700", textColor: "text-white" },
-              { title: "Event Management", url: "/case-study/publicis-groupe", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-gray-900", textColor: "text-white" }
-            ].map((service, index) => (
-              <a 
-                key={index} 
-                href={service.url} 
-                className={`group relative block ${service.bgColor} rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100/50 hover:border-primary/20 overflow-hidden`}
-                style={{ animationDelay: service.delay }}
-              >
-                {/* Gradient overlay that appears on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-                
-                {/* Dynamic background pattern */}
-                <div className="absolute -top-10 -right-10 w-20 h-20 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-                <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-white/10 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
-                
-                {/* Client logo */}
-                <div className="relative z-10 mb-6">
-                  <div className="w-56 h-36 flex items-center justify-start">
+              { 
+                title: "Media Relations", 
+                description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
+                url: "/case-study/ufc", 
+                delay: "0ms", 
+                client: "UFC", 
+                clientSlug: "ufc",
+                backgroundImage: "/clients/ufc/hero.jpg"
+              },
+              { 
+                title: "Crisis Communication", 
+                description: "Navigate challenging situations with expert crisis management and reputation protection.",
+                url: "/case-study/oneplus", 
+                delay: "100ms", 
+                client: "OnePlus", 
+                clientSlug: "oneplus",
+                backgroundImage: "/clients/oneplus/hero.jpg"
+              },
+              { 
+                title: "Brand Communications", 
+                description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
+                url: "/case-study/oppo", 
+                delay: "200ms", 
+                client: "OPPO", 
+                clientSlug: "oppo",
+                backgroundImage: "/clients/oppo/hero.jpg"
+              },
+              { 
+                title: "Content Strategy", 
+                description: "Develop content that educates, entertains, and converts across all marketing channels.",
+                url: "/case-study/ogilvy", 
+                delay: "300ms", 
+                client: "Ogilvy", 
+                clientSlug: "ogilvy",
+                backgroundImage: "/clients/ogilvy/hero.jpg"
+              },
+              { 
+                title: "Influencer Marketing", 
+                description: "Connect with authentic voices that amplify your brand message to engaged communities.",
+                url: "/case-study/weber-shandwick", 
+                delay: "400ms", 
+                client: "Weber Shandwick", 
+                clientSlug: "weber-shandwick",
+                backgroundImage: "/clients/weber-shandwick/hero.jpg"
+              },
+              { 
+                title: "Event Management", 
+                description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
+                url: "/case-study/publicis-groupe", 
+                delay: "500ms", 
+                client: "Publicis Groupe", 
+                clientSlug: "publicis-groupe",
+                backgroundImage: "/clients/publicis-groupe/hero.jpg"
+              }
+            ].map((service, index) => {
+              const hasBackground = service.backgroundImage && service.backgroundImage.length > 0;
+              
+              return (
+                <a 
+                  key={index} 
+                  href={service.url} 
+                  className="group relative block rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ease-out focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                  style={{ 
+                    animationDelay: service.delay,
+                    aspectRatio: '16/9'
+                  }}
+                  aria-label={`${service.title} — ${service.client}`}
+                >
+                  {/* Background Image */}
+                  {hasBackground ? (
                     <img 
-                      src={service.logo} 
-                      alt={service.client} 
-                      className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0"
-                      loading="lazy"
+                      src={service.backgroundImage}
+                      alt={`${service.client} background`}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                      loading={index < 3 ? "eager" : "lazy"}
+                      decoding={index < 3 ? "sync" : "async"}
                     />
+                  ) : (
+                    <div className={`absolute inset-0 bg-gradient-to-br ${
+                      index % 3 === 0 ? 'from-red-500 to-red-700' :
+                      index % 3 === 1 ? 'from-blue-600 to-blue-800' :
+                      'from-emerald-600 to-emerald-800'
+                    } transition-transform duration-300 ease-out group-hover:scale-105`} />
+                  )}
+                  
+                  {/* Bottom Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+                  
+                  {/* Content Container */}
+                  <div className="absolute left-0 right-0 bottom-0 p-5 lg:p-6">
+                    <div className="space-y-3">
+                      <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight">
+                        {service.title}
+                      </h3>
+                      <p className="text-white/90 text-sm sm:text-base leading-snug line-clamp-2">
+                        {service.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium transition-all duration-300 group-hover:bg-white/30">
+                          <span>Learn More</span>
+                          <ArrowRight className="ml-1.5 h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-
-                {/* Arrow only */}
-                <div className="relative z-10 flex items-center justify-end mb-6">
-                  <div className="w-8 h-8 rounded-full bg-white/20 group-hover:bg-white group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                    <ArrowRight className="w-4 h-4 text-white group-hover:text-gray-800 transition-colors duration-300 transform group-hover:translate-x-1" />
-                  </div>
-                </div>
-                
-                {/* Service title */}
-                <h3 className={`relative z-10 text-2xl lg:text-3xl font-bold ${service.textColor} group-hover:text-white transition-colors duration-300 leading-tight`}>
-                  {service.title}
-                </h3>
-                
-                {/* Animated underline */}
-                <div className="relative z-10 mt-4 h-1 w-0 bg-gradient-to-r from-white to-white/60 group-hover:w-full transition-all duration-500 rounded-full"></div>
-              </a>
-            ))}
+                  
+                  {/* Loading Placeholder for Background Images */}
+                  {hasBackground && (
+                    <div className="absolute inset-0 bg-gray-200 animate-pulse opacity-0 group-[&:not(.loaded)]:opacity-100 transition-opacity duration-300" />
+                  )}
+                </a>
+              );
+            })}
           </div>
 
           {/* CTA to Services page */}
@@ -392,9 +456,6 @@ const Index = () => {
       </section>
 
 
-
-      {/* Client Hero Gallery */}
-      <ClientHeroGallery />
 
       {/* Client Recommendations Section */}
       <section className="py-20 px-6" style={{ background: 'var(--gradient-blue-deep)' }}>
