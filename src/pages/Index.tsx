@@ -247,9 +247,9 @@ const Index = () => {
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               
-              {/* Content pinned to bottom */}
-              <div className="absolute inset-x-0 bottom-0 p-8 lg:p-12">
-                <div className="space-y-4 max-w-2xl">
+              {/* Content centered */}
+              <div className="absolute inset-0 flex items-center justify-center p-8 lg:p-12">
+                <div className="space-y-4 max-w-2xl text-left">
                   <h3 className="text-4xl lg:text-6xl font-medium text-white leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
                     {service.title}
                   </h3>
