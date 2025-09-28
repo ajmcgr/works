@@ -206,7 +206,7 @@ const Index = () => {
                 delay: "400ms", 
                 client: "Content Studio", 
                 clientSlug: "content-strategy",
-                backgroundImage: "/brands/angry-miao/hero.jpg"
+                backgroundImage: "/brands/xreal/hero.jpg"
               },
               { 
                 title: "Event Management", 
@@ -215,7 +215,7 @@ const Index = () => {
                 delay: "500ms",
                 client: "XREAL", 
                 clientSlug: "xreal",
-                backgroundImage: "/brands/xreal/hero.jpg"
+                backgroundImage: "/brands/angry-miao/hero.jpg"
               }
           ].map((service, index) => (
             <a 
