@@ -163,7 +163,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="flex flex-col gap-6 max-w-4xl mx-auto">
             {[
               { title: "Media Relations", url: "/services/media-relations", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC" },
               { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus" },
@@ -186,8 +186,8 @@ const Index = () => {
                 <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-primary/5 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
                 
                 {/* Client logo */}
-                <div className="relative z-10 mb-4">
-                  <div className="w-16 h-12 flex items-center justify-start">
+                <div className="relative z-10 mb-6">
+                  <div className="w-32 h-20 flex items-center justify-start">
                     <img 
                       src={service.logo} 
                       alt={service.client} 
@@ -247,8 +247,8 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Tool Cards - Desktop Row Layout */}
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {/* Tool Cards - Vertical Stack Layout */}
+          <div className="flex flex-col gap-8 max-w-4xl mx-auto">
             {[
               {
                 name: "Contact Us",
@@ -312,8 +312,8 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Mobile-first case study cards */}
-          <div className="grid gap-8 md:grid-cols-2">
+          {/* Case study cards - Vertical Stack */}
+          <div className="flex flex-col gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover">
               <div className="flex items-center mb-6">
                 <div>
