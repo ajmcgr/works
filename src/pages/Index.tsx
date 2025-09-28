@@ -135,134 +135,109 @@ const Index = () => {
 
 
       {/* How We Can Help Section - Nothing.tech Style */}
-      <section className="py-24 px-6 overflow-hidden" style={{ background: 'var(--gradient-gray-subtle)' }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
-              How we can help
-            </h2>
-            <p className="text-muted-foreground text-xl max-w-2xl mx-auto animate-fade-in">
-              Comprehensive PR solutions designed to elevate your brand and drive meaningful engagement
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { 
-                title: "Media Relations", 
-                description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
-                url: "/case-study/ufc", 
-                delay: "0ms", 
-                client: "UFC", 
-                clientSlug: "ufc",
-                backgroundImage: "/clients/ufc/hero.jpg"
-              },
-              { 
-                title: "Crisis Communication", 
-                description: "Navigate challenging situations with expert crisis management and reputation protection.",
-                url: "/case-study/oneplus", 
-                delay: "100ms", 
-                client: "OnePlus", 
-                clientSlug: "oneplus",
-                backgroundImage: "/clients/oneplus/hero.jpg"
-              },
-              { 
-                title: "Brand Communications", 
-                description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
-                url: "/case-study/oppo", 
-                delay: "200ms", 
-                client: "OPPO", 
-                clientSlug: "oppo",
-                backgroundImage: "/clients/oppo/hero.jpg"
-              },
-              { 
-                title: "Content Strategy", 
-                description: "Develop content that educates, entertains, and converts across all marketing channels.",
-                url: "/case-study/ogilvy", 
-                delay: "300ms", 
-                client: "Ogilvy", 
-                clientSlug: "ogilvy",
-                backgroundImage: "/clients/ogilvy/hero.jpg"
-              },
-              { 
-                title: "Influencer Marketing", 
-                description: "Connect with authentic voices that amplify your brand message to engaged communities.",
-                url: "/case-study/weber-shandwick", 
-                delay: "400ms", 
-                client: "Weber Shandwick", 
-                clientSlug: "weber-shandwick",
-                backgroundImage: "/clients/weber-shandwick/hero.jpg"
-              },
-              { 
-                title: "Event Management", 
-                description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
-                url: "/case-study/publicis-groupe", 
-                delay: "500ms", 
-                client: "Publicis Groupe", 
-                clientSlug: "publicis-groupe",
-                backgroundImage: "/clients/publicis-groupe/hero.jpg"
-              }
-            ].map((service, index) => (
-              <a 
-                key={index} 
-                href={service.url} 
-                className="group relative block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-out focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 bg-gray-900"
-                style={{ 
-                  animationDelay: service.delay,
-                  aspectRatio: '4/5',
-                  minHeight: '400px'
-                }}
-                aria-label={service.title}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0 overflow-hidden">
-                  <img 
-                    src={service.backgroundImage}
-                    alt={`${service.client} background`}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
-                    loading={index < 3 ? "eager" : "lazy"}
-                    decoding={index < 3 ? "sync" : "async"}
-                  />
-                </div>
-                
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                
-                {/* Content pinned to bottom */}
-                <div className="absolute inset-x-0 bottom-0 p-6 lg:p-8">
-                  <div className="space-y-3">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
-                      {service.title}
-                    </h3>
-                    <p className="text-white/90 text-sm sm:text-base leading-relaxed line-clamp-2 mb-4">
-                      {service.description}
-                    </p>
-                    <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/30">
-                      <span>Learn More</span>
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                    </div>
+      <section className="overflow-hidden">
+        <div className="flex flex-col">
+          {[
+            { 
+              title: "Media Relations", 
+              description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
+              url: "/case-study/ufc", 
+              delay: "0ms", 
+              client: "UFC", 
+              clientSlug: "ufc",
+              backgroundImage: "/clients/ufc/hero.jpg"
+            },
+            { 
+              title: "Crisis Communication", 
+              description: "Navigate challenging situations with expert crisis management and reputation protection.",
+              url: "/case-study/oneplus", 
+              delay: "100ms", 
+              client: "OnePlus", 
+              clientSlug: "oneplus",
+              backgroundImage: "/clients/oneplus/hero.jpg"
+            },
+            { 
+              title: "Brand Communications", 
+              description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
+              url: "/case-study/oppo", 
+              delay: "200ms", 
+              client: "OPPO", 
+              clientSlug: "oppo",
+              backgroundImage: "/clients/oppo/hero.jpg"
+            },
+            { 
+              title: "Content Strategy", 
+              description: "Develop content that educates, entertains, and converts across all marketing channels.",
+              url: "/case-study/ogilvy", 
+              delay: "300ms", 
+              client: "Ogilvy", 
+              clientSlug: "ogilvy",
+              backgroundImage: "/clients/ogilvy/hero.jpg"
+            },
+            { 
+              title: "Influencer Marketing", 
+              description: "Connect with authentic voices that amplify your brand message to engaged communities.",
+              url: "/case-study/weber-shandwick", 
+              delay: "400ms", 
+              client: "Weber Shandwick", 
+              clientSlug: "weber-shandwick",
+              backgroundImage: "/clients/weber-shandwick/hero.jpg"
+            },
+            { 
+              title: "Event Management", 
+              description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
+              url: "/case-study/publicis-groupe", 
+              delay: "500ms", 
+              client: "Publicis Groupe", 
+              clientSlug: "publicis-groupe",
+              backgroundImage: "/clients/publicis-groupe/hero.jpg"
+            }
+          ].map((service, index) => (
+            <a 
+              key={index} 
+              href={service.url} 
+              className="group relative block overflow-hidden transition-all duration-300 ease-out focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 bg-gray-900"
+              style={{ 
+                animationDelay: service.delay,
+                height: '100vh',
+                width: '100%'
+              }}
+              aria-label={service.title}
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 overflow-hidden">
+                <img 
+                  src={service.backgroundImage}
+                  alt={`${service.client} background`}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                  loading={index < 2 ? "eager" : "lazy"}
+                  decoding={index < 2 ? "sync" : "async"}
+                />
+              </div>
+              
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              
+              {/* Content pinned to bottom */}
+              <div className="absolute inset-x-0 bottom-0 p-8 lg:p-12">
+                <div className="space-y-4 max-w-2xl">
+                  <h3 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                    {service.title}
+                  </h3>
+                  <p className="text-white/90 text-lg lg:text-xl leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/30">
+                    <span>Learn More</span>
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
                 </div>
-                
-                {/* Loading state */}
-                <div className="absolute inset-0 bg-gray-800 animate-pulse opacity-0 transition-opacity duration-300" />
-              </a>
-            ))}
-          </div>
-
-          {/* CTA to Services page */}
-          <div className="text-center mt-20">
-            <Button 
-              asChild 
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
-            >
-              <a href="/services">
-                View All Services 
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
+              </div>
+              
+              {/* Loading state */}
+              <div className="absolute inset-0 bg-gray-800 animate-pulse opacity-0 transition-opacity duration-300" />
+            </a>
+          ))}
         </div>
       </section>
 
