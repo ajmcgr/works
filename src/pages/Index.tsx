@@ -168,7 +168,7 @@ const Index = () => {
                 delay: "300ms", 
                 client: "Content Studio", 
                 clientSlug: "content-strategy",
-                backgroundImage: "/brands/content-studio.jpg"
+                backgroundImage: "/brands/angry-miao/hero.jpg"
               },
               { 
                 title: "Influencer Marketing", 
