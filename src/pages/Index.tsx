@@ -166,7 +166,7 @@ const Index = () => {
               { 
                 title: "Influencer Marketing", 
                 description: "Connect with authentic voices that amplify your brand message to engaged communities.",
-                url: "/services/influencer-marketing", 
+                url: "/case-study/weber-shandwick", 
                 delay: "0ms", 
                 client: "Weber Shandwick", 
                 clientSlug: "weber-shandwick",
@@ -175,7 +175,7 @@ const Index = () => {
               { 
                 title: "Media Relations", 
                 description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
-                url: "/services/media-relations", 
+                url: "/case-study/ufc", 
                 delay: "100ms", 
                 client: "UFC", 
                 clientSlug: "ufc",
@@ -202,7 +202,7 @@ const Index = () => {
               { 
                 title: "Content Strategy", 
                 description: "Develop content that educates, entertains, and converts across all marketing channels.",
-                url: "/services/content-strategy", 
+                url: "/case-study/content-strategy", 
                 delay: "400ms", 
                 client: "Content Studio", 
                 clientSlug: "content-strategy",
