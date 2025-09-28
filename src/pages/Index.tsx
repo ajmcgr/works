@@ -48,9 +48,9 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-[125vh] md:min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-32 md:pt-16 pb-0 px-4 md:px-6" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="min-h-[125vh] md:min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden pt-32 md:pt-16 pb-0" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
-        <div className="relative z-10 text-center max-w-5xl mx-auto w-full">
+        <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-white mb-4 md:mb-6 text-5xl md:text-6xl lg:text-6xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4rem)' }}>
@@ -131,8 +131,8 @@ const Index = () => {
           </div>
 
           {/* Video with no controls - Now below brand logos */}
-          <div className="mt-8 md:mt-12 w-full">
-            <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black rounded-[10px]">
+          <div className="mt-8 md:mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+            <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
                 className="absolute inset-0 w-full h-full transform scale-150"
@@ -153,7 +153,7 @@ const Index = () => {
 
       {/* How We Can Help Section */}
       <section className="py-20 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
               How we can help
@@ -237,7 +237,7 @@ const Index = () => {
 
       {/* Product Showcase - Scroll Reveals */}
       <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Our Process
@@ -302,7 +302,7 @@ const Index = () => {
 
       {/* Case Study Reel - Touch Native */}
       <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Case Studies
