@@ -18,7 +18,7 @@ const Header = () => {
   const navigation = [
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/customers" },
-    { name: "Creators", href: "https://creators200.com/" },
+    { name: "Creators 200", href: "https://creators200.com/" },
   ];
 
   const handleNavClick = (href: string) => {
