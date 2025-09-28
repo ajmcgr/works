@@ -224,7 +224,7 @@ const Index = () => {
                   <h3 className="text-4xl lg:text-6xl font-medium text-white leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
                     {service.title}
                   </h3>
-                  <p className="text-white/90 text-lg lg:text-xl leading-relaxed mb-6">
+                  <p className="text-white text-lg lg:text-xl leading-relaxed mb-6">
                     {service.description}
                   </p>
                   <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/30">
