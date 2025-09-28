@@ -167,32 +167,38 @@ const Index = () => {
             {[
               {
                 title: "Media Relations",
-                description: "Strategic coverage through key journalists and media outlets."
+                keywords: ["Global Coverage", "Top-Tier Press", "Exclusive Access"]
               },
               {
                 title: "Crisis Communication", 
-                description: "Rapid response strategies to protect your reputation."
+                keywords: ["Reputation Shield", "24/7 Response", "Crisis Control"]
               },
               {
                 title: "Brand Communications",
-                description: "Consistent messaging that builds trust and strengthens your brand."
+                keywords: ["Brand Authority", "Thought Leadership", "Executive Voice"]
               },
               {
                 title: "Content Strategy",
-                description: "Compelling narratives that engage and drive conversations."
+                keywords: ["Viral Narratives", "Compelling Stories", "Audience Captivation"]
               },
               {
                 title: "Influencer Marketing",
-                description: "Connect with authentic voices to amplify your message."
+                keywords: ["Authentic Voices", "Massive Reach", "Culture Shaping"]
               },
               {
                 title: "Event Management",
-                description: "Memorable experiences that position you as an industry leader."
+                keywords: ["Unforgettable Experiences", "Industry Leadership", "VIP Access"]
               }
             ].map((service, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-lg hover:border-primary/20 transition-all group cursor-pointer">
+                <h3 className="text-xl font-bold text-foreground mb-6 group-hover:text-primary transition-colors">{service.title}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {service.keywords.map((keyword, idx) => (
+                    <span key={idx} className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full group-hover:bg-primary group-hover:text-white transition-all">
+                      {keyword}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
