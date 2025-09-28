@@ -1,0 +1,52 @@
+{
+  "clients": [
+    {
+      "name": "UFC",
+      "url": "https://www.ufc.com",
+      "slug": "ufc",
+      "case_study_url": "/case-study/ufc",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "OnePlus",
+      "url": "https://www.oneplus.com",
+      "slug": "oneplus", 
+      "case_study_url": "/case-study/oneplus",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "OPPO",
+      "url": "https://www.oppo.com",
+      "slug": "oppo",
+      "case_study_url": "/case-study/oppo", 
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "Ogilvy",
+      "url": "https://www.ogilvy.com",
+      "slug": "ogilvy",
+      "case_study_url": "/case-study/ogilvy",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "Weber Shandwick",
+      "url": "https://www.webershandwick.com", 
+      "slug": "weber-shandwick",
+      "case_study_url": "/case-study/weber-shandwick",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "Publicis Groupe",
+      "url": "https://www.publicisgroupe.com",
+      "slug": "publicis-groupe",
+      "case_study_url": "/case-study/publicis-groupe",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    }
+  ]
+}

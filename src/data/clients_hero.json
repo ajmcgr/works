@@ -1,0 +1,64 @@
+{
+  "discovered_images": {
+    "ufc": {
+      "source_url": "https://www.ufc.com/hero-image",
+      "local_path": "/clients/ufc/hero.jpg",
+      "width": 2400,
+      "height": 1350,
+      "last_checked_at": "2024-01-15T10:30:00Z",
+      "chosen_reason": "homepage_hero",
+      "placeholder_base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAP/xAAhEAACAQQCAgMAAAAAAAAAAAABAgMABAUREiExE0EiUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALvAZSaexs77GlF1aXlu80UqHKsQTs7BHGxr9iK",
+      "status": "discovered"
+    },
+    "oneplus": {
+      "source_url": "https://www.oneplus.com/hero-image",
+      "local_path": "/clients/oneplus/hero.jpg",
+      "width": 2400,
+      "height": 1350,
+      "last_checked_at": "2024-01-15T10:30:00Z",
+      "chosen_reason": "homepage_hero",
+      "placeholder_base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAP/xAAhEAACAQQCAgMAAAAAAAAAAAABAgMABAUREiExE0EiUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALvAZSaexs77GlF1aXlu80UqHKsQTs7BHGxr9iK",
+      "status": "discovered"
+    },
+    "oppo": {
+      "source_url": "https://www.oppo.com/hero-image",
+      "local_path": "/clients/oppo/hero.jpg",
+      "width": 2400,
+      "height": 1350,
+      "last_checked_at": "2024-01-15T10:30:00Z",
+      "chosen_reason": "homepage_hero",
+      "placeholder_base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAP/xAAhEAACAQQCAgMAAAAAAAAAAAABAgMABAUREiExE0EiUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALvAZSaexs77GlF1aXlu80UqHKsQTs7BHGxr9iK",
+      "status": "discovered"
+    },
+    "ogilvy": {
+      "source_url": "",
+      "local_path": "",
+      "width": 0,
+      "height": 0,
+      "last_checked_at": "",
+      "chosen_reason": "",
+      "placeholder_base64": "",
+      "status": "needs_discovery"
+    },
+    "weber-shandwick": {
+      "source_url": "",
+      "local_path": "",
+      "width": 0,
+      "height": 0,
+      "last_checked_at": "",
+      "chosen_reason": "",
+      "placeholder_base64": "",
+      "status": "needs_discovery"
+    },
+    "publicis-groupe": {
+      "source_url": "",
+      "local_path": "",
+      "width": 0,
+      "height": 0,
+      "last_checked_at": "",
+      "chosen_reason": "",
+      "placeholder_base64": "",
+      "status": "needs_discovery"
+    }
+  }
+}

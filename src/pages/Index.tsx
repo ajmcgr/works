@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { ClientHeroGallery } from '@/components/ClientHeroGallery';
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -391,6 +392,9 @@ const Index = () => {
       </section>
 
 
+
+      {/* Client Hero Gallery */}
+      <ClientHeroGallery />
 
       {/* Client Recommendations Section */}
       <section className="py-20 px-6" style={{ background: 'var(--gradient-blue-deep)' }}>
