@@ -167,46 +167,32 @@ const Index = () => {
             {[
               {
                 title: "Media Relations",
-                description: "Build and maintain relationships with key journalists, influencers, and media outlets to secure strategic coverage.",
-                features: ["Press Release Distribution", "Media Outreach", "Journalist Relationships", "Story Pitching"]
+                description: "Strategic coverage through key journalists and media outlets."
               },
               {
                 title: "Crisis Communication", 
-                description: "Rapid response strategies to protect and restore your reputation during challenging situations.",
-                features: ["24/7 Crisis Support", "Reputation Management", "Stakeholder Communication", "Media Training"]
+                description: "Rapid response strategies to protect your reputation."
               },
               {
                 title: "Brand Communications",
-                description: "Develop consistent messaging that builds trust and strengthens your brand across all touchpoints.",
-                features: ["Message Development", "Brand Positioning", "Thought Leadership", "Executive Communications"]
+                description: "Consistent messaging that builds trust and strengthens your brand."
               },
               {
                 title: "Content Strategy",
-                description: "Create compelling narratives and content that engage your audience and drive meaningful conversations.",
-                features: ["Content Planning", "Storytelling", "Editorial Calendar", "Multi-Channel Distribution"]
+                description: "Compelling narratives that engage and drive conversations."
               },
               {
                 title: "Influencer Marketing",
-                description: "Connect with influential voices that authentically align with your brand to amplify your message.",
-                features: ["Influencer Identification", "Partnership Management", "Campaign Strategy", "Performance Tracking"]
+                description: "Connect with authentic voices to amplify your message."
               },
               {
                 title: "Event Management",
-                description: "Create memorable experiences that strengthen relationships and position your brand as an industry leader.",
-                features: ["Event Planning", "Media Events", "Product Launches", "Conference Management"]
+                description: "Memorable experiences that position you as an industry leader."
               }
             ].map((service, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg touch-hover">
-                <h3 className="text-xl font-bold text-foreground mb-4" style={{ letterSpacing: '0px' }}>{service.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center space-x-3">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span className="text-sm text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+              <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-foreground mb-3">{service.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
