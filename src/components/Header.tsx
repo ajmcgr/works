@@ -38,8 +38,10 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 relative bg-transparent`}>
-      <div className="container mx-auto px-6 max-w-3xl">
+    <header className={`w-full z-50 relative overflow-hidden`} style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      {/* Semi-transparent overlay */}
+      <div className="absolute inset-0 bg-white/60"></div>
+      <div className="container mx-auto px-6 max-w-3xl relative z-10">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
