@@ -262,9 +262,14 @@ const Index = () => {
                   {...(tool.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="block"
                 >
-                  <div className="bg-white rounded-3xl p-8 shadow-md h-full hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                    <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-md">
-                      <span className="text-2xl font-bold text-white">{tool.number}</span>
+                  <div className="group bg-white rounded-3xl p-8 shadow-md h-full hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-md">
+                        <span className="text-2xl font-bold text-white">{tool.number}</span>
+                      </div>
+                      <div className="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                        <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
+                      </div>
                     </div>
                     <h3 className="text-2xl font-bold text-foreground mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
                     <p className="text-muted-foreground text-lg mb-4">{tool.tagline}</p>
@@ -305,11 +310,14 @@ const Index = () => {
           {/* Case study cards - Vertical Stack */}
           <div className="flex flex-col gap-8 max-w-3xl mx-auto">
             <a href="/case-study/ufc" className="block">
-              <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-                <div className="flex items-center mb-6">
+              <div className="group bg-white rounded-3xl p-8 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center justify-between mb-6">
                   <div>
                     <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>UFC</h4>
                     <p className="text-muted-foreground text-sm">Global Event Launch</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -334,11 +342,14 @@ const Index = () => {
             </a>
 
             <a href="/case-study/oneplus" className="block">
-              <div className="bg-white rounded-3xl p-8 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-                <div className="flex items-center mb-6">
+              <div className="group bg-white rounded-3xl p-8 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center justify-between mb-6">
                   <div>
                     <h4 className="font-bold text-foreground text-2xl" style={{ letterSpacing: '0px' }}>OnePlus</h4>
                     <p className="text-muted-foreground text-sm">Product Launch Campaign</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -395,18 +406,23 @@ const Index = () => {
 
           <div className="space-y-12">
             <a href="/case-study/ufc" className="block">
-              <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-                <div className="flex items-center mb-8">
-                  <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                    <img 
-                      src="/lovable-uploads/f2bdfdc8-7b25-451a-b578-82b4b38994a1.png" 
-                      alt="Dana White" 
-                      className="w-full h-full object-cover"
-                    />
+              <div className="group bg-white rounded-3xl p-12 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center">
+                    <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                      <img 
+                        src="/lovable-uploads/f2bdfdc8-7b25-451a-b578-82b4b38994a1.png" 
+                        alt="Dana White" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Dana White</h4>
+                      <p className="text-muted-foreground">President, UFC</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Dana White</h4>
-                    <p className="text-muted-foreground">President, UFC</p>
+                  <div className="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
                   </div>
                 </div>
                 <blockquote className="text-xl text-foreground leading-relaxed mb-6">
@@ -420,18 +436,23 @@ const Index = () => {
             </a>
 
             <a href="/case-study/oneplus" className="block">
-              <div className="bg-white rounded-3xl p-12 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-                <div className="flex items-center mb-8">
-                  <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
-                    <img 
-                      src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
-                      alt="Pete Lau" 
-                      className="w-full h-full object-cover"
-                    />
+              <div className="group bg-white rounded-3xl p-12 shadow-xl touch-hover hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center">
+                    <div className="w-16 h-16 rounded-full overflow-hidden mr-6">
+                      <img 
+                        src="/lovable-uploads/e851873c-e437-45e4-ad7e-0b9c7d28d0f0.png" 
+                        alt="Pete Lau" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Pete Lau</h4>
+                      <p className="text-muted-foreground">CEO, OnePlus</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-bold text-foreground text-lg" style={{ letterSpacing: '0px' }}>Pete Lau</h4>
-                    <p className="text-muted-foreground">CEO, OnePlus</p>
+                  <div className="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
                   </div>
                 </div>
                 <blockquote className="text-xl text-foreground leading-relaxed mb-6">
