@@ -1,6 +1,7 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,7 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const Header = () => {
-  
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const location = useLocation();
   const isHomepage = location.pathname === '/';
@@ -134,9 +135,9 @@ const Header = () => {
         </div>
 
         {/* Mobile Layout */}
-        <div className="md:hidden py-6">
-          {/* Logo */}
-          <div className="flex justify-center mb-4">
+        <div className="md:hidden">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
             <Link to="/" className="hover:opacity-80 transition-opacity">
               <img 
                 src="/lovable-uploads/works-black-logo.png" 
@@ -144,91 +145,119 @@ const Header = () => {
                 className="h-6"
               />
             </Link>
-          </div>
 
-          {/* Navigation Links */}
-          <div className="flex flex-wrap justify-center items-center gap-6 text-xs">
-            {/* Products */}
-            <div className="relative">
-              <DropdownMenu>
-                <DropdownMenuTrigger 
-                  className="font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1"
-                >
-                  <span>Products</span>
-                  <ChevronDown className="h-3 w-3" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent 
-                  className="bg-white border border-gray-200 shadow-lg rounded-lg p-1 w-80 z-[60]"
-                >
-                  <DropdownMenuItem 
-                    onClick={() => handleNavClick('https://trymedia.ai/')}
-                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                  >
-                    <img 
-                      src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
-                      alt="Media AI" 
-                      className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
-                    />
-                    <div className="flex flex-col">
-                      <span className="font-medium text-sm text-gray-900">Media AI</span>
-                      <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
-                    </div>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem 
-                    onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                  >
-                    <img 
-                      src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
-                      alt="Write AI" 
-                      className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
-                    />
-                    <div className="flex flex-col">
-                      <span className="font-medium text-sm text-gray-900">Write AI</span>
-                      <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
-                    </div>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem 
-                    onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                    className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                  >
-                    <img 
-                      src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
-                      alt="Content AI" 
-                      className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
-                    />
-                    <div className="flex flex-col">
-                      <span className="font-medium text-sm text-gray-900">Content AI</span>
-                      <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
-                    </div>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={(e) => {
-                  if (item.href.includes('#')) {
-                    e.preventDefault();
-                    handleNavClick(item.href);
-                  }
-                }}
-                className="font-medium transition-colors hover:text-gray-600 text-gray-900"
-              >
-                {item.name}
-              </Link>
-            ))}
-            
-            <Link
-              to="/contact"
-              className="font-medium transition-colors hover:text-gray-600 text-gray-900"
+            {/* Hamburger Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-gray-900 hover:text-gray-600 transition-colors"
+              aria-label="Toggle mobile menu"
             >
-              Contact us
-            </Link>
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
           </div>
+
+          {/* Mobile Menu Overlay */}
+          {isMobileMenuOpen && (
+            <div className="absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
+              <div className="px-6 py-4 space-y-4">
+                {/* Products dropdown */}
+                <div className="relative">
+                  <DropdownMenu>
+                    <DropdownMenuTrigger 
+                      className="font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1 text-sm"
+                    >
+                      <span>Products</span>
+                      <ChevronDown className="h-3 w-3" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent 
+                      className="bg-white border border-gray-200 shadow-lg rounded-lg p-1 w-80 z-[60]"
+                    >
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://trymedia.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
+                          alt="Media AI" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Media AI</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://www.trywrite.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
+                          alt="Write AI" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Write AI</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://www.trycontent.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
+                          alt="Content AI" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Content AI</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
+                        </div>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                </div>
+
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={(e) => {
+                      if (item.href.includes('#')) {
+                        e.preventDefault();
+                        handleNavClick(item.href);
+                      }
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                
+                <Link
+                  to="/contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm"
+                >
+                  Contact us
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </header>
