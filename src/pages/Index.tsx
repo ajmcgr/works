@@ -135,10 +135,19 @@ const Index = () => {
         <div className="flex flex-col">
           {[
               { 
+                title: "Influencer Marketing", 
+                description: "Connect with authentic voices that amplify your brand message to engaged communities.",
+                url: "/case-study/weber-shandwick", 
+                delay: "0ms", 
+                client: "Weber Shandwick", 
+                clientSlug: "weber-shandwick",
+                backgroundImage: "/brands/weber-shandwick/hero.jpg"
+              },
+              { 
                 title: "Media Relations", 
                 description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
                 url: "/case-study/ufc", 
-                delay: "0ms", 
+                delay: "100ms", 
                 client: "UFC", 
                 clientSlug: "ufc",
                 backgroundImage: "/brands/ufc/hero.jpg"
@@ -147,7 +156,7 @@ const Index = () => {
                 title: "Crisis Communication", 
                 description: "Navigate challenging situations with expert crisis management and reputation protection.",
                 url: "/case-study/oneplus", 
-                delay: "100ms", 
+                delay: "200ms", 
                 client: "OnePlus", 
                 clientSlug: "oneplus",
                 backgroundImage: "/brands/oneplus/hero.jpg"
@@ -156,7 +165,7 @@ const Index = () => {
                 title: "Brand Communications", 
                 description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
                 url: "/case-study/oppo", 
-                delay: "200ms", 
+                delay: "300ms", 
                 client: "OPPO", 
                 clientSlug: "oppo",
                 backgroundImage: "/brands/oppo/hero.jpg"
@@ -165,25 +174,16 @@ const Index = () => {
                 title: "Content Strategy", 
                 description: "Develop content that educates, entertains, and converts across all marketing channels.",
                 url: "/case-study/content-strategy", 
-                delay: "300ms", 
+                delay: "400ms", 
                 client: "Content Studio", 
                 clientSlug: "content-strategy",
                 backgroundImage: "/brands/angry-miao/hero.jpg"
               },
               { 
-                title: "Influencer Marketing", 
-                description: "Connect with authentic voices that amplify your brand message to engaged communities.",
-                url: "/case-study/weber-shandwick", 
-                delay: "400ms", 
-                client: "Weber Shandwick", 
-                clientSlug: "weber-shandwick",
-                backgroundImage: "/brands/weber-shandwick/hero.jpg"
-              },
-              { 
                 title: "Event Management", 
                 description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
                 url: "/case-study/xreal", 
-                delay: "500ms", 
+                delay: "500ms",
                 client: "XREAL", 
                 clientSlug: "xreal",
                 backgroundImage: "/brands/xreal/hero.jpg"
@@ -239,7 +239,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 px-6" style={{ background: 'var(--gradient-navy-rich)' }}>
+      <section className="py-20 px-6 bg-black">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px', fontWeight: 500 }}>
