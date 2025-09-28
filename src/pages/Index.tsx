@@ -148,12 +148,12 @@ const Index = () => {
 
           <div className="flex flex-col gap-6 max-w-4xl mx-auto">
             {[
-              { title: "Media Relations", url: "/services/media-relations", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
-              { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
-              { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-emerald-600", textColor: "text-white" },
-              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-600", textColor: "text-white" },
-              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-700", textColor: "text-white" },
-              { title: "Event Management", url: "/services/event-management", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-gray-900", textColor: "text-white" }
+              { title: "Media Relations", url: "/case-study/ufc", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
+              { title: "Crisis Communication", url: "/case-study/oneplus", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
+              { title: "Brand Communications", url: "/case-study/oppo", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-emerald-600", textColor: "text-white" },
+              { title: "Content Strategy", url: "/case-study/ogilvy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-600", textColor: "text-white" },
+              { title: "Influencer Marketing", url: "/case-study/weber-shandwick", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-700", textColor: "text-white" },
+              { title: "Event Management", url: "/case-study/publicis-groupe", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-gray-900", textColor: "text-white" }
             ].map((service, index) => (
               <a 
                 key={index} 
