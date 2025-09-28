@@ -164,11 +164,11 @@ const Index = () => {
               { 
                 title: "Content Strategy", 
                 description: "Develop content that educates, entertains, and converts across all marketing channels.",
-                url: "/case-study/ogilvy", 
+                url: "/case-study/tencent", 
                 delay: "300ms", 
-                client: "Ogilvy", 
-                clientSlug: "ogilvy",
-                backgroundImage: "/brands/ogilvy/hero.jpg"
+                client: "Tencent", 
+                clientSlug: "tencent",
+                backgroundImage: "/brands/tencent/hero.jpg"
               },
               { 
                 title: "Influencer Marketing", 
@@ -182,11 +182,11 @@ const Index = () => {
               { 
                 title: "Event Management", 
                 description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
-                url: "/case-study/publicis-groupe", 
+                url: "/case-study/xreal", 
                 delay: "500ms", 
-                client: "Publicis Groupe", 
-                clientSlug: "publicis-groupe",
-                backgroundImage: "/brands/publicis-groupe/hero.jpg"
+                client: "XREAL", 
+                clientSlug: "xreal",
+                backgroundImage: "/brands/xreal/hero.jpg"
               }
           ].map((service, index) => (
             <a 
