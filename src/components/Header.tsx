@@ -46,7 +46,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/works-black-logo.png" 
               alt="Works" 
-              className="h-8"
+              className="h-6"
             />
           </Link>
 
@@ -141,7 +141,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/works-black-logo.png" 
                 alt="Works" 
-                className="h-8"
+                className="h-6"
               />
             </Link>
           </div>
