@@ -202,7 +202,7 @@ const Index = () => {
               { 
                 title: "Content Strategy", 
                 description: "Develop content that educates, entertains, and converts across all marketing channels.",
-                url: "/case-study/content-strategy", 
+                url: "/services/content-strategy", 
                 delay: "400ms", 
                 client: "Content Studio", 
                 clientSlug: "content-strategy",
