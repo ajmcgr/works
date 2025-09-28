@@ -148,52 +148,42 @@ const Index = () => {
 
           <div className="flex flex-col gap-6 max-w-4xl mx-auto">
             {[
-              { title: "Media Relations", url: "/case-study/ufc", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
-              { title: "Crisis Communication", url: "/case-study/oneplus", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
-              { title: "Brand Communications", url: "/case-study/oppo", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-emerald-600", textColor: "text-white" },
-              { title: "Content Strategy", url: "/case-study/ogilvy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-600", textColor: "text-white" },
-              { title: "Influencer Marketing", url: "/case-study/weber-shandwick", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-700", textColor: "text-white" },
-              { title: "Event Management", url: "/case-study/publicis-groupe", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-gray-900", textColor: "text-white" }
+              { title: "Media Relations", url: "/case-study/ufc", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-blue-500" },
+              { title: "Crisis Communication", url: "/case-study/oneplus", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-green-500" },
+              { title: "Brand Communications", url: "/case-study/oppo", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-purple-500" },
+              { title: "Content Strategy", url: "/case-study/ogilvy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-orange-500" },
+              { title: "Influencer Marketing", url: "/case-study/weber-shandwick", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-pink-500" },
+              { title: "Event Management", url: "/case-study/publicis-groupe", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-indigo-500" }
             ].map((service, index) => (
               <a 
                 key={index} 
                 href={service.url} 
-                className={`group relative block ${service.bgColor} rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 animate-fade-in border border-gray-100/50 hover:border-primary/20 overflow-hidden`}
+                className={`group block ${service.bgColor} rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300`}
                 style={{ animationDelay: service.delay }}
               >
-                {/* Gradient overlay that appears on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-                
-                {/* Dynamic background pattern */}
-                <div className="absolute -top-10 -right-10 w-20 h-20 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-                <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-white/10 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
+                {/* Clean, minimal design */}
                 
                 {/* Client logo */}
-                <div className="relative z-10 mb-6">
-                  <div className="w-56 h-36 flex items-center justify-start">
+                <div className="mb-6">
+                  <div className="w-20 h-16 flex items-center justify-start">
                     <img 
                       src={service.logo} 
                       alt={service.client} 
-                      className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0"
+                      className="max-w-full max-h-full object-contain brightness-0 invert"
                       loading="lazy"
                     />
                   </div>
                 </div>
 
-                {/* Arrow only */}
-                <div className="relative z-10 flex items-center justify-end mb-6">
-                  <div className="w-8 h-8 rounded-full bg-white/20 group-hover:bg-white group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                    <ArrowRight className="w-4 h-4 text-white group-hover:text-gray-800 transition-colors duration-300 transform group-hover:translate-x-1" />
-                  </div>
-                </div>
-                
                 {/* Service title */}
-                <h3 className={`relative z-10 text-2xl lg:text-3xl font-bold ${service.textColor} group-hover:text-white transition-colors duration-300 leading-tight`}>
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {service.title}
                 </h3>
                 
-                {/* Animated underline */}
-                <div className="relative z-10 mt-4 h-1 w-0 bg-gradient-to-r from-white to-white/60 group-hover:w-full transition-all duration-500 rounded-full"></div>
+                {/* Simple arrow indicator */}
+                <div className="flex justify-end">
+                  <ArrowRight className="w-5 h-5 text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all duration-200" />
+                </div>
               </a>
             ))}
           </div>
