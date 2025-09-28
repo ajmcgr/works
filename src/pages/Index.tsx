@@ -53,11 +53,11 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-gray-900 mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)' }}>
+            <h1 className="font-headline text-white mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)' }}>
               PR & Influencer Marketing for Ambitious Brands
             </h1>
             
-            <p className="text-gray-800 font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto">
+            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto">
               We run high-impact PR and influencer campaigns designed to scale ambitious brands — powered by AI.
             </p>
           </div>
@@ -65,7 +65,7 @@ const Index = () => {
           {/* Touch-native CTA */}
             <div>
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center px-8 py-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-gray-800 text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
+                 className="inline-flex items-center px-8 py-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
                 <span>Let's Work Together</span>
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
@@ -73,7 +73,7 @@ const Index = () => {
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10">
-            <p className="text-gray-700 text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
+            <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
               <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
                 <img 
