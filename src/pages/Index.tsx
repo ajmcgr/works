@@ -165,41 +165,16 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {[
-              {
-                title: "Media Relations",
-                keywords: ["Global Coverage", "Top-Tier Press", "Exclusive Access"]
-              },
-              {
-                title: "Crisis Communication", 
-                keywords: ["Reputation Shield", "24/7 Response", "Crisis Control"]
-              },
-              {
-                title: "Brand Communications",
-                keywords: ["Brand Authority", "Thought Leadership", "Executive Voice"]
-              },
-              {
-                title: "Content Strategy",
-                keywords: ["Viral Narratives", "Compelling Stories", "Audience Captivation"]
-              },
-              {
-                title: "Influencer Marketing",
-                keywords: ["Authentic Voices", "Massive Reach", "Culture Shaping"]
-              },
-              {
-                title: "Event Management",
-                keywords: ["Unforgettable Experiences", "Industry Leadership", "VIP Access"]
-              }
+              "Media Relations",
+              "Crisis Communication",
+              "Brand Communications", 
+              "Content Strategy",
+              "Influencer Marketing",
+              "Event Management"
             ].map((service, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-lg hover:border-primary/20 transition-all group cursor-pointer">
-                <h3 className="text-xl font-bold text-foreground mb-6 group-hover:text-primary transition-colors">{service.title}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {service.keywords.map((keyword, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full group-hover:bg-primary group-hover:text-white transition-all">
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              <a key={index} href="/services" className="block bg-white rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-lg hover:border-primary/20 transition-all group">
+                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors text-center">{service}</h3>
+              </a>
             ))}
           </div>
 
