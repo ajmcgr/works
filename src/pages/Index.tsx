@@ -216,13 +216,13 @@ const Index = () => {
 
 
       {/* Product Showcase - Scroll Reveals */}
-      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="min-h-screen py-20 px-6 relative overflow-hidden bg-gray-100">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Our Process
             </h2>
-            <p className="text-white/70 text-xl max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
               How we engineer influence that sticks
             </p>
           </div>
@@ -253,13 +253,13 @@ const Index = () => {
               }
             ].map((tool, index) => (
               <div key={index}>
-                <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-8 touch-hover h-full">
-                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
-                    <span className="text-2xl font-bold text-foreground">{tool.number}</span>
+                <div className="bg-white rounded-3xl p-8 shadow-md h-full">
+                  <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                    <span className="text-2xl font-bold text-white">{tool.number}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
-                  <p className="text-white/70 text-lg mb-4">{tool.tagline}</p>
-                  <p className="text-white/60 leading-relaxed">{tool.description}</p>
+                  <h3 className="text-2xl font-bold text-foreground mb-2" style={{ letterSpacing: '0px' }}>{tool.name}</h3>
+                  <p className="text-muted-foreground text-lg mb-4">{tool.tagline}</p>
+                  <p className="text-muted-foreground leading-relaxed">{tool.description}</p>
                 </div>
               </div>
             ))}
