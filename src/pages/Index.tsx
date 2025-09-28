@@ -165,25 +165,25 @@ const Index = () => {
 
           <div className="flex flex-col gap-6 max-w-4xl mx-auto">
             {[
-              { title: "Media Relations", url: "/services/media-relations", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC" },
-              { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus" },
-              { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO" },
-              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy" },
-              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick" },
-              { title: "Event Management", url: "/services/event-management", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe" }
+              { title: "Media Relations", url: "/services/media-relations", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
+              { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
+              { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-emerald-600", textColor: "text-white" },
+              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-700", textColor: "text-white" },
+              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-600", textColor: "text-white" },
+              { title: "Event Management", url: "/services/event-management", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-indigo-700", textColor: "text-white" }
             ].map((service, index) => (
               <a 
                 key={index} 
                 href={service.url} 
-                className="group relative block bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 animate-fade-in border border-gray-100/50 hover:border-primary/20 overflow-hidden"
+                className={`group relative block ${service.bgColor} rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 animate-fade-in border border-gray-100/50 hover:border-primary/20 overflow-hidden`}
                 style={{ animationDelay: service.delay }}
               >
                 {/* Gradient overlay that appears on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                 
                 {/* Dynamic background pattern */}
-                <div className="absolute -top-10 -right-10 w-20 h-20 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-                <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-primary/5 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
+                <div className="absolute -top-10 -right-10 w-20 h-20 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-white/10 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
                 
                 {/* Client logo */}
                 <div className="relative z-10 mb-6">
@@ -191,7 +191,7 @@ const Index = () => {
                     <img 
                       src={service.logo} 
                       alt={service.client} 
-                      className="max-w-full max-h-full object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 brightness-0 group-hover:brightness-100"
+                      className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0"
                       loading="lazy"
                     />
                   </div>
@@ -199,21 +199,21 @@ const Index = () => {
 
                 {/* Service number */}
                 <div className="relative z-10 flex items-center justify-between mb-6">
-                  <span className="text-6xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300">
+                  <span className="text-6xl font-bold text-white/30 group-hover:text-white/50 transition-colors duration-300">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <div className="w-8 h-8 rounded-full bg-primary/10 group-hover:bg-primary group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                    <ArrowRight className="w-4 h-4 text-primary group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" />
+                  <div className="w-8 h-8 rounded-full bg-white/20 group-hover:bg-white group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <ArrowRight className="w-4 h-4 text-white group-hover:text-gray-800 transition-colors duration-300 transform group-hover:translate-x-1" />
                   </div>
                 </div>
                 
                 {/* Service title */}
-                <h3 className="relative z-10 text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
+                <h3 className={`relative z-10 text-2xl lg:text-3xl font-bold ${service.textColor} group-hover:text-white transition-colors duration-300 leading-tight`}>
                   {service.title}
                 </h3>
                 
                 {/* Animated underline */}
-                <div className="relative z-10 mt-4 h-1 w-0 bg-gradient-to-r from-primary to-primary/60 group-hover:w-full transition-all duration-500 rounded-full"></div>
+                <div className="relative z-10 mt-4 h-1 w-0 bg-gradient-to-r from-white to-white/60 group-hover:w-full transition-all duration-500 rounded-full"></div>
               </a>
             ))}
           </div>
