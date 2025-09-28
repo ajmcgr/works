@@ -84,7 +84,7 @@ const Index = () => {
             </h1>
             
             <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto">
-              We run high-impact PR and influencer campaigns designed to scale ambitious brands — powered by AI.
+              We run high-impact PR and influencer campaigns.
             </p>
           </div>
 
@@ -211,11 +211,11 @@ const Index = () => {
               { 
                 title: "Event Management", 
                 description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
-                url: "/case-study/xreal", 
+                url: "/case-study/publicis", 
                 delay: "500ms",
-                client: "XREAL", 
-                clientSlug: "xreal",
-                backgroundImage: "/brands/angry-miao/hero.jpg"
+                client: "Publicis Groupe", 
+                clientSlug: "publicis-groupe",
+                backgroundImage: "/brands/thaifex-event.jpg"
               }
           ].map((service, index) => (
             <a 

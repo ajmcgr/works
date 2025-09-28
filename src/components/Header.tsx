@@ -42,7 +42,7 @@ const Header = () => {
     <header className={`w-full z-50 relative bg-white`}>
       <div className="container mx-auto px-6 max-w-3xl">
         {/* Desktop Layout */}
-        <div className="hidden md:flex items-center justify-center gap-8 h-16">
+        <div className="hidden md:flex items-center justify-center gap-8 h-14">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/works-black-logo.png" 
@@ -136,7 +136,7 @@ const Header = () => {
 
         {/* Mobile Layout */}
         <div className="md:hidden">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <Link to="/" className="hover:opacity-80 transition-opacity">
               <img 
@@ -162,7 +162,7 @@ const Header = () => {
 
           {/* Mobile Menu Overlay */}
           {isMobileMenuOpen && (
-            <div className="absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
+            <div className="absolute top-14 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
               <div className="px-6 py-4 space-y-4">
                 {/* Products dropdown */}
                 <div className="relative">
