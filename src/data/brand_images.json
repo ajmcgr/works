@@ -22,7 +22,7 @@
     "alt_text": "OnePlus smartphone product showcase with modern design"
   },
   "oppo": {
-    "source_url": "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a6-pro-series-2024/navigation/A6-Pro-Series-kv-pc.jpg",
+    "source_url": "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a6-pro-series/topbanner/5120-1280-pink-pc.jpg",
     "tile": "/brands/oppo/tile.jpg", 
     "hero": "/brands/oppo/hero.jpg",
     "width": 1920,
@@ -44,25 +44,25 @@
     "alt_text": "Ogilvy creative advertising agency showcase"
   },
   "weber-shandwick": {
-    "source_url": "",
+    "source_url": "https://cms.webershandwick.com/wp-content/uploads/2025/07/CarouselSliderUpdate.jpg",
     "tile": "/brands/weber-shandwick/tile.jpg",
     "hero": "/brands/weber-shandwick/hero.jpg",
-    "width": 0,
-    "height": 0,
-    "chosen_reason": "fallback",
-    "last_checked_at": "",
-    "content_hash": "",
-    "alt_text": "Weber Shandwick PR agency"
+    "width": 1920,
+    "height": 1080,
+    "chosen_reason": "homepage_hero",
+    "last_checked_at": "2024-01-15T10:30:00Z",
+    "content_hash": "weber_shandwick_hero_hash",
+    "alt_text": "Weber Shandwick PR agency modern communications"
   },
   "publicis-groupe": {
-    "source_url": "",
+    "source_url": "generated_hero_image",
     "tile": "/brands/publicis-groupe/tile.jpg", 
     "hero": "/brands/publicis-groupe/hero.jpg",
-    "width": 0,
-    "height": 0,
-    "chosen_reason": "fallback",
-    "last_checked_at": "",
-    "content_hash": "",
-    "alt_text": "Publicis Groupe marketing agency"
+    "width": 1920,
+    "height": 1080,
+    "chosen_reason": "homepage_hero",
+    "last_checked_at": "2024-01-15T10:30:00Z",
+    "content_hash": "publicis_groupe_hero_hash",
+    "alt_text": "Publicis Groupe marketing and advertising excellence"
   }
 }
