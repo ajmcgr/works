@@ -165,12 +165,12 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { title: "Media Relations", url: "/services/media-relations", delay: "0ms" },
-              { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms" },
-              { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms" },
-              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms" },
-              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms" },
-              { title: "Event Management", url: "/services/event-management", delay: "500ms" }
+              { title: "Media Relations", url: "/services/media-relations", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC" },
+              { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus" },
+              { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO" },
+              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy" },
+              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick" },
+              { title: "Event Management", url: "/services/event-management", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe" }
             ].map((service, index) => (
               <a 
                 key={index} 
@@ -185,6 +185,18 @@ const Index = () => {
                 <div className="absolute -top-10 -right-10 w-20 h-20 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div className="absolute -bottom-10 -left-10 w-16 h-16 bg-primary/5 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700 delay-100"></div>
                 
+                {/* Client logo */}
+                <div className="relative z-10 mb-4">
+                  <div className="w-16 h-12 flex items-center justify-start">
+                    <img 
+                      src={service.logo} 
+                      alt={service.client} 
+                      className="max-w-full max-h-full object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 brightness-0 group-hover:brightness-100"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
                 {/* Service number */}
                 <div className="relative z-10 flex items-center justify-between mb-6">
                   <span className="text-6xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300">
@@ -208,19 +220,16 @@ const Index = () => {
 
           {/* Enhanced CTA to Services page */}
           <div className="text-center mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
-            <div className="relative inline-block">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary to-primary/80 rounded-full blur opacity-30 group-hover:opacity-70 transition duration-1000"></div>
-              <Button 
-                asChild 
-                size="lg"
-                className="relative bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold hover:scale-105 transition-transform duration-200"
-              >
-                <a href="/services" className="group">
-                  View All Services 
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
-                </a>
-              </Button>
-            </div>
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold hover:scale-105 transition-transform duration-200"
+            >
+              <a href="/services" className="group">
+                View All Services 
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+              </a>
+            </Button>
           </div>
         </div>
       </section>
