@@ -170,7 +170,7 @@ const Index = () => {
                 
                 {/* Client logo */}
                 <div className="relative z-10 mb-6">
-                  <div className="w-32 h-20 flex items-center justify-start">
+                  <div className="w-48 h-32 flex items-center justify-start">
                     <img 
                       src={service.logo} 
                       alt={service.client} 
