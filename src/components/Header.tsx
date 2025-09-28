@@ -18,7 +18,6 @@ const Header = () => {
   const navigation = [
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/customers" },
-    { name: "Creators 200", href: "https://creators200.com/" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -142,6 +141,13 @@ const Header = () => {
             >
               Contact us
             </Link>
+            
+            <button
+              onClick={() => handleNavClick('https://creators200.com/')}
+              className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer"
+            >
+              Creators 200 ↗
+            </button>
           </div>
         </div>
 
@@ -279,6 +285,16 @@ const Header = () => {
                 >
                   Contact us
                 </Link>
+                
+                <button
+                  onClick={() => {
+                    handleNavClick('https://creators200.com/');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm cursor-pointer text-left"
+                >
+                  Creators 200 ↗
+                </button>
               </div>
             </div>
           )}
