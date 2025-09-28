@@ -9,6 +9,11 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import StartupPR from "./pages/services/StartupPR";
 import InfluencerMarketing from "./pages/services/InfluencerMarketing";
+import MediaRelations from "./pages/services/MediaRelations";
+import CrisisCommunication from "./pages/services/CrisisCommunication";
+import BrandCommunications from "./pages/services/BrandCommunications";
+import ContentStrategy from "./pages/services/ContentStrategy";
+import EventManagement from "./pages/services/EventManagement";
 import AIPressOutreach from "./pages/services/AIPressOutreach";
 import GlobalPRStrategy from "./pages/services/GlobalPRStrategy";
 import B2BPRSaaS from "./pages/services/B2BPRSaaS";
@@ -56,6 +61,11 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/services/media-relations" element={<MediaRelations />} />
+              <Route path="/services/crisis-communication" element={<CrisisCommunication />} />
+              <Route path="/services/brand-communications" element={<BrandCommunications />} />
+              <Route path="/services/content-strategy" element={<ContentStrategy />} />
+              <Route path="/services/event-management" element={<EventManagement />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />

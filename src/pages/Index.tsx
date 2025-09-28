@@ -165,15 +165,15 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {[
-              "Media Relations",
-              "Crisis Communication",
-              "Brand Communications", 
-              "Content Strategy",
-              "Influencer Marketing",
-              "Event Management"
+              { title: "Media Relations", url: "/services/media-relations" },
+              { title: "Crisis Communication", url: "/services/crisis-communication" },
+              { title: "Brand Communications", url: "/services/brand-communications" },
+              { title: "Content Strategy", url: "/services/content-strategy" },
+              { title: "Influencer Marketing", url: "/services/influencer-marketing" },
+              { title: "Event Management", url: "/services/event-management" }
             ].map((service, index) => (
-              <a key={index} href="/services" className="block bg-white rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-lg hover:border-primary/20 transition-all group">
-                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors text-center">{service}</h3>
+              <a key={index} href={service.url} className="block bg-white rounded-2xl p-12 shadow-sm hover:shadow-lg transition-all group">
+                <h3 className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors text-center">{service.title}</h3>
               </a>
             ))}
           </div>
