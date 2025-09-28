@@ -69,12 +69,18 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ 
-        backgroundImage: 'url(/brands/hero-workspace.jpg)', 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center',
-        willChange: 'auto'
-      }}>
+      <a 
+        href="https://cal.com/works" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16 cursor-pointer" style={{ 
+          backgroundImage: 'url(/brands/hero-workspace.jpg)', 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center',
+          willChange: 'auto'
+        }}>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
@@ -156,7 +162,8 @@ const Index = () => {
           </div>
 
         </div>
-      </section>
+        </section>
+      </a>
 
 
       {/* How We Can Help Section - Nothing.tech Style */}
