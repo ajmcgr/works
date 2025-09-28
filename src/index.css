@@ -50,6 +50,9 @@
     --gradient-gray-cool: linear-gradient(135deg, hsl(210 20% 94%) 0%, hsl(210 15% 89%) 100%);
     --gradient-slate-cool: linear-gradient(135deg, hsl(215 25% 92%) 0%, hsl(215 20% 87%) 100%);
     --gradient-blue-mist: linear-gradient(135deg, hsl(210 25% 95%) 0%, hsl(215 30% 90%) 100%);
+    --gradient-dark-elegant: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(220 20% 12%) 100%);
+    --gradient-blue-deep: linear-gradient(135deg, hsl(215 65% 25%) 0%, hsl(220 70% 35%) 100%);
+    --gradient-navy-rich: linear-gradient(135deg, hsl(220 45% 15%) 0%, hsl(225 50% 25%) 100%);
     
     /* Motion system */
     --timing-instant: 0.1s cubic-bezier(0.4, 0, 1, 1);

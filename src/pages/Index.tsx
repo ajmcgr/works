@@ -216,13 +216,13 @@ const Index = () => {
 
 
       {/* Product Showcase - Scroll Reveals */}
-      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ background: 'var(--gradient-slate-cool)' }}>
+      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ background: 'var(--gradient-dark-elegant)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Our Process
             </h2>
-            <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
+            <p className="text-white/70 text-xl max-w-2xl mx-auto">
               How we engineer influence that sticks
             </p>
           </div>
@@ -368,13 +368,13 @@ const Index = () => {
 
 
       {/* Client Recommendations Section */}
-      <section className="py-20 px-6" style={{ background: 'var(--gradient-gray-cool)' }}>
+      <section className="py-20 px-6" style={{ background: 'var(--gradient-blue-deep)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               What clients say
             </h2>
-            <p className="text-muted-foreground text-xl">
+            <p className="text-white/70 text-xl">
               The words that matter most
             </p>
           </div>
@@ -454,13 +454,13 @@ const Index = () => {
 
 
       {/* Contact Form Section */}
-      <section className="py-20 px-6" style={{ background: 'var(--gradient-slate-cool)' }}>
+      <section className="py-20 px-6" style={{ background: 'var(--gradient-navy-rich)' }}>
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-black mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
+            <h2 className="font-headline text-white mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
               Ready to shape your story?
             </h2>
-            <p className="text-gray-600 text-xl">
+            <p className="text-white/70 text-xl">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
           </div>
@@ -468,7 +468,7 @@ const Index = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                   Name *
                 </label>
                 <Input
@@ -478,12 +478,12 @@ const Index = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="Your name"
-                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                   style={{ borderRadius: '12px' }}
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                   Email *
                 </label>
                 <Input
@@ -494,13 +494,13 @@ const Index = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="your@email.com"
-                  className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                   style={{ borderRadius: '12px' }}
                 />
               </div>
             </div>
             <div>
-              <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
+              <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
                 Company
               </label>
               <Input
@@ -509,12 +509,12 @@ const Index = () => {
                 value={formData.company}
                 onChange={handleInputChange}
                 placeholder="Your company name"
-                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                 style={{ borderRadius: '12px' }}
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                 Message *
               </label>
               <Textarea
@@ -525,7 +525,7 @@ const Index = () => {
                 required
                 rows={6}
                 placeholder="Tell us about your project..."
-                className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500"
+                className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                 style={{ borderRadius: '12px' }}
               />
             </div>
