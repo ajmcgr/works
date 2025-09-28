@@ -218,16 +218,16 @@ const Index = () => {
             ))}
           </div>
 
-          {/* Enhanced CTA to Services page */}
-          <div className="text-center mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
+          {/* CTA to Services page */}
+          <div className="text-center mt-20">
             <Button 
               asChild 
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold hover:scale-105 transition-transform duration-200"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
-              <a href="/services" className="group">
+              <a href="/services">
                 View All Services 
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
