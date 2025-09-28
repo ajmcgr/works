@@ -6,8 +6,6 @@ import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const Index = () => {
-  const [currentSection, setCurrentSection] = useState(0);
-  const [showFloatingCTA, setShowFloatingCTA] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,7 +15,30 @@ const Index = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  // Removed scroll effects - load everything at once
+  // Preload critical images
+  useEffect(() => {
+    const preloadLinks = [
+      '/brands/hero-workspace.jpg',
+      '/brands/weber-shandwick/hero.jpg',
+      '/brands/ufc/hero.jpg'
+    ];
+    
+    preloadLinks.forEach(src => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+    });
+    
+    return () => {
+      // Cleanup preload links
+      preloadLinks.forEach(src => {
+        const link = document.querySelector(`link[href="${src}"]`);
+        if (link) document.head.removeChild(link);
+      });
+    };
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -48,7 +69,12 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ backgroundImage: 'url(/brands/hero-workspace.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ 
+        backgroundImage: 'url(/brands/hero-workspace.jpg)', 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center',
+        willChange: 'auto'
+      }}>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
@@ -80,7 +106,8 @@ const Index = () => {
                   src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                   alt="UFC" 
                   className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="eager"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
@@ -88,7 +115,8 @@ const Index = () => {
                   src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                   alt="OnePlus" 
                   className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="eager"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
@@ -96,7 +124,8 @@ const Index = () => {
                   src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                   alt="OPPO" 
                   className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="eager"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
@@ -208,10 +237,10 @@ const Index = () => {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                   loading={index < 2 ? "eager" : "lazy"}
                   decoding={index < 2 ? "sync" : "async"}
+                  style={{ willChange: 'transform', opacity: 0 }}
                   onLoad={(e) => {
                     e.currentTarget.style.opacity = '1';
                   }}
-                  style={{ opacity: 0 }}
                 />
               </div>
               
