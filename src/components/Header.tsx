@@ -38,10 +38,10 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 absolute top-0 left-0 bg-transparent`}>
-      <div className="container mx-auto px-6 max-w-5xl">
+    <header className={`w-full z-50 relative bg-transparent`}>
+      <div className="container mx-auto px-6 max-w-3xl">
         {/* Desktop Layout */}
-        <div className="hidden md:flex items-center justify-between h-16">
+        <div className="hidden md:flex items-center justify-center gap-8 h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
               src={isHomepage ? "/lovable-uploads/389975af-e8ab-45ab-a4fb-c329d9b46f9c.png" : "/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png"} 
@@ -50,11 +50,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Spacer for centered logo */}
-          <div className="flex-1"></div>
-
-          {/* Right side navigation and contact */}
-          <div className="flex items-center space-x-8">
+          {/* Navigation Links */}
+          <div className="flex items-center space-x-6">
             {/* Products dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger 
