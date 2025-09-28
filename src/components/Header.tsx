@@ -18,6 +18,7 @@ const Header = () => {
   const navigation = [
     { name: "Services", href: "/services" },
     { name: "Customers", href: "/customers" },
+    { name: "Creators", href: "https://creators200.com/" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -110,19 +111,29 @@ const Header = () => {
             </DropdownMenu>
             
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={(e) => {
-                  if (item.href.includes('#')) {
-                    e.preventDefault();
-                    handleNavClick(item.href);
-                  }
-                }}
-                className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900"
-              >
-                {item.name}
-              </Link>
+              item.href.startsWith('http') ? (
+                <button
+                  key={item.name}
+                  onClick={() => handleNavClick(item.href)}
+                  className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer"
+                >
+                  {item.name}
+                </button>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={(e) => {
+                    if (item.href.includes('#')) {
+                      e.preventDefault();
+                      handleNavClick(item.href);
+                    }
+                  }}
+                  className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900"
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
             
             <Link
@@ -232,20 +243,33 @@ const Header = () => {
                 </div>
 
                 {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    onClick={(e) => {
-                      if (item.href.includes('#')) {
-                        e.preventDefault();
+                  item.href.startsWith('http') ? (
+                    <button
+                      key={item.name}
+                      onClick={() => {
                         handleNavClick(item.href);
-                      }
-                      setIsMobileMenuOpen(false);
-                    }}
-                    className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm"
-                  >
-                    {item.name}
-                  </Link>
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm cursor-pointer text-left"
+                    >
+                      {item.name}
+                    </button>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      onClick={(e) => {
+                        if (item.href.includes('#')) {
+                          e.preventDefault();
+                          handleNavClick(item.href);
+                        }
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm"
+                    >
+                      {item.name}
+                    </Link>
+                  )
                 ))}
                 
                 <Link
