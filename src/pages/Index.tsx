@@ -347,15 +347,15 @@ const Index = () => {
             </div>
           </div>
 
-          {/* CTA to Work page */}
-          <div className="text-center mt-16 reveal-on-scroll">
+          {/* CTA to Customers page */}
+          <div className="text-center mt-16">
             <Button 
               asChild 
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
             >
-              <a href="https://works.xyz/customers">
-                View Our Work <ArrowRight className="ml-2 h-4 w-4" />
+              <a href="/customers">
+                View All Customers <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
