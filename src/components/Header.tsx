@@ -44,9 +44,9 @@ const Header = () => {
         <div className="hidden md:flex items-center justify-center gap-8 h-16">
           <Link to="/" className="hover:opacity-80 transition-opacity">
             <img 
-              src={isHomepage ? "/lovable-uploads/389975af-e8ab-45ab-a4fb-c329d9b46f9c.png" : "/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png"} 
+              src="/lovable-uploads/works-black-logo.png" 
               alt="Works" 
-              className="h-6"
+              className="h-8"
             />
           </Link>
 
@@ -55,7 +55,7 @@ const Header = () => {
             {/* Products dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger 
-                className={`text-sm font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
+                className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1"
               >
                 <span>Products</span>
                 <ChevronDown className="h-3 w-3" />
@@ -118,9 +118,7 @@ const Header = () => {
                     handleNavClick(item.href);
                   }
                 }}
-                className={`text-sm font-medium transition-colors ${
-                  isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
-                }`}
+                className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900"
               >
                 {item.name}
               </Link>
@@ -128,9 +126,7 @@ const Header = () => {
             
             <Link
               to="/contact"
-              className={`text-sm font-medium transition-colors ${
-                isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
-              }`}
+              className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900"
             >
               Contact us
             </Link>
@@ -143,9 +139,9 @@ const Header = () => {
           <div className="flex justify-center mb-4">
             <Link to="/" className="hover:opacity-80 transition-opacity">
               <img 
-                src={isHomepage ? "/lovable-uploads/389975af-e8ab-45ab-a4fb-c329d9b46f9c.png" : "/lovable-uploads/b1ddf536-e0e9-47ee-8dac-b35b327af302.png"} 
+                src="/lovable-uploads/works-black-logo.png" 
                 alt="Works" 
-                className="h-6"
+                className="h-8"
               />
             </Link>
           </div>
@@ -156,7 +152,7 @@ const Header = () => {
             <div className="relative">
               <DropdownMenu>
                 <DropdownMenuTrigger 
-                  className={`font-medium transition-colors ${isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'} flex items-center space-x-1`}
+                  className="font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1"
                 >
                   <span>Products</span>
                   <ChevronDown className="h-3 w-3" />
@@ -220,9 +216,7 @@ const Header = () => {
                     handleNavClick(item.href);
                   }
                 }}
-                className={`font-medium transition-colors ${
-                  isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
-                }`}
+                className="font-medium transition-colors hover:text-gray-600 text-gray-900"
               >
                 {item.name}
               </Link>
@@ -230,9 +224,7 @@ const Header = () => {
             
             <Link
               to="/contact"
-              className={`font-medium transition-colors ${
-                isHomepage ? 'hover:text-white text-white' : 'hover:text-gray-600 text-gray-900'
-              }`}
+              className="font-medium transition-colors hover:text-gray-600 text-gray-900"
             >
               Contact us
             </Link>
