@@ -48,7 +48,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Full-Bleed Hero - Mobile First */}
-      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ backgroundImage: 'url(/lovable-uploads/7274cc69-8d35-40ef-ad17-033424367b56.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16" style={{ backgroundImage: 'url(/brands/oppo/hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
@@ -63,17 +63,13 @@ const Index = () => {
           </div>
 
           {/* Touch-native CTA */}
-          <div>
-            <Button 
-              asChild 
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
-            >
-              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                Let's Work Together <ArrowRight className="ml-2 h-4 w-4" />
+            <div>
+              <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center px-8 py-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
+                <span>Let's Work Together</span>
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
-            </Button>
-          </div>
+            </div>
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10">
@@ -138,60 +134,60 @@ const Index = () => {
       <section className="overflow-hidden">
         <div className="flex flex-col">
           {[
-            { 
-              title: "Media Relations", 
-              description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
-              url: "/case-study/ufc", 
-              delay: "0ms", 
-              client: "UFC", 
-              clientSlug: "ufc",
-              backgroundImage: "/clients/ufc/hero.jpg"
-            },
-            { 
-              title: "Crisis Communication", 
-              description: "Navigate challenging situations with expert crisis management and reputation protection.",
-              url: "/case-study/oneplus", 
-              delay: "100ms", 
-              client: "OnePlus", 
-              clientSlug: "oneplus",
-              backgroundImage: "/clients/oneplus/hero.jpg"
-            },
-            { 
-              title: "Brand Communications", 
-              description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
-              url: "/case-study/oppo", 
-              delay: "200ms", 
-              client: "OPPO", 
-              clientSlug: "oppo",
-              backgroundImage: "/clients/oppo/hero.jpg"
-            },
-            { 
-              title: "Content Strategy", 
-              description: "Develop content that educates, entertains, and converts across all marketing channels.",
-              url: "/case-study/ogilvy", 
-              delay: "300ms", 
-              client: "Ogilvy", 
-              clientSlug: "ogilvy",
-              backgroundImage: "/clients/ogilvy/hero.jpg"
-            },
-            { 
-              title: "Influencer Marketing", 
-              description: "Connect with authentic voices that amplify your brand message to engaged communities.",
-              url: "/case-study/weber-shandwick", 
-              delay: "400ms", 
-              client: "Weber Shandwick", 
-              clientSlug: "weber-shandwick",
-              backgroundImage: "/clients/weber-shandwick/hero.jpg"
-            },
-            { 
-              title: "Event Management", 
-              description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
-              url: "/case-study/publicis-groupe", 
-              delay: "500ms", 
-              client: "Publicis Groupe", 
-              clientSlug: "publicis-groupe",
-              backgroundImage: "/clients/publicis-groupe/hero.jpg"
-            }
+              { 
+                title: "Media Relations", 
+                description: "Strategic media outreach that gets your story heard by the right audiences at the right time.",
+                url: "/case-study/ufc", 
+                delay: "0ms", 
+                client: "UFC", 
+                clientSlug: "ufc",
+                backgroundImage: "/brands/ufc/hero.jpg"
+              },
+              { 
+                title: "Crisis Communication", 
+                description: "Navigate challenging situations with expert crisis management and reputation protection.",
+                url: "/case-study/oneplus", 
+                delay: "100ms", 
+                client: "OnePlus", 
+                clientSlug: "oneplus",
+                backgroundImage: "/brands/oneplus/hero.jpg"
+              },
+              { 
+                title: "Brand Communications", 
+                description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
+                url: "/case-study/oppo", 
+                delay: "200ms", 
+                client: "OPPO", 
+                clientSlug: "oppo",
+                backgroundImage: "/brands/oppo/hero.jpg"
+              },
+              { 
+                title: "Content Strategy", 
+                description: "Develop content that educates, entertains, and converts across all marketing channels.",
+                url: "/case-study/ogilvy", 
+                delay: "300ms", 
+                client: "Ogilvy", 
+                clientSlug: "ogilvy",
+                backgroundImage: "/brands/ogilvy/hero.jpg"
+              },
+              { 
+                title: "Influencer Marketing", 
+                description: "Connect with authentic voices that amplify your brand message to engaged communities.",
+                url: "/case-study/weber-shandwick", 
+                delay: "400ms", 
+                client: "Weber Shandwick", 
+                clientSlug: "weber-shandwick",
+                backgroundImage: "/brands/weber-shandwick/hero.jpg"
+              },
+              { 
+                title: "Event Management", 
+                description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
+                url: "/case-study/publicis-groupe", 
+                delay: "500ms", 
+                client: "Publicis Groupe", 
+                clientSlug: "publicis-groupe",
+                backgroundImage: "/brands/publicis-groupe/hero.jpg"
+              }
           ].map((service, index) => (
             <a 
               key={index} 
@@ -317,16 +313,16 @@ const Index = () => {
                 style={{ borderRadius: '12px' }}
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
-              {isSubmitting ? (
-                "Opening email client..."
-              ) : (
-                <>
-                  Start a conversation
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </>
-              )}
-            </Button>
+            <div className="inline-flex items-center px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 hover:bg-white/20 hover:border-white/30 cursor-pointer">
+              <button type="submit" disabled={isSubmitting} className="bg-transparent border-none text-white font-medium">
+                {isSubmitting ? (
+                  "Opening email client..."
+                ) : (
+                  "Start a conversation"
+                )}
+              </button>
+              {!isSubmitting && <ArrowRight className="h-4 w-4 ml-2" />}
+            </div>
           </form>
         </div>
       </section>

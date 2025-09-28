@@ -1,0 +1,68 @@
+{
+  "ufc": {
+    "source_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-12/ANKALEV_MAGOMED_L_12-07.png?h=a706a884&itok=lq5FsTl2",
+    "tile": "/brands/ufc/tile.jpg",
+    "hero": "/brands/ufc/hero.jpg", 
+    "width": 1920,
+    "height": 1080,
+    "chosen_reason": "homepage_hero",
+    "last_checked_at": "2024-01-15T10:30:00Z",
+    "content_hash": "ufc_hero_hash",
+    "alt_text": "UFC fighters in octagon arena with dramatic lighting"
+  },
+  "oneplus": {
+    "source_url": "https://image01.oneplus.net/ebp/202411/12/1-m00-5e-2c-rb8bwmashmqagaljaanaxzwdvs8782.png",
+    "tile": "/brands/oneplus/tile.jpg",
+    "hero": "/brands/oneplus/hero.jpg",
+    "width": 1920,
+    "height": 1080, 
+    "chosen_reason": "homepage_hero",
+    "last_checked_at": "2024-01-15T10:30:00Z",
+    "content_hash": "oneplus_hero_hash",
+    "alt_text": "OnePlus smartphone product showcase with modern design"
+  },
+  "oppo": {
+    "source_url": "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a6-pro-series-2024/navigation/A6-Pro-Series-kv-pc.jpg",
+    "tile": "/brands/oppo/tile.jpg", 
+    "hero": "/brands/oppo/hero.jpg",
+    "width": 1920,
+    "height": 1080,
+    "chosen_reason": "homepage_hero",
+    "last_checked_at": "2024-01-15T10:30:00Z",
+    "content_hash": "oppo_hero_hash",
+    "alt_text": "OPPO A6 Pro Series smartphone with elegant design"
+  },
+  "ogilvy": {
+    "source_url": "https://www.ogilvy.com/sites/g/files/wmrpj9506/files/styles/hero_image/public/2024-11/ogilvy-work-the-real-deal-video-thumb.jpg?itok=VLJKGrcW",
+    "tile": "/brands/ogilvy/tile.jpg",
+    "hero": "/brands/ogilvy/hero.jpg", 
+    "width": 1920,
+    "height": 1080,
+    "chosen_reason": "homepage_hero",
+    "last_checked_at": "2024-01-15T10:30:00Z",
+    "content_hash": "ogilvy_hero_hash",
+    "alt_text": "Ogilvy creative advertising agency showcase"
+  },
+  "weber-shandwick": {
+    "source_url": "",
+    "tile": "/brands/weber-shandwick/tile.jpg",
+    "hero": "/brands/weber-shandwick/hero.jpg",
+    "width": 0,
+    "height": 0,
+    "chosen_reason": "fallback",
+    "last_checked_at": "",
+    "content_hash": "",
+    "alt_text": "Weber Shandwick PR agency"
+  },
+  "publicis-groupe": {
+    "source_url": "",
+    "tile": "/brands/publicis-groupe/tile.jpg", 
+    "hero": "/brands/publicis-groupe/hero.jpg",
+    "width": 0,
+    "height": 0,
+    "chosen_reason": "fallback",
+    "last_checked_at": "",
+    "content_hash": "",
+    "alt_text": "Publicis Groupe marketing agency"
+  }
+}
