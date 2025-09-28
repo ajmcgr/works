@@ -86,7 +86,7 @@ const Index = () => {
 
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-white mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)' }}>
-              Storytelling at Startup Speed.
+              Storytelling at Startup Speed
             </h1>
             
             <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto">
