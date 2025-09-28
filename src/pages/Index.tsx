@@ -131,7 +131,7 @@ const Index = () => {
           </div>
 
           {/* Video with no controls - Now below brand logos */}
-          <div className="mt-8 md:mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+          <div className="mt-8 md:mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-0">
             <div className="w-full h-80 md:h-96 lg:h-[500px] overflow-hidden relative bg-black">
               <iframe
                 src="https://player.vimeo.com/video/1096169142?autoplay=1&loop=1&muted=1&controls=0&playbar=0&pip=0&quality_selector=0&speed=0&title=0&byline=0&portrait=0&badge=0&transparent=0&responsive=1"
@@ -152,7 +152,7 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
+      <section className="py-20 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden -mt-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
@@ -168,9 +168,9 @@ const Index = () => {
               { title: "Media Relations", url: "/services/media-relations", delay: "0ms", logo: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", client: "UFC", bgColor: "bg-red-600", textColor: "text-white" },
               { title: "Crisis Communication", url: "/services/crisis-communication", delay: "100ms", logo: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", client: "OnePlus", bgColor: "bg-red-500", textColor: "text-white" },
               { title: "Brand Communications", url: "/services/brand-communications", delay: "200ms", logo: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", client: "OPPO", bgColor: "bg-emerald-600", textColor: "text-white" },
-              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-700", textColor: "text-white" },
-              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-600", textColor: "text-white" },
-              { title: "Event Management", url: "/services/event-management", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-indigo-700", textColor: "text-white" }
+              { title: "Content Strategy", url: "/services/content-strategy", delay: "300ms", logo: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", client: "Ogilvy", bgColor: "bg-red-600", textColor: "text-white" },
+              { title: "Influencer Marketing", url: "/services/influencer-marketing", delay: "400ms", logo: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", client: "Weber Shandwick", bgColor: "bg-blue-700", textColor: "text-white" },
+              { title: "Event Management", url: "/services/event-management", delay: "500ms", logo: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", client: "Publicis Groupe", bgColor: "bg-gray-900", textColor: "text-white" }
             ].map((service, index) => (
               <a 
                 key={index} 
@@ -197,11 +197,8 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Service number */}
-                <div className="relative z-10 flex items-center justify-between mb-6">
-                  <span className="text-6xl font-bold text-white/30 group-hover:text-white/50 transition-colors duration-300">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
+                {/* Arrow only */}
+                <div className="relative z-10 flex items-center justify-end mb-6">
                   <div className="w-8 h-8 rounded-full bg-white/20 group-hover:bg-white group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
                     <ArrowRight className="w-4 h-4 text-white group-hover:text-gray-800 transition-colors duration-300 transform group-hover:translate-x-1" />
                   </div>
