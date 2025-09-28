@@ -135,7 +135,7 @@ const Index = () => {
 
 
       {/* How We Can Help Section */}
-      <section className="py-24 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
+      <section className="py-24 px-6 overflow-hidden" style={{ background: 'var(--gradient-gray-subtle)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl animate-fade-in" style={{ letterSpacing: '0px' }}>
@@ -216,7 +216,7 @@ const Index = () => {
 
 
       {/* Product Showcase - Scroll Reveals */}
-      <section className="min-h-screen py-20 px-6 relative overflow-hidden bg-gray-100">
+      <section className="min-h-screen py-20 px-6 relative overflow-hidden" style={{ background: 'var(--gradient-slate-cool)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
@@ -281,7 +281,7 @@ const Index = () => {
       </section>
 
       {/* Case Study Reel - Touch Native */}
-      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
+      <section className="py-20 px-6" style={{ background: 'var(--gradient-blue-mist)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
@@ -368,7 +368,7 @@ const Index = () => {
 
 
       {/* Client Recommendations Section */}
-      <section className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
+      <section className="py-20 px-6" style={{ background: 'var(--gradient-gray-cool)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-foreground mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
@@ -454,7 +454,7 @@ const Index = () => {
 
 
       {/* Contact Form Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ background: 'var(--gradient-slate-cool)' }}>
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-black mb-6 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0px' }}>
