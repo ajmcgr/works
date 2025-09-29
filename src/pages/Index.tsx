@@ -218,7 +218,7 @@ const Index = () => {
               { 
                 title: "Event Management", 
                 description: "Create memorable experiences that strengthen relationships and generate meaningful buzz.",
-                url: "/case-study/publicis", 
+                url: "https://works.xyz/case-study/publicis-msl", 
                 delay: "500ms",
                 client: "Publicis Groupe", 
                 clientSlug: "publicis-groupe",
