@@ -18,7 +18,7 @@ const EventManagement = () => {
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
           >
-            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+            <a href="https://works.xyz/case-study/publicis-msl" target="_blank" rel="noopener noreferrer">
               Plan Your Event <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
@@ -82,7 +82,7 @@ const EventManagement = () => {
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
           >
-            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+            <a href="https://works.xyz/case-study/publicis-msl" target="_blank" rel="noopener noreferrer">
               Start Event Planning <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
