@@ -56,7 +56,7 @@ const Header = () => {
             {/* Products dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger 
-                className="text-xs font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1"
+                className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1 tracking-tight"
               >
                 <span>Products</span>
                 <ChevronDown className="h-3 w-3" />
@@ -114,7 +114,7 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-xs font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer"
+                  className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer tracking-tight"
                 >
                   {item.name}
                 </button>
@@ -128,7 +128,7 @@ const Header = () => {
                       handleNavClick(item.href);
                     }
                   }}
-                  className="text-xs font-medium transition-colors hover:text-gray-600 text-gray-900"
+                  className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 tracking-tight"
                 >
                   {item.name}
                 </Link>
@@ -137,14 +137,14 @@ const Header = () => {
             
             <Link
               to="/contact"
-              className="text-xs font-medium transition-colors hover:text-gray-600 text-gray-900"
+              className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 tracking-tight"
             >
               Contact us
             </Link>
             
             <button
               onClick={() => handleNavClick('https://creators200.com/')}
-              className="text-xs font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer"
+              className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer tracking-tight"
             >
               Creators 200 ↗
             </button>
@@ -185,7 +185,7 @@ const Header = () => {
                 <div className="relative">
                   <DropdownMenu>
                     <DropdownMenuTrigger 
-                      className="font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1 text-xs"
+                      className="font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1 text-sm tracking-tight"
                     >
                       <span>Products</span>
                       <ChevronDown className="h-3 w-3" />
@@ -256,7 +256,7 @@ const Header = () => {
                         handleNavClick(item.href);
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-xs cursor-pointer text-left"
+                      className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm cursor-pointer text-left tracking-tight"
                     >
                       {item.name}
                     </button>
@@ -271,7 +271,7 @@ const Header = () => {
                         }
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-xs"
+                      className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm tracking-tight"
                     >
                       {item.name}
                     </Link>
@@ -281,7 +281,7 @@ const Header = () => {
                 <Link
                   to="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-xs"
+                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm tracking-tight"
                 >
                   Contact us
                 </Link>
@@ -291,7 +291,7 @@ const Header = () => {
                     handleNavClick('https://creators200.com/');
                     setIsMobileMenuOpen(false);
                   }}
-                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-xs cursor-pointer text-left"
+                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm cursor-pointer text-left tracking-tight"
                 >
                   Creators 200 ↗
                 </button>
