@@ -75,7 +75,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-16 pb-16 cursor-pointer" style={{ 
+        <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-16 cursor-pointer" style={{ 
           backgroundImage: 'url(/brands/hero-workspace.jpg)', 
           backgroundSize: 'cover', 
           backgroundPosition: 'center',
