@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 fixed top-0 bg-white/40 backdrop-blur-sm`}>
+    <header className={`w-full z-50 fixed top-0 bg-white/50 backdrop-blur-sm`}>
       <div className="container mx-auto px-6 max-w-3xl">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-14">
