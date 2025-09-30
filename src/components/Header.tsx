@@ -179,7 +179,7 @@ const Header = () => {
 
           {/* Mobile Menu Overlay */}
           {isMobileMenuOpen && (
-            <div className="absolute top-14 left-0 right-0 bg-white/40 backdrop-blur-sm border-t border-gray-200 shadow-lg z-50">
+            <div className="absolute top-14 left-0 right-0 bg-white/40 backdrop-blur-sm shadow-lg z-50">
               <div className="px-6 py-4 space-y-4">
                 {/* Products dropdown */}
                 <div className="relative">
