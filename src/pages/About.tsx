@@ -23,16 +23,16 @@ const About = () => {
                 <h1 className="text-4xl lg:text-5xl font-headline text-black mb-6 tracking-wide">Our story</h1>
                 
                 {/* Centered Opening Paragraph */}
-                <p className="text-xl leading-tight tracking-wide" style={{ color: '#374151' }}>
+                <p className="text-base leading-tight tracking-wide" style={{ color: '#374151' }}>
                   Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
               
               {/* Letter Content */}
               <div className="text-left">
-                <p className="text-xl font-medium mb-6 tracking-wide" style={{ color: '#374151' }}>Hello there!</p>
+                <p className="text-base font-medium mb-6 tracking-wide" style={{ color: '#374151' }}>Hello there!</p>
                 
-                <div className="space-y-4 leading-normal text-xs tracking-wide" style={{ color: '#374151' }}>
+                <div className="space-y-4 leading-normal text-sm tracking-wide" style={{ color: '#374151' }}>
                   <p>I'm Alex MacGregor, the founder of Works, and I've spent the last eight years proving that great PR is equal parts art, science, and street‑level hustle.</p>
                   
                   <p>I cut my teeth launching consumer‑tech giants Meizu, OPPO, and OnePlus across the world.</p>
@@ -87,41 +87,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* About Works Section */}
-      <section className="py-32 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <div className="text-left">
-            <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight tracking-wide">
-              About Works
-            </h2>
-            <div className="space-y-4 text-lg text-gray-600 font-normal leading-normal tracking-wide">
-              <p>
-                We're the PR & Influencer Marketing agency built for founders, rebels, and category creators.
-              </p>
-              <p>
-                Our playbook? Strategy. Media. Influencers. Hype.
-              </p>
-              <p>
-                Our AI tools supercharge it — turning your story into headlines and your brand into influence.
-              </p>
-              <p>
-                We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond.
-              </p>
-              <p>
-                If you're building something bold, we'll make the world pay attention.
-              </p>
-            </div>
-            <div className="mt-12">
-              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
