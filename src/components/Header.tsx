@@ -61,7 +61,7 @@ const Header = () => {
 
   return (
     <header className={`w-full z-50 fixed top-0 flex justify-center transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-full px-6">
+      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-lg px-6">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-14">
           <Link to="/" className="hover:opacity-80 transition-opacity">
