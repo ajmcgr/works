@@ -1,7 +1,7 @@
 
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,9 +11,30 @@ import {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   
   const location = useLocation();
   const isHomepage = location.pathname === '/';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   const navigation = [
     { name: "Services", href: "/services" },
@@ -39,7 +60,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 fixed top-0 bg-white/40 backdrop-blur-sm`}>
+    <header className={`w-full z-50 fixed top-0 bg-white/40 backdrop-blur-sm transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-6 max-w-3xl">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-14">
