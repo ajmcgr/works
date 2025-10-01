@@ -60,8 +60,8 @@ const Header = () => {
   };
 
   return (
-    <header className={`w-full z-50 fixed top-0 bg-white/40 backdrop-blur-sm transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="container mx-auto px-6 max-w-3xl">
+    <header className={`w-full z-50 fixed top-0 flex justify-center transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-full px-6">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-14">
           <Link to="/" className="hover:opacity-80 transition-opacity">
@@ -173,7 +173,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Layout */}
-        <div className="md:hidden">
+        <div className="md:hidden min-w-[280px]">
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <Link to="/" className="hover:opacity-80 transition-opacity">
