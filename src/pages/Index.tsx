@@ -4,6 +4,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import tankaLogo from "@/assets/tanka.png";
+import tauLogo from "@/assets/tau.png";
+import nottaLogo from "@/assets/notta.png";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -106,59 +110,112 @@ const Index = () => {
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10">
             <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-8 lg:gap-12 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
-              <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
-                  alt="UFC" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
-                  alt="OnePlus" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
-                  alt="OPPO" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
-                  alt="Ogilvy" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="eager"
-                />
-              </div>
-              <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
-                  alt="Weber Shandwick" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="eager"
-                />
-              </div>
-              <div className="w-32 h-20 md:w-48 md:h-32 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
-                  alt="Publicis Groupe" 
-                  className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
-                  loading="eager"
-                />
-              </div>
-            </div>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-4">
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
+                      alt="UFC" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
+                      alt="OnePlus" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
+                      alt="OPPO" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
+                      alt="Ogilvy" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="eager"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
+                      alt="Weber Shandwick" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="eager"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
+                      alt="Publicis Groupe" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="eager"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src={tankaLogo} 
+                      alt="Tanka" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src={tauLogo} 
+                      alt="Tau" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src={nottaLogo} 
+                      alt="Notta" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+            </Carousel>
           </div>
 
         </div>
