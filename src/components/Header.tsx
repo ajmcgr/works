@@ -162,13 +162,6 @@ const Header = () => {
             >
               Contact us
             </Link>
-            
-            <button
-              onClick={() => handleNavClick('https://creators200.com/')}
-              className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 cursor-pointer tracking-normal"
-            >
-              Creators 200 ↗
-            </button>
           </div>
         </div>
 
@@ -306,16 +299,6 @@ const Header = () => {
                 >
                   Contact us
                 </Link>
-                
-                <button
-                  onClick={() => {
-                    handleNavClick('https://creators200.com/');
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm cursor-pointer text-left tracking-normal"
-                >
-                  Creators 200 ↗
-                </button>
               </div>
             </div>
           )}
