@@ -68,7 +68,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/works-black-logo.png" 
               alt="Works" 
-              className="h-6"
+              className="h-5"
             />
           </Link>
 
@@ -173,7 +173,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/works-black-logo.png" 
                 alt="Works" 
-                className="h-6"
+                className="h-5"
               />
             </Link>
 
