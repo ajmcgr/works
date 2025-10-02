@@ -149,7 +149,7 @@ ${brief.dosAndDonts.donts.map((item: string) => `• ${item}`).join('\n')}
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6">
+      <section className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-headline text-foreground mb-6 text-4xl md:text-5xl lg:text-6xl">
             Influencer Content Brief Generator
