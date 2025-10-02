@@ -197,7 +197,7 @@ const CaseStudies = () => {
           {/* Work by Client Groups */}
           <div className="space-y-20">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">Client Portfolio</h2>
+              <h2 className="text-3xl lg:text-4xl font-headline text-black mb-8 leading-tight">Customer portfolio</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed">
                 Strategic communications delivered across technology, enterprise, and innovation sectors.
               </p>

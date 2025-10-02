@@ -26,7 +26,7 @@ const MediaRelations = () => {
       </section>
 
       {/* What We Do */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-28 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl mb-12 text-center">
             What We Do

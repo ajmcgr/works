@@ -6,7 +6,7 @@ const InfluencerMarketing = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-28 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-headline text-foreground mb-6">
             Influencer Marketing for Launches: Creator-Led Brand Amplification
