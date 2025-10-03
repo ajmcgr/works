@@ -20,7 +20,7 @@ const Index = () => {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const { toast } = useToast();
 
-  // Auto-scroll carousel
+  // Auto-scroll carousel - slower and smoother
   useEffect(() => {
     if (!carouselApi) return;
 
@@ -30,7 +30,7 @@ const Index = () => {
       } else {
         carouselApi.scrollTo(0);
       }
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, [carouselApi]);
