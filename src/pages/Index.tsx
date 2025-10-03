@@ -115,6 +115,23 @@ const Index = () => {
                 align: "start",
                 loop: true,
               }}
+              plugins={[
+                {
+                  name: 'autoScroll',
+                  init: (embla) => {
+                    let scrollInterval: NodeJS.Timeout;
+                    const scroll = () => {
+                      if (embla.canScrollNext()) {
+                        embla.scrollNext();
+                      } else {
+                        embla.scrollTo(0);
+                      }
+                    };
+                    scrollInterval = setInterval(scroll, 3000);
+                    return () => clearInterval(scrollInterval);
+                  }
+                }
+              ] as any}
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-4">
