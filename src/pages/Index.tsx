@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
@@ -17,7 +17,23 @@ const Index = () => {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const { toast } = useToast();
+
+  // Auto-scroll carousel
+  useEffect(() => {
+    if (!carouselApi) return;
+
+    const intervalId = setInterval(() => {
+      if (carouselApi.canScrollNext()) {
+        carouselApi.scrollNext();
+      } else {
+        carouselApi.scrollTo(0);
+      }
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [carouselApi]);
 
   // Preload critical images
   useEffect(() => {
@@ -111,27 +127,11 @@ const Index = () => {
           <div className="mt-8 md:mt-10">
             <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by agencies and marketing teams worldwide</p>
             <Carousel
+              setApi={setCarouselApi}
               opts={{
                 align: "start",
                 loop: true,
               }}
-              plugins={[
-                {
-                  name: 'autoScroll',
-                  init: (embla) => {
-                    let scrollInterval: NodeJS.Timeout;
-                    const scroll = () => {
-                      if (embla.canScrollNext()) {
-                        embla.scrollNext();
-                      } else {
-                        embla.scrollTo(0);
-                      }
-                    };
-                    scrollInterval = setInterval(scroll, 3000);
-                    return () => clearInterval(scrollInterval);
-                  }
-                }
-              ] as any}
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-4">
