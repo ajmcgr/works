@@ -47,6 +47,30 @@
       "case_study_url": "/case-study/publicis-groupe",
       "hero_image_override": "",
       "hero_attribution": ""
+    },
+    {
+      "name": "Tanka AI",
+      "url": "https://www.tanka.ai",
+      "slug": "tanka",
+      "case_study_url": "/case-study/tanka",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "TAU Net",
+      "url": "https://www.tau.net",
+      "slug": "tau",
+      "case_study_url": "/case-study/tau",
+      "hero_image_override": "",
+      "hero_attribution": ""
+    },
+    {
+      "name": "Notta",
+      "url": "https://www.notta.ai",
+      "slug": "notta",
+      "case_study_url": "/case-study/notta",
+      "hero_image_override": "",
+      "hero_attribution": ""
     }
   ]
 }

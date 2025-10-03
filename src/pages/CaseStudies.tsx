@@ -139,6 +139,51 @@ const CaseStudies = () => {
             "Consumer trust building"
           ],
           innovation: "Health Technology - Innovative wellness solutions"
+        },
+        {
+          id: "tanka",
+          name: "Tanka AI",
+          challenge: "Launch AI-powered workplace chat platform with persistent memory capabilities in competitive team communication market.",
+          solution: "Developed narrative focusing on organizational knowledge retention and AI-enhanced productivity, securing major tech media coverage.",
+          results: [
+            "Coverage in Reuters and major tech outlets",
+            "Positioned as innovation leader in workplace AI",
+            "Strong market entry momentum"
+          ],
+          innovation: "AI Workplace Chat - Messenger with persistent organizational memory",
+          links: [
+            { title: "Reuters Press Release", url: "https://www.reuters.com/press-releases/tanka-brings-ai-memory-to-workplace-chat-2025-02-18/" }
+          ]
+        },
+        {
+          id: "tau",
+          name: "TAU Net",
+          challenge: "Launch revolutionary Layer-1 AI blockchain with collective specification synthesis in complex crypto market.",
+          solution: "Created thought leadership content emphasizing guaranteed accuracy and AI-driven governance, targeting blockchain and AI communities.",
+          results: [
+            "Coverage in Bitcoin.com and crypto media",
+            "Successful testnet launch communications",
+            "Strong technical community engagement"
+          ],
+          innovation: "AI Blockchain - Layer-1 blockchain with AI reasoning and collective specification",
+          links: [
+            { title: "Bitcoin.com Feature", url: "https://news.bitcoin.com/tau-net-layer-1-ai-blockchain-releases-testnet-architecture-and-ai-reasoning-language-update/" }
+          ]
+        },
+        {
+          id: "notta",
+          name: "Notta",
+          challenge: "Launch AI voice recorder device in crowded productivity tech market with clear differentiation.",
+          solution: "Developed campaigns emphasizing real-time transcription, translation capabilities, and practical workplace applications.",
+          results: [
+            "Featured in Pocketables and tech review sites",
+            "Strong product-market fit messaging",
+            "Positioned as essential productivity tool"
+          ],
+          innovation: "AI Voice Recording - Pocket-sized recorder with real-time transcription and translation",
+          links: [
+            { title: "Pocketables Review", url: "https://pocketables.com/2025/09/the-notta-memo-an-ai-backed-voice-recorder-that-travels-with-you.html" }
+          ]
         }
       ]
     },
