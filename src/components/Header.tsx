@@ -79,7 +79,7 @@ const Header = () => {
               <DropdownMenuTrigger 
                 className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1 tracking-normal"
               >
-                <span>Products</span>
+                <span>Apps</span>
                 <ChevronDown className="h-3.5 w-3.5" />
               </DropdownMenuTrigger>
               <DropdownMenuContent 
@@ -201,7 +201,7 @@ const Header = () => {
                     <DropdownMenuTrigger 
                       className="font-medium transition-colors hover:text-gray-600 text-gray-900 flex items-center space-x-1 text-sm tracking-normal"
                     >
-                      <span>Products</span>
+                      <span>Apps</span>
                       <ChevronDown className="h-3.5 w-3.5" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent 
