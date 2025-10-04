@@ -269,7 +269,7 @@ const Index = () => {
                 delay: "200ms", 
                 client: "OnePlus", 
                 clientSlug: "oneplus",
-                backgroundImage: "/brands/oneplus/product.jpg"
+                backgroundImage: "/brands/oneplus/crisis-comm.webp"
               },
               { 
                 title: "Brand Communications", 
