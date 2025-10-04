@@ -269,7 +269,7 @@ const Index = () => {
                 delay: "200ms", 
                 client: "OnePlus", 
                 clientSlug: "oneplus",
-                backgroundImage: "/brands/oneplus/hero.jpg"
+                backgroundImage: "/brands/oneplus/product.jpg"
               },
               { 
                 title: "Brand Communications", 
@@ -287,7 +287,7 @@ const Index = () => {
                 delay: "400ms", 
                 client: "Content Studio", 
                 clientSlug: "content-strategy",
-                backgroundImage: "/brands/xreal/hero.jpg"
+                backgroundImage: "/brands/xreal/one-pro.webp"
               },
               { 
                 title: "Event Management", 
