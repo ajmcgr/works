@@ -260,7 +260,7 @@ const Index = () => {
                 delay: "100ms", 
                 client: "UFC", 
                 clientSlug: "ufc",
-                backgroundImage: "/brands/ufc/hero.jpg"
+                backgroundImage: "/brands/ufc/media-relations.jpg"
               },
               { 
                 title: "Crisis Communication", 
