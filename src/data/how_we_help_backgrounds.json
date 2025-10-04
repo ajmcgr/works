@@ -8,9 +8,9 @@
     },
     "crisis-communication": {
       "client_slug": "oneplus", 
-      "background_source": "/clients/oneplus/hero.jpg",
-      "background_source_reason": "homepage_hero",
-      "last_updated": "2024-01-15T10:30:00Z"
+      "background_source": "/brands/oneplus/product.jpg",
+      "background_source_reason": "product_showcase",
+      "last_updated": "2025-10-04T10:30:00Z"
     },
     "brand-communications": {
       "client_slug": "oppo",
