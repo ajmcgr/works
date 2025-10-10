@@ -91,11 +91,11 @@ const Header = () => {
                 >
                   <img 
                     src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
-                    alt="Media AI" 
+                    alt="Media" 
                     className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
-                    <span className="font-medium text-sm text-gray-900">Media AI</span>
+                    <span className="font-medium text-sm text-gray-900">Media</span>
                     <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
                   </div>
                 </DropdownMenuItem>
@@ -105,11 +105,11 @@ const Header = () => {
                 >
                   <img 
                     src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
-                    alt="Write AI" 
+                    alt="Write" 
                     className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
-                    <span className="font-medium text-sm text-gray-900">Write AI</span>
+                    <span className="font-medium text-sm text-gray-900">Write</span>
                     <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
                   </div>
                 </DropdownMenuItem>
@@ -119,12 +119,26 @@ const Header = () => {
                 >
                   <img 
                     src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
-                    alt="Content AI" 
+                    alt="Content" 
                     className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                   />
                   <div className="flex flex-col">
-                    <span className="font-medium text-sm text-gray-900">Content AI</span>
+                    <span className="font-medium text-sm text-gray-900">Content</span>
                     <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
+                  </div>
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://trycreators.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                >
+                  <img 
+                    src="/lovable-uploads/creators-icon.png" 
+                    alt="Creators" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Creators</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Your all-in-one creator CRM</span>
                   </div>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -216,11 +230,11 @@ const Header = () => {
                       >
                         <img 
                           src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
-                          alt="Media AI" 
+                          alt="Media" 
                           className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                         />
                         <div className="flex flex-col">
-                          <span className="font-medium text-sm text-gray-900">Media AI</span>
+                          <span className="font-medium text-sm text-gray-900">Media</span>
                           <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
                         </div>
                       </DropdownMenuItem>
@@ -233,11 +247,11 @@ const Header = () => {
                       >
                         <img 
                           src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
-                          alt="Write AI" 
+                          alt="Write" 
                           className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                         />
                         <div className="flex flex-col">
-                          <span className="font-medium text-sm text-gray-900">Write AI</span>
+                          <span className="font-medium text-sm text-gray-900">Write</span>
                           <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
                         </div>
                       </DropdownMenuItem>
@@ -250,12 +264,29 @@ const Header = () => {
                       >
                         <img 
                           src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
-                          alt="Content AI" 
+                          alt="Content" 
                           className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
                         />
                         <div className="flex flex-col">
-                          <span className="font-medium text-sm text-gray-900">Content AI</span>
+                          <span className="font-medium text-sm text-gray-900">Content</span>
                           <span className="text-xs text-gray-500 mt-0.5">Your blog content writing assistant</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://trycreators.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/creators-icon.png" 
+                          alt="Creators" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Creators</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Your all-in-one creator CRM</span>
                         </div>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
