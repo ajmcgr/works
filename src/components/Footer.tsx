@@ -67,7 +67,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
                 >
-                  Creators Media Kit ↗
+                  Media Kit Creator ↗
                 </a>
                 <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Headlines Generator</Link>
                 <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Briefs Generator</Link>
