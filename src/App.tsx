@@ -29,6 +29,8 @@ import Startups from "./pages/Startups";
 import CaseStudies from "./pages/CaseStudies";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -95,6 +97,8 @@ const App = () => (
             <Route path="/tools/influencer-campaign-timeline" element={<InfluencerCampaignTimeline />} />
             <Route path="/tools/influencer-performance-tracker" element={<InfluencerPerformanceTracker />} />
               
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
