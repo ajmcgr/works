@@ -64,6 +64,22 @@ const Footer = () => {
               <h4 className="text-base font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.1px' }}>Free Tools</h4>
               <div className="space-y-3">
                 <a 
+                  href="https://trybio.ai/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Link-in-bio Creator ↗
+                </a>
+                <a 
+                  href="https://trycreators.ai/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Creators CRM ↗
+                </a>
+                <a 
                   href="https://creatorsmediakit.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
