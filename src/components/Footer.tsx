@@ -39,14 +39,6 @@ const Footer = () => {
             <div>
               <h4 className="text-base font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.1px' }}>Resources</h4>
               <div className="space-y-3">
-                <a 
-                  href="https://creators200.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Top 200 Creators ↗
-                </a>
                 <Link to="/resources/startup-pr-guide" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Startup PR Guide</Link>
                 <Link to="/resources/launch-amplification" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Launch Amplification</Link>
                 <Link to="/resources/ai-media-tools" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">AI Media Tools</Link>
@@ -63,6 +55,14 @@ const Footer = () => {
             <div>
               <h4 className="text-base font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.1px' }}>Free Tools</h4>
               <div className="space-y-3">
+                <a 
+                  href="https://creators200.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
+                >
+                  Top 200 Creators ↗
+                </a>
                 <a 
                   href="https://trybio.ai/" 
                   target="_blank" 
