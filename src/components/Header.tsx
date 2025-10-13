@@ -141,6 +141,20 @@ const Header = () => {
                     <span className="text-xs text-gray-500 mt-0.5">Your all-in-one creator CRM</span>
                   </div>
                 </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('http://trybio.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                >
+                  <img 
+                    src="/lovable-uploads/bio-icon.png" 
+                    alt="Bio" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Bio</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Your link-in-bio page</span>
+                  </div>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
@@ -287,6 +301,23 @@ const Header = () => {
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Creators</span>
                           <span className="text-xs text-gray-500 mt-0.5">Your all-in-one creator CRM</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('http://trybio.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-md hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/bio-icon.png" 
+                          alt="Bio" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Bio</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Your link-in-bio page</span>
                         </div>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
