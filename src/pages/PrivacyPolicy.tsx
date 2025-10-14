@@ -87,6 +87,83 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">Google User Data</h2>
+              
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Data Accessed</h3>
+              <p className="text-gray-700 mb-4">
+                When you connect a Google account to Works.xyz or any of our applications (such as TryMedia.ai, Write AI, or Content AI), we may request limited access to specific types of Google user data.
+                This may include:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li><strong>Basic profile information:</strong> name, email address, and profile photo (used for authentication and account personalization).</li>
+                <li><strong>Google account ID:</strong> used to identify and authenticate your login securely.</li>
+                <li><strong>Drive or Gmail access (if explicitly granted):</strong> in rare cases where integration features are offered (e.g., importing press lists or exporting documents), access is limited to user-approved files or messages only, never to your entire account.</li>
+              </ul>
+              <p className="text-gray-700 mb-4">
+                We never access, read, or store the content of personal emails, files, or documents without your explicit consent.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Data Usage</h3>
+              <p className="text-gray-700 mb-4">
+                The Google user data we access is used solely to:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li>Authenticate and verify your identity via Google Sign-In.</li>
+                <li>Personalize your user experience (e.g., displaying your name or photo in your dashboard).</li>
+                <li>Enable optional integrations that you have actively chosen to connect (e.g., saving generated files to Google Drive).</li>
+              </ul>
+              <p className="text-gray-700 mb-4">
+                We do not sell, rent, or use your Google data for advertising, marketing, or profiling purposes.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Data Sharing</h3>
+              <p className="text-gray-700 mb-4">
+                Works.xyz does not share Google user data with any third parties except as necessary to operate our services.
+                Limited data may be shared only with:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li><strong>Service providers</strong> (e.g., hosting, analytics, payment processors) that help us operate Works.xyz and our products. These providers are bound by strict confidentiality and security obligations.</li>
+                <li><strong>Legal authorities,</strong> only if required to comply with applicable laws or enforce our terms of service.</li>
+              </ul>
+              <p className="text-gray-700 mb-4">
+                We do not share, sell, or disclose Google user data for commercial gain.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Data Storage & Protection</h3>
+              <p className="text-gray-700 mb-4">
+                All user data, including any Google user data, is securely stored using industry-standard encryption and access controls.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li>Data is encrypted in transit (TLS 1.2+) and at rest (AES-256).</li>
+                <li>Our databases are hosted on Supabase and Google Cloud infrastructure, which comply with leading security standards such as ISO/IEC 27001 and SOC 2.</li>
+                <li>Internal access to user data is strictly limited to authorized personnel who require it for system maintenance or support.</li>
+                <li>We continuously monitor our systems to prevent unauthorized access, loss, or misuse of data.</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Data Retention & Deletion</h3>
+              <p className="text-gray-700 mb-4">
+                We retain Google user data only for as long as it is necessary to provide our services or as required by law.
+                Users can request deletion of their data at any time by contacting privacy@works.xyz
+              </p>
+              <p className="text-gray-700 mb-4">
+                Upon receiving a deletion request:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li>All associated Google user data (including profile information, tokens, and related records) will be permanently deleted from our systems within 30 days.</li>
+                <li>Any cached or backup data will be automatically purged in accordance with our backup retention schedule.</li>
+              </ul>
+              <p className="text-gray-700 mb-4">
+                You may also revoke Works.xyz's access to your Google account directly through your Google Account Permissions page.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Compliance</h3>
+              <p className="text-gray-700 mb-4">
+                Works.xyz complies with the Google API Services User Data Policy, including the Limited Use requirements.
+                We only use Google data to provide or improve user-facing features that you explicitly engage with, never for advertising or data resale.
+              </p>
+            </section>
+
+            <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our contact address</h2>
               <div className="text-gray-700">
                 <p>Works App, Inc.</p>
