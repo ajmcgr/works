@@ -28,7 +28,7 @@ const TermsOfService = () => {
                 <li><strong>Subscriptions</strong> refer to the services or access to the Service offered on a subscription basis by the Company to You.</li>
                 <li><strong>Terms and Conditions</strong> (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</li>
                 <li><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</li>
-                <li><strong>Website</strong> refers to Media AI, accessible from https://www.trymedia.ai</li>
+                <li><strong>Website</strong> refers to Works, accessible from https://works.xyz/</li>
                 <li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
               </ul>
             </section>

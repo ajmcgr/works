@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Who we are</h2>
               <p className="text-gray-700 mb-4">
-                We are Works App, Inc., doing business as Media AI. Our website address is: https://www.trymedia.ai.
+                We are Works App, Inc., doing business as Works. Our website address is: https://works.xyz/.
               </p>
             </section>
 
