@@ -231,6 +231,50 @@ const Index = () => {
                     />
                   </div>
                 </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/ecarx.png" 
+                      alt="ECARX" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/hho.png" 
+                      alt="HHO" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/angrymiao.png" 
+                      alt="Angry Miao" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="w-full h-20 md:h-32 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/tencent.png" 
+                      alt="Tencent" 
+                      className="max-w-full max-h-full object-contain brightness-0 invert transition-all duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </CarouselItem>
               </CarouselContent>
             </Carousel>
           </div>
