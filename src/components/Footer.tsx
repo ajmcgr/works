@@ -63,30 +63,6 @@ const Footer = () => {
                 >
                   Top 200 Creators ↗
                 </a>
-                <a 
-                  href="https://trybio.ai/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Link-in-bio Creator ↗
-                </a>
-                <a 
-                  href="https://trycreators.ai/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Creators CRM ↗
-                </a>
-                <a 
-                  href="https://creatorsmediakit.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Media Kit Creator ↗
-                </a>
                 <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Headlines Generator</Link>
                 <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Briefs Generator</Link>
                 <Link to="/tools/pr-health-checker" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Health Check</Link>

@@ -125,7 +125,7 @@ const Index = () => {
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10">
-            <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by PR agencies and brands worldwide</p>
+            <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by founders and brands worldwide</p>
             <Carousel
               setApi={setCarouselApi}
               opts={{
