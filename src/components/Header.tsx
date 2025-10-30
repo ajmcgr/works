@@ -110,7 +110,7 @@ const Header = () => {
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Creators</span>
-                    <span className="text-xs text-gray-500 mt-0.5">Your all-in-one creator CRM</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Create your media kit</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
@@ -266,7 +266,7 @@ const Header = () => {
                         />
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Creators</span>
-                          <span className="text-xs text-gray-500 mt-0.5">Your all-in-one creator CRM</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Create your media kit</span>
                         </div>
                       </DropdownMenuItem>
                       <DropdownMenuItem 
