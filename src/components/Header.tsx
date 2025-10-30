@@ -96,7 +96,7 @@ const Header = () => {
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Bio</span>
-                    <span className="text-xs text-gray-500 mt-0.5">Your link-in-bio page</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Create your link-in-bio</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
@@ -249,7 +249,7 @@ const Header = () => {
                         />
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Bio</span>
-                          <span className="text-xs text-gray-500 mt-0.5">Your link-in-bio page</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Create your link-in-bio</span>
                         </div>
                       </DropdownMenuItem>
                       <DropdownMenuItem 
