@@ -125,6 +125,11 @@ const Index = () => {
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10">
+            {/* Senja Recommendation Widget */}
+            <div className="mb-8 md:mb-10">
+              <div className="senja-embed" data-id="ba800473-dfcb-4e1f-8d31-9e1c08d090bc" data-mode="shadow" data-lazyload="false" style={{ display: 'block', width: '100%' }}></div>
+            </div>
+            
             <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by founders and brands worldwide</p>
             <Carousel
               setApi={setCarouselApi}
