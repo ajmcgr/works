@@ -110,7 +110,7 @@ const Index = () => {
             </h1>
             
             <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto">
-              We run AI powered high-impact PR and influencer campaigns.
+              AI-powered PR and influencer campaigns that make noise — and drive growth.
             </p>
           </div>
 
