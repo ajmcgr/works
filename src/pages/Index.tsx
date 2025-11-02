@@ -105,11 +105,11 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-white mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
+            <h1 className="font-headline text-white mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
               We Connect Creators & Brands
             </h1>
             
-            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.3)' }}>
+            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.15)' }}>
               AI-powered PR and Influencer Marketing services that drive growth.
             </p>
           </div>
@@ -130,7 +130,7 @@ const Index = () => {
               <div className="senja-embed" data-id="ba800473-dfcb-4e1f-8d31-9e1c08d090bc" data-mode="shadow" data-lazyload="false" style={{ display: 'block', width: '100%' }}></div>
             </div>
             
-            <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by brands worldwide</p>
+            <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by Innovative brands worldwide</p>
             <Carousel
               setApi={setCarouselApi}
               opts={{
