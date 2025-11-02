@@ -130,6 +130,12 @@ const Contact = () => {
               )}
             </Button>
           </form>
+          
+          <div className="mt-12 text-center">
+            <p className="text-sm text-gray-600">
+              1902 Lyon St, San Francisco, California 94115, US. All rights reserved.
+            </p>
+          </div>
         </div>
       </section>
     </div>
