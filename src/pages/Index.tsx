@@ -117,7 +117,7 @@ const Index = () => {
           {/* Touch-native CTA */}
             <div>
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center px-8 py-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
+                 className="inline-flex items-center px-8 py-6 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
                 <span>Let's Work Together</span>
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
