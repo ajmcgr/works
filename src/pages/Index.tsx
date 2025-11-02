@@ -117,7 +117,7 @@ const Index = () => {
           {/* Touch-native CTA */}
             <div>
                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-6 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
+                  className="inline-flex items-center px-8 py-6 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
                 <span>Let's Work Together</span>
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
@@ -386,7 +386,7 @@ const Index = () => {
                   <p className="text-white text-lg lg:text-xl leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <div className="inline-flex items-center px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/30">
+                  <div className="inline-flex items-center px-6 py-3 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/30">
                     <span>Learn More</span>
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
@@ -473,7 +473,7 @@ const Index = () => {
                 style={{ borderRadius: '12px' }}
               />
             </div>
-            <div className="inline-flex items-center px-8 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 hover:bg-white/20 hover:border-white/30 cursor-pointer">
+            <div className="inline-flex items-center px-8 py-3 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 hover:bg-white/20 hover:border-white/30 cursor-pointer">
               <button type="submit" disabled={isSubmitting} className="bg-transparent border-none text-white font-medium">
                 {isSubmitting ? (
                   "Opening email client..."
