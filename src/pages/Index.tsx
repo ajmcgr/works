@@ -109,8 +109,8 @@ const Index = () => {
               We Connect Creators & Brands
             </h1>
             
-            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.15)' }}>
-              AI-powered PR and Influencer Marketing services that drive growth.
+            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.15)' }}>
+              AI-powered PR and Influencer Marketing services<br />that drive growth.
             </p>
           </div>
 
