@@ -116,9 +116,6 @@ const Index = () => {
               background: 'radial-gradient(ellipse at 20% 50%, rgba(66, 133, 244, 0.4) 0%, transparent 50%), radial-gradient(ellipse at 80% 50%, rgba(234, 67, 53, 0.3) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(251, 188, 5, 0.35) 0%, transparent 50%)'
             }}
           />
-          
-          {/* Subtle Light Balance */}
-          <div className="absolute inset-0 bg-white/5 pointer-events-none" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
