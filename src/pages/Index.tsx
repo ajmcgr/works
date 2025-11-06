@@ -8,7 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
-import heroWorkspace from "@/assets/hero-workspace.jpg";
+import heroCreation from "@/assets/hero-creation.png";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -101,8 +101,8 @@ const Index = () => {
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
             <img 
-              src={heroWorkspace}
-              alt="Creative professionals collaborating"
+              src={heroCreation}
+              alt="Creative vision and innovation"
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
             />
