@@ -97,23 +97,23 @@ const Index = () => {
       >
         <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
-          {/* Video Background */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ 
-              filter: 'brightness(0.65)',
-              willChange: 'auto'
-            }}
-          >
-            <source src="/hero-grid.mp4" type="video/mp4" />
-          </video>
+          {/* Animated Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-slate-900 to-amber-900 animate-gradient-flow" />
           
-          {/* Dark Gradient Overlay */}
-          <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+          {/* Pulsing Gradient Overlay */}
+          <div className="absolute inset-0 opacity-60 animate-gradient-pulse" style={{
+            background: 'radial-gradient(circle at 30% 50%, rgba(168, 85, 247, 0.4) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(251, 146, 120, 0.3) 0%, transparent 50%)'
+          }} />
+          
+          {/* Light Flares */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute w-96 h-96 rounded-full blur-3xl bg-purple-500/20 animate-flare-drift-1" style={{ top: '20%', left: '10%' }} />
+            <div className="absolute w-80 h-80 rounded-full blur-3xl bg-amber-500/15 animate-flare-drift-2" style={{ top: '60%', right: '15%' }} />
+            <div className="absolute w-72 h-72 rounded-full blur-3xl bg-coral/20 animate-flare-drift-3" style={{ bottom: '30%', left: '40%' }} />
+          </div>
+          
+          {/* Dark Vignette */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
