@@ -97,23 +97,35 @@ const Index = () => {
       >
         <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
-          {/* Creative Spectrum Background */}
-          <div className="absolute inset-0 bg-white" />
+          {/* Minimalist Base */}
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-900" />
           
-          {/* Flowing Color Bands */}
+          {/* Subtle Digital Network Pattern */}
           <div 
-            className="absolute inset-0 opacity-90 blur-3xl animate-spectrum-flow"
+            className="absolute inset-0 opacity-20"
             style={{
-              background: 'linear-gradient(110deg, #4285F4 0%, #EA4335 20%, #FBBC05 40%, #34A853 60%, #A142F4 80%, #4285F4 100%)',
-              backgroundSize: '200% 100%'
+              backgroundImage: `radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.03) 0%, transparent 50%),
+                                radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+                                radial-gradient(circle at 40% 70%, rgba(0, 0, 0, 0.02) 0%, transparent 40%)`,
             }}
           />
           
-          {/* Soft Aurora Overlay */}
+          {/* Atmospheric Light Glow */}
           <div 
-            className="absolute inset-0 opacity-70 blur-2xl animate-aurora-drift"
+            className="absolute inset-0 opacity-30"
             style={{
-              background: 'radial-gradient(ellipse at 20% 50%, rgba(66, 133, 244, 0.4) 0%, transparent 50%), radial-gradient(ellipse at 80% 50%, rgba(234, 67, 53, 0.3) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(251, 188, 5, 0.35) 0%, transparent 50%)'
+              background: 'radial-gradient(ellipse at 50% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 60%)',
+            }}
+          />
+          
+          {/* Mesh Grid Fade */}
+          <div 
+            className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px)`,
+              backgroundSize: '60px 60px',
+              maskImage: 'linear-gradient(to bottom, transparent 0%, black 40%, black 100%)',
             }}
           />
 
