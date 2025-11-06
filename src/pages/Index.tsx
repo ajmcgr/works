@@ -97,32 +97,37 @@ const Index = () => {
       >
         <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
-          {/* Animated Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-slate-900 to-amber-900 animate-gradient-flow" />
+          {/* Creative Spectrum Background */}
+          <div className="absolute inset-0 bg-white" />
           
-          {/* Pulsing Gradient Overlay */}
-          <div className="absolute inset-0 opacity-60 animate-gradient-pulse" style={{
-            background: 'radial-gradient(circle at 30% 50%, rgba(168, 85, 247, 0.4) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(251, 146, 120, 0.3) 0%, transparent 50%)'
-          }} />
+          {/* Flowing Color Bands */}
+          <div 
+            className="absolute inset-0 opacity-90 blur-3xl animate-spectrum-flow"
+            style={{
+              background: 'linear-gradient(110deg, #4285F4 0%, #EA4335 20%, #FBBC05 40%, #34A853 60%, #A142F4 80%, #4285F4 100%)',
+              backgroundSize: '200% 100%'
+            }}
+          />
           
-          {/* Light Flares */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute w-96 h-96 rounded-full blur-3xl bg-purple-500/20 animate-flare-drift-1" style={{ top: '20%', left: '10%' }} />
-            <div className="absolute w-80 h-80 rounded-full blur-3xl bg-amber-500/15 animate-flare-drift-2" style={{ top: '60%', right: '15%' }} />
-            <div className="absolute w-72 h-72 rounded-full blur-3xl bg-coral/20 animate-flare-drift-3" style={{ bottom: '30%', left: '40%' }} />
-          </div>
+          {/* Soft Aurora Overlay */}
+          <div 
+            className="absolute inset-0 opacity-70 blur-2xl animate-aurora-drift"
+            style={{
+              background: 'radial-gradient(ellipse at 20% 50%, rgba(66, 133, 244, 0.4) 0%, transparent 50%), radial-gradient(ellipse at 80% 50%, rgba(234, 67, 53, 0.3) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(251, 188, 5, 0.35) 0%, transparent 50%)'
+            }}
+          />
           
-          {/* Dark Vignette */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
+          {/* Subtle Light Balance */}
+          <div className="absolute inset-0 bg-white/5 pointer-events-none" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
           <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-white mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
+            <h1 className="font-headline text-white mb-4 md:mb-6 text-6xl md:text-7xl lg:text-8xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
               We Connect Creators & Brands
             </h1>
             
-            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.15)' }}>
+            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.25)' }}>
               AI-powered PR and Influencer Marketing services that drive growth.
             </p>
           </div>
@@ -130,7 +135,8 @@ const Index = () => {
           {/* Touch-native CTA */}
             <div>
                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-6 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
+                  className="inline-flex items-center px-8 py-6 rounded-lg bg-white/15 backdrop-blur-md border border-white/30 text-white text-lg font-semibold transition-all duration-300 hover:bg-white/25 hover:border-white/40"
+                  style={{ textShadow: '0 2px 6px rgba(0,0,0,0.2)' }}>
                 <span>Let's Work Together</span>
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
