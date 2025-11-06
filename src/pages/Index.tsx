@@ -8,6 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
+import heroWorkspace from "@/assets/hero-workspace.jpg";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -97,37 +98,18 @@ const Index = () => {
       >
         <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
-          {/* Minimalist Base */}
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-900" />
+          {/* Hero Background Image */}
+          <div className="absolute inset-0 overflow-hidden">
+            <img 
+              src={heroWorkspace}
+              alt="Creative professionals collaborating"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
           
-          {/* Subtle Digital Network Pattern */}
-          <div 
-            className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage: `radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.03) 0%, transparent 50%),
-                                radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
-                                radial-gradient(circle at 40% 70%, rgba(0, 0, 0, 0.02) 0%, transparent 40%)`,
-            }}
-          />
-          
-          {/* Atmospheric Light Glow */}
-          <div 
-            className="absolute inset-0 opacity-30"
-            style={{
-              background: 'radial-gradient(ellipse at 50% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 60%)',
-            }}
-          />
-          
-          {/* Mesh Grid Fade */}
-          <div 
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-                                linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px)`,
-              backgroundSize: '60px 60px',
-              maskImage: 'linear-gradient(to bottom, transparent 0%, black 40%, black 100%)',
-            }}
-          />
+          {/* Gradient Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/40" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
