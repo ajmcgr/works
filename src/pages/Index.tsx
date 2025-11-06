@@ -101,6 +101,34 @@ const Index = () => {
           backgroundPosition: 'center',
           willChange: 'auto'
         }}>
+          
+          {/* Grid Overlay - Hidden on mobile */}
+          <div className="hidden md:block absolute inset-0 pointer-events-none" style={{ opacity: 0.15 }}>
+            <svg className="w-full h-full">
+              <defs>
+                <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                  <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="2"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+            
+            {/* Glowing Dots */}
+            <div className="absolute inset-0 overflow-hidden">
+              {[...Array(12)].map((_, i) => (
+                <div
+                  key={i}
+                  className="absolute w-2 h-2 rounded-full bg-white/60 animate-glow-pulse"
+                  style={{
+                    left: `${Math.random() * 100}%`,
+                    top: `${Math.random() * 100}%`,
+                    animationDelay: `${i * 0.8}s`,
+                    boxShadow: '0 0 10px 2px rgba(255,255,255,0.3)'
+                  }}
+                />
+              ))}
+            </div>
+          </div>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
