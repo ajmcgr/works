@@ -112,7 +112,8 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/25" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
-
+          {/* Darker backdrop for headline and CTA */}
+          <div className="relative bg-black/30 backdrop-blur-sm rounded-3xl p-8 md:p-12">
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-white mb-4 md:mb-6 text-5xl md:text-6xl lg:text-7xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4.5rem)' }}>
               We Connect Creators & Brands
@@ -131,6 +132,7 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
             </div>
+          </div>
 
           {/* Client Logos - Now directly below hero button */}
           <div className="mt-8 md:mt-10">
