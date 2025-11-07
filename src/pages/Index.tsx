@@ -8,7 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
-import heroCreation from "@/assets/hero-creation.png";
+import heroCreationTech from "@/assets/hero-creativity-tech.png";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -101,15 +101,15 @@ const Index = () => {
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
             <img 
-              src={heroCreation}
-              alt="Creative vision and innovation"
-              className="absolute inset-0 w-full h-full object-cover"
+              src={heroCreationTech}
+              alt="Human hand with spray paint meets robotic arm with digital particles - creativity meets technology"
+              className="absolute inset-0 w-full h-full object-cover object-center"
               loading="eager"
             />
           </div>
           
           {/* Gradient Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/60" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
