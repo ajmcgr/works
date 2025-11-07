@@ -8,7 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
-import heroCreationTech from "@/assets/hero-creativity-tech-white.png";
+import heroCreationTech from "@/assets/hero-creativity-tech-realistic.png";
 
 const Index = () => {
   const [formData, setFormData] = useState({
