@@ -109,7 +109,7 @@ const Index = () => {
           </div>
           
           {/* Gradient Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
@@ -126,7 +126,7 @@ const Index = () => {
           {/* Touch-native CTA */}
             <div>
                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-6 rounded-lg bg-gray-900 text-white text-lg font-semibold transition-all duration-300 hover:bg-gray-800">
+                  className="inline-flex items-center px-8 py-6 rounded-lg bg-white/10 backdrop-blur-sm text-white border border-white/20 text-lg font-semibold transition-all duration-300 hover:bg-white/20">
                 <span>Let's Work Together</span>
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
               </a>
