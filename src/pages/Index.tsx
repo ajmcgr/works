@@ -109,7 +109,7 @@ const Index = () => {
           </div>
           
           {/* Gradient Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/25" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
