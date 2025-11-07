@@ -111,8 +111,8 @@ const Index = () => {
           {/* Gradient Overlay for Text Readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/25" />
           
-          {/* Elegant radial darkening around headline and CTA */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_600px_at_center,transparent_0%,transparent_40%,rgba(0,0,0,0.4)_70%,rgba(0,0,0,0.2)_100%)]" />
+          {/* Elegant radial darkening - darker in center around headline/CTA */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.45)_0%,rgba(0,0,0,0.25)_40%,transparent_70%)]" />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
