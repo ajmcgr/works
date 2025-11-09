@@ -112,7 +112,7 @@ const About = () => {
               </p>
             </div>
             <div className="mt-12">
-              <Button asChild className="text-white px-10 py-4 text-sm font-medium" style={{ backgroundColor: '#409EFF' }}>
+              <Button asChild className="px-10 py-4 text-sm font-medium">
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
                   Start a conversation
                   <ArrowRight className="ml-2 h-4 w-4" />

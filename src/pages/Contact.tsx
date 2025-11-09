@@ -119,7 +119,7 @@ const Contact = () => {
                 style={{ borderRadius: '12px' }}
               />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full text-white hover:opacity-90 px-6 py-4 text-base" style={{ backgroundColor: '#409EFF' }}>
+            <Button type="submit" disabled={isSubmitting} className="w-full px-6 py-4 text-base">
               {isSubmitting ? (
                 "Opening email client..."
               ) : (

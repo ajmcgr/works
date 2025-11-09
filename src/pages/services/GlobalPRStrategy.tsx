@@ -15,7 +15,7 @@ const GlobalPRStrategy = () => {
             Showcase Works' ability to land coverage across three major markets with 
             culturally-informed campaigns that resonate locally while maintaining global brand consistency.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
+          <Button asChild size="lg" className="px-8 py-4">
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
             </a>
@@ -336,7 +336,7 @@ const GlobalPRStrategy = () => {
             Launch your brand worldwide with strategic PR that resonates locally while building global influence and credibility.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
+            <Button asChild size="lg" className="px-8 py-4">
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
               </a>

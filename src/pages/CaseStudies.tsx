@@ -279,7 +279,7 @@ const CaseStudies = () => {
                             )}
                           </div>
                           <div>
-                            <Button asChild className="text-white hover:opacity-90" style={{ backgroundColor: '#409EFF' }}>
+                            <Button asChild>
                               <Link to={`/case-study/${client.id}`}>Read Case Study</Link>
                             </Button>
                           </div>
@@ -384,7 +384,7 @@ const CaseStudies = () => {
           <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto text-gray-600 font-normal leading-relaxed">
             Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
-          <Button asChild size="lg" className="text-white hover:opacity-90 px-8 py-3" style={{ backgroundColor: '#409EFF' }}>
+          <Button asChild size="lg" className="px-8 py-3">
             <Link to="/contact">Start a conversation</Link>
           </Button>
         </div>

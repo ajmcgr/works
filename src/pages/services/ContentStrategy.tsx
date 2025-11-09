@@ -16,7 +16,7 @@ const ContentStrategy = () => {
           <Button 
             asChild 
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+            className="px-12 py-6 text-lg font-semibold"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Craft Your Story <ArrowRight className="ml-2 h-4 w-4" />
@@ -80,7 +80,7 @@ const ContentStrategy = () => {
           <Button 
             asChild 
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold"
+            className="px-12 py-6 text-lg font-semibold"
           >
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Start Content Strategy <ArrowRight className="ml-2 h-4 w-4" />

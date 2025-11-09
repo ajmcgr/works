@@ -147,7 +147,7 @@ const Startups = () => {
                 </li>
               </ul>
               
-              <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
+              <Button asChild className="w-full py-4 text-lg font-semibold">
                 <a href="https://buy.stripe.com/5kQ14o9aO46M3D483wcMM0i" target="_blank" rel="noopener noreferrer">Buy PR Sprint</a>
               </Button>
             </div>
@@ -191,7 +191,7 @@ const Startups = () => {
                 </li>
               </ul>
               
-              <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-semibold">
+              <Button asChild className="w-full py-4 text-lg font-semibold">
                 <a href="https://buy.stripe.com/8x24gA0Ei1YE3D42JccMM0j" target="_blank" rel="noopener noreferrer">Buy PR Sprint Pro</a>
               </Button>
             </div>
@@ -255,7 +255,7 @@ const Startups = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Join hundreds of founders who've accelerated their growth with our startup-focused PR solutions.
           </p>
-          <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold">
+          <Button asChild className="px-12 py-6 text-lg font-semibold">
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Get Started Today <ArrowRight className="ml-2 h-4 w-4" />
             </a>

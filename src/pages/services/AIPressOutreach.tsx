@@ -15,7 +15,7 @@ const AIPressOutreach = () => {
             Transform media outreach with intelligent journalist discovery, automated list building, 
             and data-driven pitch optimization powered by Media AI.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
+          <Button asChild size="lg" className="px-8 py-4">
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
             </a>
@@ -258,7 +258,7 @@ const AIPressOutreach = () => {
             Join thousands of PR professionals using AI to build better media relationships and achieve superior placement results.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
+            <Button asChild size="lg" className="px-8 py-4">
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
               </a>

@@ -15,7 +15,7 @@ const CrisisReputationManagement = () => {
             Manage brand narratives during founder drama, product recalls, social backlash, 
             and unexpected challenges with strategic crisis communication that protects and rebuilds trust.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
+          <Button asChild size="lg" className="px-8 py-4">
             <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
               Get Crisis Support <ArrowRight className="ml-2 h-4 w-4" />
             </a>
@@ -337,7 +337,7 @@ const CrisisReputationManagement = () => {
             systems that protect and strengthen your brand through any challenge.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4">
+            <Button asChild size="lg" className="px-8 py-4">
               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                 Schedule Crisis Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </a>
