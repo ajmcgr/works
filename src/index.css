@@ -41,7 +41,7 @@
     --foreground: 218 12% 15%; /* #222529 */
     --accent-electric: 209 88% 52%; /* Button blue #136ed5 */
     --accent-punch: 0 0% 8%; /* Pure black for contrast */
-    --cta-blue: 209 84% 45%; /* CTA button blue #136ed5 */
+    --cta-blue: 344 100% 43%; /* CTA button blue #136ed5 */
     
     /* Kinetic gradients */
     --gradient-hero: linear-gradient(180deg, hsl(0 0% 95%) 0%, hsl(0 0% 95%) 100%);
