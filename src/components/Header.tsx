@@ -61,7 +61,7 @@ const Header = () => {
 
   return (
     <header className={`w-full z-50 fixed top-0 flex justify-center transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-[5px] px-6">
+      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-[5.5px] px-6">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-14">
           <Link to="/" className="hover:opacity-80 transition-opacity">
@@ -83,7 +83,7 @@ const Header = () => {
                 <ChevronDown className="h-3.5 w-3.5" />
               </DropdownMenuTrigger>
               <DropdownMenuContent 
-                className="bg-white border border-gray-200 shadow-lg rounded-[5px] p-2 w-80 z-[60]"
+                className="bg-white border border-gray-200 shadow-lg rounded-[5.5px] p-2 w-80 z-[60]"
               >
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('http://trybio.ai/')}
@@ -221,7 +221,7 @@ const Header = () => {
 
           {/* Mobile Menu Overlay */}
           {isMobileMenuOpen && (
-            <div className="absolute top-14 left-0 right-0 bg-white/40 backdrop-blur-sm shadow-lg rounded-[5px] z-50">
+            <div className="absolute top-14 left-0 right-0 bg-white/40 backdrop-blur-sm shadow-lg rounded-[5.5px] z-50">
               <div className="px-6 py-4 space-y-4">
                 {/* Products dropdown */}
                 <div className="relative">
@@ -233,7 +233,7 @@ const Header = () => {
                       <ChevronDown className="h-3.5 w-3.5" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent 
-                      className="bg-white border border-gray-200 shadow-lg rounded-[5px] p-1 w-80 z-[60]"
+                      className="bg-white border border-gray-200 shadow-lg rounded-[5.5px] p-1 w-80 z-[60]"
                     >
                       <DropdownMenuItem 
                         onClick={() => {
