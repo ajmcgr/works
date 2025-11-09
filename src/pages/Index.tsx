@@ -128,11 +128,12 @@ const Index = () => {
 
           {/* Touch-native CTA */}
             <div>
-               <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-6 rounded-lg bg-white/10 backdrop-blur-sm text-white border border-white/20 text-lg font-semibold transition-all duration-300 hover:bg-white/20">
-                <span>Let's Work Together</span>
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 hover:translate-x-1" />
-              </a>
+              <Button variant="cta" size="lg" asChild>
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                  <span>Let's Work Together</span>
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
             </div>
 
           {/* Client Logos - Now directly below hero button */}
@@ -398,10 +399,10 @@ const Index = () => {
                   <p className="text-white text-lg lg:text-xl leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <div className="inline-flex items-center px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/30">
+                  <Button variant="cta" size="default" className="inline-flex">
                     <span>Learn More</span>
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
                 </div>
               </div>
             </a>
@@ -485,16 +486,16 @@ const Index = () => {
                 style={{ borderRadius: '12px' }}
               />
             </div>
-            <div className="inline-flex items-center px-8 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium transition-all duration-300 hover:bg-white/20 hover:border-white/30 cursor-pointer">
-              <button type="submit" disabled={isSubmitting} className="bg-transparent border-none text-white font-medium">
-                {isSubmitting ? (
-                  "Opening email client..."
-                ) : (
-                  "Start a conversation"
-                )}
-              </button>
-              {!isSubmitting && <ArrowRight className="h-4 w-4 ml-2" />}
-            </div>
+            <Button variant="cta" size="default" type="submit" disabled={isSubmitting} className="inline-flex">
+              {isSubmitting ? (
+                "Opening email client..."
+              ) : (
+                <>
+                  <span>Start a conversation</span>
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </>
+              )}
+            </Button>
           </form>
         </div>
       </section>

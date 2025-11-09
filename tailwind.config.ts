@@ -51,6 +51,7 @@ export default {
 				'warm-gray': 'hsl(var(--warm-gray))',
 				'cool-gray': 'hsl(var(--cool-gray))',
 				'charcoal': 'hsl(var(--charcoal))',
+				'cta-blue': 'hsl(var(--cta-blue))',
 				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
