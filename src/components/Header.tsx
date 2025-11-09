@@ -61,7 +61,7 @@ const Header = () => {
 
   return (
     <header className={`w-full z-50 fixed top-0 flex justify-center transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-[7px] px-6">
+      <div className="mt-4 bg-white/40 backdrop-blur-sm rounded-[.75rem] px-6">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-center gap-8 h-14">
           <Link to="/" className="hover:opacity-80 transition-opacity">
@@ -83,11 +83,11 @@ const Header = () => {
                 <ChevronDown className="h-3.5 w-3.5" />
               </DropdownMenuTrigger>
               <DropdownMenuContent 
-                className="bg-white border border-gray-200 shadow-lg rounded-[7px] p-2 w-80 z-[60]"
+                className="bg-white border border-gray-200 shadow-lg rounded-[.75rem] p-2 w-80 z-[60]"
               >
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('http://trybio.ai/')}
-                  className="flex items-start space-x-3 p-3 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
                     src="/lovable-uploads/bio-icon.png" 
@@ -101,7 +101,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('https://trycreators.ai/')}
-                  className="flex items-start space-x-3 p-3 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
                     src="/lovable-uploads/creators-icon.png" 
@@ -115,7 +115,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('https://trymedia.ai/')}
-                  className="flex items-start space-x-3 p-3 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
                     src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
@@ -129,7 +129,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('https://www.trycontent.ai/')}
-                  className="flex items-start space-x-3 p-3 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
                     src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
@@ -143,7 +143,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem 
                   onClick={() => handleNavClick('https://www.trywrite.ai/')}
-                  className="flex items-start space-x-3 p-3 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
                   <img 
                     src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
@@ -221,7 +221,7 @@ const Header = () => {
 
           {/* Mobile Menu Overlay */}
           {isMobileMenuOpen && (
-            <div className="absolute top-14 left-0 right-0 bg-white/40 backdrop-blur-sm shadow-lg rounded-[7px] z-50">
+            <div className="absolute top-14 left-0 right-0 bg-white/40 backdrop-blur-sm shadow-lg rounded-[.75rem] z-50">
               <div className="px-6 py-4 space-y-4">
                 {/* Products dropdown */}
                 <div className="relative">
@@ -233,14 +233,14 @@ const Header = () => {
                       <ChevronDown className="h-3.5 w-3.5" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent 
-                      className="bg-white border border-gray-200 shadow-lg rounded-[7px] p-1 w-80 z-[60]"
+                      className="bg-white border border-gray-200 shadow-lg rounded-[.75rem] p-1 w-80 z-[60]"
                     >
                       <DropdownMenuItem 
                         onClick={() => {
                           handleNavClick('http://trybio.ai/');
                           setIsMobileMenuOpen(false);
                         }}
-                        className="flex items-start space-x-1 p-2 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                       >
                         <img 
                           src="/lovable-uploads/bio-icon.png" 
@@ -257,7 +257,7 @@ const Header = () => {
                           handleNavClick('https://trycreators.ai/');
                           setIsMobileMenuOpen(false);
                         }}
-                        className="flex items-start space-x-1 p-2 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                       >
                         <img 
                           src="/lovable-uploads/creators-icon.png" 
@@ -274,7 +274,7 @@ const Header = () => {
                           handleNavClick('https://trymedia.ai/');
                           setIsMobileMenuOpen(false);
                         }}
-                        className="flex items-start space-x-1 p-2 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                       >
                         <img 
                           src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
@@ -291,7 +291,7 @@ const Header = () => {
                           handleNavClick('https://www.trycontent.ai/');
                           setIsMobileMenuOpen(false);
                         }}
-                        className="flex items-start space-x-1 p-2 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                       >
                         <img 
                           src="/lovable-uploads/0470ccaf-cf52-42bb-9852-40cdea28c5d2.png" 
@@ -308,7 +308,7 @@ const Header = () => {
                           handleNavClick('https://www.trywrite.ai/');
                           setIsMobileMenuOpen(false);
                         }}
-                        className="flex items-start space-x-1 p-2 rounded-[7px] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                       >
                         <img 
                           src="/lovable-uploads/2f01faa2-9738-4566-8711-ffc76c8ea440.png" 
