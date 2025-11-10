@@ -114,7 +114,7 @@ const About = () => {
             <div className="mt-12">
               <Button asChild className="px-10 py-4 text-sm font-medium">
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer" className="hover:opacity-90">
-                  Start a conversation
+                  Start A Conversation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>

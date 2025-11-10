@@ -124,7 +124,7 @@ const Contact = () => {
                 "Opening email client..."
               ) : (
                 <>
-                  Start a conversation
+                  Start A Conversation
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </>
               )}

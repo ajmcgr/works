@@ -491,7 +491,7 @@ const Index = () => {
                 "Opening email client..."
               ) : (
                 <>
-                  <span>Start a conversation</span>
+                  <span>Start A Conversation</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </>
               )}

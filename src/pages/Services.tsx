@@ -143,7 +143,7 @@ const Services = () => {
             Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
           <Button asChild size="lg">
-            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Start a conversation</a>
+            <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">Start A Conversation</a>
           </Button>
         </div>
       </section>

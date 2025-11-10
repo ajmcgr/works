@@ -385,7 +385,7 @@ const CaseStudies = () => {
             Let's discuss your goals and how we can help you achieve them through strategic public relations.
           </p>
           <Button asChild size="lg" className="px-8 py-3">
-            <Link to="/contact">Start a conversation</Link>
+            <Link to="/contact">Start A Conversation</Link>
           </Button>
         </div>
       </section>
