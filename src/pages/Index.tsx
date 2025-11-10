@@ -400,7 +400,7 @@ const Index = () => {
                     {service.description}
                   </p>
                   <Button variant="cta" size="default" className="inline-flex">
-                    <span>Learn More</span>
+                    <span>Read Case Study</span>
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </div>
