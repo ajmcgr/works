@@ -158,7 +158,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                       alt="UFC" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -169,7 +169,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                       alt="OnePlus" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -180,7 +180,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                       alt="OPPO" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -191,7 +191,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                       alt="Ogilvy" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="eager"
                     />
                   </div>
@@ -201,7 +201,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png" 
                       alt="Weber Shandwick" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="eager"
                     />
                   </div>
@@ -211,7 +211,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                       alt="Publicis Groupe" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="eager"
                     />
                   </div>
@@ -221,7 +221,7 @@ const Index = () => {
                     <img 
                       src={tankaLogo} 
                       alt="Tanka" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -232,7 +232,7 @@ const Index = () => {
                     <img 
                       src={tauLogo} 
                       alt="Tau" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -243,7 +243,7 @@ const Index = () => {
                     <img 
                       src={nottaLogo} 
                       alt="Notta" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -254,7 +254,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/ecarx.png" 
                       alt="ECARX" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -265,7 +265,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/hho.png" 
                       alt="HHO" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -276,7 +276,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/angrymiao.png" 
                       alt="Angry Miao" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
@@ -287,7 +287,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/tencent.png" 
                       alt="Tencent" 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
                       decoding="async"
                     />
