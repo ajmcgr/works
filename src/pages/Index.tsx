@@ -8,6 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
+import angryMiaoLogo from "@/assets/angry-miao.png";
 import heroCreationTech from "@/assets/hero-creativity-tech-realistic.png";
 
 const Index = () => {
@@ -274,7 +275,7 @@ const Index = () => {
                 <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
                   <div className="w-full h-20 md:h-32 flex items-center justify-center">
                     <img 
-                      src="/lovable-uploads/angrymiao.png" 
+                      src={angryMiaoLogo} 
                       alt="Angry Miao" 
                       className="max-w-full max-h-full object-contain transition-all duration-300 brightness-0 invert"
                       loading="lazy"
