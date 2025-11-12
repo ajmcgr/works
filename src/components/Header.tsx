@@ -155,6 +155,20 @@ const Header = () => {
                     <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
                   </div>
                 </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://trypost.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                >
+                  <img 
+                    src="/lovable-uploads/post-icon.png" 
+                    alt="Post" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Post</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Create once schedule everywhere</span>
+                  </div>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
@@ -318,6 +332,23 @@ const Header = () => {
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Write</span>
                           <span className="text-xs text-gray-500 mt-0.5">Your press release writing assistant</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://trypost.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/post-icon.png" 
+                          alt="Post" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Post</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Create once schedule everywhere</span>
                         </div>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
