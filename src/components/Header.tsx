@@ -114,20 +114,6 @@ const Header = () => {
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
-                  onClick={() => handleNavClick('https://trymedia.ai/')}
-                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                >
-                  <img 
-                    src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
-                    alt="Media" 
-                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
-                  />
-                  <div className="flex flex-col">
-                    <span className="font-medium text-sm text-gray-900">Media</span>
-                    <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
-                  </div>
-                </DropdownMenuItem>
-                <DropdownMenuItem 
                   onClick={() => handleNavClick('https://trypost.ai/')}
                   className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
@@ -139,6 +125,20 @@ const Header = () => {
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Post</span>
                     <span className="text-xs text-gray-500 mt-0.5">Create once schedule everywhere</span>
+                  </div>
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://trymedia.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                >
+                  <img 
+                    src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
+                    alt="Media" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Media</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
@@ -285,23 +285,6 @@ const Header = () => {
                       </DropdownMenuItem>
                       <DropdownMenuItem 
                         onClick={() => {
-                          handleNavClick('https://trymedia.ai/');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
-                      >
-                        <img 
-                          src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
-                          alt="Media" 
-                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
-                        />
-                        <div className="flex flex-col">
-                          <span className="font-medium text-sm text-gray-900">Media</span>
-                          <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
-                        </div>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem 
-                        onClick={() => {
                           handleNavClick('https://trypost.ai/');
                           setIsMobileMenuOpen(false);
                         }}
@@ -315,6 +298,23 @@ const Header = () => {
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Post</span>
                           <span className="text-xs text-gray-500 mt-0.5">Create once schedule everywhere</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://trymedia.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/4d4628f9-f999-41bf-a8c3-e3b7bca7eb0b.png" 
+                          alt="Media" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Media</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
                         </div>
                       </DropdownMenuItem>
                       <DropdownMenuItem 
