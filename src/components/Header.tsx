@@ -142,6 +142,20 @@ const Header = () => {
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
+                  onClick={() => handleNavClick('https://tryhype.ai/')}
+                  className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                >
+                  <img 
+                    src="/lovable-uploads/hype-icon.png" 
+                    alt="Hype" 
+                    className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sm text-gray-900">Hype</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Your word of mouth assistant</span>
+                  </div>
+                </DropdownMenuItem>
+                <DropdownMenuItem 
                   onClick={() => handleNavClick('https://www.trycontent.ai/')}
                   className="flex items-start space-x-3 p-3 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
                 >
@@ -315,6 +329,23 @@ const Header = () => {
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Media</span>
                           <span className="text-xs text-gray-500 mt-0.5">Find any journalist or creator email</span>
+                        </div>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem 
+                        onClick={() => {
+                          handleNavClick('https://tryhype.ai/');
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-start space-x-1 p-2 rounded-[.75rem] hover:bg-gray-100 cursor-pointer focus:bg-gray-100"
+                      >
+                        <img 
+                          src="/lovable-uploads/hype-icon.png" 
+                          alt="Hype" 
+                          className="w-5 h-5 mt-0.5 flex-shrink-0 rounded"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm text-gray-900">Hype</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Your word of mouth assistant</span>
                         </div>
                       </DropdownMenuItem>
                       <DropdownMenuItem 
