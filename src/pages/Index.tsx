@@ -117,7 +117,7 @@ const Index = () => {
 
         <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6">
 
-          <div className="mb-6 md:mb-8">
+          <div className="mb-6 md:mb-8 backdrop-blur-md bg-black/20 rounded-2xl p-6 md:p-8 mx-auto max-w-4xl">
             <h1 className="font-headline text-white mb-4 md:mb-6 text-5xl md:text-6xl lg:text-7xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4.5rem)' }}>
               We Connect Creators & Brands
             </h1>
