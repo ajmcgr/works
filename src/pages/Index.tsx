@@ -149,7 +149,7 @@ const Index = () => {
             >
               <CarouselContent className="-ml-2">
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                       alt="UFC" 
@@ -160,7 +160,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png" 
                       alt="OnePlus" 
@@ -171,7 +171,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png" 
                       alt="OPPO" 
@@ -182,7 +182,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png" 
                       alt="Ogilvy" 
@@ -202,7 +202,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png" 
                       alt="Publicis Groupe" 
@@ -212,7 +212,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src={tankaLogo} 
                       alt="Tanka" 
@@ -223,7 +223,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src={tauLogo} 
                       alt="Tau" 
@@ -234,7 +234,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src={nottaLogo} 
                       alt="Notta" 
@@ -245,7 +245,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/ecarx.png" 
                       alt="ECARX" 
@@ -256,7 +256,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/hho.png" 
                       alt="HHO" 
@@ -267,7 +267,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src={angryMiaoLogo} 
                       alt="Angry Miao" 
@@ -278,7 +278,7 @@ const Index = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-28 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/tencent.png" 
                       alt="Tencent" 
