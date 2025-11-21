@@ -97,7 +97,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-6 md:py-16 cursor-pointer">
+        <section className="min-h-screen flex flex-col items-center relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
@@ -115,7 +115,7 @@ const Index = () => {
           {/* Elegant radial darkening - darker in center around headline/CTA */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
 
-        <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6 mt-auto mb-8 md:mb-12">
+        <div className="relative z-10 text-center max-w-5xl mx-auto w-full px-4 md:px-6 mt-auto mb-4 md:mb-6">
 
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-white mb-4 md:mb-6 text-5xl md:text-6xl lg:text-7xl" style={{ letterSpacing: '0px', fontSize: 'clamp(3rem, 5vw, 4.5rem)' }}>
@@ -138,7 +138,7 @@ const Index = () => {
             </div>
 
           {/* Client Logos - Now directly below hero button */}
-          <div className="mt-8 md:mt-10">
+          <div className="mt-6 md:mt-8">
             <p className="text-white text-sm mb-3 md:mb-6 text-center">Trusted by Innovative brands worldwide</p>
             <Carousel
               setApi={setCarouselApi}
