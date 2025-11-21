@@ -127,7 +127,7 @@ const Index = () => {
             >
               <CarouselContent className="-ml-4">
                 <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-20 md:h-36 flex items-center justify-center">
+                  <div className="w-full h-28 md:h-36 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                       alt="UFC" 
