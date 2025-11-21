@@ -9,7 +9,7 @@ import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
 import angryMiaoLogo from "@/assets/angry-miao.png";
-import heroHumanCool from "@/assets/hero-human-cool.png";
+import heroHumanCool from "@/assets/hero-human-cool.webp";
 
 const Index = () => {
   const [formData, setFormData] = useState({
