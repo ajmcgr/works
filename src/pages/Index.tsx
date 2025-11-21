@@ -117,12 +117,12 @@ const Index = () => {
 
         <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 mt-auto mb-8 lg:mb-12 ml-4 md:ml-8 lg:ml-16">
 
-          <div className="mb-6 md:mb-8">
-            <h1 className="font-headline text-white mb-4 md:mb-6 text-4xl lg:text-6xl">
+          <div className="mb-3 md:mb-4">
+            <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl">
               We Connect Creators & Brands
             </h1>
             
-            <p className="text-white font-medium text-lg md:text-xl mb-4 md:mb-6 max-w-3xl leading-relaxed">
+            <p className="text-white font-medium text-lg md:text-xl mb-3 md:mb-4 max-w-3xl leading-relaxed">
               AI-powered PR and Influencer Marketing services that drive growth.
             </p>
           </div>
@@ -138,7 +138,7 @@ const Index = () => {
             </div>
 
           {/* Client Logos - Now directly below hero button */}
-          <div className="mt-6 md:mt-8">
+          <div className="mt-4 md:mt-5">
             <Carousel
               setApi={setCarouselApi}
               opts={{
