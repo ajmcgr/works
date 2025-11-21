@@ -9,7 +9,7 @@ import tankaLogo from "@/assets/tanka.png";
 import tauLogo from "@/assets/tau.png";
 import nottaLogo from "@/assets/notta.png";
 import angryMiaoLogo from "@/assets/angry-miao.png";
-import heroCreationTech from "@/assets/hero-creativity-tech-realistic.png";
+import heroHumanCool from "@/assets/hero-human-cool.png";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -102,8 +102,8 @@ const Index = () => {
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
             <img 
-              src={heroCreationTech}
-              alt="Human hand with spray paint meets robotic arm with digital particles - creativity meets technology"
+              src={heroHumanCool}
+              alt="Stylish professional in modern urban setting - contemporary brand communications"
               className="absolute inset-0 w-full h-full object-cover object-center"
               loading="eager"
             />
