@@ -97,7 +97,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-screen flex flex-col items-center justify-between relative overflow-hidden py-6 md:py-16 cursor-pointer">
+        <section className="min-h-[100svh] md:min-h-screen flex flex-col items-center justify-between relative overflow-hidden py-4 md:py-16 cursor-pointer">
           
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
@@ -127,7 +127,7 @@ const Index = () => {
             >
               <CarouselContent className="-ml-4">
                 <CarouselItem className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="w-full h-28 md:h-36 flex items-center justify-center">
+                  <div className="w-full h-20 md:h-36 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png" 
                       alt="UFC" 
@@ -273,12 +273,12 @@ const Index = () => {
           {/* Hero Content - Pushed to bottom */}
           <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16">
 
-            <div className="mb-3 md:mb-4">
-              <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl">
+            <div className="mb-2 md:mb-4">
+              <h1 className="font-headline text-white mb-2 md:mb-3 text-3xl sm:text-4xl lg:text-6xl leading-tight">
                 We Connect Creators & Brands
               </h1>
               
-              <p className="text-white font-medium text-lg md:text-xl mb-3 md:mb-4 max-w-3xl leading-relaxed">
+              <p className="text-white font-medium text-base md:text-xl mb-2 md:mb-4 max-w-3xl leading-relaxed">
                 AI-powered PR and Influencer Marketing services that drive growth.
               </p>
             </div>
