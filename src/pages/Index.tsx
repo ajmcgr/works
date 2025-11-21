@@ -271,7 +271,7 @@ const Index = () => {
           </div>
 
           {/* Hero Content - Pushed to bottom */}
-          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 mb-6 md:mb-16 ml-4 md:ml-8 lg:ml-16">
+          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16">
 
             <div className="mb-3 md:mb-4">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl">
