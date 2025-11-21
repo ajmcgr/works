@@ -115,7 +115,7 @@ const Index = () => {
           {/* Elegant radial darkening - darker in center around headline/CTA */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
 
-        <div className="relative z-10 text-left max-w-5xl w-full px-4 md:px-6 mt-auto mb-4 md:mb-6 ml-4 md:ml-8 lg:ml-16">
+        <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 mt-auto mb-4 md:mb-6 ml-4 md:ml-8 lg:ml-16">
 
           <div className="mb-6 md:mb-8">
             <h1 className="font-headline text-white mb-4 md:mb-6 text-4xl lg:text-6xl">
