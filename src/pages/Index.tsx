@@ -104,7 +104,7 @@ const Index = () => {
             <img 
               src={heroHumanCool}
               alt="Stylish professional in modern urban setting - contemporary brand communications"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 w-full h-full object-cover object-[60%_center]"
               loading="eager"
             />
           </div>
