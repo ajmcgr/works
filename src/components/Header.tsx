@@ -152,7 +152,7 @@ const Header = () => {
                   />
                   <div className="flex flex-col">
                     <span className="font-medium text-sm text-gray-900">Launch</span>
-                    <span className="text-xs text-gray-500 mt-0.5">Discover new AI products. Daily.</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Your product launch platform</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem 
@@ -359,7 +359,7 @@ const Header = () => {
                         />
                         <div className="flex flex-col">
                           <span className="font-medium text-sm text-gray-900">Launch</span>
-                          <span className="text-xs text-gray-500 mt-0.5">Discover new AI products. Daily.</span>
+                          <span className="text-xs text-gray-500 mt-0.5">Your product launch platform</span>
                         </div>
                       </DropdownMenuItem>
                       <DropdownMenuItem 
