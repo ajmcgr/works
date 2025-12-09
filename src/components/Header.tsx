@@ -230,8 +230,17 @@ const Header = () => {
               to="/contact"
               className="text-sm font-medium transition-colors hover:text-gray-600 text-gray-900 tracking-normal"
             >
-              Contact us
+              Contact
             </Link>
+            
+            <a
+              href="https://cal.com/works"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium bg-cta-blue text-white px-4 py-2 rounded-[.75rem] hover:bg-cta-blue/90 transition-colors"
+            >
+              Book a Call
+            </a>
           </div>
         </div>
 
@@ -452,8 +461,18 @@ const Header = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block font-medium transition-colors hover:text-gray-600 text-gray-900 text-sm tracking-normal"
                 >
-                  Contact us
+                  Contact
                 </Link>
+                
+                <a
+                  href="https://cal.com/works"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="inline-block font-medium bg-cta-blue text-white px-4 py-2 rounded-[.75rem] hover:bg-cta-blue/90 transition-colors text-sm"
+                >
+                  Book a Call
+                </a>
               </div>
             </div>
           )}
