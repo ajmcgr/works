@@ -55,14 +55,6 @@ const Footer = () => {
             <div>
               <h4 className="text-base font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.1px' }}>Free Tools</h4>
               <div className="space-y-3">
-                <a 
-                  href="https://creators200.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Top 200 Creators ↗
-                </a>
                 <Link to="/tools/pr-headline-generator" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Headlines Generator</Link>
                 <Link to="/tools/influencer-brief-builder" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Influencer Briefs Generator</Link>
                 <Link to="/tools/pr-health-checker" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">PR Health Check</Link>
