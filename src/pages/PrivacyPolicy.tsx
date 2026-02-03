@@ -167,11 +167,10 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our contact address</h2>
               <div className="text-gray-700">
                 <p>Works App, Inc.</p>
-                <p>651 N Broad St,</p>
-                <p>Suite 201,</p>
-                <p>Middletown,</p>
-                <p>DE 19709</p>
-                <p>US</p>
+                <p>447 Sutter St,</p>
+                <p>Ste 405 #3,</p>
+                <p>San Francisco,</p>
+                <p>CA 94108</p>
               </div>
             </section>
           </div>
