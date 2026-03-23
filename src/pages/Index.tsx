@@ -97,7 +97,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-[100svh] md:min-h-screen flex flex-col justify-end relative overflow-hidden py-6 md:py-16 cursor-pointer">
+        <section className="min-h-[100svh] md:min-h-screen flex flex-col justify-between relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
@@ -115,10 +115,10 @@ const Index = () => {
           {/* Elegant radial darkening */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
 
-          {/* Spacer */}
+          {/* Spacer top */}
           <div className="flex-1" />
 
-          {/* Hero Content */}
+          {/* Hero Content - Centered */}
           <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16">
             <div className="mb-3 md:mb-4">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
@@ -131,7 +131,7 @@ const Index = () => {
             </div>
 
             {/* CTA */}
-            <div className="mb-6 md:mb-8">
+            <div>
               <Button variant="cta" size="lg" asChild>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                   <span>Let's Work Together</span>
@@ -140,6 +140,9 @@ const Index = () => {
               </Button>
             </div>
           </div>
+
+          {/* Spacer bottom */}
+          <div className="flex-1" />
 
           {/* Client Logos - Below CTA */}
           <div className="relative z-10 w-full px-4 pb-2 md:pb-4">
