@@ -110,7 +110,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-[100svh] md:min-h-screen flex flex-col items-center justify-between relative overflow-hidden py-6 md:py-16 cursor-pointer">
+        <section className="min-h-[100svh] md:min-h-screen flex flex-col justify-end relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
@@ -125,24 +125,23 @@ const Index = () => {
           {/* Gradient Overlay for Text Readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/25" />
           
-          {/* Elegant radial darkening - darker in center around headline/CTA */}
+          {/* Elegant radial darkening */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
 
-          {/* Randomly placed client logos */}
+          {/* Randomly placed client logos - upper portion */}
           {clientLogos.map((logo, index) => (
             <div
               key={index}
-              className="absolute pointer-events-none"
+              className="absolute pointer-events-none z-[1]"
               style={{
-                top: logo.top,
-                left: logo.left,
-                opacity: logo.opacity,
+                top: `${8 + logo.topPct * 55}%`,
+                left: `${5 + logo.leftPct * 85}%`,
               }}
             >
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="brightness-0 invert"
+                className="brightness-0 invert opacity-100"
                 style={{ width: logo.size, height: logo.size, objectFit: 'contain' }}
                 loading="lazy"
                 decoding="async"
@@ -150,8 +149,8 @@ const Index = () => {
             </div>
           ))}
 
-          {/* Hero Content - Pushed to bottom */}
-          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-2 md:pb-0">
+          {/* Hero Content - Bottom */}
+          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-2 md:pb-0 mt-auto">
 
             <div className="mb-3 md:mb-4">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
