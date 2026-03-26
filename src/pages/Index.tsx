@@ -18,23 +18,37 @@ const Index = () => {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const { toast } = useToast();
 
-  // Auto-scroll carousel - slower and smoother
-  useEffect(() => {
-    if (!carouselApi) return;
-
-    const intervalId = setInterval(() => {
-      if (carouselApi.canScrollNext()) {
-        carouselApi.scrollNext();
-      } else {
-        carouselApi.scrollTo(0);
-      }
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [carouselApi]);
+  const clientLogos = useMemo(() => {
+    const logos = [
+      { src: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", alt: "UFC" },
+      { src: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", alt: "OnePlus" },
+      { src: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", alt: "OPPO" },
+      { src: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", alt: "Ogilvy" },
+      { src: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", alt: "Weber Shandwick" },
+      { src: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", alt: "Publicis Groupe" },
+      { src: tankaLogo, alt: "Tanka" },
+      { src: tauLogo, alt: "Tau" },
+      { src: nottaLogo, alt: "Notta" },
+      { src: "/lovable-uploads/ecarx.png", alt: "ECARX" },
+      { src: "/lovable-uploads/hho.png", alt: "HHO" },
+      { src: angryMiaoLogo, alt: "Angry Miao" },
+      { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
+    ];
+    // Generate stable random positions
+    const seededRandom = (seed: number) => {
+      const x = Math.sin(seed * 9301 + 49297) * 49297;
+      return x - Math.floor(x);
+    };
+    return logos.map((logo, i) => ({
+      ...logo,
+      top: `${10 + seededRandom(i * 3 + 1) * 70}%`,
+      left: `${5 + seededRandom(i * 3 + 2) * 85}%`,
+      opacity: 0.15 + seededRandom(i * 3 + 3) * 0.25,
+      size: 48 + Math.floor(seededRandom(i * 3 + 4) * 40),
+    }));
+  }, []);
 
   // Preload critical images
   useEffect(() => {
