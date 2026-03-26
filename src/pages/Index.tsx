@@ -43,9 +43,8 @@ const Index = () => {
     };
     return logos.map((logo, i) => ({
       ...logo,
-      top: `${10 + seededRandom(i * 3 + 1) * 70}%`,
-      left: `${5 + seededRandom(i * 3 + 2) * 85}%`,
-      opacity: 0.15 + seededRandom(i * 3 + 3) * 0.25,
+      topPct: seededRandom(i * 3 + 1),
+      leftPct: seededRandom(i * 3 + 2),
       size: 48 + Math.floor(seededRandom(i * 3 + 4) * 40),
     }));
   }, []);
