@@ -45,7 +45,7 @@ const Index = () => {
       ...logo,
       topPct: seededRandom(i * 3 + 1),
       leftPct: seededRandom(i * 3 + 2),
-      size: 80 + Math.floor(seededRandom(i * 3 + 4) * 60),
+      size: 180 + Math.floor(seededRandom(i * 3 + 4) * 140),
     }));
   }, []);
 
@@ -128,27 +128,29 @@ const Index = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
 
           {/* Randomly placed client logos - upper portion */}
-          {clientLogos.map((logo, index) => (
-            <div
-              key={index}
-              className="absolute pointer-events-none z-[1]"
-              style={{
-                top: `${8 + logo.topPct * 55}%`,
-                left: `${5 + logo.leftPct * 85}%`,
-              }}
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="brightness-0 invert opacity-100"
-                style={{ width: logo.size, height: logo.size, objectFit: 'contain' }}
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          ))}
+          <div className="relative z-10 w-full h-full flex-1 px-4 md:px-8">
+            {clientLogos.map((logo, index) => (
+              <div
+                key={index}
+                className="absolute pointer-events-none z-[1]"
+                style={{
+                  top: `${4 + logo.topPct * 46}%`,
+                  left: `${2 + logo.leftPct * 84}%`,
+                }}
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="brightness-0 invert opacity-100"
+                  style={{ width: logo.size, height: logo.size, objectFit: 'contain' }}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))}
+          </div>
 
-          {/* Hero Content - Pushed to bottom */}
+          {/* Hero Content - Bottom left exactly like before */}
           <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-2 md:pb-0">
 
             <div className="mb-3 md:mb-4">
