@@ -45,7 +45,7 @@ const Index = () => {
       ...logo,
       topPct: seededRandom(i * 3 + 1),
       leftPct: seededRandom(i * 3 + 2),
-      size: 48 + Math.floor(seededRandom(i * 3 + 4) * 40),
+      size: 80 + Math.floor(seededRandom(i * 3 + 4) * 60),
     }));
   }, []);
 
@@ -109,7 +109,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-[100svh] md:min-h-screen flex flex-col justify-end relative overflow-hidden py-6 md:py-16 cursor-pointer">
+        <section className="min-h-[100svh] md:min-h-screen flex flex-col items-center justify-between relative overflow-hidden py-6 md:py-16 cursor-pointer">
           
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
@@ -148,8 +148,8 @@ const Index = () => {
             </div>
           ))}
 
-          {/* Hero Content - Bottom */}
-          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-2 md:pb-0 mt-auto">
+          {/* Hero Content - Pushed to bottom */}
+          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-2 md:pb-0">
 
             <div className="mb-3 md:mb-4">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
