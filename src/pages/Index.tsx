@@ -36,17 +36,28 @@ const Index = () => {
       { src: angryMiaoLogo, alt: "Angry Miao" },
       { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
     ];
-    // Generate stable random positions
+    // Place logos in a grid to prevent overlap, with slight random offsets
     const seededRandom = (seed: number) => {
       const x = Math.sin(seed * 9301 + 49297) * 49297;
       return x - Math.floor(x);
     };
-    return logos.map((logo, i) => ({
-      ...logo,
-      topPct: seededRandom(i * 3 + 1),
-      leftPct: seededRandom(i * 3 + 2),
-      size: 180 + Math.floor(seededRandom(i * 3 + 4) * 140),
-    }));
+    const cols = 5;
+    const rows = Math.ceil(logos.length / cols);
+    return logos.map((logo, i) => {
+      const col = i % cols;
+      const row = Math.floor(i / cols);
+      const cellW = 100 / cols;
+      const cellH = 100 / rows;
+      // Random offset within cell (keep padding so they don't touch edges)
+      const offsetX = seededRandom(i * 3 + 1) * (cellW * 0.4);
+      const offsetY = seededRandom(i * 3 + 2) * (cellH * 0.3);
+      return {
+        ...logo,
+        top: row * cellH + offsetY,
+        left: col * cellW + offsetX,
+        size: 180 + Math.floor(seededRandom(i * 3 + 4) * 140),
+      };
+    });
   }, []);
 
   // Preload critical images
@@ -134,8 +145,8 @@ const Index = () => {
                 key={index}
                 className="absolute pointer-events-none z-[1]"
                 style={{
-                  top: `${4 + logo.topPct * 46}%`,
-                  left: `${2 + logo.leftPct * 84}%`,
+                  top: `${logo.top}%`,
+                  left: `${logo.left}%`,
                 }}
               >
                 <img
@@ -151,7 +162,7 @@ const Index = () => {
           </div>
 
           {/* Hero Content - Bottom left exactly like before */}
-          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-2 md:pb-0">
+          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-8 lg:pb-12">
 
             <div className="mb-3 md:mb-4">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
