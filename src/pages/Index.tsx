@@ -36,11 +36,7 @@ const Index = () => {
       { src: angryMiaoLogo, alt: "Angry Miao" },
       { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
     ];
-    // Place logos in a grid to prevent overlap, with slight random offsets
-    const seededRandom = (seed: number) => {
-      const x = Math.sin(seed * 9301 + 49297) * 49297;
-      return x - Math.floor(x);
-    };
+    // Place logos in a grid with random offsets (randomized each visit)
     const cols = 5;
     const rows = Math.ceil(logos.length / cols);
     return logos.map((logo, i) => {
@@ -48,14 +44,13 @@ const Index = () => {
       const row = Math.floor(i / cols);
       const cellW = 100 / cols;
       const cellH = 100 / rows;
-      // Random offset within cell (keep padding so they don't touch edges)
-      const offsetX = seededRandom(i * 3 + 1) * (cellW * 0.4);
-      const offsetY = seededRandom(i * 3 + 2) * (cellH * 0.3);
+      const offsetX = Math.random() * (cellW * 0.4);
+      const offsetY = Math.random() * (cellH * 0.3);
       return {
         ...logo,
         top: row * cellH + offsetY,
         left: col * cellW + offsetX,
-        size: 180 + Math.floor(seededRandom(i * 3 + 4) * 140),
+        size: 180 + Math.floor(Math.random() * 140),
       };
     });
   }, []);
