@@ -138,8 +138,8 @@ const Index = () => {
           {/* Elegant radial darkening */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
 
-          {/* Randomly placed client logos - upper portion */}
-          <div className="relative z-10 w-full h-full flex-1 px-4 md:px-8">
+          {/* Randomly placed client logos - upper portion, capped to avoid headline */}
+          <div className="relative z-10 w-full flex-1 px-4 md:px-8" style={{ maxHeight: '60%' }}>
             {clientLogos.map((logo, index) => (
               <div
                 key={index}
