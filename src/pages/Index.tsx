@@ -120,7 +120,7 @@ const Index = () => {
         rel="noopener noreferrer"
         className="block"
       >
-        <section className="min-h-[100svh] md:min-h-screen flex flex-col items-center justify-between relative overflow-hidden py-6 md:py-16 cursor-pointer">
+        <section className="min-h-[100svh] md:min-h-screen flex flex-col items-center justify-between relative overflow-hidden pt-6 md:pt-16 cursor-pointer">
           
           {/* Hero Background Image */}
           <div className="absolute inset-0 overflow-hidden">
