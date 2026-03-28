@@ -158,7 +158,7 @@ const Index = () => {
                   src={logo.src}
                   alt={logo.alt}
                   className="brightness-0 invert opacity-100"
-                  style={{ width: logo.size, height: logo.size, objectFit: 'contain' }}
+                  style={{ width: `${logo.widthPct}vw`, height: `${logo.widthPct}vw`, objectFit: 'contain' }}
                   loading="lazy"
                   decoding="async"
                 />
