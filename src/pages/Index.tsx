@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,6 +21,8 @@ const Index = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
+  const isMobile = useIsMobile();
+
   const clientLogos = useMemo(() => {
     const logos = [
       { src: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", alt: "UFC" },
@@ -36,21 +39,25 @@ const Index = () => {
       { src: angryMiaoLogo, alt: "Angry Miao" },
       { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
     ];
-    // Place logos in a grid with random offsets (randomized each visit)
-    const cols = 5;
-    const rows = Math.ceil(logos.length / cols);
-    return logos.map((logo, i) => {
+    // On mobile: show fewer logos, smaller, in a 3-col grid
+    const mobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const displayLogos = mobile ? logos.slice(0, 9) : logos;
+    const cols = mobile ? 3 : 5;
+    const rows = Math.ceil(displayLogos.length / cols);
+    const minSize = mobile ? 80 : 180;
+    const sizeRange = mobile ? 60 : 140;
+    return displayLogos.map((logo, i) => {
       const col = i % cols;
       const row = Math.floor(i / cols);
       const cellW = 100 / cols;
       const cellH = 100 / rows;
-      const offsetX = Math.random() * (cellW * 0.4);
-      const offsetY = Math.random() * (cellH * 0.3);
+      const offsetX = Math.random() * (cellW * 0.25);
+      const offsetY = Math.random() * (cellH * 0.2);
       return {
         ...logo,
         top: row * cellH + offsetY,
         left: col * cellW + offsetX,
-        size: 180 + Math.floor(Math.random() * 140),
+        size: minSize + Math.floor(Math.random() * sizeRange),
       };
     });
   }, []);
