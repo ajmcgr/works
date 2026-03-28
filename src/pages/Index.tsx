@@ -47,7 +47,7 @@ const Index = () => {
     const cellW = 100 / cols;
     const cellH = 100 / rows;
     // Logo size as percentage of cell, ensuring it never exceeds cell bounds
-    const logoSizePct = mobile ? 75 : 50; // % of cell width
+    const logoSizePct = mobile ? 90 : 50; // % of cell width
     return displayLogos.map((logo, i) => {
       const col = i % cols;
       const row = Math.floor(i / cols);
