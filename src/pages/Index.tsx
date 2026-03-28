@@ -39,25 +39,28 @@ const Index = () => {
       { src: angryMiaoLogo, alt: "Angry Miao" },
       { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
     ];
-    // On mobile: show fewer logos, smaller, in a 3-col grid
+    // Grid-based placement ensures no overlap
     const mobile = typeof window !== 'undefined' && window.innerWidth < 768;
     const displayLogos = mobile ? logos.slice(0, 9) : logos;
     const cols = mobile ? 3 : 5;
     const rows = Math.ceil(displayLogos.length / cols);
-    const minSize = mobile ? 80 : 180;
-    const sizeRange = mobile ? 60 : 140;
+    const cellW = 100 / cols;
+    const cellH = 100 / rows;
+    // Logo size as percentage of cell, ensuring it never exceeds cell bounds
+    const logoSizePct = mobile ? 55 : 50; // % of cell width
     return displayLogos.map((logo, i) => {
       const col = i % cols;
       const row = Math.floor(i / cols);
-      const cellW = 100 / cols;
-      const cellH = 100 / rows;
-      const offsetX = Math.random() * (cellW * 0.25);
-      const offsetY = Math.random() * (cellH * 0.2);
+      // Random offset limited so logo + size stays inside cell
+      const maxOffsetX = cellW - logoSizePct * cellW / 100;
+      const maxOffsetY = cellH - logoSizePct * cellH / 100;
+      const offsetX = Math.random() * maxOffsetX * 0.6;
+      const offsetY = Math.random() * maxOffsetY * 0.6;
       return {
         ...logo,
         top: row * cellH + offsetY,
         left: col * cellW + offsetX,
-        size: minSize + Math.floor(Math.random() * sizeRange),
+        widthPct: logoSizePct * cellW / 100, // as % of container
       };
     });
   }, []);
