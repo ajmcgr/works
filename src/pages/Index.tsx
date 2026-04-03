@@ -171,7 +171,7 @@ const Index = () => {
 
             <div className="mb-3 md:mb-4">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
-                Where Products Meet Creators
+                Where Product Meets Creative
               </h1>
               
               <p className="text-white font-medium text-base md:text-xl mb-3 md:mb-4 max-w-3xl leading-relaxed">
