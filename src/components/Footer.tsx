@@ -22,14 +22,6 @@ const Footer = () => {
                 >
                   Updates
                 </a>
-                <a 
-                  href="https://discord.gg/Cet49cDcSr" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Community
-                </a>
                 <Link to="/privacy-policy" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Privacy Policy</Link>
                 <Link to="/terms-of-service" className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors">Terms of Service</Link>
               </div>
