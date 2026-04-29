@@ -274,7 +274,7 @@ const Index = () => {
                   style={{
                     willChange: 'transform',
                     opacity: 0,
-                    filter: 'saturate(0.78) contrast(1.08) brightness(0.88)'
+                    filter: 'saturate(0.9) contrast(1.12) brightness(1)'
                   }}
                   onLoad={(e) => {
                     e.currentTarget.style.opacity = '1';
@@ -282,10 +282,10 @@ const Index = () => {
                 />
               </div>
 
-              {/* Cinematic color wash for a unified CGI look */}
-              <div className="absolute inset-0 bg-[#0b1220]/25 mix-blend-multiply pointer-events-none" />
-              {/* Vignette + bottom darken for legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/20 pointer-events-none" />
+              {/* Cinematic teal-orange color grade */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0a2540]/20 via-transparent to-[#ff8a3d]/10 mix-blend-overlay pointer-events-none" />
+              {/* Soft bottom darken for text legibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent pointer-events-none" />
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
