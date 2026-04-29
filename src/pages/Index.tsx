@@ -274,7 +274,7 @@ const Index = () => {
                   style={{
                     willChange: 'transform',
                     opacity: 0,
-                    filter: 'saturate(0.9) contrast(1.12) brightness(1)'
+                    filter: 'saturate(1.15) contrast(1.18) brightness(1.02)'
                   }}
                   onLoad={(e) => {
                     e.currentTarget.style.opacity = '1';
@@ -282,10 +282,12 @@ const Index = () => {
                 />
               </div>
 
-              {/* Cinematic teal-orange color grade */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0a2540]/20 via-transparent to-[#ff8a3d]/10 mix-blend-overlay pointer-events-none" />
-              {/* Soft bottom darken for text legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent pointer-events-none" />
+              {/* Soft cool-to-warm cinematic grade (teal shadows, warm highlights) */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0e3a5f]/25 via-transparent to-[#ffb877]/15 mix-blend-soft-light pointer-events-none" />
+              {/* Glossy specular sheen — fakes a rendered surface highlight */}
+              <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-transparent mix-blend-overlay pointer-events-none" />
+              {/* Subtle radial vignette for depth */}
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.35) 100%)' }} />
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
