@@ -227,11 +227,11 @@ const Index = () => {
               { 
                 title: "Brand Communications", 
                 description: "Craft compelling brand narratives that resonate with your target market and drive engagement.",
-                url: "/case-study/oppo", 
+                url: "/case-study/byd", 
                 delay: "300ms", 
-                client: "OPPO", 
-                clientSlug: "oppo",
-                backgroundImage: "/brands/oppo/hero.jpg"
+                client: "BYD", 
+                clientSlug: "byd",
+                backgroundImage: "/clients/byd/hero.jpg"
               },
               { 
                 title: "Content Strategy", 
