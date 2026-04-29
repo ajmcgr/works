@@ -134,14 +134,18 @@ const Index = () => {
               alt="Stylish professional in modern urban setting - contemporary brand communications"
               className="absolute inset-0 w-full h-full object-cover object-center"
               loading="eager"
+              style={{ filter: 'saturate(1.15) contrast(1.18) brightness(1.02)' }}
             />
           </div>
-          
-          {/* Gradient Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/25" />
-          
-          {/* Elegant radial darkening */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_700px_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.08)_40%,transparent_70%)]" />
+
+          {/* Soft cool-to-warm cinematic grade */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0e3a5f]/25 via-transparent to-[#ffb877]/15 mix-blend-soft-light pointer-events-none" />
+          {/* Glossy specular sheen — fakes a rendered surface highlight */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-transparent mix-blend-overlay pointer-events-none" />
+          {/* Subtle radial vignette for depth */}
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.35) 100%)' }} />
+          {/* Bottom darken for text legibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 
           {/* Randomly placed client logos - upper portion, capped to avoid headline */}
           <div className="relative z-10 w-full flex-1 px-4 md:px-8" style={{ maxHeight: '60%' }}>
