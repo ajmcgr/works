@@ -38,6 +38,30 @@ const CaseStudyDetail = () => {
       team: "5 specialists",
       services: ["Media Relations", "Crisis Communication", "Product Launch", "Executive Positioning"]
     },
+    "byd": {
+      name: "BYD",
+      category: "Automotive & Electric Vehicles",
+      challenge: "Establish BYD as a premium, trusted electric vehicle brand in European and global markets amid intensifying EV competition and shifting perceptions of Chinese automakers.",
+      solution: "Built a brand-led PR program centered on design credibility, sustainability leadership, and major auto-show moments — pairing executive storytelling with experiential press activations.",
+      results: [
+        "Tier-1 coverage across global automotive and business media",
+        "Elevated brand perception in Europe and emerging EV markets",
+        "Strong share-of-voice during flagship auto show launches"
+      ],
+      detailedChallenge: "BYD entered key Western markets needing to reframe the narrative around Chinese EV makers — moving the conversation from price competition to design, technology leadership, and sustainability. The brand had to win credibility with skeptical automotive press, premium consumers, and policy stakeholders simultaneously, while competing against legacy OEMs investing heavily in their own electrification stories.",
+      detailedSolution: "We built an integrated brand communications program designed to position BYD as a category-defining EV leader:\n\n• Crafted a unified brand narrative bridging engineering depth, vertical integration, and sustainability\n• Orchestrated press moments around flagship vehicles like the SEAL U at major European auto shows\n• Positioned senior executives as thought leaders on EV strategy, batteries, and the energy transition\n• Built relationships with tier-1 automotive, business, and lifestyle media across EMEA and APAC\n• Designed experiential press drives and showroom activations to translate specs into emotion\n• Coordinated regional spokespeople and localized messaging without diluting the global brand voice",
+      detailedResults: "The brand PR program reset BYD's positioning in priority markets:\n\n• Secured sustained tier-1 coverage in outlets including Reuters, Bloomberg, Top Gear, and Auto Express\n• Drove a measurable lift in unaided brand awareness and premium perception in target European markets\n• Owned share-of-voice during key auto show windows versus established European OEMs\n• Built a durable bench of journalist relationships supporting ongoing model launches\n• Established BYD as a credible reference point in EV, battery, and sustainability conversations",
+      media: [
+        { outlet: "Reuters", type: "News", description: "Global business and EV market coverage" },
+        { outlet: "Bloomberg", type: "Analysis", description: "Strategic positioning and market analysis" },
+        { outlet: "Top Gear", type: "Review", description: "Flagship vehicle reviews and feature stories" },
+        { outlet: "Auto Express", type: "Feature", description: "European market launches and product features" }
+      ],
+      links: [],
+      timeline: "16 months",
+      team: "6 specialists",
+      services: ["Brand Communications", "Media Relations", "Executive Positioning", "Event & Auto Show PR"]
+    },
     "oppo": {
       name: "OPPO",
       category: "Consumer Electronics",
