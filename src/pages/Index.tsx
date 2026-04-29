@@ -204,7 +204,7 @@ const Index = () => {
                 delay: "0ms", 
                 client: "Weber Shandwick", 
                 clientSlug: "weber-shandwick",
-                backgroundImage: "/brands/weber-shandwick/hero.jpg"
+                backgroundImage: "/brands/influencer-marketing/hero.jpg"
               },
               { 
                 title: "Media Relations", 
