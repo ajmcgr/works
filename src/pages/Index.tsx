@@ -271,15 +271,21 @@ const Index = () => {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                   loading={index < 2 ? "eager" : "lazy"}
                   decoding={index < 2 ? "sync" : "async"}
-                  style={{ willChange: 'transform', opacity: 0 }}
+                  style={{
+                    willChange: 'transform',
+                    opacity: 0,
+                    filter: 'saturate(0.78) contrast(1.08) brightness(0.88)'
+                  }}
                   onLoad={(e) => {
                     e.currentTarget.style.opacity = '1';
                   }}
                 />
               </div>
-              
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+              {/* Cinematic color wash for a unified CGI look */}
+              <div className="absolute inset-0 bg-[#0b1220]/25 mix-blend-multiply pointer-events-none" />
+              {/* Vignette + bottom darken for legibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/20 pointer-events-none" />
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
