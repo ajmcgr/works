@@ -131,7 +131,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
 
           {/* Hero Content - bottom-anchored, centered, matching other sections */}
-          <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center p-8 lg:p-12">
+          <div className="absolute inset-x-0 bottom-32 md:bottom-36 z-10 flex justify-center p-8 lg:p-12">
             <div className="space-y-4 max-w-2xl w-full text-left">
               <h1 className="font-headline text-white text-4xl lg:text-6xl leading-tight">
                 Where Product Meets Creative
@@ -147,46 +147,47 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-
-              {/* Client logos carousel - below CTA */}
-              <div
-                className="pt-6 w-full"
-                onClick={stopProp}
-              >
-                <Carousel
-                  setApi={setLogoApi}
-                  opts={{ align: "start", loop: true, slidesToScroll: 1 }}
-                  className="w-full"
-                >
-                  <CarouselContent className="-ml-4">
-                    {clientLogos.map((logo, index) => (
-                      <CarouselItem
-                        key={index}
-                        className="pl-4 basis-1/3 md:basis-1/4"
-                      >
-                        <div className="flex items-center justify-center h-10 md:h-12">
-                          <img
-                            src={logo.src}
-                            alt={logo.alt}
-                            className="brightness-0 invert opacity-80 hover:opacity-100 transition-opacity max-h-full max-w-full object-contain"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious
-                    onClick={stopProp}
-                    className="-left-3 bg-white/10 hover:bg-white/20 border-white/30 text-white h-7 w-7"
-                  />
-                  <CarouselNext
-                    onClick={stopProp}
-                    className="-right-3 bg-white/10 hover:bg-white/20 border-white/30 text-white h-7 w-7"
-                  />
-                </Carousel>
-              </div>
             </div>
+          </div>
+
+          {/* Client logos carousel - full width along bottom of hero */}
+          <div
+            className="absolute inset-x-0 bottom-0 z-10 px-8 lg:px-12 pb-6 lg:pb-8"
+            onClick={stopProp}
+          >
+            <Carousel
+              setApi={setLogoApi}
+              opts={{ align: "start", loop: true, slidesToScroll: 1 }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {clientLogos.map((logo, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="pl-4 basis-1/3 md:basis-1/6 lg:basis-1/8"
+                    style={{ flexBasis: undefined }}
+                  >
+                    <div className="flex items-center justify-center h-10 md:h-12">
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="brightness-0 invert opacity-80 hover:opacity-100 transition-opacity max-h-full max-w-full object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious
+                onClick={stopProp}
+                className="left-1 bg-white/10 hover:bg-white/20 border-white/30 text-white h-7 w-7"
+              />
+              <CarouselNext
+                onClick={stopProp}
+                className="right-1 bg-white/10 hover:bg-white/20 border-white/30 text-white h-7 w-7"
+              />
+            </Carousel>
           </div>
         </section>
       </a>
