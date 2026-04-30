@@ -130,49 +130,13 @@ const Index = () => {
           <div className="absolute inset-0 bg-black/10 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
 
-          {/* Client logos carousel - row with nav */}
-          <div
-            className="relative z-10 w-full flex-1 flex items-center px-4 md:px-12"
-            onClick={stopProp}
-          >
-            <Carousel
-              setApi={setLogoApi}
-              opts={{ align: "start", loop: true, slidesToScroll: 1 }}
-              className="w-full max-w-6xl mx-auto"
-            >
-              <CarouselContent className="-ml-4">
-                {clientLogos.map((logo, index) => (
-                  <CarouselItem
-                    key={index}
-                    className="pl-4 basis-1/3 md:basis-1/5 lg:basis-1/6"
-                  >
-                    <div className="flex items-center justify-center h-20 md:h-24">
-                      <img
-                        src={logo.src}
-                        alt={logo.alt}
-                        className="brightness-0 invert opacity-90 hover:opacity-100 transition-opacity max-h-full max-w-full object-contain"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious
-                onClick={stopProp}
-                className="left-0 md:-left-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
-              />
-              <CarouselNext
-                onClick={stopProp}
-                className="right-0 md:-right-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
-              />
-            </Carousel>
-          </div>
+          {/* Spacer to push content to bottom */}
+          <div className="flex-1" />
 
           {/* Hero Content - Bottom left exactly like before */}
-          <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-8 lg:pb-12">
+          <div className="relative z-10 text-left w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-8 lg:pb-12">
 
-            <div className="mb-3 md:mb-4">
+            <div className="mb-3 md:mb-4 max-w-2xl">
               <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
                 Where Product Meets Creative
               </h1>
@@ -183,13 +147,52 @@ const Index = () => {
             </div>
 
             {/* Touch-native CTA */}
-            <div>
+            <div className="max-w-2xl">
               <Button variant="cta" size="lg" asChild>
                 <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
                   <span>Let's Work Together</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
+            </div>
+
+            {/* Client logos carousel - below CTA */}
+            <div
+              className="mt-8 md:mt-10 w-full max-w-4xl pr-4 md:pr-12"
+              onClick={stopProp}
+            >
+              <Carousel
+                setApi={setLogoApi}
+                opts={{ align: "start", loop: true, slidesToScroll: 1 }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {clientLogos.map((logo, index) => (
+                    <CarouselItem
+                      key={index}
+                      className="pl-4 basis-1/3 md:basis-1/5 lg:basis-1/6"
+                    >
+                      <div className="flex items-center justify-center h-12 md:h-14">
+                        <img
+                          src={logo.src}
+                          alt={logo.alt}
+                          className="brightness-0 invert opacity-80 hover:opacity-100 transition-opacity max-h-full max-w-full object-contain"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious
+                  onClick={stopProp}
+                  className="-left-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
+                />
+                <CarouselNext
+                  onClick={stopProp}
+                  className="-right-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
+                />
+              </Carousel>
             </div>
           </div>
         </section>
