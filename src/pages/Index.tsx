@@ -288,17 +288,19 @@ const Index = () => {
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
-                <div className="space-y-4 max-w-2xl text-left">
-                  <h3 className="text-4xl lg:text-6xl font-medium text-white leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
-                    {service.title}
-                  </h3>
-                  <p className="text-white text-lg lg:text-xl leading-relaxed mb-6">
-                    {service.description}
-                  </p>
-                  <Button variant="cta" size="default" className="inline-flex">
-                    <span>Read Case Study</span>
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                <div className="inline-block bg-white/40 backdrop-blur-sm rounded-[.75rem] px-6 py-6 max-w-2xl">
+                  <div className="space-y-4 text-left">
+                    <h3 className="text-4xl lg:text-6xl font-medium text-gray-900 leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-900 text-lg lg:text-xl leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+                    <Button variant="cta" size="default" className="inline-flex">
+                      <span>Read Case Study</span>
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </div>
                 </div>
               </div>
             </a>
