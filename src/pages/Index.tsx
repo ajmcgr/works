@@ -24,47 +24,34 @@ const Index = () => {
 
   const isMobile = useIsMobile();
 
-  const clientLogos = useMemo(() => {
-    const logos = [
-      { src: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", alt: "UFC" },
-      { src: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", alt: "OnePlus" },
-      { src: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", alt: "OPPO" },
-      { src: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", alt: "Ogilvy" },
-      { src: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", alt: "Weber Shandwick" },
-      { src: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", alt: "Publicis Groupe" },
-      { src: tankaLogo, alt: "Tanka" },
-      { src: tauLogo, alt: "Tau" },
-      { src: nottaLogo, alt: "Notta" },
-      { src: "/lovable-uploads/ecarx.png", alt: "ECARX" },
-      { src: "/lovable-uploads/hho.png", alt: "HHO" },
-      { src: angryMiaoLogo, alt: "Angry Miao" },
-      { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
-    ];
-    // Grid-based placement ensures no overlap
-    const mobile = typeof window !== 'undefined' && window.innerWidth < 768;
-    const displayLogos = mobile ? logos.slice(0, 9) : logos;
-    const cols = mobile ? 3 : 5;
-    const rows = Math.ceil(displayLogos.length / cols);
-    const cellW = 100 / cols;
-    const cellH = 100 / rows;
-    // Logo size as percentage of cell, ensuring it never exceeds cell bounds
-    const logoSizePct = mobile ? 90 : 50; // % of cell width
-    return displayLogos.map((logo, i) => {
-      const col = i % cols;
-      const row = Math.floor(i / cols);
-      // Random offset limited so logo + size stays inside cell
-      const maxOffsetX = cellW - logoSizePct * cellW / 100;
-      const maxOffsetY = cellH - logoSizePct * cellH / 100;
-      const offsetX = Math.random() * maxOffsetX * 0.6;
-      const offsetY = Math.random() * maxOffsetY * 0.6;
-      return {
-        ...logo,
-        top: row * cellH + offsetY,
-        left: col * cellW + offsetX,
-        widthPct: logoSizePct * cellW / 100, // as % of container
-      };
-    });
-  }, []);
+  const clientLogos = useMemo(() => [
+    { src: "/lovable-uploads/e3245375-9a24-4ea7-89aa-f37c5c59078f.png", alt: "UFC" },
+    { src: "/lovable-uploads/8ef86b72-a30c-418e-8a3c-ae16ccfa0913.png", alt: "OnePlus" },
+    { src: "/lovable-uploads/4329826e-9683-4f34-b0ad-26a739aef474.png", alt: "OPPO" },
+    { src: "/lovable-uploads/c9739784-e9ac-48c8-83d5-360e933fea0c.png", alt: "Ogilvy" },
+    { src: "/lovable-uploads/b46ae86a-6dd8-4b8a-a25c-94658108c395.png", alt: "Weber Shandwick" },
+    { src: "/lovable-uploads/37a5a0e4-49f5-4885-8cef-be0fd36337da.png", alt: "Publicis Groupe" },
+    { src: tankaLogo, alt: "Tanka" },
+    { src: tauLogo, alt: "Tau" },
+    { src: nottaLogo, alt: "Notta" },
+    { src: "/lovable-uploads/ecarx.png", alt: "ECARX" },
+    { src: "/lovable-uploads/hho.png", alt: "HHO" },
+    { src: angryMiaoLogo, alt: "Angry Miao" },
+    { src: "/lovable-uploads/tencent.png", alt: "Tencent" },
+  ], []);
+
+  const [logoApi, setLogoApi] = useState<CarouselApi>();
+  const [logoIndex, setLogoIndex] = useState(0);
+
+  useEffect(() => {
+    if (!logoApi) return;
+    setLogoIndex(logoApi.selectedScrollSnap());
+    logoApi.on("select", () => setLogoIndex(logoApi.selectedScrollSnap()));
+  }, [logoApi]);
+
+  const stopProp = (e: React.MouseEvent | React.KeyboardEvent) => {
+    e.stopPropagation();
+  };
 
   // Preload critical images
   useEffect(() => {
