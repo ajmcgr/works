@@ -130,32 +130,27 @@ const Index = () => {
           <div className="absolute inset-0 bg-black/10 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
 
-          {/* Hero Content - Centered */}
-          <div className="relative z-10 flex-1 w-full flex items-center justify-center px-4 md:px-6 pb-8 lg:pb-12">
-            <div className="text-center w-full max-w-4xl">
-              <div className="mb-6 md:mb-8">
-                <h1 className="font-headline text-white mb-3 md:mb-4 text-4xl lg:text-6xl leading-tight">
-                  Where Product Meets Creative
-                </h1>
+          {/* Hero Content - bottom-anchored, centered, matching other sections */}
+          <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center p-8 lg:p-12">
+            <div className="space-y-4 max-w-2xl w-full text-left">
+              <h1 className="font-headline text-white text-4xl lg:text-6xl leading-tight">
+                Where Product Meets Creative
+              </h1>
 
-                <p className="text-white font-medium text-base md:text-xl mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
-                  AI-powered PR and Influencer Marketing services that drive growth.
-                </p>
-              </div>
+              <p className="text-white font-medium text-lg lg:text-xl leading-relaxed mb-6">
+                AI-powered PR and Influencer Marketing services that drive growth.
+              </p>
 
-              {/* Touch-native CTA */}
-              <div>
-                <Button variant="cta" size="lg" asChild>
-                  <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                    <span>Let's Work Together</span>
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-              </div>
+              <Button variant="cta" size="default" className="inline-flex" asChild>
+                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                  <span>Let's Work Together</span>
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
 
               {/* Client logos carousel - below CTA */}
               <div
-                className="mt-10 md:mt-14 w-full max-w-4xl mx-auto px-8 md:px-12"
+                className="pt-6 w-full"
                 onClick={stopProp}
               >
                 <Carousel
@@ -167,9 +162,9 @@ const Index = () => {
                     {clientLogos.map((logo, index) => (
                       <CarouselItem
                         key={index}
-                        className="pl-4 basis-1/3 md:basis-1/5 lg:basis-1/6"
+                        className="pl-4 basis-1/3 md:basis-1/4"
                       >
-                        <div className="flex items-center justify-center h-12 md:h-14">
+                        <div className="flex items-center justify-center h-10 md:h-12">
                           <img
                             src={logo.src}
                             alt={logo.alt}
@@ -183,11 +178,11 @@ const Index = () => {
                   </CarouselContent>
                   <CarouselPrevious
                     onClick={stopProp}
-                    className="-left-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
+                    className="-left-3 bg-white/10 hover:bg-white/20 border-white/30 text-white h-7 w-7"
                   />
                   <CarouselNext
                     onClick={stopProp}
-                    className="-right-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
+                    className="-right-3 bg-white/10 hover:bg-white/20 border-white/30 text-white h-7 w-7"
                   />
                 </Carousel>
               </div>
