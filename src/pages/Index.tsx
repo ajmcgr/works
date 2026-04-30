@@ -282,23 +282,23 @@ const Index = () => {
                 />
               </div>
 
-              {/* Matte flat darken for legibility */}
-              <div className="absolute inset-0 bg-black/25 pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
+              {/* Matte flat darken for legibility — lighter */}
+              <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
-                <div className="inline-block bg-white/40 backdrop-blur-sm rounded-[.75rem] px-10 py-10 md:px-12 md:py-12 max-w-2xl">
-                  <div className="space-y-3 text-left">
-                    <h3 className="text-2xl lg:text-4xl font-medium text-gray-900 leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
+                <div className="inline-block bg-white/40 backdrop-blur-sm rounded-[.75rem] px-5 py-5 md:px-6 md:py-6 max-w-2xl">
+                  <div className="space-y-2 text-left">
+                    <h3 className="text-xl lg:text-3xl font-medium text-gray-900 leading-tight" style={{ fontFamily: 'Reckless, serif' }}>
                       {service.title}
                     </h3>
-                    <p className="text-gray-900 text-sm lg:text-base leading-relaxed mb-4">
+                    <p className="text-gray-900 text-xs lg:text-sm leading-relaxed mb-3">
                       {service.description}
                     </p>
-                    <Button variant="cta" size="default" className="inline-flex">
+                    <Button variant="cta" size="sm" className="inline-flex">
                       <span>Read Case Study</span>
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <ArrowRight className="ml-2 h-3.5 w-3.5" />
                     </Button>
                   </div>
                 </div>
