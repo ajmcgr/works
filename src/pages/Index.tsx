@@ -154,7 +154,7 @@ const Index = () => {
 
             {/* Client logos carousel - full width */}
             <div
-              className="w-full px-12 md:px-14 lg:px-16 pb-6 lg:pb-8"
+              className="w-full px-[4.75rem] md:px-14 lg:px-16 pb-6 lg:pb-8"
               onClick={stopProp}
             >
               <Carousel
@@ -183,12 +183,12 @@ const Index = () => {
                 <CarouselPrevious
                   onClick={stopProp}
                   variant="ghost"
-                  className="-left-1 md:left-0 h-9 w-9 md:h-11 md:w-11 rounded-full border-0 bg-transparent text-white/70 hover:text-white hover:bg-transparent transition-all duration-300 [&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:transition-transform hover:[&_svg]:-translate-x-0.5"
+                  className="!-left-[3.65rem] md:!left-0 h-9 w-9 md:h-11 md:w-11 rounded-full border-0 bg-transparent text-white/70 hover:text-white hover:bg-transparent transition-all duration-300 [&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:transition-transform hover:[&_svg]:-translate-x-0.5"
                 />
                 <CarouselNext
                   onClick={stopProp}
                   variant="ghost"
-                  className="-right-1 md:right-0 h-9 w-9 md:h-11 md:w-11 rounded-full border-0 bg-transparent text-white/70 hover:text-white hover:bg-transparent transition-all duration-300 [&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:transition-transform hover:[&_svg]:translate-x-0.5"
+                  className="!-right-[3.65rem] md:!right-0 h-9 w-9 md:h-11 md:w-11 rounded-full border-0 bg-transparent text-white/70 hover:text-white hover:bg-transparent transition-all duration-300 [&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:transition-transform hover:[&_svg]:translate-x-0.5"
                 />
               </Carousel>
             </div>
