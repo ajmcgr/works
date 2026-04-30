@@ -130,27 +130,43 @@ const Index = () => {
           <div className="absolute inset-0 bg-black/10 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
 
-          {/* Randomly placed client logos - upper portion, capped to avoid headline */}
-          <div className="relative z-10 w-full flex-1 px-4 md:px-8" style={{ maxHeight: '60%' }}>
-            {clientLogos.map((logo, index) => (
-              <div
-                key={index}
-                className="absolute pointer-events-none z-[1]"
-                style={{
-                  top: `${logo.top}%`,
-                  left: `${logo.left}%`,
-                }}
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="brightness-0 invert opacity-100"
-                  style={{ width: `${logo.widthPct}vw`, height: `${logo.widthPct}vw`, objectFit: 'contain' }}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            ))}
+          {/* Client logos carousel - row with nav */}
+          <div
+            className="relative z-10 w-full flex-1 flex items-center px-4 md:px-12"
+            onClick={stopProp}
+          >
+            <Carousel
+              setApi={setLogoApi}
+              opts={{ align: "start", loop: true, slidesToScroll: 1 }}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-4">
+                {clientLogos.map((logo, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="pl-4 basis-1/3 md:basis-1/5 lg:basis-1/6"
+                  >
+                    <div className="flex items-center justify-center h-20 md:h-24">
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="brightness-0 invert opacity-90 hover:opacity-100 transition-opacity max-h-full max-w-full object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious
+                onClick={stopProp}
+                className="left-0 md:-left-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
+              />
+              <CarouselNext
+                onClick={stopProp}
+                className="right-0 md:-right-4 bg-white/10 hover:bg-white/20 border-white/30 text-white"
+              />
+            </Carousel>
           </div>
 
           {/* Hero Content - Bottom left exactly like before */}
