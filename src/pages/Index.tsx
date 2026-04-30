@@ -134,13 +134,13 @@ const Index = () => {
               alt="Stylish professional in modern urban setting - contemporary brand communications"
               className="absolute inset-0 w-full h-full object-cover object-center"
               loading="eager"
-              style={{ filter: 'saturate(0.85) contrast(0.95)' }}
+              style={{ filter: 'saturate(0.95) contrast(1)' }}
             />
           </div>
 
           {/* Matte flat darken for legibility */}
-          <div className="absolute inset-0 bg-black/25 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
 
           {/* Randomly placed client logos - upper portion, capped to avoid headline */}
           <div className="relative z-10 w-full flex-1 px-4 md:px-8" style={{ maxHeight: '60%' }}>
@@ -273,7 +273,7 @@ const Index = () => {
                   style={{
                     willChange: 'transform',
                     opacity: 0,
-                    filter: 'saturate(0.85) contrast(0.95)'
+                    filter: 'saturate(0.95) contrast(1)'
                   }}
                   onLoad={(e) => {
                     e.currentTarget.style.opacity = '1';
@@ -282,8 +282,8 @@ const Index = () => {
               </div>
 
               {/* Matte flat darken for legibility */}
-              <div className="absolute inset-0 bg-black/25 pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent pointer-events-none" />
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
