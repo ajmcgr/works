@@ -165,27 +165,28 @@ const Index = () => {
             ))}
           </div>
 
-          {/* Hero Content - Bottom left exactly like before */}
+          {/* Hero Content - Bottom left, wrapped in nav-style pill */}
           <div className="relative z-10 text-left max-w-2xl w-full px-4 md:px-6 ml-4 md:ml-8 lg:ml-16 pb-8 lg:pb-12">
+            <div className="inline-block bg-white/40 backdrop-blur-sm rounded-[.75rem] px-6 py-6">
+              <div className="mb-3 md:mb-4">
+                <h1 className="font-headline text-gray-900 mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
+                  Where Product Meets Creative
+                </h1>
 
-            <div className="mb-3 md:mb-4">
-              <h1 className="font-headline text-white mb-2 md:mb-3 text-4xl lg:text-6xl leading-tight">
-                Where Product Meets Creative
-              </h1>
-              
-              <p className="text-white font-medium text-base md:text-xl mb-3 md:mb-4 max-w-3xl leading-relaxed">
-                AI-powered PR and Influencer Marketing services that drive growth.
-              </p>
-            </div>
+                <p className="text-gray-900 font-medium text-base md:text-xl mb-3 md:mb-4 max-w-3xl leading-relaxed">
+                  AI-powered PR and Influencer Marketing services that drive growth.
+                </p>
+              </div>
 
-            {/* Touch-native CTA */}
-            <div>
-              <Button variant="cta" size="lg" asChild>
-                <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
-                  <span>Let's Work Together</span>
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
+              {/* Touch-native CTA */}
+              <div>
+                <Button variant="cta" size="lg" asChild>
+                  <a href="https://cal.com/works" target="_blank" rel="noopener noreferrer">
+                    <span>Let's Work Together</span>
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
