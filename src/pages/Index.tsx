@@ -134,14 +134,13 @@ const Index = () => {
               alt="Stylish professional in modern urban setting - contemporary brand communications"
               className="absolute inset-0 w-full h-full object-cover object-center"
               loading="eager"
-              style={{ filter: 'saturate(0.92) contrast(1.05) brightness(0.95)' }}
+              style={{ filter: 'saturate(0.85) contrast(0.95)' }}
             />
           </div>
 
-          {/* Tesla-style clean bottom darken for legibility */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent pointer-events-none" />
-          {/* Tight edge vignette for depth */}
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at center, transparent 65%, rgba(0,0,0,0.4) 100%)' }} />
+          {/* Matte flat darken for legibility */}
+          <div className="absolute inset-0 bg-black/25 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
 
           {/* Randomly placed client logos - upper portion, capped to avoid headline */}
           <div className="relative z-10 w-full flex-1 px-4 md:px-8" style={{ maxHeight: '60%' }}>
@@ -274,7 +273,7 @@ const Index = () => {
                   style={{
                     willChange: 'transform',
                     opacity: 0,
-                    filter: 'saturate(0.92) contrast(1.05) brightness(0.95)'
+                    filter: 'saturate(0.85) contrast(0.95)'
                   }}
                   onLoad={(e) => {
                     e.currentTarget.style.opacity = '1';
@@ -282,10 +281,9 @@ const Index = () => {
                 />
               </div>
 
-              {/* Tesla-style clean bottom darken for legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
-              {/* Tight edge vignette for depth */}
-              <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at center, transparent 65%, rgba(0,0,0,0.4) 100%)' }} />
+              {/* Matte flat darken for legibility */}
+              <div className="absolute inset-0 bg-black/25 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
               
               {/* Content at bottom, centered horizontally */}
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-8 lg:p-12">
