@@ -182,11 +182,13 @@ const Index = () => {
                 </CarouselContent>
                 <CarouselPrevious
                   onClick={stopProp}
-                  className="left-0 bg-white/10 hover:bg-white/20 border-white/30 text-white h-9 w-9"
+                  variant="ghost"
+                  className="left-0 h-11 w-11 rounded-full border-0 bg-transparent text-white/70 hover:text-white hover:bg-transparent transition-all duration-300 [&_svg]:h-6 [&_svg]:w-6 [&_svg]:transition-transform hover:[&_svg]:-translate-x-0.5"
                 />
                 <CarouselNext
                   onClick={stopProp}
-                  className="right-0 bg-white/10 hover:bg-white/20 border-white/30 text-white h-9 w-9"
+                  variant="ghost"
+                  className="right-0 h-11 w-11 rounded-full border-0 bg-transparent text-white/70 hover:text-white hover:bg-transparent transition-all duration-300 [&_svg]:h-6 [&_svg]:w-6 [&_svg]:transition-transform hover:[&_svg]:translate-x-0.5"
                 />
               </Carousel>
             </div>
