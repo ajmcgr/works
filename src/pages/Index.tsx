@@ -131,7 +131,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
 
           {/* Hero Content - bottom-anchored, centered, matching other sections */}
-          <div className="absolute inset-x-0 bottom-32 md:bottom-36 z-10 flex justify-center p-8 lg:p-12">
+          <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center p-8 lg:p-12 pb-24 md:pb-28">
             <div className="space-y-4 max-w-2xl w-full text-left">
               <h1 className="font-headline text-white text-4xl lg:text-6xl leading-tight">
                 Where Product Meets Creative
