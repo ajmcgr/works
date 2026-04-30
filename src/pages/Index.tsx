@@ -138,9 +138,9 @@ const Index = () => {
             />
           </div>
 
-          {/* Matte flat darken for legibility */}
-          <div className="absolute inset-0 bg-black/25 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+          {/* Matte flat darken for legibility — lightened */}
+          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
 
           {/* Randomly placed client logos - upper portion, capped to avoid headline */}
           <div className="relative z-10 w-full flex-1 px-4 md:px-8" style={{ maxHeight: '60%' }}>
