@@ -12,7 +12,33 @@ const CaseStudies = () => {
   ];
 
   const workByClient = [
+    // Automotive & Mobility Group
+    {
+      groupTitle: "Automotive & Mobility",
+      groupCategory: "Global Brand Elevation & Sponsorships",
+      clients: [
+        {
+          id: "byd",
+          name: "BYD",
+          challenge: "Upgrade BYD's brand overseas across every product line — passenger EVs, commercial vehicles, and energy storage — while turning global sponsorships, including Manchester City, into brand equity rather than logo placement.",
+          solution: "Built a unified global brand platform that connected product storytelling with sponsorship activation: auto-show launch moments, executive thought leadership, and Manchester City partnership content localized across Europe, APAC, and LATAM.",
+          results: [
+            "Consistent premium brand narrative across all product lines overseas",
+            "Manchester City partnership activated into earned media, not just visibility",
+            "Tier-1 coverage in Reuters, Bloomberg, Top Gear and Auto Express"
+          ],
+          media: [
+            { outlet: "Reuters", type: "News" },
+            { outlet: "Bloomberg", type: "Analysis" },
+            { outlet: "Top Gear", type: "Review" },
+            { outlet: "Auto Express", type: "Feature" }
+          ],
+          services: ["Brand Communications", "Sponsorship Activation", "Auto Show PR", "Executive Positioning"]
+        }
+      ]
+    },
     // Consumer Electronics Group
+
     {
       groupTitle: "Consumer Electronics Giants",
       groupCategory: "Product Launch & Crisis Management",
