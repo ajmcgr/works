@@ -65,22 +65,6 @@ const Footer = () => {
               <h4 className="text-base font-semibold text-black mb-3 font-sans" style={{ letterSpacing: '0.1px' }}>Connect</h4>
               <div className="space-y-3">
                 <a 
-                  href="https://x.com/worksxyz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  X
-                </a>
-                <a 
-                  href="https://www.facebook.com/worksxyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Facebook
-                </a>
-                <a 
                   href="https://www.linkedin.com/company/worksxyz" 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -88,23 +72,8 @@ const Footer = () => {
                 >
                   LinkedIn
                 </a>
-                <a 
-                  href="https://www.youtube.com/@worksxyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  YouTube
-                </a>
-                <a 
-                  href="https://www.instagram.com/works.xyz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-600 text-xs sm:text-sm hover:text-black transition-colors"
-                >
-                  Instagram
-                </a>
               </div>
+
             </div>
 
           </div>
