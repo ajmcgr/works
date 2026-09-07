@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
@@ -12,14 +12,9 @@ const Contact = () => {
             <p className="text-lg lg:text-xl mb-12 max-w-2xl mx-auto font-normal text-gray-600 leading-relaxed">
               Let's discuss how strategic public relations can elevate your brand.
             </p>
-            <a
-              href="mailto:alex@worksapp.com"
-              className="inline-flex items-center justify-center px-8 py-4 text-base text-white hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: '#136ed5', borderRadius: '.75rem' }}
-            >
-              Contact Us
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </a>
+            <Button asChild size="lg" className="px-8 py-3">
+            <a href="mailto:alex@worksapp.com">Contact Us</a>
+          </Button>
             <p className="mt-6 text-sm text-gray-500">
               Or email us directly at{" "}
               <a href="mailto:alex@worksapp.com" className="underline">alex@worksapp.com</a>

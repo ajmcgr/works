@@ -281,14 +281,9 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <a
-              href="mailto:alex@worksapp.com"
-              className="inline-flex items-center justify-center px-8 py-4 text-base text-white hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: '#136ed5', borderRadius: '.75rem' }}
-            >
-              <span>Contact Us</span>
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </a>
+            <Button asChild size="lg" className="px-8 py-3">
+            <a href="mailto:alex@worksapp.com">Contact Us</a>
+          </Button>
             <p className="mt-6 text-sm text-white/60">
               Or email us directly at{" "}
               <a href="mailto:alex@worksapp.com" className="underline">alex@worksapp.com</a>
