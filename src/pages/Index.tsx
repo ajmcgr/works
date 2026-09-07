@@ -313,81 +313,21 @@ const Index = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
-                  Name *
-                </label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="Your name"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                  style={{ borderRadius: '12px' }}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
-                  Email *
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="your@email.com"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                  style={{ borderRadius: '12px' }}
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
-                Company
-              </label>
-              <Input
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleInputChange}
-                placeholder="Your company name"
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                style={{ borderRadius: '12px' }}
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
-                Message *
-              </label>
-              <Textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                required
-                rows={6}
-                placeholder="Tell us about your project..."
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                style={{ borderRadius: '12px' }}
-              />
-            </div>
-            <Button variant="cta" size="default" type="submit" disabled={isSubmitting} className="inline-flex">
-              {isSubmitting ? (
-                "Opening email client..."
-              ) : (
-                <>
-                  <span>Start A Conversation</span>
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </>
-              )}
-            </Button>
-          </form>
+          <div className="text-center">
+            <a
+              href="mailto:alex@worksapp.com"
+              className="inline-flex items-center justify-center px-8 py-4 text-base text-white hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#136ed5', borderRadius: '.75rem' }}
+            >
+              <span>Contact Us</span>
+              <ArrowRight className="h-4 w-4 ml-2" />
+            </a>
+            <p className="mt-6 text-sm text-white/60">
+              Or email us directly at{" "}
+              <a href="mailto:alex@worksapp.com" className="underline">alex@worksapp.com</a>
+            </p>
+          </div>
+
         </div>
       </section>
 
