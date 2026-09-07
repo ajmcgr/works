@@ -22,8 +22,6 @@ import CrisisReputationManagement from "./pages/services/CrisisReputationManagem
 import CreativeStorytelling from "./pages/services/CreativeStorytelling";
 import MediaTraining from "./pages/services/MediaTraining";
 import LaunchSprint from "./pages/services/LaunchSprint";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import Startups from "./pages/Startups";
 import CaseStudies from "./pages/CaseStudies";
@@ -34,6 +32,8 @@ import TermsOfService from "./pages/TermsOfService";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Seo from "./components/Seo";
+import BlogRedirect from "./components/BlogRedirect";
 
 // Free Tools
 import PRHeadlineGenerator from "./pages/tools/PRHeadlineGenerator";
@@ -49,17 +49,17 @@ import InfluencerPerformanceTracker from "./pages/tools/InfluencerPerformanceTra
 
 const queryClient = new QueryClient();
 
-const App = () => (
+export const AppContent = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">
-            <Routes>
+      <ScrollToTop />
+      <Seo />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">
+          <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
@@ -68,8 +68,7 @@ const App = () => (
               <Route path="/services/brand-communications" element={<BrandCommunications />} />
               <Route path="/services/content-strategy" element={<ContentStrategy />} />
               <Route path="/services/event-management" element={<EventManagement />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/blog" element={<BlogRedirect />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/startups" element={<Startups />} />
               <Route path="/customers" element={<CaseStudies />} />
@@ -100,13 +99,18 @@ const App = () => (
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </TooltipProvider>
   </QueryClientProvider>
+);
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
 );
 
 export default App;

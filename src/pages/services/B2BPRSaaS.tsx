@@ -12,7 +12,7 @@ const B2BPRSaaS = () => {
             B2B PR for SaaS & Tech: Tailored for Software Companies Selling to Businesses
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Strategic public relations designed specifically for B2B software companies, 
+            Strategic public relations designed specifically for B2B software companies,
             AI platforms, and enterprise technology providers targeting business decision-makers.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -38,7 +38,7 @@ const B2BPRSaaS = () => {
               At Works, we understand the unique challenges of B2B tech PR: complex products that require explanation, long sales cycles, and highly educated audiences who demand substance over hype. Our approach combines technical expertise with strategic narrative development, using tools like <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Media AI</a> to identify the right trade journalists and industry analysts who influence your target market.
             </p>
             <p>
-              From early-stage startups building market awareness to enterprise companies launching new features, our B2B PR strategies drive qualified leads, support sales efforts, and establish the market positioning needed for sustainable growth. Learn how this integrates with our <Link to="/" className="text-primary hover:underline">broader PR services</Link> and <Link to="/services/startup-pr" className="text-primary hover:underline">startup-focused campaigns</Link>.
+              From early-stage startups building market awareness to enterprise companies launching new features, our B2B PR strategies drive qualified leads, support sales efforts, and establish the market positioning needed for sustainable growth. Learn how this integrates with our <Link to="/" className="text-primary hover:underline">broader PR services</Link> and <Link to="/resources/startup-pr-guide" className="text-primary hover:underline">startup-focused campaigns</Link>.
             </p>
           </div>
         </div>
@@ -300,7 +300,7 @@ const B2BPRSaaS = () => {
               <div className="text-muted-foreground">Of prospects recognize brand before first meeting</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -323,7 +323,7 @@ const B2BPRSaaS = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-headline mb-6">Ready to Accelerate Your B2B Growth?</h2>
           <p className="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
-            Build credibility, generate qualified leads, and establish thought leadership 
+            Build credibility, generate qualified leads, and establish thought leadership
             with strategic PR designed specifically for B2B software companies.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
@@ -335,8 +335,8 @@ const B2BPRSaaS = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Explore our <Link to="/services/global-pr-strategy" className="text-background hover:underline">global PR strategies</Link> or 
-              learn about <Link to="/services/consumer-tech-hardware-pr" className="text-background hover:underline">consumer tech PR</Link>.
+              Explore our <Link to="/resources/international-expansion" className="text-background hover:underline">global PR strategies</Link> or
+              learn about <Link to="/resources/hardware-launches" className="text-background hover:underline">consumer tech PR</Link>.
             </p>
           </div>
         </div>

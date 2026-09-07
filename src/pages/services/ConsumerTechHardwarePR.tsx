@@ -359,7 +359,7 @@ const ConsumerTechHardwarePR = () => {
           <div className="mt-12">
             <p className="text-background/60 text-sm">
               Explore our <Link to="/services/influencer-marketing" className="text-background hover:underline">influencer marketing services</Link> or 
-              learn about <Link to="/services/crisis-reputation-management" className="text-background hover:underline">crisis management</Link>.
+              learn about <Link to="/resources/reputation-defense" className="text-background hover:underline">crisis management</Link>.
             </p>
           </div>
         </div>

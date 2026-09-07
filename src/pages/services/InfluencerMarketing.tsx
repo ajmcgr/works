@@ -12,7 +12,7 @@ const InfluencerMarketing = () => {
             Influencer Marketing for Launches: Creator-Led Brand Amplification
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Target product drops and creator-led amplification for new brands, features, and launches. 
+            Target product drops and creator-led amplification for new brands, features, and launches.
             Turn influential voices into your most powerful growth engine.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -56,7 +56,7 @@ const InfluencerMarketing = () => {
                 description: "We analyze audience demographics, engagement rates, brand affinity, and content style to identify creators who authentically align with your product and target market."
               },
               {
-                step: "2", 
+                step: "2",
                 title: "Campaign Architecture",
                 description: "Multi-phase campaigns with teaser content, launch day activation, and post-launch amplification. Coordinated timing maximizes social momentum."
               },
@@ -180,7 +180,7 @@ const InfluencerMarketing = () => {
               <div className="text-muted-foreground">Positive sentiment across creator content</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -214,8 +214,8 @@ const InfluencerMarketing = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Explore our <Link to="/services/ai-press-outreach" className="text-background hover:underline">AI-powered press outreach</Link> or 
-              learn about our <Link to="/services/startup-pr" className="text-background hover:underline">startup PR services</Link>.
+              Explore our <Link to="/resources/ai-media-tools" className="text-background hover:underline">AI-powered press outreach</Link> or
+              learn about our <Link to="/resources/startup-pr-guide" className="text-background hover:underline">startup PR services</Link>.
             </p>
           </div>
         </div>

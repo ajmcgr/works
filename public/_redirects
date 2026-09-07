@@ -1,0 +1,13 @@
+/services/startup-pr /resources/startup-pr-guide 301
+/services/ai-press-outreach /resources/ai-media-tools 301
+/services/global-pr-strategy /resources/international-expansion 301
+/services/b2b-pr-saas /resources/saas-marketing 301
+/services/consumer-tech-hardware-pr /resources/hardware-launches 301
+/services/crisis-reputation-management /resources/reputation-defense 301
+/services/creative-storytelling /resources/brand-storytelling 301
+/services/media-training /resources/founder-training 301
+/services/launch-sprint /resources/launch-amplification 301
+/resources/our-customers /customers 301
+/blog https://blog.works.xyz/ 301
+/blog/* /404.html 404
+/* /404.html 404

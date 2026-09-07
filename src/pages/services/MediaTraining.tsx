@@ -12,7 +12,7 @@ const MediaTraining = () => {
             Podcast & Media Training for Founders: Show Up Strong On Mic & In Interviews
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Teach founders how to excel in podcast interviews, panel discussions, 
+            Teach founders how to excel in podcast interviews, panel discussions,
             and media appearances with confidence, clarity, and compelling storytelling.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -35,7 +35,7 @@ const MediaTraining = () => {
               In today's media landscape, founders are expected to be the face and voice of their companies across multiple formats and platforms. A single great podcast appearance can generate millions in brand value, while poor performance can damage carefully built reputations. Professional media training transforms nervous founders into confident spokespeople who drive business results through strategic communication.
             </p>
             <p>
-              At Works, our media training approach combines traditional interview skills with modern content creation techniques. We understand that today's founders need to excel not just in formal media settings, but also in social media videos, virtual conferences, and creator-driven content formats. Our training integrates with your broader <Link to="/" className="text-primary hover:underline">PR strategy</Link> and <Link to="/services/creative-storytelling" className="text-primary hover:underline">storytelling development</Link> to create authentic, consistent messaging across all platforms.
+              At Works, our media training approach combines traditional interview skills with modern content creation techniques. We understand that today's founders need to excel not just in formal media settings, but also in social media videos, virtual conferences, and creator-driven content formats. Our training integrates with your broader <Link to="/" className="text-primary hover:underline">PR strategy</Link> and <Link to="/resources/brand-storytelling" className="text-primary hover:underline">storytelling development</Link> to create authentic, consistent messaging across all platforms.
             </p>
             <p>
               Whether you're a first-time entrepreneur preparing for your first podcast or a seasoned CEO looking to sharpen your message for Series B fundraising, our training programs build the confidence and skills necessary to represent your brand effectively in any media situation.
@@ -285,7 +285,7 @@ const MediaTraining = () => {
               <div className="text-muted-foreground">Improvement in message clarity scores</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -331,7 +331,7 @@ const MediaTraining = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-headline mb-6">Ready to Excel in Every Media Opportunity?</h2>
           <p className="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
-            Transform from nervous founder to confident spokesperson with media training 
+            Transform from nervous founder to confident spokesperson with media training
             that builds skills, confidence, and measurable business results.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
@@ -343,8 +343,8 @@ const MediaTraining = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Explore our <Link to="/services/creative-storytelling" className="text-background hover:underline">storytelling services</Link> or 
-              learn about our <Link to="/services/launch-sprint" className="text-background hover:underline">14-day launch sprints</Link>.
+              Explore our <Link to="/resources/brand-storytelling" className="text-background hover:underline">storytelling services</Link> or
+              learn about our <Link to="/resources/launch-amplification" className="text-background hover:underline">14-day launch sprints</Link>.
             </p>
           </div>
         </div>

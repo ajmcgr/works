@@ -12,7 +12,7 @@ const CreativeStorytelling = () => {
             Creative Storytelling Services: Craft Your Origin Story & Market Position
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Help brands shape their origin story, mission, and market positioning through compelling narratives 
+            Help brands shape their origin story, mission, and market positioning through compelling narratives
             that resonate with audiences and drive business growth.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -300,7 +300,7 @@ const CreativeStorytelling = () => {
               <div className="text-muted-foreground">Improvement in employee NPS after mission clarity</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -353,7 +353,7 @@ const CreativeStorytelling = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-headline mb-6">Ready to Craft Your Brand Story?</h2>
           <p className="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
-            Transform your brand narrative from forgettable facts into memorable stories 
+            Transform your brand narrative from forgettable facts into memorable stories
             that drive emotional connection and business growth.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
@@ -370,8 +370,8 @@ const CreativeStorytelling = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Explore our <Link to="/services/media-training" className="text-background hover:underline">media training programs</Link> or 
-              learn about <Link to="/services/launch-sprint" className="text-background hover:underline">14-day launch sprints</Link>.
+              Explore our <Link to="/resources/founder-training" className="text-background hover:underline">media training programs</Link> or
+              learn about <Link to="/resources/launch-amplification" className="text-background hover:underline">14-day launch sprints</Link>.
             </p>
           </div>
         </div>

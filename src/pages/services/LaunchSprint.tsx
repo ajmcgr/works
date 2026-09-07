@@ -12,7 +12,7 @@ const LaunchSprint = () => {
             Launch Sprint: PR in 7 Days - Fast, Focused Visibility for Critical Moments
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            A time-boxed offering for startups needing rapid, strategic visibility around launches, 
+            A time-boxed offering for startups needing rapid, strategic visibility around launches,
             funding rounds, or critical business milestones. Maximum impact in minimum time.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -35,7 +35,7 @@ const LaunchSprint = () => {
               Perfect for funding announcements, product launches, major partnerships, or competitive responses that require rapid market response, Launch Sprints combine the urgency of breaking news with the strategic depth of comprehensive campaigns. Every hour is planned, every contact is purposeful, and every piece of content is optimized for maximum viral potential and business impact.
             </p>
             <p>
-              At Works, our Launch Sprint methodology leverages AI-powered tools like <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Media AI</a> for rapid journalist identification and <a href="https://trywrite.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Write AI</a> for fast content creation, allowing us to execute campaigns that would traditionally take months in just 7 days. This integrates with our broader <Link to="/" className="text-primary hover:underline">PR services</Link> and specialized <Link to="/services/startup-pr" className="text-primary hover:underline">startup campaigns</Link>.
+              At Works, our Launch Sprint methodology leverages AI-powered tools like <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Media AI</a> for rapid journalist identification and <a href="https://trywrite.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Write AI</a> for fast content creation, allowing us to execute campaigns that would traditionally take months in just 7 days. This integrates with our broader <Link to="/" className="text-primary hover:underline">PR services</Link> and specialized <Link to="/resources/startup-pr-guide" className="text-primary hover:underline">startup campaigns</Link>.
             </p>
             <p>
               When timing is everything and you can't afford to wait for slow traditional PR cycles, Launch Sprints deliver the focused intensity and measurable results that critical business moments demand.
@@ -299,7 +299,7 @@ const LaunchSprint = () => {
               <div className="text-muted-foreground">Of sprints generate tier-1 media coverage</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-white rounded-xl p-8 shadow-sm">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -392,7 +392,7 @@ const LaunchSprint = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-headline mb-6">Launch Fast. Launch Smart. Launch Now.</h2>
           <p className="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
-            When your business moment can't wait for traditional PR timelines, 
+            When your business moment can't wait for traditional PR timelines,
             Launch Sprints deliver maximum impact in minimum time.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
@@ -404,8 +404,8 @@ const LaunchSprint = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Need longer campaigns? Explore our <Link to="/services/startup-pr" className="text-background hover:underline">startup PR services</Link> or 
-              learn about <Link to="/services/media-training" className="text-background hover:underline">media training</Link>.
+              Need longer campaigns? Explore our <Link to="/resources/startup-pr-guide" className="text-background hover:underline">startup PR services</Link> or
+              learn about <Link to="/resources/founder-training" className="text-background hover:underline">media training</Link>.
             </p>
           </div>
         </div>

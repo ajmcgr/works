@@ -12,7 +12,7 @@ const CrisisReputationManagement = () => {
             Crisis & Reputation Management: Navigate Brand Challenges with Confidence
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Manage brand narratives during founder drama, product recalls, social backlash, 
+            Manage brand narratives during founder drama, product recalls, social backlash,
             and unexpected challenges with strategic crisis communication that protects and rebuilds trust.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -288,7 +288,7 @@ const CrisisReputationManagement = () => {
               <div className="text-muted-foreground">Average crisis response activation time</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -333,7 +333,7 @@ const CrisisReputationManagement = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-headline mb-6">Protect Your Brand Before Crisis Strikes</h2>
           <p className="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
-            Don't wait for a crisis to develop your response strategy. Build resilient reputation management 
+            Don't wait for a crisis to develop your response strategy. Build resilient reputation management
             systems that protect and strengthen your brand through any challenge.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
@@ -350,8 +350,8 @@ const CrisisReputationManagement = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Learn about our <Link to="/services/creative-storytelling" className="text-background hover:underline">creative storytelling services</Link> or 
-              explore <Link to="/services/media-training" className="text-background hover:underline">media training programs</Link>.
+              Learn about our <Link to="/resources/brand-storytelling" className="text-background hover:underline">creative storytelling services</Link> or
+              explore <Link to="/resources/founder-training" className="text-background hover:underline">media training programs</Link>.
             </p>
           </div>
         </div>

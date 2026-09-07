@@ -12,7 +12,7 @@ const GlobalPRStrategy = () => {
             Global PR Strategy: US, EU & APAC Coverage Through Smart Localization
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Showcase Works' ability to land coverage across three major markets with 
+            Showcase Works' ability to land coverage across three major markets with
             culturally-informed campaigns that resonate locally while maintaining global brand consistency.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -38,7 +38,7 @@ const GlobalPRStrategy = () => {
               At Works, our global PR expertise spans the three most critical markets for modern businesses: North America (US focus), Europe (UK, Germany, France, Netherlands), and Asia-Pacific (Singapore, Japan, Australia, South Korea). Our team combines native market knowledge with AI-powered insights from <a href="https://trymedia.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Media AI</a> to create campaigns that feel local while achieving global impact.
             </p>
             <p>
-              From coordinating simultaneous product launches to managing crisis communications across time zones, our global PR approach ensures your brand speaks fluently in every market that matters. Learn how this integrates with our <Link to="/" className="text-primary hover:underline">comprehensive PR services</Link> and <Link to="/services/startup-pr" className="text-primary hover:underline">startup-focused campaigns</Link>.
+              From coordinating simultaneous product launches to managing crisis communications across time zones, our global PR approach ensures your brand speaks fluently in every market that matters. Learn how this integrates with our <Link to="/" className="text-primary hover:underline">comprehensive PR services</Link> and <Link to="/resources/startup-pr-guide" className="text-primary hover:underline">startup-focused campaigns</Link>.
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ const GlobalPRStrategy = () => {
                 description: "Fast-paced, innovation-focused narratives emphasizing market disruption, funding, and scale potential for tech and VC audiences."
               },
               {
-                region: "EU Market", 
+                region: "EU Market",
                 icon: <MapPin className="w-6 h-6" />,
                 focus: "Compliance & Trust",
                 description: "Privacy-conscious, regulatory-aware messaging emphasizing sustainability, data protection, and social responsibility for European stakeholders."
@@ -286,7 +286,7 @@ const GlobalPRStrategy = () => {
               <div className="text-muted-foreground">Client satisfaction with global campaign results</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -344,8 +344,8 @@ const GlobalPRStrategy = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Explore our <Link to="/services/b2b-pr-saas" className="text-background hover:underline">B2B PR for SaaS</Link> or 
-              learn about <Link to="/services/crisis-reputation-management" className="text-background hover:underline">crisis management</Link> strategies.
+              Explore our <Link to="/resources/saas-marketing" className="text-background hover:underline">B2B PR for SaaS</Link> or
+              learn about <Link to="/resources/reputation-defense" className="text-background hover:underline">crisis management</Link> strategies.
             </p>
           </div>
         </div>

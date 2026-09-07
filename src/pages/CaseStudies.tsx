@@ -3,6 +3,19 @@ import { ExternalLink, Users, Globe, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+const detailedCaseStudyIds = new Set([
+  "byd",
+  "oneplus",
+  "oppo",
+  "meizu",
+  "tencent",
+  "xreal",
+  "angry-miao",
+  "ecarx",
+  "hhogene",
+  "publicis-msl",
+]);
+
 const CaseStudies = () => {
   const portfolioStats = [
     { icon: Users, label: "Years", value: "2+" },
@@ -304,11 +317,13 @@ const CaseStudies = () => {
                               <p className="text-gray-500 text-sm mt-2 font-normal">{client.period}</p>
                             )}
                           </div>
-                          <div>
-                            <Button asChild>
-                              <Link to={`/case-study/${client.id}`}>Read Case Study</Link>
-                            </Button>
-                          </div>
+                          {detailedCaseStudyIds.has(client.id) && (
+                            <div>
+                              <Button asChild>
+                                <Link to={`/case-study/${client.id}`}>Read Case Study</Link>
+                              </Button>
+                            </div>
+                          )}
                         </div>
                       </CardHeader>
                       

@@ -12,7 +12,7 @@ const AIPressOutreach = () => {
             AI-Powered Press Outreach: Streamlined Journalist Discovery & Media Lists
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Transform media outreach with intelligent journalist discovery, automated list building, 
+            Transform media outreach with intelligent journalist discovery, automated list building,
             and data-driven pitch optimization powered by Media AI.
           </p>
           <Button asChild size="lg" className="px-8 py-4">
@@ -210,7 +210,7 @@ const AIPressOutreach = () => {
               <div className="text-muted-foreground">Verified journalist contacts in database</div>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="flex items-center mb-6">
               <div className="flex text-yellow-400">
@@ -238,7 +238,7 @@ const AIPressOutreach = () => {
           <div className="grid md:grid-cols-4 gap-6">
             {[
               "CRM Integration",
-              "Email Platform Sync", 
+              "Email Platform Sync",
               "Analytics Dashboard",
               "Team Collaboration"
             ].map((feature, index) => (
@@ -271,8 +271,8 @@ const AIPressOutreach = () => {
           </div>
           <div className="mt-12">
             <p className="text-background/60 text-sm">
-              Learn about our <Link to="/services/startup-pr" className="text-background hover:underline">startup PR services</Link> or 
-              explore <Link to="/services/global-pr-strategy" className="text-background hover:underline">global PR strategies</Link>.
+              Learn about our <Link to="/resources/startup-pr-guide" className="text-background hover:underline">startup PR services</Link> or
+              explore <Link to="/resources/international-expansion" className="text-background hover:underline">global PR strategies</Link>.
             </p>
           </div>
         </div>

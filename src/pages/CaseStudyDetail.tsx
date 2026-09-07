@@ -340,7 +340,7 @@ const CaseStudyDetail = () => {
           <h1 className="text-4xl font-bold text-black mb-4">Case Study Not Found</h1>
           <p className="text-gray-600 mb-8">The case study you're looking for doesn't exist.</p>
           <Button asChild>
-            <Link to="/resources/our-customers">Back to Our Work</Link>
+            <Link to="/customers">Back to Our Work</Link>
           </Button>
         </div>
       </div>
