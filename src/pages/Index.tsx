@@ -79,31 +79,8 @@ const Index = () => {
     };
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
 
-    // Create mailto link
-    const subject = `Contact from ${formData.name} - ${formData.company}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:alex@worksapp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open default email client
-    window.location.href = mailtoLink;
-
-    toast({
-      title: "Email Client Opened",
-      description: "Your default email client should open with the message pre-filled.",
-    });
-
-    setFormData({ name: "", email: "", company: "", message: "" });
-    setIsSubmitting(false);
-  };
 
   return (
     <div className="min-h-screen">
