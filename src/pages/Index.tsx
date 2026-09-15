@@ -108,7 +108,7 @@ const Index = () => {
                 </h1>
 
                 <p className="text-white font-medium text-lg lg:text-xl leading-relaxed mb-6">
-                  AI-powered PR and Influencer Marketing services that drive growth.
+                  AI-powered Brand, PR and Influencer Marketing services that drive growth.
                 </p>
 
                 <Button variant="cta" size="default" className="inline-flex" asChild>
