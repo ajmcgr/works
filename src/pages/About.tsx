@@ -24,7 +24,7 @@ const About = () => {
                 
                 {/* Centered Opening Paragraph */}
                 <p className="text-xl leading-tight tracking-wide" style={{ color: '#374151' }}>
-                  Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
+                  Works was born from a simple belief: great companies deserve great stories. We're the Brand, PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
               
@@ -96,13 +96,13 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-gray-600 font-normal leading-normal tracking-wide">
               <p>
-                We're the PR & Influencer Marketing agency built for founders, rebels, and category creators.
+                We're the Brand, PR & Influencer Marketing agency built for founders, rebels, and category creators.
               </p>
               <p>
-                Our playbook? Strategy. Media. Influencers. Hype.
+                Our playbook? Brand. Strategy. Media. Influencers. Hype.
               </p>
               <p>
-                Our AI tools supercharge it — turning your story into headlines and your brand into influence.
+                Our AI tools supercharge it — turning your brand into a category of one, your story into headlines, and your name into influence.
               </p>
               <p>
                 We work with companies shaping the future: AI, robotics, crypto, consumer tech, fintech, and beyond.

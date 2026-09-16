@@ -12,7 +12,7 @@ export type SeoPage = {
 
 const pages: SeoPage[] = [
   { path: "/", title: "Works — Brand, PR & Influencer Marketing Agency", description: "AI-powered PR and influencer marketing for ambitious brands. Works builds buzz, earns media coverage, and turns product launches into growth." },
-  { path: "/about", title: "About Works | Global PR & Influencer Experts", description: "Meet Works, an independent PR and influencer marketing agency combining senior communications expertise, creative storytelling, and AI-powered execution." },
+  { path: "/about", title: "About Works | Brand, PR & Influencer Marketing Agency", description: "Meet Works, an independent brand, PR and influencer marketing agency combining senior communications expertise, creative storytelling, and AI-powered execution." },
   { path: "/services", title: "PR & Influencer Marketing Services | Works", description: "Explore Works services spanning media relations, influencer marketing, crisis communications, brand strategy, content, and global product launches." },
   { path: "/services/media-relations", title: "Media Relations Agency | Works", description: "Earn relevant media coverage with strategic positioning, journalist relationships, news development, and targeted press outreach from Works." },
   { path: "/services/crisis-communication", title: "Crisis Communication Services | Works", description: "Protect brand reputation with crisis planning, rapid-response messaging, stakeholder communications, and senior media counsel." },
