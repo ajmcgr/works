@@ -73,7 +73,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-100 mt-16 pt-8">
           <div className="flex justify-center">
-            <p className="text-xs text-gray-600">&copy; 2026 Works App, Inc. All rights reserved. 447 Sutter St, Ste 405 #3, San Francisco, CA 94108.</p>
+            <p className="text-xs text-gray-600">&copy; 2026 Works App, Inc. All rights reserved. 651 N Broad St, Suite 201, Middletown, 19709, Delaware.</p>
           </div>
         </div>
       </div>
