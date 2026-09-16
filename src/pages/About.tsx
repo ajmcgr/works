@@ -24,7 +24,7 @@ const About = () => {
                 
                 {/* Centered Opening Paragraph */}
                 <p className="text-xl leading-tight tracking-wide" style={{ color: '#374151' }}>
-                  Works was born from a simple belief: great companies deserve great stories. We're the PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
+                  Works was born from a simple belief: great companies deserve great stories. We're the Brand, PR & Influencer Marketing agency built for founders, rebels, and category creators who are shaping the future.
                 </p>
               </div>
               
