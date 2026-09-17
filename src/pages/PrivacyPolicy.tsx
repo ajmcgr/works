@@ -143,7 +143,7 @@ const PrivacyPolicy = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Data Retention & Deletion</h3>
               <p className="text-gray-700 mb-4">
                 We retain Google user data only for as long as it is necessary to provide our services or as required by law.
-                Users can request deletion of their data at any time by contacting privacy@works.xyz
+                Users can request deletion of their data at any time by contacting privacy@worksapp.com
               </p>
               <p className="text-gray-700 mb-4">
                 Upon receiving a deletion request:
