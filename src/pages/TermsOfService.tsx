@@ -98,7 +98,7 @@ const TermsOfService = () => {
                 If you have any questions about these Terms and Conditions, You can contact us:
               </p>
               <p className="text-gray-700">
-                By email: support@trymedia.ai
+                By email: alex@worksapp.com
               </p>
             </section>
           </div>
